@@ -1,0 +1,4222 @@
+[
+  {
+    "id": "GmTPO8MMDoiGA",
+    "claims": {
+      "/propertyPack/priceInformation": {
+        "price": 107000,
+        "priceQualifier": "Fixed price"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.974Z"
+    }
+  },
+  {
+    "id": "rF1aiNyu94cSgw",
+    "claims": {
+      "/propertyPack/uprn": 910358169111
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "1dtz4x9sE1qzA",
+    "claims": {
+      "/status": "For sale"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "yKijjmEJGn7sQ",
+    "claims": {
+      "/externalIds": {}
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "RJYjerLpgmS9Wg",
+    "claims": {
+      "/participants/-": {
+        "role": "Estate Agent",
+        "name": {
+          "firstName": "Sarah",
+          "lastName": "Mitchell",
+          "title": "Ms"
+        },
+        "email": "sarah.mitchell@property-partners.co.uk",
+        "externalIds": {
+          "propertyPartnersId": "EA2024001"
+        }
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property Partners Estate Agents - Professional Services Registry"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "OoKmSPL7srpiQQ",
+    "claims": {
+      "/participants/-": {
+        "role": "Seller",
+        "name": {
+          "firstName": "Agnieszka",
+          "lastName": "Jones",
+          "title": "Ms"
+        },
+        "email": "agnieszka.jones@hotmail.co.uk",
+        "externalIds": {
+          "sandboxPersonId": "P00004175"
+        }
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "S26zv1CEDcYN5A",
+    "claims": {
+      "/participants/-": {
+        "role": "Seller",
+        "name": {
+          "firstName": "Jon",
+          "lastName": "Jones",
+          "title": "Mr"
+        },
+        "email": "jon.jones@yahoo.com",
+        "externalIds": {
+          "sandboxPersonId": "P00004176"
+        }
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "Mja2cuNXZE8tw",
+    "claims": {
+      "/propertyPack/energyEfficiency/certificate": {
+        "certificateNumber": "9103-5816-9111-1754988370975",
+        "currentEnergyRating": "B",
+        "currentEnergyEfficiency": 82,
+        "potentialEnergyRating": "B",
+        "potentialEnergyEfficiency": 89,
+        "environmentImpactCurrent": 68,
+        "environmentImpactPotential": 82,
+        "co2EmissionsCurrent": 2.23,
+        "co2EmissionsPotential": 1.3379999999999999,
+        "totalFloorArea": 50.44,
+        "propertyType": "Terraced",
+        "builtForm": "Terraced",
+        "numberHabitableRooms": 3,
+        "numberHeatedRooms": 3,
+        "mainFuel": "mains gas (not community)",
+        "mainsGasFlag": "Y",
+        "energyConsumptionCurrent": 1923,
+        "energyConsumptionPotential": 1538,
+        "heatingCostCurrent": 440,
+        "heatingCostPotential": 275,
+        "inspectionDate": "2025-05-14"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Energy Performance Certificate obtained from https://find-energy-certificate.service.gov.uk/"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "l3Jvp3ZZ+u/I+GtU4RSVRA=="
+              },
+              "url": "https://find-energy-certificate.service.gov.uk/energy-certificate/synthetic-cert",
+              "desc": "Energy Performance Certificate from GOV.UK"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "0w2aBFDBhzthQ",
+    "claims": {
+      "/propertyPack/energyEfficiency/certificateIsSupplied": "Attached"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Energy Performance Certificate obtained from https://find-energy-certificate.service.gov.uk/"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "fe/u7t1FJf8Ik1kPLXvetw=="
+              },
+              "url": "https://find-energy-certificate.service.gov.uk/energy-certificate/synthetic-cert",
+              "desc": "Energy Performance Certificate from GOV.UK"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "Nxslxp0cPrZfA",
+    "claims": {
+      "/propertyPack/energyEfficiency/greenDealLoan/hasGreenDealLoan/yesNo": "No"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "SxLE1X5utifCw",
+    "claims": {
+      "/propertyPack/buildInformation/internalArea": {
+        "area": 50.44,
+        "unit": "square metres"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "9PFtn4cXiihoxQ",
+    "claims": {
+      "/propertyPack/heating/heatingSystem/heatingType": "Central heating"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "QBizkcjNCoQ5hA",
+    "claims": {
+      "/propertyPack/buildInformation/building/propertyType": "House"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "huKuaGNeSuemA",
+    "claims": {
+      "/propertyPack/buildInformation/building/builtForm": "Terraced"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "IwBI3fezMyAfg",
+    "claims": {
+      "/externalIds/LMS": {
+        "workspaceId": "workspace-f2f0459ce66d0716"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "VIgMfGPfWlKCZQ",
+    "claims": {
+      "/propertyPack/address": {
+        "line1": "107 Sunbeam Crescent",
+        "line2": "",
+        "town": "MANCHESTER",
+        "county": "Greater Manchester",
+        "postcode": "M16 8HJ"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "SX6J5QvynheyA",
+    "claims": {
+      "/propertyPack/location": {
+        "latitude": 53.4808,
+        "longitude": -2.2426
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Address coordinates obtained from Ordnance Survey API"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "3dKf4dFkRxfMQA",
+    "claims": {
+      "/propertyPack/connectivity/broadband": {
+        "yesNo": "Yes",
+        "typeOfConnection": "FTTP (Fibre to the Premises)",
+        "predictedSpeed": {
+          "maxBbPredictedDown": 16,
+          "maxBbPredictedUp": 1,
+          "maxSfbbPredictedDown": 67,
+          "maxSfbbPredictedUp": 20,
+          "maxUfbbPredictedDown": 1000,
+          "maxUfbbPredictedUp": 220,
+          "maxPredictedDown": 1000,
+          "maxPredictedUp": 220
+        }
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.975Z"
+    }
+  },
+  {
+    "id": "jVWQm8TMSRuoZg",
+    "claims": {
+      "/propertyPack/connectivity/mobilePhone/predictedCoverage": {
+        "eeDataOutdoor": 4,
+        "eeVoiceOutdoor": 4,
+        "voDataOutdoor": 4,
+        "voVoiceOutdoor": 4,
+        "h3DataOutdoor": 4,
+        "h3VoiceOutdoor": 4,
+        "tfDataOutdoor": 4,
+        "tfVoiceOutdoor": 4,
+        "eeDataIndoor": 3,
+        "eeDataIndoorNo4g": 3,
+        "eeDataOutdoorNo4g": 3,
+        "eeVoiceIndoor": 3,
+        "eeVoiceIndoorNo4g": 3,
+        "eeVoiceOutdoorNo4g": 4,
+        "h3DataIndoor": 0,
+        "h3DataIndoorNo4g": 0,
+        "h3DataOutdoorNo4g": 3,
+        "h3VoiceIndoor": 0,
+        "h3VoiceIndoorNo4g": 0,
+        "h3VoiceOutdoorNo4g": 4,
+        "tfDataIndoor": 3,
+        "tfDataIndoorNo4g": 3,
+        "tfDataOutdoorNo4g": 3,
+        "tfVoiceIndoor": 3,
+        "tfVoiceIndoorNo4g": 3,
+        "tfVoiceOutdoorNo4g": 4,
+        "voDataIndoor": 3,
+        "voDataIndoorNo4g": 0,
+        "voDataOutdoorNo4g": 0,
+        "voVoiceIndoor": 3,
+        "voVoiceIndoorNo4g": 3,
+        "voVoiceOutdoorNo4g": 4
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "m8fd9jUvmsetg",
+    "claims": {
+      "/propertyPack/localAuthority/localAuthorityName": "Manchester City Council"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "LXXzu7x0B0txxA",
+    "claims": {
+      "/propertyPack/localAuthority/countyCouncil": "Greater Manchester Combined Authority"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "Akf33p7Ma3ErA",
+    "claims": {
+      "/propertyPack/localAuthority/districtCouncil": "Manchester City Council"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "sbW1hzGEzsiQ9Q",
+    "claims": {
+      "/propertyPack/localAuthority/regulatedSearchTurnaroundTimeInWorkingDays": 10
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "TLYSvr7bhBgFUw",
+    "claims": {
+      "/propertyPack/councilTax": {
+        "councilTaxBand": "A",
+        "councilTaxAnnualCharge": 1845.45,
+        "councilTaxAnnualChargeTaxYear": "2024-2025",
+        "councilTaxAffectingAlterations": {
+          "yesNo": "No"
+        }
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Council Tax information obtained from the Valuation Office Agency"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "c2rCkJirUu5zIjRIFuDJwA=="
+              },
+              "url": "https://www.tax.service.gov.uk/check-council-tax-band/property/synthetic",
+              "desc": "Council Tax band on GOV.UK"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "fXXoL537kU5Ng",
+    "claims": {
+      "/propertyPack/environmentalIssues/coalMining": {
+        "result": "Identified",
+        "summary": "Coal mining risk identified in area.",
+        "riskIndicator": "Yes",
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "07RnKfGZCzQg",
+    "claims": {
+      "/propertyPack/environmentalIssues/nonCoalMining": {
+        "result": "Not identified",
+        "summary": "No non-coal mining risk has been identified.",
+        "riskIndicator": "No",
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "I5gupzIpYOzNWQ",
+    "claims": {
+      "/propertyPack/localSearches/localAuthoritySearches/planningAndBuildingRegulations/decisionsAndPendingApplications/planningPermission": []
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "cX0gw1lf5AU5Q",
+    "claims": {
+      "/propertyPack/environmentalIssues/coastalErosion": {
+        "result": "Not close to an area potentially affected by future coastal erosion.",
+        "summary": "The property is not close to any area potentially impacted by coastal erosion.",
+        "riskIndicator": "No",
+        "actionAlertRating": 1,
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "f1ou4dCo4mqsfQ",
+    "claims": {
+      "/propertyPack/environmentalIssues/flooding/floodRisk": {
+        "summary": "Flooding from rivers: Very low risk; Flooding from the sea: Very low risk",
+        "riskSubcategories": [
+          {
+            "result": "Very low risk",
+            "summary": "Risk less than 0.1% chance each year",
+            "subCategory": "Flooding from rivers",
+            "actionAlertRating": 1
+          },
+          {
+            "result": "Very low risk",
+            "summary": "Risk less than 0.1% chance each year",
+            "subCategory": "Flooding from the sea",
+            "actionAlertRating": 1
+          }
+        ],
+        "riskIndicator": "No",
+        "actionAlertRating": 1,
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environment Agency Long-term Flood Risk service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "wKgMBZIhKnMTGGpCQdpRlw=="
+              },
+              "url": "https://check-long-term-flood-risk.service.gov.uk/synthetic-report",
+              "desc": "Environment Agency flood risk report"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "GFPpGe5Z71U0g",
+    "claims": {
+      "/propertyPack/titlesToBeSold": [
+        {
+          "titleNumber": "TF910358",
+          "titleIncludedInSale": true
+        }
+      ]
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "eYO9i9bDqFdZS/5Qn25ufA=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "zcRte3Iybwfmw",
+    "claims": {
+      "/propertyPack/marketingTenure": "Freehold"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "ZEGq9NpkSt36Qw",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/titleExtents": "{\"type\":\"Polygon\",\"coordinates\":[[[-2.2427,53.4807],[-2.2424999999999997,53.4807],[-2.2424999999999997,53.480900000000005],[-2.2427,53.480900000000005],[-2.2427,53.4807]]]}"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "ZHF4v8B8wNnoZc9JqppgIw=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "fYFPjKKb6hxcw",
+    "claims": {
+      "/propertyPack/ownership/ownershipsToBeTransferred/-": {
+        "ownershipType": "Freehold",
+        "titleNumber": "TF910358",
+        "percentageOwned": 100,
+        "owner": [
+          {
+            "firstName": "Agnieszka",
+            "lastName": "Jones"
+          },
+          {
+            "firstName": "Jon",
+            "lastName": "Jones"
+          }
+        ]
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "ubwVqDAMVy1ZAlFtrXmhYA=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "b9hPSNeyn095Gg",
+    "claims": {
+      "/propertyPack/legalOwners/namesOfLegalOwners": [
+        {
+          "ownerType": "Private individual",
+          "firstName": "Agnieszka",
+          "middleNames": "",
+          "lastName": "Jones"
+        },
+        {
+          "ownerType": "Private individual",
+          "firstName": "Jon",
+          "middleNames": "",
+          "lastName": "Jones"
+        }
+      ]
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "pnNutrrq9o5KAg",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/registerExtract": {
+        "ocSummaryData": {
+          "documentDetails": {
+            "document": [
+              {
+                "documentDate": "2018-04-14",
+                "documentType": "60",
+                "planOnlyIndicator": "false",
+                "entryNumber": [
+                  "A1",
+                  "B1"
+                ],
+                "registerDescription": "Transfer"
+              }
+            ]
+          },
+          "officialCopyDateTime": "2025-08-12T08:46:10.976Z",
+          "proprietorship": {
+            "currentProprietorshipDate": "2018-04-14",
+            "registeredProprietorParty": [
+              {
+                "privateIndividual": {
+                  "name": {
+                    "forenamesName": "Agnieszka",
+                    "surnameName": "Jones"
+                  }
+                },
+                "address": {
+                  "postcodeZone": {
+                    "postcode": "M16 8HJ"
+                  },
+                  "addressLine": {
+                    "line": [
+                      "107 Sunbeam Crescent",
+                      "MANCHESTER"
+                    ]
+                  }
+                }
+              },
+              {
+                "privateIndividual": {
+                  "name": {
+                    "forenamesName": "Jon",
+                    "surnameName": "Jones"
+                  }
+                },
+                "address": {
+                  "postcodeZone": {
+                    "postcode": "M16 8HJ"
+                  },
+                  "addressLine": {
+                    "line": [
+                      "107 Sunbeam Crescent",
+                      "MANCHESTER"
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "propertyAddress": {
+            "postcodeZone": {
+              "postcode": "M16 8HJ"
+            },
+            "addressLine": {
+              "line": [
+                "107 Sunbeam Crescent",
+                "MANCHESTER"
+              ]
+            }
+          },
+          "editionDate": "2025-07-13",
+          "title": {
+            "titleNumber": "TF910358",
+            "commonholdIndicator": false,
+            "classOfTitleCode": "10",
+            "titleRegistrationDetails": {
+              "postcodeZone": {
+                "postcode": "M16 8HJ"
+              },
+              "districtName": "MANCHESTER",
+              "registrationDate": "2018-04-14",
+              "administrativeArea": "MANCHESTER",
+              "landRegistryOfficeName": "Manchester Office",
+              "latestEditionDate": "2025-07-13"
+            }
+          },
+          "registerEntryIndicators": {
+            "multipleChargeIndicator": false,
+            "chargeeIndicator": false,
+            "homeRightsIndicator": false,
+            "leaseHoldTitleIndicator": false,
+            "pricePaidIndicator": true
+          },
+          "pricePaidEntry": {
+            "entryDetails": {
+              "entryText": "The price stated to have been paid on 2018-04-14 was £95000.",
+              "registrationDate": "2018-04-14",
+              "infills": {
+                "date": "2018-04-14",
+                "amount": "£95000"
+              },
+              "entryNumber": "1",
+              "subRegisterCode": "B"
+            }
+          }
+        },
+        "ocRegisterData": {
+          "proprietorshipRegister": {
+            "registerEntry": [
+              {
+                "entryType": "Proprietor",
+                "entryText": "PROPRIETOR: AGNIESZKA JONES and JON JONES of 107 Sunbeam Crescent, MANCHESTER, M16 8HJ.",
+                "entryDate": "2018-04-14",
+                "entryNumber": "1"
+              }
+            ]
+          },
+          "propertyRegister": {
+            "registerEntry": [
+              {
+                "entryType": "Property Description",
+                "entryText": "The Freehold land shown edged with red on the plan of the above title filed at the Registry and being 107 Sunbeam Crescent, MANCHESTER (M16 8HJ).",
+                "entryDate": "2018-04-14",
+                "entryNumber": "1"
+              }
+            ],
+            "districtDetails": {
+              "entryText": "MANCHESTER"
+            }
+          }
+        }
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "Bw+jBIHGc77rwUeqnDPhxw=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "6q9JoDpB1XKcA",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/documentAvailability": {
+        "titlePlan": {
+          "availabilityCode": "IMMEDIATE",
+          "availability": "available for immediate download",
+          "type": "plan",
+          "backdated": false,
+          "typeCode": "TITLEPLAN"
+        },
+        "titleStatus": "Title number is valid.",
+        "titleNumber": "TF910358",
+        "applicationsPending": false,
+        "titleStatusCode": "VALID",
+        "referredToDocuments": [
+          {
+            "date": "2018-04-14",
+            "availabilityCode": "IMMEDIATE",
+            "availability": "available for immediate download",
+            "type": "Transfer",
+            "entryNumbers": [
+              "A1",
+              "B1"
+            ],
+            "filedUnder": "TF910358",
+            "typeCode": "Transfer"
+          }
+        ],
+        "register": {
+          "availabilityCode": "IMMEDIATE",
+          "availability": "available for immediate download",
+          "type": "register",
+          "backdated": false,
+          "typeCode": "REGISTER"
+        }
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "ArlZy7H668wXGpFLnWFkrQ=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "srDT53XOFaG34Q",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/keyFacts": {
+        "chargesAndFinancialBurdens": [],
+        "relatedDocuments": [
+          "A transfer dated 2018-04-14 showing the transfer of property ownership."
+        ],
+        "legalOwners": [
+          "Agnieszka Jones",
+          "Jon Jones"
+        ],
+        "rightsOrEasements": [
+          "Standard property rights as detailed in the title register."
+        ],
+        "beneficialOwners": [
+          "Agnieszka Jones",
+          "Jon Jones"
+        ],
+        "restrictionsOrRestrictiveCovenants": [],
+        "propertyAndLandDescription": "The property is the freehold (full ownership) of the land located at 107 Sunbeam Crescent, MANCHESTER, with postcode M16 8HJ. This means the owners own the land and property outright.",
+        "complexityScore": 1
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "LLiIIJ4y0n0UXsDjQs8lCQ=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "bmnIjlqPvyT6cg",
+    "claims": {
+      "/propertyPack/ownership/numberOfSellers": 2
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "5RbX/VWpUkVTwd1EJ+5W2g=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "J4eA0CUa06rA",
+    "claims": {
+      "/propertyPack/typeOfConstruction/isStandardForm": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "Y0EkyxiECBSiyQ",
+    "claims": {
+      "/propertyPack/typeOfConstruction/buildingSafety": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "6bo3CJoUHHXO4Q",
+    "claims": {
+      "/propertyPack/typeOfConstruction/accessibilityAndAdaptations": []
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "5XpOv8th0TiRkw",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/-": {
+        "documentType": "Transfer",
+        "documentDate": "2018-04-14",
+        "documentReference": "TR-91035816"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "2iAUGfxE6MyZnYskfqGoeQ=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "pN53gAYyuxtYFA",
+    "claims": {
+      "/propertyPack/electricity/mainsElectricity": {
+        "yesNo": "Yes",
+        "supplier": "British Gas",
+        "electricityMeter": {
+          "type": "Smart meter",
+          "location": "External meter box"
+        }
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "cMuYZkKsf8RBTg",
+    "claims": {
+      "/propertyPack/electricity/solarPanels": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "RDiNXM3muzOCw",
+    "claims": {
+      "/propertyPack/electricity/heatPump": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "8zNQ6PmSW1bxA",
+    "claims": {
+      "/propertyPack/electricity/otherSources": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "o76yQNuPYVwrOQ",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water": {
+        "mainsWater": {
+          "yesNo": "Yes",
+          "supplier": "United Utilities",
+          "waterMeter": {
+            "isSupplyMetered": "Yes",
+            "location": "Front garden"
+          },
+          "stopcock": {
+            "location": "Under kitchen sink"
+          }
+        }
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "55FMBEj4mVrg",
+    "claims": {
+      "/propertyPack/waterAndDrainage/drainage": {
+        "mainsSurfaceWaterDrainage": {
+          "yesNo": "Yes"
+        },
+        "mainsFoulDrainage": {
+          "yesNo": "Yes",
+          "supplier": "United Utilities"
+        }
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "oGlSdS1ez7IGRA",
+    "claims": {
+      "/propertyPack/heating/otherHeatingFeatures": [
+        "None"
+      ]
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "hRJ0TiCeHvikg",
+    "claims": {
+      "/propertyPack/parking/parkingArrangements": [
+        "On-street"
+      ]
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "7dmfL9sJFnLwCw",
+    "claims": {
+      "/propertyPack/parking/disabledParking": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "vPe8GHh9dsvTIg",
+    "claims": {
+      "/propertyPack/parking/controlledParking": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "C3JJGQA1Wzmf2A",
+    "claims": {
+      "/propertyPack/parking/electricVehicleChargingPoint": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "ssiO8HfrCKBZA",
+    "claims": {
+      "/propertyPack/listingAndConservation/isListed": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "vSMaD30FJRxxGQ",
+    "claims": {
+      "/propertyPack/listingAndConservation/isConservationArea": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "83e3Ok9Eyx2x7A",
+    "claims": {
+      "/propertyPack/listingAndConservation/hasTreePreservationOrder": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "MNKwTUwHbO5A2w",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements": {
+        "publicRightOfWay": {
+          "yesNo": "No"
+        },
+        "rightsOfLight": {
+          "yesNo": "No"
+        },
+        "rightsOfSupport": {
+          "yesNo": "No"
+        },
+        "rightsCreatedThroughCustom": {
+          "yesNo": "No"
+        },
+        "rightsToTakeFromLand": {
+          "yesNo": "No"
+        },
+        "minesAndMinerals": {
+          "yesNo": "No"
+        },
+        "churchChancel": {
+          "yesNo": "No"
+        },
+        "otherRights": {
+          "yesNo": "No"
+        }
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "x4rlojgk70lEPg",
+    "claims": {
+      "/propertyPack/environmentalIssues/flooding/historicalFlooding/hasBeenFlooded": "No"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environment Agency Long-term Flood Risk service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "sW6Va5PaJkT40opCNtXHBg=="
+              },
+              "url": "https://check-long-term-flood-risk.service.gov.uk/synthetic-report",
+              "desc": "Environment Agency flood risk report"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "kssKfWtjUyDPw",
+    "claims": {
+      "/propertyPack/notices/planningApplication/yesNo": "No"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "0ardyFRB93X1Mg",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/waterMeter": {
+        "isSupplyMetered": "Yes",
+        "location": "Front garden"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "mgVY7vlvEdWv9g",
+    "claims": {
+      "/propertyPack/legalBoundaries/ownership": {
+        "areBoundariesUniform": "Yes",
+        "uniformBoundaries": {
+          "rear": "Shared",
+          "left": "Seller",
+          "right": "Shared",
+          "front": "Highway"
+        }
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "gcmCx1cdmLZWHIGDH5CUkw=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "hIYh1ZyeBFWWlQ",
+    "claims": {
+      "/propertyPack/legalBoundaries/haveBoundaryFeaturesMoved": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "7TZ2A8lyZOz9bQ",
+    "claims": {
+      "/propertyPack/legalBoundaries/adjacentLandIncluded": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "HA6ervS4YiM66g",
+    "claims": {
+      "/propertyPack/legalBoundaries/flyingFreehold": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "icc8ZZ1stZihDA",
+    "claims": {
+      "/propertyPack/disputesAndComplaints/hasDisputesAndComplaints": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "ehjii3ReVheJdw",
+    "claims": {
+      "/propertyPack/disputesAndComplaints/leadingToDisputesAndComplaints": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "7KI1zSfs1kcF3A",
+    "claims": {
+      "/propertyPack/notices/neighbourDevelopment": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "Nc65HXz6sleoQ",
+    "claims": {
+      "/propertyPack/notices/requiredMaintenance": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "3gj6cJUHrTNzZA",
+    "claims": {
+      "/propertyPack/notices/listedBuildingApplication": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "beDlb9oS5Acm8A",
+    "claims": {
+      "/propertyPack/notices/infrastructureProject": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "zAoZRUZb71Fkg",
+    "claims": {
+      "/propertyPack/notices/partyWallAct": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "lqt7KRfP7P5B0Q",
+    "claims": {
+      "/propertyPack/notices/otherNotices": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "gFOlMrSnmSBfQ",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/hasStructuralAlterations": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "xYrt5Fx4gLyIA",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/changeOfUse": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.976Z"
+    }
+  },
+  {
+    "id": "u6T9qptDJIKfQA",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/windowReplacementsSince2002": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "fUFVJm9Ci8cleQ",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/hasAddedConservatory": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "h8raIz6bopiwkg",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/worksUnfinished": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "wY5WNbyd5yeg",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/planningPermissionBreaches": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "5ViKMokuNOjfzg",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/unresolvedPlanningIssues": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "99HzsvAc3kiphQ",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/hasValidGuaranteesOrWarranties": "Yes"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "kuoMDNgtn38GTA",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/newHomeWarranty": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "4BYHl2LJEe7sg",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/roofingWork": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "ghMMXuTkqmunAA",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/dampProofingTreatment": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "ARlFGGy2Lo8S9Q",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/timberRotOrInfestationTreatment": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "nULdpTTVbgmStA",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/centralHeatingAndorPlumbing": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "SnKmmLovNACQ",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/doubleGlazing": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "CxUgCv4lBpjFOQ",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/electricalRepairOrInstallation": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "mDum7KepmYWHhA",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/subsidenceWork": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "nhbkPht3vPKZQ",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/otherGuarantees": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "evBOEfu4u33w",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/outstandingClaimsOrApplications": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "v4oGu5ghtRikQ",
+    "claims": {
+      "/propertyPack/insurance/isInsured": "Yes"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "Ylrje9fReQ1wCA",
+    "claims": {
+      "/propertyPack/insurance/insuranceClaims": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "Jsl6FvxoIJZCQ",
+    "claims": {
+      "/propertyPack/insurance/difficultiesObtainingInsurance": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "6GQE42b0FwZPTw",
+    "claims": {
+      "/propertyPack/environmentalIssues/radon/radonTest": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "QkXLgqgNUA0EjA",
+    "claims": {
+      "/propertyPack/environmentalIssues/radon/remedialMeasuresOnConstruction": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "zte9Ud04IASFMg",
+    "claims": {
+      "/propertyPack/specialistIssues/japaneseKnotweed/yesNo": "No"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "ohaPGSbtLGhWg",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsOfLight": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "P2JoWCgG2UajRQ",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsOfSupport": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "Mj5yzCPyhEijig",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsCreatedThroughCustom": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "nVPmUmf3EDMo7Q",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsToTakeFromLand": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "W8SO2pPhWg8dsg",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/minesAndMinerals": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "NHjGIqW3C19kBg",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/churchChancel": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "LDrT1RIaxoiAbQ",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/otherRights": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "X0Klsyys2pOrA",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/sharedContributions": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "9tC9s4o8d8pDQ",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/neighbouringLandRights": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "sgN1ZmSKvm8mSg",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/accessRestrictionAttempts": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "QxRDwH3XewpQ",
+    "claims": {
+      "/propertyPack/servicesCrossing/pipesWiresCablesDrainsToProperty": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "2sltjRQi2NA7A",
+    "claims": {
+      "/propertyPack/servicesCrossing/pipesWiresCablesDrainsFromProperty": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "uQxxtpvKLnROQ",
+    "claims": {
+      "/propertyPack/servicesCrossing/formalOrInformalAgreements": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "YT10Bm3O9AghwA",
+    "claims": {
+      "/propertyPack/additionalInformation/otherCharges/yesNo": "No"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "0bKVGThGwFGlsw",
+    "claims": {
+      "/propertyPack/occupiers/sellerLivesAtProperty": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "DeJfNKNC50oK0w",
+    "claims": {
+      "/propertyPack/occupiers/othersAged17OrOver": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "R1EHO8ztFui4Q",
+    "claims": {
+      "/propertyPack/electricalWorks/testedByQualifiedElectrician": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "51dxIDi99zc1jQ",
+    "claims": {
+      "/propertyPack/electricalWorks/electricalWorkSince2005": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "Ddmipa649SH6QA",
+    "claims": {
+      "/propertyPack/waterAndDrainage/drainage/mainsFoulDrainage/supplier": "United Utilities"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "V1Hm3bVvzS8TxA",
+    "claims": {
+      "/propertyPack/electricity/mainsElectricity/supplier": "British Gas"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "SfdOGuyldtnnlA",
+    "claims": {
+      "/propertyPack/electricity/mainsElectricity/electricityMeter": {
+        "type": "Smart meter",
+        "location": "External meter box"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "MLsrG50qAHULbQ",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/waterMeter/location": "Front garden"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Address coordinates obtained from Ordnance Survey API"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "grPp38TtERp0Q",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/supplier": "United Utilities"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "kYsHEQTuqwe6w",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/stopcock": {
+        "location": "Under kitchen sink"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "lw2HRtAyYkPCaA",
+    "claims": {
+      "/propertyPack/connectivity/telephone": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "znqBqPQ0zwaXw",
+    "claims": {
+      "/propertyPack/connectivity/cableSatelliteTV": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "37XDFUVamioQFw",
+    "claims": {
+      "/propertyPack/completionAndMoving/sellerWillEnsure": {
+        "removeRubbish": true,
+        "replaceLightFittings": true,
+        "leaveKeys": true,
+        "takeReasonableCare": true
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "CWMAoWpHtiMg",
+    "claims": {
+      "/propertyPack/completionAndMoving/otherPropertyInChain": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "9JccSEcZGjZ9jA",
+    "claims": {
+      "/propertyPack/completionAndMoving/moveRestrictionDates": {
+        "hasRestrictions": false
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "PfnKffR9UlQmg",
+    "claims": {
+      "/propertyPack/completionAndMoving/sufficientToRepayAllMortgages": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "k7BchhWfqqjErQ",
+    "claims": {
+      "/propertyPack/confirmationOfAccuracyByOwners/confirmInformationIsAccurate": true
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Agnieszka Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "YNipRJbrGh707Q",
+    "claims": {
+      "/propertyPack/documents/-": {
+        "documentType": "Floorplan",
+        "documentId": "FP-R00002276"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "mT4h53FA9JkDew",
+    "claims": {
+      "/propertyPack/documents/-": {
+        "documentType": "Brochure",
+        "documentId": "BR-R00002276"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "QL3KOMtzxSxH4w",
+    "claims": {
+      "/propertyPack/documents/0/documentType": "Floorplan"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "9HAJ4QTXGd2Dg",
+    "claims": {
+      "/propertyPack/documents/1/documentType": "Brochure"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "xMcfvVHDFFG5Tw",
+    "claims": {
+      "/propertyPack/documents/0/alterationsInsights": {
+        "hasAlterations": false,
+        "summary": "No significant alterations identified"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "K1P6rbf2CBT5zA",
+    "claims": {
+      "/externalIds/TMGroup": {
+        "propertyId": "TM-91035816"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "04RJnlquUStLg",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/insights/restrictiveCovenants": {
+        "summary": "No significant restrictive covenants identified",
+        "items": [],
+        "riskLevel": "Low"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "i79pCXupjn8JYX11TZFpEw=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "1ierKcttxlHwQ",
+    "claims": {
+      "/propertyPack/documents/1/alterationsInsights": []
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "UEnxrWjFd2KmQ",
+    "claims": {
+      "/propertyPack/documents/0/transcription": {
+        "rawText": "Property: 107 Sunbeam Crescent, MANCHESTER\nFloor Plan - Terraced property with 2 bedrooms",
+        "processedText": "Standard floor plan layout"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "NXPdEFO9nfutsQ",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/1/transcription": {
+        "rawText": "Property register extract",
+        "processedText": "Standard register entry"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "NaBWSGfEsy8GUbhft1n2QA=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "bRpS8JUGGHY3w",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/2/transcription": {
+        "rawText": "Title plan",
+        "processedText": "Standard title plan showing property boundaries"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "phUsFgmMUFl8iVta16iuVQ=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "MMxhRPfxjM3O9Q",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/0/transcription": {
+        "rawText": "Transfer dated 2018-04-14",
+        "processedText": "Standard property transfer document"
+      }
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "RkIUXWdTdciJZh36+/xSzA=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:10.977Z"
+    }
+  },
+  {
+    "id": "2Jj2tvgsQF8heQ",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/bedrooms": 2
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.783Z"
+    }
+  },
+  {
+    "id": "AMjYfeVTJTRQ",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/bathrooms": 1
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.783Z"
+    }
+  },
+  {
+    "id": "kMmuG9irmmRQ",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/receptions": 1
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.783Z"
+    }
+  },
+  {
+    "id": "lG8mQo2Ti3O63Q",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/kitchens": 1
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.783Z"
+    }
+  },
+  {
+    "id": "XcWAilfYDUChLg",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/outsideAreas": [
+        "Rear yard",
+        "Front area"
+      ]
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.783Z"
+    }
+  },
+  {
+    "id": "9WKcltkM8j6AYg",
+    "claims": {
+      "/propertyPack/buildInformation/floorplan/rooms": [
+        {
+          "roomName": "Master Bedroom",
+          "description": "Primary bedroom with built-in storage",
+          "length": 3.81,
+          "width": 2.86,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        },
+        {
+          "roomName": "Bedroom 2",
+          "description": "Secondary bedroom",
+          "length": 3.81,
+          "width": 2.86,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        },
+        {
+          "roomName": "Living Room",
+          "description": "Main reception room with natural light",
+          "length": 4.45,
+          "width": 3.49,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        },
+        {
+          "roomName": "Kitchen",
+          "description": "Fitted kitchen with modern appliances",
+          "length": 3.18,
+          "width": 2.54,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        },
+        {
+          "roomName": "Bathroom",
+          "description": "Main family bathroom with bath and shower",
+          "length": 2.22,
+          "width": 1.91,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        }
+      ]
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.783Z"
+    }
+  },
+  {
+    "id": "JS40OfoDb0j9Q",
+    "claims": {
+      "/propertyPack/buildInformation/floorplan/hasFloorplan": "Yes"
+    },
+    "transactionId": "wTLdGq9c4cU3fA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.783Z"
+    }
+  }
+]

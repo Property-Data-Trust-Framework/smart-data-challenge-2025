@@ -1,0 +1,4262 @@
+[
+  {
+    "id": "dYkcIR4VH5sDw",
+    "claims": {
+      "/propertyPack/priceInformation": {
+        "price": 480000,
+        "priceQualifier": "Guide price"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.887Z"
+    }
+  },
+  {
+    "id": "6ClSHoKFrgTDA",
+    "claims": {
+      "/propertyPack/uprn": 635044300628
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.887Z"
+    }
+  },
+  {
+    "id": "rsotyAY92aMg",
+    "claims": {
+      "/status": "For sale"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.887Z"
+    }
+  },
+  {
+    "id": "k8WRvsV6uypxg",
+    "claims": {
+      "/externalIds": {
+        "Matchmaker": {
+          "matchmakerId": "MM3A04D8EE"
+        }
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.887Z"
+    }
+  },
+  {
+    "id": "LshVHM4qMn0Yg",
+    "claims": {
+      "/participants/-": {
+        "role": "Estate Agent",
+        "name": {
+          "firstName": "Sarah",
+          "lastName": "Mitchell",
+          "title": "Ms"
+        },
+        "email": "sarah.mitchell@property-partners.co.uk",
+        "organisation": "Property Partners",
+        "externalIds": {
+          "propertyPartnersId": "EA2024001"
+        }
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property Partners Estate Agents - Professional Services Registry"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.887Z"
+    }
+  },
+  {
+    "id": "AdZvQOH7mUCKBA",
+    "claims": {
+      "/participants/-": {
+        "role": "Seller",
+        "name": {
+          "firstName": "Martin",
+          "lastName": "Jones",
+          "title": "Mr"
+        },
+        "email": "martin.jones@hotmail.co.uk",
+        "externalIds": {
+          "sandboxPersonId": "P00001954"
+        }
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.887Z"
+    }
+  },
+  {
+    "id": "zCGtNI9nExu1A",
+    "claims": {
+      "/participants/-": {
+        "role": "Seller",
+        "name": {
+          "firstName": "Laura",
+          "lastName": "Jones",
+          "title": "Ms"
+        },
+        "email": "laura.jones@hotmail.com",
+        "externalIds": {
+          "sandboxPersonId": "P00001955"
+        }
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "Mr2PA14xMTvr6g",
+    "claims": {
+      "/propertyPack/energyEfficiency/certificate": {
+        "certificateNumber": "6350-4430-0628-1756734099888",
+        "currentEnergyRating": "D",
+        "currentEnergyEfficiency": 68,
+        "potentialEnergyRating": "B",
+        "potentialEnergyEfficiency": 82,
+        "environmentImpactCurrent": 50,
+        "environmentImpactPotential": 68,
+        "co2EmissionsCurrent": 2.92,
+        "co2EmissionsPotential": 1.752,
+        "totalFloorArea": 100.11,
+        "propertyType": "Detached",
+        "builtForm": "Detached",
+        "numberHabitableRooms": 3,
+        "numberHeatedRooms": 3,
+        "mainFuel": "mains gas (not community)",
+        "mainsGasFlag": "Y",
+        "energyConsumptionCurrent": 2714,
+        "energyConsumptionPotential": 2171,
+        "heatingCostCurrent": 562,
+        "heatingCostPotential": 351,
+        "inspectionDate": "2025-06-03"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Energy Performance Certificate obtained from https://find-energy-certificate.service.gov.uk/"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "NtbUm5XvWLrHL8TTJneHdQ=="
+              },
+              "url": "https://find-energy-certificate.service.gov.uk/energy-certificate/synthetic-cert",
+              "desc": "Energy Performance Certificate from GOV.UK"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "vIrRnlzsZglbQ",
+    "claims": {
+      "/propertyPack/energyEfficiency/certificateIsSupplied": "Attached"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Energy Performance Certificate obtained from https://find-energy-certificate.service.gov.uk/"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "3gDT82fAYKah4lfzoh4ZYA=="
+              },
+              "url": "https://find-energy-certificate.service.gov.uk/energy-certificate/synthetic-cert",
+              "desc": "Energy Performance Certificate from GOV.UK"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "UVCg41pTnt79PQ",
+    "claims": {
+      "/propertyPack/energyEfficiency/greenDealLoan/hasGreenDealLoan/yesNo": "No"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "4NW0NDTbI3FAxg",
+    "claims": {
+      "/propertyPack/buildInformation/internalArea": {
+        "area": 100.11,
+        "unit": "square metres"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "y41pClTetnHTsw",
+    "claims": {
+      "/propertyPack/heating/heatingSystem/heatingType": "Central heating"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "9HW23SzS1Gcg",
+    "claims": {
+      "/propertyPack/buildInformation/building/propertyType": "House"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "Gch71x1GdzK1A",
+    "claims": {
+      "/propertyPack/buildInformation/building/builtForm": "Detached"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "UVyBrUk7UBFmVw",
+    "claims": {
+      "/externalIds/LMS": {
+        "workspaceId": "workspace-7eb67a9c740366f6"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "bGwEohULf6ALqQ",
+    "claims": {
+      "/propertyPack/address": {
+        "line1": "59 Hawkley Gardens",
+        "line2": "",
+        "town": "ALTRINCHAM",
+        "county": "Cheshire",
+        "postcode": "WA14 5SL"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "C3E2e1kt6WFVA",
+    "claims": {
+      "/propertyPack/location": {
+        "latitude": 53.286316,
+        "longitude": -2.396151
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Address coordinates obtained from Ordnance Survey API"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "CHOT0ASEduGrQ",
+    "claims": {
+      "/propertyPack/connectivity/broadband": {
+        "yesNo": "Yes",
+        "typeOfConnection": "FTTP (Fibre to the Premises)",
+        "predictedSpeed": {
+          "maxBbPredictedDown": 16,
+          "maxBbPredictedUp": 1,
+          "maxSfbbPredictedDown": 67,
+          "maxSfbbPredictedUp": 20,
+          "maxUfbbPredictedDown": 1000,
+          "maxUfbbPredictedUp": 220,
+          "maxPredictedDown": 1000,
+          "maxPredictedUp": 220
+        }
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "tE2pLwnyuJmSlg",
+    "claims": {
+      "/propertyPack/connectivity/mobilePhone/predictedCoverage": {
+        "eeDataOutdoor": 4,
+        "eeVoiceOutdoor": 4,
+        "voDataOutdoor": 4,
+        "voVoiceOutdoor": 4,
+        "h3DataOutdoor": 4,
+        "h3VoiceOutdoor": 4,
+        "tfDataOutdoor": 4,
+        "tfVoiceOutdoor": 4,
+        "eeDataIndoor": 3,
+        "eeDataIndoorNo4g": 3,
+        "eeDataOutdoorNo4g": 3,
+        "eeVoiceIndoor": 3,
+        "eeVoiceIndoorNo4g": 3,
+        "eeVoiceOutdoorNo4g": 4,
+        "h3DataIndoor": 0,
+        "h3DataIndoorNo4g": 0,
+        "h3DataOutdoorNo4g": 3,
+        "h3VoiceIndoor": 0,
+        "h3VoiceIndoorNo4g": 0,
+        "h3VoiceOutdoorNo4g": 4,
+        "tfDataIndoor": 3,
+        "tfDataIndoorNo4g": 3,
+        "tfDataOutdoorNo4g": 3,
+        "tfVoiceIndoor": 3,
+        "tfVoiceIndoorNo4g": 3,
+        "tfVoiceOutdoorNo4g": 4,
+        "voDataIndoor": 3,
+        "voDataIndoorNo4g": 0,
+        "voDataOutdoorNo4g": 0,
+        "voVoiceIndoor": 3,
+        "voVoiceIndoorNo4g": 3,
+        "voVoiceOutdoorNo4g": 4
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "R0bf5Jz47GNc1A",
+    "claims": {
+      "/propertyPack/localAuthority/localAuthorityName": "Trafford Borough Council"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "h0vUh8B8aO6VA",
+    "claims": {
+      "/propertyPack/localAuthority/countyCouncil": "Cheshire County Council"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "GIMv8R7L5UaxvA",
+    "claims": {
+      "/propertyPack/localAuthority/districtCouncil": "Trafford Borough Council"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "JDPqCjb3lamGPw",
+    "claims": {
+      "/propertyPack/localAuthority/regulatedSearchTurnaroundTimeInWorkingDays": 10
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "bVCmaHTMr2z98Q",
+    "claims": {
+      "/propertyPack/councilTax": {
+        "councilTaxBand": "F",
+        "councilTaxAnnualCharge": 2135.86,
+        "councilTaxAnnualChargeTaxYear": "2024-2025",
+        "councilTaxAffectingAlterations": {
+          "yesNo": "No"
+        }
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Council Tax information obtained from the Valuation Office Agency"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "lPMSOXG5Z5PbdPeWlqc3Xw=="
+              },
+              "url": "https://www.tax.service.gov.uk/check-council-tax-band/property/synthetic",
+              "desc": "Council Tax band on GOV.UK"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "vkpVL94ig6Rg6A",
+    "claims": {
+      "/propertyPack/environmentalIssues/coalMining": {
+        "result": "Not identified",
+        "summary": "No coal mining risk has been identified.",
+        "riskIndicator": "No",
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "L5riGfnshnpZJA",
+    "claims": {
+      "/propertyPack/environmentalIssues/nonCoalMining": {
+        "result": "Not identified",
+        "summary": "No non-coal mining risk has been identified.",
+        "riskIndicator": "No",
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "7gF2v86CW2QNVg",
+    "claims": {
+      "/propertyPack/localSearches/localAuthoritySearches/planningAndBuildingRegulations/decisionsAndPendingApplications/planningPermission": []
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "BGjOlKcsxw6E2w",
+    "claims": {
+      "/propertyPack/environmentalIssues/coastalErosion": {
+        "result": "Not close to an area potentially affected by future coastal erosion.",
+        "summary": "The property is not close to any area potentially impacted by coastal erosion.",
+        "riskIndicator": "No",
+        "actionAlertRating": 1,
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "eamcUyoHhglEHQ",
+    "claims": {
+      "/propertyPack/environmentalIssues/flooding/floodRisk": {
+        "summary": "Flooding from rivers: Very low risk; Flooding from the sea: Very low risk",
+        "riskSubcategories": [
+          {
+            "result": "Very low risk",
+            "summary": "Risk less than 0.1% chance each year",
+            "subCategory": "Flooding from rivers",
+            "actionAlertRating": 1
+          },
+          {
+            "result": "Very low risk",
+            "summary": "Risk less than 0.1% chance each year",
+            "subCategory": "Flooding from the sea",
+            "actionAlertRating": 1
+          }
+        ],
+        "riskIndicator": "No",
+        "actionAlertRating": 1,
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environment Agency Long-term Flood Risk service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "OBATDZ74aX1V8mSQ2YCweQ=="
+              },
+              "url": "https://check-long-term-flood-risk.service.gov.uk/synthetic-report",
+              "desc": "Environment Agency flood risk report"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "7dfqNyYhuZYFA",
+    "claims": {
+      "/propertyPack/titlesToBeSold": [
+        {
+          "titleNumber": "TF635044",
+          "titleIncludedInSale": true
+        }
+      ]
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "RIeQfwn0ZBjBcxaY1AuXjw=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "PjQ5AJLrwC6Lw",
+    "claims": {
+      "/propertyPack/marketingTenure": "Freehold"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "VDEzKsxvbFX3w",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/titleExtents": "{\"type\":\"Polygon\",\"coordinates\":[[[-2.3962510000000004,53.286215999999996],[-2.396051,53.286215999999996],[-2.396051,53.286416],[-2.3962510000000004,53.286416],[-2.3962510000000004,53.286215999999996]]]}"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "pSJhm2YWPOZ3AZDXn3I09w=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "K8QEdGddWoN36A",
+    "claims": {
+      "/propertyPack/ownership/ownershipsToBeTransferred/-": {
+        "ownershipType": "Freehold",
+        "titleNumber": "TF635044",
+        "percentageOwned": 100,
+        "owner": [
+          {
+            "firstName": "Martin",
+            "lastName": "Jones"
+          },
+          {
+            "firstName": "Laura",
+            "lastName": "Jones"
+          }
+        ]
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "mZFygJQq6nby/pF4YwUPyQ=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "ozUgIjYbJXygA",
+    "claims": {
+      "/propertyPack/legalOwners/namesOfLegalOwners": [
+        {
+          "ownerType": "Private individual",
+          "firstName": "Martin",
+          "middleNames": "",
+          "lastName": "Jones"
+        },
+        {
+          "ownerType": "Private individual",
+          "firstName": "Laura",
+          "middleNames": "",
+          "lastName": "Jones"
+        }
+      ]
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "878Xa2HH0MIwCw",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/registerExtract": {
+        "ocSummaryData": {
+          "documentDetails": {
+            "document": [
+              {
+                "documentDate": "2019-02-16",
+                "documentType": "60",
+                "planOnlyIndicator": "false",
+                "entryNumber": [
+                  "A1",
+                  "B1"
+                ],
+                "registerDescription": "Transfer"
+              }
+            ]
+          },
+          "officialCopyDateTime": "2025-09-01T13:41:39.888Z",
+          "proprietorship": {
+            "currentProprietorshipDate": "2019-02-16",
+            "registeredProprietorParty": [
+              {
+                "privateIndividual": {
+                  "name": {
+                    "forenamesName": "Martin",
+                    "surnameName": "Jones"
+                  }
+                },
+                "address": {
+                  "postcodeZone": {
+                    "postcode": "WA14 5SL"
+                  },
+                  "addressLine": {
+                    "line": [
+                      "59 Hawkley Gardens",
+                      "ALTRINCHAM"
+                    ]
+                  }
+                }
+              },
+              {
+                "privateIndividual": {
+                  "name": {
+                    "forenamesName": "Laura",
+                    "surnameName": "Jones"
+                  }
+                },
+                "address": {
+                  "postcodeZone": {
+                    "postcode": "WA14 5SL"
+                  },
+                  "addressLine": {
+                    "line": [
+                      "59 Hawkley Gardens",
+                      "ALTRINCHAM"
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "propertyAddress": {
+            "postcodeZone": {
+              "postcode": "WA14 5SL"
+            },
+            "addressLine": {
+              "line": [
+                "59 Hawkley Gardens",
+                "ALTRINCHAM"
+              ]
+            }
+          },
+          "editionDate": "2025-08-02",
+          "title": {
+            "titleNumber": "TF635044",
+            "commonholdIndicator": false,
+            "classOfTitleCode": "10",
+            "titleRegistrationDetails": {
+              "postcodeZone": {
+                "postcode": "WA14 5SL"
+              },
+              "districtName": "ALTRINCHAM",
+              "registrationDate": "2019-02-16",
+              "administrativeArea": "ALTRINCHAM",
+              "landRegistryOfficeName": "Birkenhead Office",
+              "latestEditionDate": "2025-08-02"
+            }
+          },
+          "registerEntryIndicators": {
+            "multipleChargeIndicator": false,
+            "chargeeIndicator": false,
+            "homeRightsIndicator": false,
+            "leaseHoldTitleIndicator": false,
+            "pricePaidIndicator": true
+          },
+          "pricePaidEntry": {
+            "entryDetails": {
+              "entryText": "The price stated to have been paid on 2019-02-16 was £425000.",
+              "registrationDate": "2019-02-16",
+              "infills": {
+                "date": "2019-02-16",
+                "amount": "£425000"
+              },
+              "entryNumber": "1",
+              "subRegisterCode": "B"
+            }
+          }
+        },
+        "ocRegisterData": {
+          "proprietorshipRegister": {
+            "registerEntry": [
+              {
+                "entryType": "Proprietor",
+                "entryText": "PROPRIETOR: MARTIN JONES and LAURA JONES of 59 Hawkley Gardens, ALTRINCHAM, WA14 5SL.",
+                "entryDate": "2019-02-16",
+                "entryNumber": "1"
+              }
+            ]
+          },
+          "propertyRegister": {
+            "registerEntry": [
+              {
+                "entryType": "Property Description",
+                "entryText": "The Freehold land shown edged with red on the plan of the above title filed at the Registry and being 59 Hawkley Gardens, ALTRINCHAM (WA14 5SL).",
+                "entryDate": "2019-02-16",
+                "entryNumber": "1"
+              }
+            ],
+            "districtDetails": {
+              "entryText": "ALTRINCHAM"
+            }
+          }
+        }
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "1r/ZXniUINy7T8eBsGqdmg=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "AHaDho2GfNWUw",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/documentAvailability": {
+        "titlePlan": {
+          "availabilityCode": "IMMEDIATE",
+          "availability": "available for immediate download",
+          "type": "plan",
+          "backdated": false,
+          "typeCode": "TITLEPLAN"
+        },
+        "titleStatus": "Title number is valid.",
+        "titleNumber": "TF635044",
+        "applicationsPending": false,
+        "titleStatusCode": "VALID",
+        "referredToDocuments": [
+          {
+            "date": "2019-02-16",
+            "availabilityCode": "IMMEDIATE",
+            "availability": "available for immediate download",
+            "type": "Transfer",
+            "entryNumbers": [
+              "A1",
+              "B1"
+            ],
+            "filedUnder": "TF635044",
+            "typeCode": "Transfer"
+          }
+        ],
+        "register": {
+          "availabilityCode": "IMMEDIATE",
+          "availability": "available for immediate download",
+          "type": "register",
+          "backdated": false,
+          "typeCode": "REGISTER"
+        }
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "8QrWs1voWbzHxGAAiJjN5w=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "3KJhx5YlcgnJpQ",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/keyFacts": {
+        "chargesAndFinancialBurdens": [],
+        "relatedDocuments": [
+          "A transfer dated 2019-02-16 showing the transfer of property ownership."
+        ],
+        "legalOwners": [
+          "Martin Jones",
+          "Laura Jones"
+        ],
+        "rightsOrEasements": [
+          "Standard property rights as detailed in the title register."
+        ],
+        "beneficialOwners": [
+          "Martin Jones",
+          "Laura Jones"
+        ],
+        "restrictionsOrRestrictiveCovenants": [],
+        "propertyAndLandDescription": "The property is the freehold (full ownership) of the land located at 59 Hawkley Gardens, ALTRINCHAM, with postcode WA14 5SL. This means the owners own the land and property outright.",
+        "complexityScore": 1
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "vlNIS+g1/yzvtMQgoNiD2Q=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "mpJeB3Th872cmw",
+    "claims": {
+      "/propertyPack/ownership/numberOfSellers": 2
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "qTKDL46idVAlSrNKdyNwEA=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "SvdxjtLQpV4iQ",
+    "claims": {
+      "/propertyPack/typeOfConstruction/isStandardForm": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "PgN7LlGWsrQ8jw",
+    "claims": {
+      "/propertyPack/typeOfConstruction/buildingSafety": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "xm5Ijv1tYMzDlQ",
+    "claims": {
+      "/propertyPack/typeOfConstruction/accessibilityAndAdaptations": []
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "xkKtyc5aSKvBEw",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/-": {
+        "documentType": "Transfer",
+        "documentDate": "2019-02-16",
+        "documentReference": "TR-63504430"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "0j6AjTPy0URj7Rtqtfx3HQ=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "W2e1xBDZkPSnog",
+    "claims": {
+      "/propertyPack/electricity/mainsElectricity": {
+        "yesNo": "Yes",
+        "supplier": "British Gas",
+        "electricityMeter": {
+          "type": "Smart meter",
+          "location": "External meter box"
+        }
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "wpbY7bj3MifoVA",
+    "claims": {
+      "/propertyPack/electricity/solarPanels": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "W2JLWhExQHAiQ",
+    "claims": {
+      "/propertyPack/electricity/heatPump": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "yxxzxFhrRawJHg",
+    "claims": {
+      "/propertyPack/electricity/otherSources": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "EeLh6DeIpQxP6w",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water": {
+        "mainsWater": {
+          "yesNo": "Yes",
+          "supplier": "United Utilities",
+          "waterMeter": {
+            "isSupplyMetered": "Yes",
+            "location": "Front garden"
+          },
+          "stopcock": {
+            "location": "Under kitchen sink"
+          }
+        }
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "fNTcIfaFK8YFDg",
+    "claims": {
+      "/propertyPack/waterAndDrainage/drainage": {
+        "mainsSurfaceWaterDrainage": {
+          "yesNo": "Yes"
+        },
+        "mainsFoulDrainage": {
+          "yesNo": "Yes",
+          "supplier": "United Utilities"
+        }
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "9WxdVCF2EYf2xA",
+    "claims": {
+      "/propertyPack/heating/otherHeatingFeatures": [
+        "None"
+      ]
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "Nk1vBD86mQ5ZYQ",
+    "claims": {
+      "/propertyPack/parking/parkingArrangements": [
+        "Driveway",
+        "Garage"
+      ]
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "S67XLrVNyrktA",
+    "claims": {
+      "/propertyPack/parking/disabledParking": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "SfyToS5SW0ZAmA",
+    "claims": {
+      "/propertyPack/parking/controlledParking": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "P8kOSqD1A1svSg",
+    "claims": {
+      "/propertyPack/parking/electricVehicleChargingPoint": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "J3CqEvq7Z2YTw",
+    "claims": {
+      "/propertyPack/listingAndConservation/isListed": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "zA8fmgwMecZpA",
+    "claims": {
+      "/propertyPack/listingAndConservation/isConservationArea": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "s4FG81u3nOajkQ",
+    "claims": {
+      "/propertyPack/listingAndConservation/hasTreePreservationOrder": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.888Z"
+    }
+  },
+  {
+    "id": "muYZgw32XBQCQ",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements": {
+        "publicRightOfWay": {
+          "yesNo": "No"
+        },
+        "rightsOfLight": {
+          "yesNo": "No"
+        },
+        "rightsOfSupport": {
+          "yesNo": "No"
+        },
+        "rightsCreatedThroughCustom": {
+          "yesNo": "No"
+        },
+        "rightsToTakeFromLand": {
+          "yesNo": "No"
+        },
+        "minesAndMinerals": {
+          "yesNo": "No"
+        },
+        "churchChancel": {
+          "yesNo": "No"
+        },
+        "otherRights": {
+          "yesNo": "No"
+        }
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "PyHnpEp0z3Eqg",
+    "claims": {
+      "/propertyPack/environmentalIssues/flooding/historicalFlooding/hasBeenFlooded": "No"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environment Agency Long-term Flood Risk service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "NccEfoJrgtgjU9alO00FLA=="
+              },
+              "url": "https://check-long-term-flood-risk.service.gov.uk/synthetic-report",
+              "desc": "Environment Agency flood risk report"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "xETvmfWbQqDwoQ",
+    "claims": {
+      "/propertyPack/notices/planningApplication/yesNo": "No"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "Ua4w2BHiBVJ0w",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/waterMeter": {
+        "isSupplyMetered": "Yes",
+        "location": "Front garden"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "M1D89qpG3yxDRg",
+    "claims": {
+      "/propertyPack/legalBoundaries/ownership": {
+        "areBoundariesUniform": "Yes",
+        "uniformBoundaries": {
+          "rear": "Shared",
+          "left": "Seller",
+          "right": "Shared",
+          "front": "Highway"
+        }
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "U3RuoMj+0jGCMDzw8Q5B4w=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "YiMG1Ep3fjhevQ",
+    "claims": {
+      "/propertyPack/legalBoundaries/haveBoundaryFeaturesMoved": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "cB9gfwbUQ60QOg",
+    "claims": {
+      "/propertyPack/legalBoundaries/adjacentLandIncluded": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "X06GLoAYuoo96A",
+    "claims": {
+      "/propertyPack/legalBoundaries/flyingFreehold": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "NaEHSwM4NFql7g",
+    "claims": {
+      "/propertyPack/disputesAndComplaints/hasDisputesAndComplaints": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "HUibVhI6N9ZS5g",
+    "claims": {
+      "/propertyPack/disputesAndComplaints/leadingToDisputesAndComplaints": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "5ZA7SEWNTl0kg",
+    "claims": {
+      "/propertyPack/notices/neighbourDevelopment": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "o9Tp6Cve0uSDpw",
+    "claims": {
+      "/propertyPack/notices/requiredMaintenance": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "we0FD8mxTVxSw",
+    "claims": {
+      "/propertyPack/notices/listedBuildingApplication": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "q8yf7w3Vf1w",
+    "claims": {
+      "/propertyPack/notices/infrastructureProject": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "Uy40ylRRY3jY0A",
+    "claims": {
+      "/propertyPack/notices/partyWallAct": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "9A6QNeGaETBvcA",
+    "claims": {
+      "/propertyPack/notices/otherNotices": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "6VN5kVqweThg7A",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/hasStructuralAlterations": {
+        "yesNo": "No",
+        "buildingRegApproval": "N/A",
+        "details": "No structural alterations",
+        "planningPermission": "Not required"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "tVbbzRzzt2da7A",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/changeOfUse": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "QdIJsJGZf3K9vw",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/windowReplacementsSince2002": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "71Pj4jpIAYTqSw",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/hasAddedConservatory": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "rp0WhH2WVOSSpg",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/worksUnfinished": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "E1Uzomq7KjVzqw",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/planningPermissionBreaches": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "ekOCtYLEdFQESg",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/unresolvedPlanningIssues": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "Y1OrBk8wQvr37Q",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/hasValidGuaranteesOrWarranties": "No"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "1XSPlouDu7gKJw",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/newHomeWarranty": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "Mi5lwcuKovMog",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/roofingWork": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "F9crD5adoikWug",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/dampProofingTreatment": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "crW2gQXIy3fjtw",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/timberRotOrInfestationTreatment": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "SFDLLMNBYCTew",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/centralHeatingAndorPlumbing": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "f0Ic7kLWChXTw",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/doubleGlazing": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "wMVBtgRCjGKnGQ",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/electricalRepairOrInstallation": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "bJsfZHI2bmhgOw",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/subsidenceWork": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "FPY6LHMpyjMk0Q",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/otherGuarantees": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "AkNSNkvNsCkTw",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/outstandingClaimsOrApplications": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "qYQAUItZ5qS2Ow",
+    "claims": {
+      "/propertyPack/insurance/isInsured": "Yes"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "mvK7N9cDPaAsA",
+    "claims": {
+      "/propertyPack/insurance/insuranceClaims": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "aJpkoa3CFJlmcw",
+    "claims": {
+      "/propertyPack/insurance/difficultiesObtainingInsurance": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "e2YwcSnMtTjUbQ",
+    "claims": {
+      "/propertyPack/environmentalIssues/radon/radonTest": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "PWRnGVEHyiPZ3Q",
+    "claims": {
+      "/propertyPack/environmentalIssues/radon/remedialMeasuresOnConstruction": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "aZsDTjJyh7Jg4A",
+    "claims": {
+      "/propertyPack/specialistIssues/japaneseKnotweed/yesNo": "No"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "8JmWwatcqz8Q3Q",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsOfLight": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "04ZBNhnUViRQsA",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsOfSupport": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "2weRDWIFS1CqBw",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsCreatedThroughCustom": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "jBY7tttv4TpZw",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsToTakeFromLand": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "J4XhbP4FnmQJgQ",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/minesAndMinerals": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "1G9tkSyTNLvLw",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/churchChancel": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "bWoFWNfe1iyGQ",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/otherRights": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "mEVPIRsl4OEEJg",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/sharedContributions": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "B7ewcgKWA1iCOw",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/neighbouringLandRights": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "IcTnI9Z2CNUhg",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/accessRestrictionAttempts": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "K0DkMYP8jOihig",
+    "claims": {
+      "/propertyPack/servicesCrossing/pipesWiresCablesDrainsToProperty": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "qLuHgdzx378cmA",
+    "claims": {
+      "/propertyPack/servicesCrossing/pipesWiresCablesDrainsFromProperty": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "d0Tct5mbffVQ",
+    "claims": {
+      "/propertyPack/servicesCrossing/formalOrInformalAgreements": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "82lZ8TszEPl8g",
+    "claims": {
+      "/propertyPack/additionalInformation/otherCharges/yesNo": "No"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "HcatQnEyoAlMvg",
+    "claims": {
+      "/propertyPack/occupiers/sellerLivesAtProperty": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "1J4PrDkLVT6g",
+    "claims": {
+      "/propertyPack/occupiers/othersAged17OrOver": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "mkLlm9lN7t1biA",
+    "claims": {
+      "/propertyPack/electricalWorks/testedByQualifiedElectrician": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "s2Wk07JVsgqDtA",
+    "claims": {
+      "/propertyPack/electricalWorks/electricalWorkSince2005": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "Nyf7MREBzgC20w",
+    "claims": {
+      "/propertyPack/waterAndDrainage/drainage/mainsFoulDrainage/supplier": "United Utilities"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "w35zNA2J8S2NvQ",
+    "claims": {
+      "/propertyPack/electricity/mainsElectricity/supplier": "British Gas"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "wrWtHL176kn9zA",
+    "claims": {
+      "/propertyPack/electricity/mainsElectricity/electricityMeter": {
+        "type": "Smart meter",
+        "location": "External meter box"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "8nxEXTSZXW7DtQ",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/waterMeter/location": "Front garden"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Address coordinates obtained from Ordnance Survey API"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "sqPODZcOzcR82A",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/supplier": "United Utilities"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "2LD7QZmM8IdhQ",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/stopcock": {
+        "location": "Under kitchen sink"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "zAcymX1FdcE9UA",
+    "claims": {
+      "/propertyPack/connectivity/telephone": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "aKyedDMXfXw6Q",
+    "claims": {
+      "/propertyPack/connectivity/cableSatelliteTV": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "lZ8jeTBYJvc1wg",
+    "claims": {
+      "/propertyPack/completionAndMoving/sellerWillEnsure": {
+        "removeRubbish": true,
+        "replaceLightFittings": true,
+        "leaveKeys": true,
+        "takeReasonableCare": true
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "TqwnYGIhOebw",
+    "claims": {
+      "/propertyPack/completionAndMoving/otherPropertyInChain": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "uRvZS9mCqdaBzw",
+    "claims": {
+      "/propertyPack/completionAndMoving/moveRestrictionDates": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "CrPXfz3R9D0xg",
+    "claims": {
+      "/propertyPack/completionAndMoving/sufficientToRepayAllMortgages": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "uCHHfAq5UyJRow",
+    "claims": {
+      "/propertyPack/confirmationOfAccuracyByOwners/confirmInformationIsAccurate": true
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Martin Jones"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "FRnSodk4FC4G8g",
+    "claims": {
+      "/propertyPack/documents/-": {
+        "documentType": "Floorplan",
+        "documentId": "FP-R00001079"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "vgPzIKCO1tuAAQ",
+    "claims": {
+      "/propertyPack/documents/-": {
+        "documentType": "Brochure",
+        "documentId": "BR-R00001079"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "zhjSMcsEpGorQ",
+    "claims": {
+      "/propertyPack/documents/0/documentType": "Floorplan"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "ImxGKMIR3hg",
+    "claims": {
+      "/propertyPack/documents/1/documentType": "Brochure"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "NjtTFg7Fr6bDJQ",
+    "claims": {
+      "/propertyPack/documents/0/alterationsInsights": {
+        "hasAlterations": false,
+        "summary": "No significant alterations identified"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "SE8nSWVR8081bg",
+    "claims": {
+      "/externalIds/TMGroup": {
+        "projectId": 63504430
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "F4svlPVrJuLX6g",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/insights/restrictiveCovenants": {
+        "summary": "No significant restrictive covenants identified",
+        "items": [],
+        "riskLevel": "Low"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "zpicdfa9V7bv8/XYP5CFbg=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "gzA0qfiJtJK5ag",
+    "claims": {
+      "/propertyPack/documents/1/alterationsInsights": []
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "fY1v5V1oRcw5w",
+    "claims": {
+      "/propertyPack/documents/0/transcription": {
+        "rawText": "Property: 59 Hawkley Gardens, ALTRINCHAM\nFloor Plan - Detached property with 2 bedrooms",
+        "processedText": "Standard floor plan layout"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "2kA7CucBBBg1g",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/1/transcription": {
+        "rawText": "Property register extract",
+        "processedText": "Standard register entry"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "LiArfW70Xz8sumUCKmHj6A=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "6McZKGpteE6nxA",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/2/transcription": {
+        "rawText": "Title plan",
+        "processedText": "Standard title plan showing property boundaries"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "lv21kQeFTpPS4lGQV8Dpxg=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "3FwTO7dM2RGv1w",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/0/transcription": {
+        "rawText": "Transfer dated 2019-02-16",
+        "processedText": "Standard property transfer document"
+      }
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "tn1fwa/n5BfSwpHzYv1+sA=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:39.889Z"
+    }
+  },
+  {
+    "id": "kxoZ2AHwLXbIw",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/bedrooms": 2
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.779Z"
+    }
+  },
+  {
+    "id": "PwZQO2WFkB78UA",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/bathrooms": 1
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.780Z"
+    }
+  },
+  {
+    "id": "8Og8DlMiYjU3Ww",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/receptions": 1
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.780Z"
+    }
+  },
+  {
+    "id": "JhapUpVKQvG34g",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/kitchens": 1
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.780Z"
+    }
+  },
+  {
+    "id": "EZsKd6Pc2uetw",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/diningAreas": 1
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.780Z"
+    }
+  },
+  {
+    "id": "9TF4sOfXSmWIQ",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/outsideAreas": [
+        "Front garden",
+        "Rear garden",
+        "Driveway",
+        "Side access"
+      ]
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.780Z"
+    }
+  },
+  {
+    "id": "mCJBXcSAhU4g",
+    "claims": {
+      "/propertyPack/buildInformation/floorplan/rooms": [
+        {
+          "roomName": "Master Bedroom",
+          "description": "Primary bedroom with built-in storage",
+          "length": 4.9,
+          "width": 3.68,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        },
+        {
+          "roomName": "Bedroom 2",
+          "description": "Secondary bedroom",
+          "length": 4.9,
+          "width": 3.68,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        },
+        {
+          "roomName": "Living Room",
+          "description": "Main reception room with natural light",
+          "length": 5.72,
+          "width": 4.49,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        },
+        {
+          "roomName": "Kitchen",
+          "description": "Fitted kitchen with modern appliances",
+          "length": 4.08,
+          "width": 3.27,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        },
+        {
+          "roomName": "Dining Room",
+          "description": "Separate dining area",
+          "length": 4.49,
+          "width": 3.68,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        },
+        {
+          "roomName": "Bathroom",
+          "description": "Main family bathroom with bath and shower",
+          "length": 2.86,
+          "width": 2.45,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        }
+      ]
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.780Z"
+    }
+  },
+  {
+    "id": "i55J6QUr2Xwjg",
+    "claims": {
+      "/propertyPack/buildInformation/floorplan/hasFloorplan": "Yes"
+    },
+    "transactionId": "CVALeFrk31T5Sg",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.780Z"
+    }
+  }
+]

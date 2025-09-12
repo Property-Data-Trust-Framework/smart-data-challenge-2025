@@ -1,0 +1,4244 @@
+[
+  {
+    "id": "5NW9BFpZzbLrHA",
+    "claims": {
+      "/propertyPack/priceInformation": {
+        "price": 161000,
+        "priceQualifier": "Fixed price"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.744Z"
+    }
+  },
+  {
+    "id": "bd7lCDDm8lx5Iw",
+    "claims": {
+      "/propertyPack/uprn": 142222141245
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.744Z"
+    }
+  },
+  {
+    "id": "qeuX5QAybX0QsA",
+    "claims": {
+      "/status": "For sale"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.744Z"
+    }
+  },
+  {
+    "id": "0ZtrabglSVDZRg",
+    "claims": {
+      "/externalIds": {}
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.744Z"
+    }
+  },
+  {
+    "id": "KThcQLUybjvY7A",
+    "claims": {
+      "/participants/-": {
+        "role": "Estate Agent",
+        "name": {
+          "firstName": "Sarah",
+          "lastName": "Mitchell",
+          "title": "Ms"
+        },
+        "email": "sarah.mitchell@property-partners.co.uk",
+        "externalIds": {
+          "propertyPartnersId": "EA2024001"
+        }
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property Partners Estate Agents - Professional Services Registry"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "tums2kl0kqsYlA",
+    "claims": {
+      "/participants/-": {
+        "role": "Seller",
+        "name": {
+          "firstName": "Diane",
+          "lastName": "Hardy",
+          "title": "Ms"
+        },
+        "email": "diane_hardy@hotmail.com",
+        "externalIds": {
+          "sandboxPersonId": "P00003681"
+        }
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "DhUk67vacRczQ",
+    "claims": {
+      "/participants/-": {
+        "role": "Seller",
+        "name": {
+          "firstName": "Neil",
+          "lastName": "Hardy",
+          "title": "Mr"
+        },
+        "email": "neil.hardy@yahoo.com",
+        "externalIds": {
+          "sandboxPersonId": "P00003682"
+        }
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "wjvwP0G6TmBwBg",
+    "claims": {
+      "/propertyPack/energyEfficiency/certificate": {
+        "certificateNumber": "1422-2214-1245-1754988381745",
+        "currentEnergyRating": "C",
+        "currentEnergyEfficiency": 79,
+        "potentialEnergyRating": "B",
+        "potentialEnergyEfficiency": 91,
+        "environmentImpactCurrent": 64,
+        "environmentImpactPotential": 77,
+        "co2EmissionsCurrent": 1.86,
+        "co2EmissionsPotential": 1.2,
+        "totalFloorArea": 66.87,
+        "propertyType": "Semi-detached",
+        "builtForm": "Semi-detached",
+        "numberHabitableRooms": 2,
+        "numberHeatedRooms": 2,
+        "mainFuel": "mains gas (not community)",
+        "mainsGasFlag": "Y",
+        "energyConsumptionCurrent": 1646,
+        "energyConsumptionPotential": 1317,
+        "heatingCostCurrent": 363,
+        "heatingCostPotential": 227,
+        "inspectionDate": "2025-05-14"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Energy Performance Certificate obtained from https://find-energy-certificate.service.gov.uk/"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "fd5gheuQ/9EzUkbzfcRyYw=="
+              },
+              "url": "https://find-energy-certificate.service.gov.uk/energy-certificate/synthetic-cert",
+              "desc": "Energy Performance Certificate from GOV.UK"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "YMTsetSvhQp4JA",
+    "claims": {
+      "/propertyPack/energyEfficiency/certificateIsSupplied": "Attached"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Energy Performance Certificate obtained from https://find-energy-certificate.service.gov.uk/"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "Nncve0cAN4BEFqhkPrqJCg=="
+              },
+              "url": "https://find-energy-certificate.service.gov.uk/energy-certificate/synthetic-cert",
+              "desc": "Energy Performance Certificate from GOV.UK"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "adVoWLDWuQMBqw",
+    "claims": {
+      "/propertyPack/energyEfficiency/greenDealLoan/hasGreenDealLoan/yesNo": "No"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "2RYdHmYlX1MLw",
+    "claims": {
+      "/propertyPack/buildInformation/internalArea": {
+        "area": 66.87,
+        "unit": "square metres"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "hucpylUGVrA9Q",
+    "claims": {
+      "/propertyPack/heating/heatingSystem/heatingType": "Central heating"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "cyVJZbii7gnRnQ",
+    "claims": {
+      "/propertyPack/buildInformation/building/propertyType": "House"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "zy63SNYVeVH9A",
+    "claims": {
+      "/propertyPack/buildInformation/building/builtForm": "Semi-detached"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "IbqEydXPW2SChA",
+    "claims": {
+      "/externalIds/LMS": {
+        "workspaceId": "workspace-25b2bdedaf01f002"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "CC4LaePhdsA",
+    "claims": {
+      "/propertyPack/address": {
+        "line1": "91 South Hill Avenue",
+        "line2": "",
+        "town": "MANCHESTER",
+        "county": "Greater Manchester",
+        "postcode": "M41 8TZ"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "h0DyoXnJsLJG5w",
+    "claims": {
+      "/propertyPack/location": {
+        "latitude": 53.4808,
+        "longitude": -2.2426
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Address coordinates obtained from Ordnance Survey API"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "5toP5wRKX7n8gw",
+    "claims": {
+      "/propertyPack/connectivity/broadband": {
+        "yesNo": "Yes",
+        "typeOfConnection": "FTTP (Fibre to the Premises)",
+        "predictedSpeed": {
+          "maxBbPredictedDown": 16,
+          "maxBbPredictedUp": 1,
+          "maxSfbbPredictedDown": 67,
+          "maxSfbbPredictedUp": 20,
+          "maxUfbbPredictedDown": 1000,
+          "maxUfbbPredictedUp": 220,
+          "maxPredictedDown": 1000,
+          "maxPredictedUp": 220
+        }
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "3LLv69qc7R7Pkg",
+    "claims": {
+      "/propertyPack/connectivity/mobilePhone/predictedCoverage": {
+        "eeDataOutdoor": 4,
+        "eeVoiceOutdoor": 4,
+        "voDataOutdoor": 4,
+        "voVoiceOutdoor": 4,
+        "h3DataOutdoor": 4,
+        "h3VoiceOutdoor": 4,
+        "tfDataOutdoor": 4,
+        "tfVoiceOutdoor": 4,
+        "eeDataIndoor": 3,
+        "eeDataIndoorNo4g": 3,
+        "eeDataOutdoorNo4g": 3,
+        "eeVoiceIndoor": 3,
+        "eeVoiceIndoorNo4g": 3,
+        "eeVoiceOutdoorNo4g": 4,
+        "h3DataIndoor": 0,
+        "h3DataIndoorNo4g": 0,
+        "h3DataOutdoorNo4g": 3,
+        "h3VoiceIndoor": 0,
+        "h3VoiceIndoorNo4g": 0,
+        "h3VoiceOutdoorNo4g": 4,
+        "tfDataIndoor": 3,
+        "tfDataIndoorNo4g": 3,
+        "tfDataOutdoorNo4g": 3,
+        "tfVoiceIndoor": 3,
+        "tfVoiceIndoorNo4g": 3,
+        "tfVoiceOutdoorNo4g": 4,
+        "voDataIndoor": 3,
+        "voDataIndoorNo4g": 0,
+        "voDataOutdoorNo4g": 0,
+        "voVoiceIndoor": 3,
+        "voVoiceIndoorNo4g": 3,
+        "voVoiceOutdoorNo4g": 4
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "A1u9t4NyRTxTw",
+    "claims": {
+      "/propertyPack/localAuthority/localAuthorityName": "Manchester City Council"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "56U7mJPeLXSAg",
+    "claims": {
+      "/propertyPack/localAuthority/countyCouncil": "Greater Manchester Combined Authority"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "qiyYZXuGduhdQ",
+    "claims": {
+      "/propertyPack/localAuthority/districtCouncil": "Manchester City Council"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "qvpXXiQtjaQUQ",
+    "claims": {
+      "/propertyPack/localAuthority/regulatedSearchTurnaroundTimeInWorkingDays": 10
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "6Kf0t2NcAUCzw",
+    "claims": {
+      "/propertyPack/councilTax": {
+        "councilTaxBand": "A",
+        "councilTaxAnnualCharge": 1845.45,
+        "councilTaxAnnualChargeTaxYear": "2024-2025",
+        "councilTaxAffectingAlterations": {
+          "yesNo": "No"
+        }
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Council Tax information obtained from the Valuation Office Agency"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "Mkc7kwA+RANxriVKJLXdjg=="
+              },
+              "url": "https://www.tax.service.gov.uk/check-council-tax-band/property/synthetic",
+              "desc": "Council Tax band on GOV.UK"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "uyQvWNDaE9AHOQ",
+    "claims": {
+      "/propertyPack/environmentalIssues/coalMining": {
+        "result": "Not identified",
+        "summary": "No coal mining risk has been identified.",
+        "riskIndicator": "No",
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "4eoxnSmASAD4Gw",
+    "claims": {
+      "/propertyPack/environmentalIssues/nonCoalMining": {
+        "result": "Not identified",
+        "summary": "No non-coal mining risk has been identified.",
+        "riskIndicator": "No",
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "AZiXlrCQ34Bpg",
+    "claims": {
+      "/propertyPack/localSearches/localAuthoritySearches/planningAndBuildingRegulations/decisionsAndPendingApplications/planningPermission": []
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "luqeBwE5LksYHg",
+    "claims": {
+      "/propertyPack/environmentalIssues/coastalErosion": {
+        "result": "Not close to an area potentially affected by future coastal erosion.",
+        "summary": "The property is not close to any area potentially impacted by coastal erosion.",
+        "riskIndicator": "No",
+        "actionAlertRating": 1,
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "Sck2bnJVRo2d1w",
+    "claims": {
+      "/propertyPack/environmentalIssues/flooding/floodRisk": {
+        "summary": "Flooding from rivers: Very low risk; Flooding from the sea: Very low risk",
+        "riskSubcategories": [
+          {
+            "result": "Very low risk",
+            "summary": "Risk less than 0.1% chance each year",
+            "subCategory": "Flooding from rivers",
+            "actionAlertRating": 1
+          },
+          {
+            "result": "Very low risk",
+            "summary": "Risk less than 0.1% chance each year",
+            "subCategory": "Flooding from the sea",
+            "actionAlertRating": 1
+          }
+        ],
+        "riskIndicator": "No",
+        "actionAlertRating": 1,
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environment Agency Long-term Flood Risk service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "/gjdv2Zh72W582ruJcY3JQ=="
+              },
+              "url": "https://check-long-term-flood-risk.service.gov.uk/synthetic-report",
+              "desc": "Environment Agency flood risk report"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "4WR9uuAc7VjwA",
+    "claims": {
+      "/propertyPack/titlesToBeSold": [
+        {
+          "titleNumber": "TF142222",
+          "titleIncludedInSale": true
+        }
+      ]
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "SVL5SDftBbI/z8yW4mHVuQ=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "UtCsLicyNzLhQ",
+    "claims": {
+      "/propertyPack/marketingTenure": "Freehold"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "AQX5yU07zwvTbA",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/titleExtents": "{\"type\":\"Polygon\",\"coordinates\":[[[-2.2427,53.4807],[-2.2424999999999997,53.4807],[-2.2424999999999997,53.480900000000005],[-2.2427,53.480900000000005],[-2.2427,53.4807]]]}"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "1TJosSOc8a0mNdAeMVUseA=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "ZVMZTeyKwK3WCQ",
+    "claims": {
+      "/propertyPack/ownership/ownershipsToBeTransferred/-": {
+        "ownershipType": "Freehold",
+        "titleNumber": "TF142222",
+        "percentageOwned": 100,
+        "owner": [
+          {
+            "firstName": "Diane",
+            "lastName": "Hardy"
+          },
+          {
+            "firstName": "Neil",
+            "lastName": "Hardy"
+          }
+        ]
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "lUEFz180G22SxpH8rbZkXA=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "5Qli0EuRmmc2AA",
+    "claims": {
+      "/propertyPack/legalOwners/namesOfLegalOwners": [
+        {
+          "ownerType": "Private individual",
+          "firstName": "Diane",
+          "middleNames": "Marion",
+          "lastName": "Hardy"
+        },
+        {
+          "ownerType": "Private individual",
+          "firstName": "Neil",
+          "middleNames": "",
+          "lastName": "Hardy"
+        }
+      ]
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    }
+  },
+  {
+    "id": "U3HreC5UK1HVQ",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/registerExtract": {
+        "ocSummaryData": {
+          "documentDetails": {
+            "document": [
+              {
+                "documentDate": "2021-12-27",
+                "documentType": "60",
+                "planOnlyIndicator": "false",
+                "entryNumber": [
+                  "A1",
+                  "B1"
+                ],
+                "registerDescription": "Transfer"
+              }
+            ]
+          },
+          "officialCopyDateTime": "2025-08-12T08:46:21.745Z",
+          "proprietorship": {
+            "currentProprietorshipDate": "2021-12-27",
+            "registeredProprietorParty": [
+              {
+                "privateIndividual": {
+                  "name": {
+                    "forenamesName": "Diane",
+                    "surnameName": "Hardy"
+                  }
+                },
+                "address": {
+                  "postcodeZone": {
+                    "postcode": "M41 8TZ"
+                  },
+                  "addressLine": {
+                    "line": [
+                      "91 South Hill Avenue",
+                      "MANCHESTER"
+                    ]
+                  }
+                }
+              },
+              {
+                "privateIndividual": {
+                  "name": {
+                    "forenamesName": "Neil",
+                    "surnameName": "Hardy"
+                  }
+                },
+                "address": {
+                  "postcodeZone": {
+                    "postcode": "M41 8TZ"
+                  },
+                  "addressLine": {
+                    "line": [
+                      "91 South Hill Avenue",
+                      "MANCHESTER"
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "propertyAddress": {
+            "postcodeZone": {
+              "postcode": "M41 8TZ"
+            },
+            "addressLine": {
+              "line": [
+                "91 South Hill Avenue",
+                "MANCHESTER"
+              ]
+            }
+          },
+          "editionDate": "2025-07-13",
+          "title": {
+            "titleNumber": "TF142222",
+            "commonholdIndicator": false,
+            "classOfTitleCode": "10",
+            "titleRegistrationDetails": {
+              "postcodeZone": {
+                "postcode": "M41 8TZ"
+              },
+              "districtName": "MANCHESTER",
+              "registrationDate": "2021-12-27",
+              "administrativeArea": "MANCHESTER",
+              "landRegistryOfficeName": "Manchester Office",
+              "latestEditionDate": "2025-07-13"
+            }
+          },
+          "registerEntryIndicators": {
+            "multipleChargeIndicator": false,
+            "chargeeIndicator": false,
+            "homeRightsIndicator": false,
+            "leaseHoldTitleIndicator": false,
+            "pricePaidIndicator": true
+          },
+          "pricePaidEntry": {
+            "entryDetails": {
+              "entryText": "The price stated to have been paid on 2021-12-27 was £145000.",
+              "registrationDate": "2021-12-27",
+              "infills": {
+                "date": "2021-12-27",
+                "amount": "£145000"
+              },
+              "entryNumber": "1",
+              "subRegisterCode": "B"
+            }
+          }
+        },
+        "ocRegisterData": {
+          "proprietorshipRegister": {
+            "registerEntry": [
+              {
+                "entryType": "Proprietor",
+                "entryText": "PROPRIETOR: DIANE HARDY and NEIL HARDY of 91 South Hill Avenue, MANCHESTER, M41 8TZ.",
+                "entryDate": "2021-12-27",
+                "entryNumber": "1"
+              }
+            ]
+          },
+          "propertyRegister": {
+            "registerEntry": [
+              {
+                "entryType": "Property Description",
+                "entryText": "The Freehold land shown edged with red on the plan of the above title filed at the Registry and being 91 South Hill Avenue, MANCHESTER (M41 8TZ).",
+                "entryDate": "2021-12-27",
+                "entryNumber": "1"
+              }
+            ],
+            "districtDetails": {
+              "entryText": "MANCHESTER"
+            }
+          }
+        }
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "k8PD0mo62PvJCzQUEwARag=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "pnkK4lxXuonwA",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/documentAvailability": {
+        "titlePlan": {
+          "availabilityCode": "IMMEDIATE",
+          "availability": "available for immediate download",
+          "type": "plan",
+          "backdated": false,
+          "typeCode": "TITLEPLAN"
+        },
+        "titleStatus": "Title number is valid.",
+        "titleNumber": "TF142222",
+        "applicationsPending": false,
+        "titleStatusCode": "VALID",
+        "referredToDocuments": [
+          {
+            "date": "2021-12-27",
+            "availabilityCode": "IMMEDIATE",
+            "availability": "available for immediate download",
+            "type": "Transfer",
+            "entryNumbers": [
+              "A1",
+              "B1"
+            ],
+            "filedUnder": "TF142222",
+            "typeCode": "Transfer"
+          }
+        ],
+        "register": {
+          "availabilityCode": "IMMEDIATE",
+          "availability": "available for immediate download",
+          "type": "register",
+          "backdated": false,
+          "typeCode": "REGISTER"
+        }
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "iiJbDhESGLQVVBgkloPU+g=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "OxnMBSRVQsTnyQ",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/keyFacts": {
+        "chargesAndFinancialBurdens": [],
+        "relatedDocuments": [
+          "A transfer dated 2021-12-27 showing the transfer of property ownership."
+        ],
+        "legalOwners": [
+          "Diane Hardy",
+          "Neil Hardy"
+        ],
+        "rightsOrEasements": [
+          "Standard property rights as detailed in the title register."
+        ],
+        "beneficialOwners": [
+          "Diane Hardy",
+          "Neil Hardy"
+        ],
+        "restrictionsOrRestrictiveCovenants": [],
+        "propertyAndLandDescription": "The property is the freehold (full ownership) of the land located at 91 South Hill Avenue, MANCHESTER, with postcode M41 8TZ. This means the owners own the land and property outright.",
+        "complexityScore": 1
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "yMTPvzhshyDaVejAmXmWuA=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "uKFtP0A7yIh21A",
+    "claims": {
+      "/propertyPack/ownership/numberOfSellers": 2
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "EcvbogFkq7qYOVgf0aNk2A=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "ogMak5MLjpCCg",
+    "claims": {
+      "/propertyPack/typeOfConstruction/isStandardForm": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "A0HdsFavRrFA",
+    "claims": {
+      "/propertyPack/typeOfConstruction/buildingSafety": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "Z6k2PtNDMIalCA",
+    "claims": {
+      "/propertyPack/typeOfConstruction/accessibilityAndAdaptations": []
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "AH0QPHryEDquTQ",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/-": {
+        "documentType": "Transfer",
+        "documentDate": "2021-12-27",
+        "documentReference": "TR-14222214"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "Cd2u8N5lL3RnRBSLuL/GhA=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "ScAA8zJgYDzeA",
+    "claims": {
+      "/propertyPack/electricity/mainsElectricity": {
+        "yesNo": "Yes",
+        "supplier": "British Gas",
+        "electricityMeter": {
+          "type": "Smart meter",
+          "location": "External meter box"
+        }
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "8LjIcP9RvuGorg",
+    "claims": {
+      "/propertyPack/electricity/solarPanels": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "6swiwFGYHm5nQ",
+    "claims": {
+      "/propertyPack/electricity/heatPump": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "XTrK6zBKT3gJXA",
+    "claims": {
+      "/propertyPack/electricity/otherSources": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "Q2PPHHnlazEA",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water": {
+        "mainsWater": {
+          "yesNo": "Yes",
+          "supplier": "United Utilities",
+          "waterMeter": {
+            "isSupplyMetered": "Yes",
+            "location": "Front garden"
+          },
+          "stopcock": {
+            "location": "Under kitchen sink"
+          }
+        }
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "w4HyBG57Bz1ZcA",
+    "claims": {
+      "/propertyPack/waterAndDrainage/drainage": {
+        "mainsSurfaceWaterDrainage": {
+          "yesNo": "Yes"
+        },
+        "mainsFoulDrainage": {
+          "yesNo": "Yes",
+          "supplier": "United Utilities"
+        }
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "BNSFGkRSxY7wQg",
+    "claims": {
+      "/propertyPack/heating/otherHeatingFeatures": [
+        "None"
+      ]
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "F49ZvNRnwoHA",
+    "claims": {
+      "/propertyPack/parking/parkingArrangements": [
+        "On-street"
+      ]
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "xSVsZ02yUQvoDw",
+    "claims": {
+      "/propertyPack/parking/disabledParking": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "oLNVyENbC51OZQ",
+    "claims": {
+      "/propertyPack/parking/controlledParking": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "zEdJGIaf763Nzg",
+    "claims": {
+      "/propertyPack/parking/electricVehicleChargingPoint": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "ogFlBQB0lyvkmw",
+    "claims": {
+      "/propertyPack/listingAndConservation/isListed": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "wOI0oaF1m6UsUQ",
+    "claims": {
+      "/propertyPack/listingAndConservation/isConservationArea": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "7PJfuKxdzS2Pow",
+    "claims": {
+      "/propertyPack/listingAndConservation/hasTreePreservationOrder": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "r5IoYwpScRbcwg",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements": {
+        "publicRightOfWay": {
+          "yesNo": "No"
+        },
+        "rightsOfLight": {
+          "yesNo": "No"
+        },
+        "rightsOfSupport": {
+          "yesNo": "No"
+        },
+        "rightsCreatedThroughCustom": {
+          "yesNo": "No"
+        },
+        "rightsToTakeFromLand": {
+          "yesNo": "No"
+        },
+        "minesAndMinerals": {
+          "yesNo": "No"
+        },
+        "churchChancel": {
+          "yesNo": "No"
+        },
+        "otherRights": {
+          "yesNo": "No"
+        }
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "aDaIiCaTC4aFnQ",
+    "claims": {
+      "/propertyPack/environmentalIssues/flooding/historicalFlooding/hasBeenFlooded": "No"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environment Agency Long-term Flood Risk service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "bGV9xHAt1HQzeix1uLPhbg=="
+              },
+              "url": "https://check-long-term-flood-risk.service.gov.uk/synthetic-report",
+              "desc": "Environment Agency flood risk report"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "Oc9gtdr8aqw",
+    "claims": {
+      "/propertyPack/notices/planningApplication/yesNo": "No"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "t7ffy2y04CfclQ",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/waterMeter": {
+        "isSupplyMetered": "Yes",
+        "location": "Front garden"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "Q8bLpRnVCD01GA",
+    "claims": {
+      "/propertyPack/legalBoundaries/ownership": {
+        "areBoundariesUniform": "Yes",
+        "uniformBoundaries": {
+          "rear": "Shared",
+          "left": "Seller",
+          "right": "Shared",
+          "front": "Highway"
+        }
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "KzDb9vxvD6laSsUoqnRmnQ=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "JhYdOx6a3kRVg",
+    "claims": {
+      "/propertyPack/legalBoundaries/haveBoundaryFeaturesMoved": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "xok3q1pB0IePhQ",
+    "claims": {
+      "/propertyPack/legalBoundaries/adjacentLandIncluded": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "4ZbPOHWcwVrbag",
+    "claims": {
+      "/propertyPack/legalBoundaries/flyingFreehold": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "lu6GigFI94Hbzw",
+    "claims": {
+      "/propertyPack/disputesAndComplaints/hasDisputesAndComplaints": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "titV6jGirkAz8A",
+    "claims": {
+      "/propertyPack/disputesAndComplaints/leadingToDisputesAndComplaints": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "o0RpoT9pzyNJg",
+    "claims": {
+      "/propertyPack/notices/neighbourDevelopment": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "RWXDGU9jJE6yhA",
+    "claims": {
+      "/propertyPack/notices/requiredMaintenance": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "heWmlaMD91iyQ",
+    "claims": {
+      "/propertyPack/notices/listedBuildingApplication": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "BXxmiy8lOrcihw",
+    "claims": {
+      "/propertyPack/notices/infrastructureProject": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "SvklkDFALZTnxQ",
+    "claims": {
+      "/propertyPack/notices/partyWallAct": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "p7eRL3zh9aVGQ",
+    "claims": {
+      "/propertyPack/notices/otherNotices": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "6s7HyS4JX8dlCw",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/hasStructuralAlterations": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "pldjnpIhEbVLbw",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/changeOfUse": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "xxanfiT12HmHHA",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/windowReplacementsSince2002": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "WGBu7Rvdnel3bQ",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/hasAddedConservatory": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "y0LGilXqMA4S3Q",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/worksUnfinished": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "ZJdiM8UdUXOlRA",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/planningPermissionBreaches": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "mhw9v1zFT8kGfg",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/unresolvedPlanningIssues": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "DB6iBFbVcw9x9w",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/hasValidGuaranteesOrWarranties": "No"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "X28mJ2yZGhbDOg",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/newHomeWarranty": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "V7C4iZQityBoWA",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/roofingWork": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "kWvxz5gKWpHOQ",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/dampProofingTreatment": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "KvUt87Ijme6LqQ",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/timberRotOrInfestationTreatment": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "zBzVpperwqaCEw",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/centralHeatingAndorPlumbing": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "vsqodAR8RFKHEg",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/doubleGlazing": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "TWeTIvQzcPRT0w",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/electricalRepairOrInstallation": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "WicaIbDh0RiDQ",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/subsidenceWork": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "iSJp0kkReITtZg",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/otherGuarantees": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "XgBd0n8PY3Kw",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/outstandingClaimsOrApplications": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "BRjdl6JIgD0gBA",
+    "claims": {
+      "/propertyPack/insurance/isInsured": "Yes"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "P4EIt7J80uGJAw",
+    "claims": {
+      "/propertyPack/insurance/insuranceClaims": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "NTw6Ww2enxaTmA",
+    "claims": {
+      "/propertyPack/insurance/difficultiesObtainingInsurance": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "l1hG9zg3CIu7iQ",
+    "claims": {
+      "/propertyPack/environmentalIssues/radon/radonTest": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "DHa4rCJUNqOM9g",
+    "claims": {
+      "/propertyPack/environmentalIssues/radon/remedialMeasuresOnConstruction": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "ceEtOinnP8wug",
+    "claims": {
+      "/propertyPack/specialistIssues/japaneseKnotweed/yesNo": "No"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "1UzQh5SzWsoK4w",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsOfLight": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "v0Dx8ykR65EQTQ",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsOfSupport": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "hOi9zui1b25Lyg",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsCreatedThroughCustom": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "Yb6LoELy8yL7A",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsToTakeFromLand": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "FRdWUnv7lEFPfQ",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/minesAndMinerals": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "zNremHp1L8uYwQ",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/churchChancel": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "QFVIgbu1mC1b8A",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/otherRights": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "5kHXAQhjXa1YA",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/sharedContributions": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "lwf9JvHr36ynA",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/neighbouringLandRights": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "0x1ec5u1OMJsQ",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/accessRestrictionAttempts": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "TVO2FCwPou1m8w",
+    "claims": {
+      "/propertyPack/servicesCrossing/pipesWiresCablesDrainsToProperty": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "zWScyRSND41fwA",
+    "claims": {
+      "/propertyPack/servicesCrossing/pipesWiresCablesDrainsFromProperty": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "qxyWQFxAtGuSFw",
+    "claims": {
+      "/propertyPack/servicesCrossing/formalOrInformalAgreements": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "blhB0rndHACDhA",
+    "claims": {
+      "/propertyPack/additionalInformation/otherCharges/yesNo": "No"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "UovVXtVWHux4g",
+    "claims": {
+      "/propertyPack/occupiers/sellerLivesAtProperty": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "gxRbi3RRurIQg",
+    "claims": {
+      "/propertyPack/occupiers/othersAged17OrOver": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "t1sYU4CJis4LEg",
+    "claims": {
+      "/propertyPack/electricalWorks/testedByQualifiedElectrician": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "nPM4w7EolOXq9w",
+    "claims": {
+      "/propertyPack/electricalWorks/electricalWorkSince2005": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "T0MRSMOxSBDzow",
+    "claims": {
+      "/propertyPack/waterAndDrainage/drainage/mainsFoulDrainage/supplier": "United Utilities"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "l56t8p4wT2U8SA",
+    "claims": {
+      "/propertyPack/electricity/mainsElectricity/supplier": "British Gas"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "QEuez89RwK21A",
+    "claims": {
+      "/propertyPack/electricity/mainsElectricity/electricityMeter": {
+        "type": "Smart meter",
+        "location": "External meter box"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "stXfXfbTx5pWyg",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/waterMeter/location": "Front garden"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Address coordinates obtained from Ordnance Survey API"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "xoP4CIOogtvw4w",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/supplier": "United Utilities"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "WGWP6GvSOHvwdQ",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/stopcock": {
+        "location": "Under kitchen sink"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "waf80Go4qd0Jww",
+    "claims": {
+      "/propertyPack/connectivity/telephone": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "MZxeGkjXKxrpCg",
+    "claims": {
+      "/propertyPack/connectivity/cableSatelliteTV": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    }
+  },
+  {
+    "id": "LI7skgnu86J6A",
+    "claims": {
+      "/propertyPack/completionAndMoving/sellerWillEnsure": {
+        "removeRubbish": true,
+        "replaceLightFittings": true,
+        "leaveKeys": true,
+        "takeReasonableCare": true
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "CoPXAq26skdJTQ",
+    "claims": {
+      "/propertyPack/completionAndMoving/otherPropertyInChain": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "aCilEJBDC6Jmww",
+    "claims": {
+      "/propertyPack/completionAndMoving/moveRestrictionDates": {
+        "hasRestrictions": false
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "vQRQ7bJcBPZIVA",
+    "claims": {
+      "/propertyPack/completionAndMoving/sufficientToRepayAllMortgages": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "mkQ8nxSTuPDDw",
+    "claims": {
+      "/propertyPack/confirmationOfAccuracyByOwners/confirmInformationIsAccurate": true
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "GMlngX5Zx4EesQ",
+    "claims": {
+      "/propertyPack/documents/-": {
+        "documentType": "Floorplan",
+        "documentId": "FP-R00002008"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "ofW1h8rxqOFvaA",
+    "claims": {
+      "/propertyPack/documents/-": {
+        "documentType": "Brochure",
+        "documentId": "BR-R00002008"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "4U3gJOPtsA1g",
+    "claims": {
+      "/propertyPack/documents/0/documentType": "Floorplan"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "FO4nVSS8bRRBEg",
+    "claims": {
+      "/propertyPack/documents/1/documentType": "Brochure"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "FPqUUZfWWf10sQ",
+    "claims": {
+      "/propertyPack/documents/0/alterationsInsights": {
+        "hasAlterations": false,
+        "summary": "No significant alterations identified"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "UN7RPCh7frSeuQ",
+    "claims": {
+      "/externalIds/TMGroup": {
+        "propertyId": "TM-14222214"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "ErnDh0kJHRuZg",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/insights/restrictiveCovenants": {
+        "summary": "No significant restrictive covenants identified",
+        "items": [],
+        "riskLevel": "Low"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "xKx96jANhjy1q4WGiIj2Tg=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "00RMhbs9374iKg",
+    "claims": {
+      "/propertyPack/documents/1/alterationsInsights": []
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "YbqOjsxqVJTfg",
+    "claims": {
+      "/propertyPack/documents/0/transcription": {
+        "rawText": "Property: 91 South Hill Avenue, MANCHESTER\nFloor Plan - Semi-detached property with 1 bedrooms",
+        "processedText": "Standard floor plan layout"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "VLUf0s046KsT9Q",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/1/transcription": {
+        "rawText": "Property register extract",
+        "processedText": "Standard register entry"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "zOTOGfNbL1BSX6fgwfFKDQ=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "zMuNB5EXi73Rw",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/2/transcription": {
+        "rawText": "Title plan",
+        "processedText": "Standard title plan showing property boundaries"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "PvhAuVpWFFwqQTcLfTTmXQ=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "Yyz7CfKjeJ9PVQ",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/0/transcription": {
+        "rawText": "Transfer dated 2021-12-27",
+        "processedText": "Standard property transfer document"
+      }
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "4He6bC4yPwDtbHMJjeci3A=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.747Z"
+    }
+  },
+  {
+    "id": "A8g7a6BpL8izEQ",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/bedrooms": 1
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.784Z"
+    }
+  },
+  {
+    "id": "prAikJGGHfKgqw",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/bathrooms": 1
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.784Z"
+    }
+  },
+  {
+    "id": "ymgZ8SB6zeww",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/receptions": 1
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.784Z"
+    }
+  },
+  {
+    "id": "uL0sUxbtBgEEJg",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/kitchens": 1
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.784Z"
+    }
+  },
+  {
+    "id": "dAktoZcrt8Q1mw",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/diningAreas": 1
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.784Z"
+    }
+  },
+  {
+    "id": "Sr1itOd2kNKWA",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/outsideAreas": [
+        "Front garden",
+        "Rear garden",
+        "Driveway"
+      ]
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.784Z"
+    }
+  },
+  {
+    "id": "Gu6UrekZIWIGw",
+    "claims": {
+      "/propertyPack/buildInformation/floorplan/rooms": [
+        {
+          "roomName": "Master Bedroom",
+          "description": "Primary bedroom with built-in storage",
+          "length": 4.39,
+          "width": 3.29,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        },
+        {
+          "roomName": "Living Room",
+          "description": "Main reception room with natural light",
+          "length": 5.12,
+          "width": 4.02,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        },
+        {
+          "roomName": "Kitchen",
+          "description": "Fitted kitchen with modern appliances",
+          "length": 3.66,
+          "width": 2.93,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        },
+        {
+          "roomName": "Dining Room",
+          "description": "Separate dining area",
+          "length": 4.02,
+          "width": 3.29,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        },
+        {
+          "roomName": "Bathroom",
+          "description": "Main family bathroom with bath and shower",
+          "length": 2.56,
+          "width": 2.19,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        }
+      ]
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.784Z"
+    }
+  },
+  {
+    "id": "jf2AFrSJO12wg",
+    "claims": {
+      "/propertyPack/buildInformation/floorplan/hasFloorplan": "Yes"
+    },
+    "transactionId": "wAyvmh8kBwJAxw",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.784Z"
+    }
+  }
+]

@@ -1,0 +1,3263 @@
+[
+  {
+    "id": "02TFAVkGAscTuI5e6eTa",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2024-12-03T10:53:33.994Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Carl Partridge"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/uprn": 100030544304
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "KHXrXu2wFyWxQwaiwsdV",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2024-12-03T10:53:33.982Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Carl Partridge"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/status": "For sale"
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "YiHweMte0SOf77RfUohK",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2024-12-03T10:53:33.994Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Carl Partridge"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/externalIds": {
+        "Matchmaker": {
+          "matchmakerId": "ABC123456"
+        }
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "s53KAxthnQqf334rQF6l",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2024-12-03T10:53:33.993Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Carl Partridge"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/participants/-": {
+        "name": {
+          "firstName": "Carl",
+          "lastName": "Partridge"
+        },
+        "email": "carl@partridge.works",
+        "role": "Estate Agent",
+        "externalIds": {
+          "Moverly": "buo8W42DzXfJcILAIO4eStIk8d23"
+        },
+        "organisation": "Peter Alan"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "dTSUxArPJ3fA4KguA2e0",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2024-12-03T10:53:36.633Z",
+      "evidence": [
+        {
+          "attachments": [],
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Energy Performance Certificate obtained from https://find-energy-certificate.service.gov.uk/energy-certificate/3390-7020-0822-4399-3273"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/energyEfficiency/certificate": {
+        "certificateNumber": "3390-7020-0822-4399-3273",
+        "currentEnergyRating": "E",
+        "potentialEnergyRating": "C",
+        "inspectionDate": "2023-12-12",
+        "lodgementDate": "2023-12-13",
+        "currentEnergyEfficiency": 40,
+        "potentialEnergyEfficiency": 77,
+        "co2EmissionsCurrent": 5.9,
+        "co2EmissionsPotential": 4.3,
+        "lowEnergyFixedLightCount": 0,
+        "address": "14 Pinfold Place, Harby",
+        "uprnSource": "Energy Assessor",
+        "floorHeight": 2.3,
+        "heatingCostPotential": 1153,
+        "unheatedCorridorLength": 0,
+        "hotWaterCostPotential": 486,
+        "constructionAgeBand": "England and Wales: 1991-1995",
+        "mainheatEnergyEff": "Very Poor",
+        "windowsEnvEff": "Average",
+        "lightingEnergyEff": "Very Good",
+        "environmentImpactPotential": 55,
+        "glazedType": "double glazing installed before 2002",
+        "heatingCostCurrent": 2615,
+        "address3": "",
+        "mainheatcontDescription": "Appliance thermostats",
+        "sheatingEnergyEff": "N/A",
+        "propertyType": "House",
+        "localAuthorityLabel": "Melton",
+        "fixedLightingOutletsCount": 22,
+        "energyTariff": "dual",
+        "mechanicalVentilation": "natural",
+        "hotWaterCostCurrent": 934,
+        "county": "Leicestershire",
+        "postcode": "LE14 4BX",
+        "solarWaterHeatingFlag": "N",
+        "constituency": "E14000909",
+        "numberHeatedRooms": 4,
+        "floorDescription": "Solid, no insulation (assumed)",
+        "energyConsumptionPotential": 309,
+        "localAuthority": "E07000133",
+        "builtForm": "Semi-Detached",
+        "numberOpenFireplaces": 1,
+        "windowsDescription": "Fully double glazed",
+        "glazedArea": "More Than Typical",
+        "mainsGasFlag": "N",
+        "co2EmissCurrPerFloorArea": 74,
+        "address1": "14 Pinfold Place",
+        "heatLossCorridor": "",
+        "flatStoreyCount": 0,
+        "constituencyLabel": "Rutland and Melton",
+        "roofEnergyEff": "Good",
+        "totalFloorArea": 80,
+        "buildingReferenceNumber": "10005352626",
+        "environmentImpactCurrent": 42,
+        "roofDescription": "Pitched, 150 mm loft insulation",
+        "floorEnergyEff": "N/A",
+        "numberHabitableRooms": 4,
+        "address2": "Harby",
+        "hotWaterEnvEff": "Average",
+        "posttown": "MELTON MOWBRAY",
+        "mainheatcEnergyEff": "Good",
+        "mainFuel": "electricity (not community)",
+        "lightingEnvEff": "Very Good",
+        "windowsEnergyEff": "Average",
+        "floorEnvEff": "N/A",
+        "sheatingEnvEff": "N/A",
+        "lightingDescription": "Low energy lighting in all fixed outlets",
+        "roofEnvEff": "Good",
+        "wallsEnergyEff": "Good",
+        "photoSupply": 0,
+        "lightingCostPotential": 158,
+        "mainheatEnvEff": "Poor",
+        "multiGlazeProportion": 100,
+        "mainHeatingControls": "",
+        "lodgementDatetime": "2023-12-13T13:44:14Z",
+        "flatTopStorey": "",
+        "secondheatDescription": "Room heaters, dual fuel (mineral and wood)",
+        "wallsEnvEff": "Good",
+        "transactionType": "marketed sale",
+        "uprn": 100030544304,
+        "energyConsumptionCurrent": 419,
+        "mainheatDescription": "Room heaters, electric",
+        "lightingCostCurrent": 138,
+        "extensionCount": 2,
+        "mainheatcEnvEff": "Good",
+        "lmkKey": "aba7191984a78ed2184fbf85f96c816296e8e4a69b167704129b6f7363a7fe6c",
+        "windTurbineCount": 0,
+        "tenure": "Owner-occupied",
+        "floorLevel": "",
+        "hotWaterEnergyEff": "Very Poor",
+        "lowEnergyLighting": 100,
+        "wallsDescription": "Cavity wall, as built, insulated (assumed)",
+        "hotwaterDescription": "Electric heat pump for water heating only, no cylinder thermostat"
+      },
+      "/propertyPack/energyEfficiency/certificateIsSupplied": "Attached",
+      "/propertyPack/energyEfficiency/greenDealLoan/hasGreenDealLoan/yesNo": "No",
+      "/propertyPack/buildInformation/internalArea": {
+        "area": 80,
+        "unit": "square metres"
+      },
+      "/propertyPack/heating/heatingSystem/heatingType": "None",
+      "/propertyPack/buildInformation/building/propertyType": "House",
+      "/propertyPack/buildInformation/building/builtForm": "Semi-detached"
+    }
+  },
+  {
+    "id": "sRIU8qD9xrtAN2fZeuXx",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2024-12-03T10:53:36.348Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Carl Partridge",
+              "organisation": "Peter Alan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/externalIds/LMS": {
+        "workspaceId": "daa5efbb-7d18-415a-bf4f-3bee7691a370"
+      }
+    }
+  },
+  {
+    "id": "Jgs5nzHTtoClAHd3RxqH",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2024-11-11T11:48:13.928Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Address and co-ordinates obtained from Postcode Address File via Loquate API at https://services.postcodeanywhere.co.uk"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/address": {
+        "line1": "14 Pinfold Place",
+        "line2": "Harby",
+        "town": "Melton Mowbray",
+        "county": "Leicestershire",
+        "postcode": "LE14 4BX"
+      },
+      "/propertyPack/location": {
+        "latitude": 52.873947,
+        "longitude": -0.885262
+      }
+    }
+  },
+  {
+    "id": "pK61RuyGJ5tAcamvdi9a",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2024-12-03T10:53:36.811Z",
+      "evidence": [
+        {
+          "attachments": [],
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations Broadband and Mobile Coverage APIs"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/connectivity/broadband": {
+        "yesNo": "Yes",
+        "typeOfConnection": "FTTC (Fibre to the Cabinet)",
+        "predictedSpeed": {
+          "maxBbPredictedDown": 16,
+          "maxBbPredictedUp": 1,
+          "maxSfbbPredictedDown": 53,
+          "maxSfbbPredictedUp": 8,
+          "maxUfbbPredictedDown": -1,
+          "maxUfbbPredictedUp": -1,
+          "maxPredictedDown": 53,
+          "maxPredictedUp": 8
+        }
+      },
+      "/propertyPack/connectivity/mobilePhone/predictedCoverage": {
+        "eeVoiceOutdoor": 4,
+        "eeVoiceOutdoorNo4g": 4,
+        "eeVoiceIndoor": 3,
+        "eeVoiceIndoorNo4g": 3,
+        "eeDataOutdoor": 4,
+        "eeDataOutdoorNo4g": 3,
+        "eeDataIndoor": 3,
+        "eeDataIndoorNo4g": 3,
+        "h3VoiceOutdoor": 4,
+        "h3VoiceOutdoorNo4g": 4,
+        "h3VoiceIndoor": 0,
+        "h3VoiceIndoorNo4g": 0,
+        "h3DataOutdoor": 4,
+        "h3DataOutdoorNo4g": 3,
+        "h3DataIndoor": 0,
+        "h3DataIndoorNo4g": 0,
+        "tfVoiceOutdoor": 4,
+        "tfVoiceOutdoorNo4g": 4,
+        "tfVoiceIndoor": 3,
+        "tfVoiceIndoorNo4g": 3,
+        "tfDataOutdoor": 4,
+        "tfDataOutdoorNo4g": 3,
+        "tfDataIndoor": 3,
+        "tfDataIndoorNo4g": 3,
+        "voVoiceOutdoor": 4,
+        "voVoiceOutdoorNo4g": 4,
+        "voVoiceIndoor": 3,
+        "voVoiceIndoorNo4g": 3,
+        "voDataOutdoor": 4,
+        "voDataOutdoorNo4g": 0,
+        "voDataIndoor": 3,
+        "voDataIndoorNo4g": 0
+      }
+    }
+  },
+  {
+    "id": "gyyOtotTYsJqEryyzKjR",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2024-12-03T10:53:37.107Z",
+      "evidence": [
+        {
+          "attachments": [],
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council(s) for LE14 4BX retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/localAuthority/localAuthorityName": "Melton Borough Council",
+      "/propertyPack/localAuthority/countyCouncil": "Leicestershire County Council",
+      "/propertyPack/localAuthority/districtCouncil": "Melton Borough Council"
+    }
+  },
+  {
+    "id": "wzHUlcdvBmYNuiQc1Ysp",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2024-12-03T10:53:37.107Z",
+      "evidence": [
+        {
+          "attachments": [],
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Regulated search turnaround times obtained for Melton Borough Council from OneSearch Direct"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/localAuthority/regulatedSearchTurnaroundTimeInWorkingDays": 10
+    }
+  },
+  {
+    "id": "3I9R3sKAsEwNyiPK3mGJ",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2024-12-03T10:53:38.797Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Council Tax information obtained from the Valuation Office Agency at https://www.tax.service.gov.uk/check-council-tax-band/property/180327046 for 2024-2025 via Council Tax Finder (counciltaxfinder.com)"
+            }
+          },
+          "attachments": [
+            {
+              "desc": "Council Tax band on GOV.UK",
+              "digest": {
+                "alg": "md5",
+                "value": "G9MiW1qLCwAJvdYGGHuLlg=="
+              },
+              "url": "https://www.tax.service.gov.uk/check-council-tax-band/property/180327046"
+            }
+          ]
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/councilTax": {
+        "councilTaxBand": "B",
+        "councilTaxAffectingAlterations": {
+          "yesNo": "No"
+        },
+        "councilTaxAnnualCharge": 1733.62,
+        "councilTaxAnnualChargeTaxYear": "2024-2025"
+      }
+    }
+  },
+  {
+    "id": "oxNdfQ1ZfEDczOjHUzpc",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2024-12-03T10:53:40.984Z",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Energy Performance Certificate obtained from https://find-energy-certificate.service.gov.uk/energy-certificate/3390-7020-0822-4399-3273"
+            }
+          },
+          "attachments": [
+            {
+              "desc": "Energy Performance Certificate from GOV.UK",
+              "digest": {
+                "alg": "md5",
+                "value": "UK/2dDYeThUftrYYvAmI7A=="
+              },
+              "url": "https://find-energy-certificate.service.gov.uk/energy-certificate/3390-7020-0822-4399-3273"
+            },
+            {
+              "desc": "EPC_14 Pinfold Place_LE14 4BX.pdf",
+              "digest": {
+                "alg": "md5",
+                "value": "gR9+TARFJfibw+7IFLzVPA=="
+              },
+              "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/EPC_14_Pinfold_Place_LE14_4BX_122496eb-c7a1-4e5a-a588-8147c4f13625.pdf?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=1985644800&Signature=Z0TqQkXgK16YLIofHt6h%2FgMks5%2B8wdVWF%2BVK9Hbk0k3zx0KpqIOoyrdn%2BQdwv2SnYfzCRLmhpE3LZAAuBV5OryajLyMlbN1uTFmUHvooGJBEYOH%2BR5ky%2BDYI1lZSQwYN9WzmeAfk4DSG%2B6%2F7tIG7YCtAL2WeToAI83zUyQGfb%2BQJzHbIQx5AKEjw8XuBh5Ojge9esBln48Ah1V2km7HTugZF%2BEbtIvK0Bpm70yDTv3S%2B4PI5PoLuyYm5C6Uga1B2xhTAypKJLJfZZhEo5P%2Bye3VWFx24lTkqPvHv6csIoH%2FtcHEBdvJxUKrqo0LH5Ng5TLCoEcaL8R9Xkp6MnOtOxQ%3D%3D&fileId=ZDl0zB1oOr64XtAanAjN"
+            }
+          ]
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/energyEfficiency/certificate": {
+        "certificateNumber": "3390-7020-0822-4399-3273",
+        "currentEnergyRating": "E",
+        "potentialEnergyRating": "C",
+        "inspectionDate": "2023-12-12",
+        "lodgementDate": "2023-12-13",
+        "currentEnergyEfficiency": 40,
+        "potentialEnergyEfficiency": 77,
+        "co2EmissionsCurrent": 5.9,
+        "co2EmissionsPotential": 4.3,
+        "lowEnergyFixedLightCount": 0,
+        "address": "14 Pinfold Place, Harby",
+        "uprnSource": "Energy Assessor",
+        "floorHeight": 2.3,
+        "heatingCostPotential": 1153,
+        "unheatedCorridorLength": 0,
+        "hotWaterCostPotential": 486,
+        "constructionAgeBand": "England and Wales: 1991-1995",
+        "mainheatEnergyEff": "Very Poor",
+        "windowsEnvEff": "Average",
+        "lightingEnergyEff": "Very Good",
+        "environmentImpactPotential": 55,
+        "glazedType": "double glazing installed before 2002",
+        "heatingCostCurrent": 2615,
+        "address3": "",
+        "mainheatcontDescription": "Appliance thermostats",
+        "sheatingEnergyEff": "N/A",
+        "propertyType": "House",
+        "localAuthorityLabel": "Melton",
+        "fixedLightingOutletsCount": 22,
+        "energyTariff": "dual",
+        "mechanicalVentilation": "natural",
+        "hotWaterCostCurrent": 934,
+        "county": "Leicestershire",
+        "postcode": "LE14 4BX",
+        "solarWaterHeatingFlag": "N",
+        "constituency": "E14000909",
+        "numberHeatedRooms": 4,
+        "floorDescription": "Solid, no insulation (assumed)",
+        "energyConsumptionPotential": 309,
+        "localAuthority": "E07000133",
+        "builtForm": "Semi-Detached",
+        "numberOpenFireplaces": 1,
+        "windowsDescription": "Fully double glazed",
+        "glazedArea": "More Than Typical",
+        "mainsGasFlag": "N",
+        "co2EmissCurrPerFloorArea": 74,
+        "address1": "14 Pinfold Place",
+        "heatLossCorridor": "",
+        "flatStoreyCount": 0,
+        "constituencyLabel": "Rutland and Melton",
+        "roofEnergyEff": "Good",
+        "totalFloorArea": 80,
+        "buildingReferenceNumber": "10005352626",
+        "environmentImpactCurrent": 42,
+        "roofDescription": "Pitched, 150 mm loft insulation",
+        "floorEnergyEff": "N/A",
+        "numberHabitableRooms": 4,
+        "address2": "Harby",
+        "hotWaterEnvEff": "Average",
+        "posttown": "MELTON MOWBRAY",
+        "mainheatcEnergyEff": "Good",
+        "mainFuel": "electricity (not community)",
+        "lightingEnvEff": "Very Good",
+        "windowsEnergyEff": "Average",
+        "floorEnvEff": "N/A",
+        "sheatingEnvEff": "N/A",
+        "lightingDescription": "Low energy lighting in all fixed outlets",
+        "roofEnvEff": "Good",
+        "wallsEnergyEff": "Good",
+        "photoSupply": 0,
+        "lightingCostPotential": 158,
+        "mainheatEnvEff": "Poor",
+        "multiGlazeProportion": 100,
+        "mainHeatingControls": "",
+        "lodgementDatetime": "2023-12-13T13:44:14Z",
+        "flatTopStorey": "",
+        "secondheatDescription": "Room heaters, dual fuel (mineral and wood)",
+        "wallsEnvEff": "Good",
+        "transactionType": "marketed sale",
+        "uprn": 100030544304,
+        "energyConsumptionCurrent": 419,
+        "mainheatDescription": "Room heaters, electric",
+        "lightingCostCurrent": 138,
+        "extensionCount": 2,
+        "mainheatcEnvEff": "Good",
+        "lmkKey": "aba7191984a78ed2184fbf85f96c816296e8e4a69b167704129b6f7363a7fe6c",
+        "windTurbineCount": 0,
+        "tenure": "Owner-occupied",
+        "floorLevel": "",
+        "hotWaterEnergyEff": "Very Poor",
+        "lowEnergyLighting": 100,
+        "wallsDescription": "Cavity wall, as built, insulated (assumed)",
+        "hotwaterDescription": "Electric heat pump for water heating only, no cylinder thermostat"
+      },
+      "/propertyPack/energyEfficiency/certificateIsSupplied": "Attached",
+      "/propertyPack/energyEfficiency/greenDealLoan/hasGreenDealLoan/yesNo": "No",
+      "/propertyPack/buildInformation/internalArea": {
+        "area": 80,
+        "unit": "square metres"
+      },
+      "/propertyPack/heating/heatingSystem/heatingType": "None",
+      "/propertyPack/buildInformation/building/propertyType": "House",
+      "/propertyPack/buildInformation/building/builtForm": "Semi-detached"
+    }
+  },
+  {
+    "id": "etu46W7t087VgdsFIIhc",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2024-12-03T10:54:03.995Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Groundsure Hazard Alerts, for indicative use only. Order the relevant Groundsure search product for full details and legal reliance."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/environmentalIssues/coalMining": {
+        "riskIndicator": "No",
+        "result": "Not identified",
+        "summary": "No coal mining risk has been identified.",
+        "datasetAttribution": "Groundsure Hazard Alerts, for indicative use only. Order the relevant Groundsure search product for full details and legal reliance."
+      },
+      "/propertyPack/environmentalIssues/nonCoalMining": {
+        "riskIndicator": "Yes",
+        "result": "Identified",
+        "summary": "A potential non-coal mining risk has been identified (landslide hazard) - a detailed search report can help to determine the impact.",
+        "datasetAttribution": "Groundsure Hazard Alerts, for indicative use only. Order the relevant Groundsure search product for full details and legal reliance."
+      }
+    }
+  },
+  {
+    "id": "34T9lZDq4pGbtHQ9tnpA",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2024-12-03T10:54:04.613Z",
+      "evidence": [
+        {
+          "attachments": [],
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Historical planning application data retrieved from Planit.org.uk for 14 Pinfold Place."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/localSearches/localAuthoritySearches/planningAndBuildingRegulations/decisionsAndPendingApplications/planningPermission": [
+        {
+          "address": "14 Pinfold Place Harby LE14 4BX",
+          "areaName": "Melton",
+          "refNumber": "21/00908/FULHH",
+          "description": "Infill of existing covered front porch area",
+          "isProposal": "No",
+          "applicationDate": "2021-07-28",
+          "decision": "Permit",
+          "decisionDate": "2021-09-01",
+          "applicationType": "Householder",
+          "url": "https://pa.melton.gov.uk/online-applications/applicationDetails.do?keyVal=QWY0T8KOMOW00&activeTab=summary"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ACrMnzcNyLHD7dOgT3Ke",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2024-12-03T10:54:05.653Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Indicative coastal erosion analysis from the National Coastal Erosion Risk Mapping (NCERM) dataset",
+              "rights": "National Coastal Erosion Risk Mapping © Environment Agency copyright and/or database right; NCERM is usable under the Environment Agency Conditional Licence"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/environmentalIssues/coastalErosion": {
+        "riskIndicator": "No",
+        "actionAlertRating": 1,
+        "result": "Not close to an area potentially affected by future coastal erosion.",
+        "summary": "The property is not close to any area potentially impacted by coastal erosion, according to the National Coastal Erosion Risk Mapping (NCERM) dataset. ",
+        "datasetAttribution": "National Coastal Erosion Risk Mapping © Environment Agency copyright and/or database right; NCERM is usable under the Environment Agency Conditional Licence"
+      }
+    }
+  },
+  {
+    "id": "LWC46pfC6vJ7nxyD4dsG",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2024-12-03T10:54:22.154Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Gov.uk Long-term Flood Risk service at https://check-long-term-flood-risk.service.gov.uk, under Open Government License v3.0"
+            },
+            "attachments": [
+              {
+                "digest": {
+                  "alg": "md5",
+                  "value": "57w1LXklJQAeoH87hhrVLQ=="
+                },
+                "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/Long_term_flood_risk_report_9c3c37a4-1db8-4b06-ac53-0f2416cee82f.png?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=1985644800&Signature=RpinCd9%2FSaIOAgaq47ezRH6ESWbyxSbykKIWamPQ7vw1mu6jDAhpthmHkIEeNkWEeDz9dKJeSxhPdRWeEZ0Vs2Ci3wxeJqiTR8ghG3wmc3G8HGO8uRf7x02WHJn7cNkoZdBZgy5Zi0YsomCn1ghcpuxjPHaC6v6aMfznj1ZmTehygXZ8lmHq89ddX3NgHRCA3HDHaEkT5jjLTzfKrosq7rsZ6LozhfcJTZbh1F%2FF9o0ZI0TCS5VyF1KyTt8jCHpFaG8Yf0RVrIpwti4JwUGKuwblcUDeDBlYP5XbeBKpXOiaDad7c6v2t49cad2W14KnMr2%2FzFiDxh6isKp5qbQCRw%3D%3D&fileId=hcvR6ZbS1WNfAUJ5oSgn",
+                "desc": "Long-term_flood_risk_report.png"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/environmentalIssues/flooding/floodRisk": {
+        "riskIndicator": "No",
+        "actionAlertRating": 1,
+        "summary": "River and sea flooding risk: Very Low; Surface water flooding risk: Very Low; Reservoir flooding risk: Not at risk; Groundwater flooding risk: Unlikely",
+        "datasetAttribution": "Environment Agency via https://www.gov.uk/check-long-term-flood-risk, data under Open Government License v3.0",
+        "riskSubcategories": [
+          {
+            "subCategory": "Surface water",
+            "actionAlertRating": 1,
+            "result": "Very Low",
+            "summary": "Each year, the area has a chance of flooding of less than 1 in 1000 (0.1%). This flood risk summary reports the highest risk from surface water within a 15 metre radius of this property. This information is suitable for identifying: which parts of counties or towns are at risk, or have the most risk the approximate extent and depth of flooding. It's unlikely to be reliable for a local area and very unlikely to be reliable for identifying individual properties at risk."
+          },
+          {
+            "subCategory": "Rivers and sea",
+            "actionAlertRating": 1,
+            "result": "Very Low",
+            "summary": "Each year, the area has a chance of flooding of less than 1 in 1000 (0.1%). This flood risk summary is not property specific. This service takes into account any flood defences."
+          },
+          {
+            "subCategory": "Reservoirs",
+            "actionAlertRating": 1,
+            "result": "Not at risk",
+            "summary": "A reservoir is a large natural or artificial lake that is designed to collect and store water. We use predicted scenarios to understand the risk of flooding from reservoirs. Flooding from reservoirs is extremely unlikely. An area is considered at risk if people’s lives could be threatened in the very unlikely event of a dam or reservoir failure."
+          },
+          {
+            "subCategory": "Groundwater",
+            "actionAlertRating": 1,
+            "result": "Unlikely",
+            "summary": "Flooding caused by groundwater happens when water underground that is usually held in the rocks and soil (known as the water table) gets so high that it flows above the surface. We use flood alert data to check the risk of flooding from groundwater."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "R3dJu3LdcrbVViuKc8Rd",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2024-12-03T10:55:41.770Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Moverly"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/titlesToBeSold": [
+        {
+          "titleNumber": "LT236144",
+          "titleIncludedInSale": true
+        }
+      ]
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "siwN2tGeuuH0mFIfZajK",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2024-12-03T10:55:41.770Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Moverly"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/marketingTenure": "Freehold"
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "hWEHu0ffpiKeQfAr2cxZ",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2024-12-03T10:55:50.025Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "type": "nps",
+            "source": {
+              "name": "HMLR National Polygon Service via MyNestBox.co.uk"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/titleExtents": "{\"type\":\"Polygon\",\"coordinates\":[[[-0.8853737584736492,52.873991805246774],[-0.885371853262297,52.873999482709],[-0.885341531711686,52.87409278284018],[-0.8853121552424796,52.87417818073145],[-0.8852987760140247,52.87418425816086],[-0.885086748966368,52.87397550012393],[-0.8851913262040195,52.87392416080748],[-0.8852111686795469,52.87391517740431],[-0.8852586676106377,52.87389377788646],[-0.8852768553709022,52.87388558802851],[-0.8853529088107223,52.873851511084965],[-0.8853718006790227,52.87386805002042],[-0.88538705210844,52.87386080349119],[-0.8853737584736492,52.873991805246774]]]}"
+    }
+  },
+  {
+    "id": "pUfGMkp3XbuM4nuChbtI",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2024-12-03T10:55:52.921Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "type": "register_extract",
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "IOxVP7mtoryxKmrckz1Beg=="
+              },
+              "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/Register_LT236144_037b06e1-ad45-437b-9ead-37a0366abc04.pdf?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=1985644800&Signature=RgEDCChZIXO6zuEklemk%2F5PejtBPJHkig6mXa0fGWMJJulinZAQYG4HDh2oX%2FdIX5cq565mXLXTNehuH57gQdzfQ0%2F6gANNPLtUmNqOEmEZEDdw%2F%2BgoJIcpvY2d0qeafWPSarhrK262tSttu%2FHioRuUuVyLHikVXk1ILj%2Bq%2Bs1Nfrh4Qc%2Fn%2BdeuDPZelvRi8Fz37r6b3fcaibFFIzzS4QZELsVv6VdKHEr5Ogqxn4h7nLxJ0OKThIyvmdD4oiFkyNp4fEH%2FJjgsLgiUxJEfwTORjClgKhY9nXuoPyMzWpJmi17F7q4ZCE9eo18wHFOxHo1N7ly%2BBnYEHB3Q7kjIV%2Fw%3D%3D&fileId=VsuJmuRo6ofNOSglAn4j",
+              "desc": "Register - LT236144.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/ownership/ownershipsToBeTransferred/-": {
+        "titleNumber": "LT236144",
+        "titlePropertyDescription": "The Freehold land shown edged with red on the plan of the above Title filed at the Registry and being 14 Pinfold Place, Harby, Melton Mowbray (LE14 4BX).",
+        "ownershipType": "Freehold"
+      },
+      "/propertyPack/legalOwners/namesOfLegalOwners": [
+        {
+          "ownerType": "Private individual",
+          "firstName": "GRACE",
+          "middleNames": "JAYNE",
+          "lastName": "BRADFORD"
+        },
+        {
+          "ownerType": "Private individual",
+          "firstName": "JAKE",
+          "middleNames": "EDWARD",
+          "lastName": "BEESLEY"
+        }
+      ],
+      "/propertyPack/titlesToBeSold/0/registerExtract": {
+        "ocSummaryData": {
+          "officialCopyDateTime": "2024-12-03T10:55:50",
+          "editionDate": "2024-04-18",
+          "pricePaidEntry": {
+            "entryDetails": {
+              "entryNumber": "2",
+              "entryText": "The price stated to have been paid on 5 April 2024 was £265,000.",
+              "registrationDate": "2024-04-12",
+              "subRegisterCode": "B",
+              "infills": {
+                "date": "2024-04-05",
+                "amount": "£265,000"
+              }
+            }
+          },
+          "propertyAddress": {
+            "postcodeZone": {
+              "postcode": "LE14 4BX"
+            },
+            "addressLine": {
+              "line": [
+                "14 Pinfold Place",
+                "Harby",
+                "Melton Mowbray"
+              ]
+            }
+          },
+          "title": {
+            "titleNumber": "LT236144",
+            "classOfTitleCode": "10",
+            "commonholdIndicator": "false",
+            "titleRegistrationDetails": {
+              "districtName": "MELTON",
+              "administrativeArea": "LEICESTERSHIRE",
+              "landRegistryOfficeName": "Leicester Office",
+              "latestEditionDate": "2024-04-18",
+              "postcodeZone": {
+                "postcode": "LE14 4BX"
+              }
+            }
+          },
+          "registerEntryIndicators": {
+            "agreedNoticeIndicator": "false",
+            "bankruptcyIndicator": "false",
+            "cautionIndicator": "false",
+            "ccbiIndicator": "false",
+            "chargeeIndicator": "true",
+            "chargeIndicator": "true",
+            "chargeRelatedRestrictionIndicator": "false",
+            "chargeRestrictionIndicator": "false",
+            "creditorsNoticeIndicator": "false",
+            "deathOfProprietorIndicator": "false",
+            "deedOfPostponementIndicator": "false",
+            "discountChargeIndicator": "false",
+            "equitableChargeIndicator": "false",
+            "greenOutEntryIndicator": "false",
+            "homeRightsChangeOfAddressIndicator": "false",
+            "homeRightsIndicator": "false",
+            "leaseHoldTitleIndicator": "false",
+            "multipleChargeIndicator": "false",
+            "nonChargeRestrictionIndicator": "true",
+            "notedChargeIndicator": "false",
+            "pricePaidIndicator": "true",
+            "propertyDescriptionNotesIndicator": "false",
+            "rentChargeIndicator": "false",
+            "rightOfPreEmptionIndicator": "false",
+            "scheduleOfLeasesIndicator": "false",
+            "subChargeIndicator": "false",
+            "unidentifiedEntryIndicator": "false",
+            "unilateralNoticeBeneficiaryIndicator": "false",
+            "unilateralNoticeIndicator": "false",
+            "vendorsLienIndicator": "false"
+          },
+          "proprietorship": {
+            "currentProprietorshipDate": "2024-04-12",
+            "registeredProprietorParty": [
+              {
+                "privateIndividual": {
+                  "name": {
+                    "forenamesName": "GRACE JAYNE",
+                    "surnameName": "BRADFORD"
+                  }
+                },
+                "address": [
+                  {
+                    "postcodeZone": {
+                      "postcode": "LE14 4BX"
+                    },
+                    "addressLine": {
+                      "line": [
+                        "14 Pinfold Place",
+                        "Harby",
+                        "Melton Mowbray"
+                      ]
+                    }
+                  },
+                  {
+                    "addressLine": {
+                      "line": "jakeebeesley@hotmail.co.uk"
+                    }
+                  },
+                  {
+                    "addressLine": {
+                      "line": "gracejbradford@gmail.com"
+                    }
+                  }
+                ]
+              },
+              {
+                "privateIndividual": {
+                  "name": {
+                    "forenamesName": "JAKE EDWARD",
+                    "surnameName": "BEESLEY"
+                  }
+                },
+                "address": [
+                  {
+                    "postcodeZone": {
+                      "postcode": "LE14 4BX"
+                    },
+                    "addressLine": {
+                      "line": [
+                        "14 Pinfold Place",
+                        "Harby",
+                        "Melton Mowbray"
+                      ]
+                    }
+                  },
+                  {
+                    "addressLine": {
+                      "line": "jakeebeesley@hotmail.co.uk"
+                    }
+                  },
+                  {
+                    "addressLine": {
+                      "line": "gracejbradford@gmail.com"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "restrictionDetails": {
+            "restrictionEntry": {
+              "nonChargeRestriction": {
+                "restrictionTypeCode": "10",
+                "entryDetails": {
+                  "entryNumber": "3",
+                  "entryText": "RESTRICTION: No disposition by a sole proprietor of the registered estate (except a trust corporation) under which capital money arises is to be registered unless authorised by an order of the court.",
+                  "subRegisterCode": "B"
+                }
+              }
+            }
+          },
+          "charge": {
+            "chargeEntry": {
+              "chargeID": "1",
+              "chargeDate": "2024-04-05",
+              "registeredCharge": {
+                "entryDetails": {
+                  "entryNumber": "6",
+                  "entryText": "REGISTERED CHARGE dated 5 April 2024.",
+                  "registrationDate": "2024-04-12",
+                  "subRegisterCode": "C",
+                  "infills": {
+                    "chargeDate": "2024-04-05"
+                  }
+                }
+              },
+              "chargeProprietor": {
+                "chargeeParty": {
+                  "organization": {
+                    "name": "Nationwide Building Society"
+                  },
+                  "address": {
+                    "postcodeZone": {
+                      "postcode": "SN38 1NW"
+                    },
+                    "addressLine": {
+                      "line": [
+                        "Nationwide House",
+                        "Pipers Way",
+                        "Swindon L"
+                      ]
+                    }
+                  }
+                },
+                "entryDetails": {
+                  "entryNumber": "7",
+                  "entryText": "Proprietor: NATIONWIDE BUILDING SOCIETY of Nationwide House, Pipers Way, Swindon L SN38 1NW.",
+                  "registrationDate": "2024-04-12",
+                  "subRegisterCode": "C"
+                }
+              }
+            }
+          },
+          "documentDetails": {
+            "document": [
+              {
+                "documentType": "50",
+                "documentDate": "2024-04-05",
+                "entryNumber": [
+                  "C6",
+                  "C7"
+                ],
+                "planOnlyIndicator": "false",
+                "registerDescription": "Charge"
+              },
+              {
+                "documentType": "130",
+                "documentDate": "1990-09-21",
+                "entryNumber": [
+                  "A4",
+                  "A5",
+                  "C5"
+                ],
+                "planOnlyIndicator": "false",
+                "registerDescription": "Transfer"
+              }
+            ]
+          }
+        },
+        "ocRegisterData": {
+          "propertyRegister": {
+            "districtDetails": {
+              "entryText": "LEICESTERSHIRE : MELTON"
+            },
+            "registerEntry": [
+              {
+                "entryNumber": "1",
+                "entryType": "Property Description",
+                "entryText": "The Freehold land shown edged with red on the plan of the above Title filed at the Registry and being 14 Pinfold Place, Harby, Melton Mowbray (LE14 4BX)."
+              },
+              {
+                "entryNumber": "2",
+                "entryType": "Mines & Minerals - Short Entries",
+                "entryText": "The mines and minerals below a depth of 100 yards together with ancillary provisions relating to letting down the surface are excepted."
+              },
+              {
+                "entryNumber": "3",
+                "entryType": "Provisions",
+                "entryText": [
+                  "The Conveyance dated 28 April 1989 referred to in the Charges Register contains the following provision:-",
+                  "\"IT IS HEREBY AGREED AND DECLARED by and between the Parties hereto that the Purchaser shall not by virtue of this Conveyance be or become entitled to any right of light or air or to any other right or easement over or in respect of the Vendors adjoining and neighbouring property (hereinafter called \"the Retained Property\") which would or might in any way prejudicially affect the free and unrestricted use by the Vendors and their successors in title of the Retained Property for building or any other purpose.\""
+                ]
+              },
+              {
+                "entryNumber": "4",
+                "entryType": "Beneficial/Subjective Easements - A Register",
+                "entryText": "The land has the benefit of the rights granted by but is subject to the rights reserved by the Transfer dated 21 September 1990 referred to in the Charges Register."
+              },
+              {
+                "entryNumber": "5",
+                "entryType": "Provisions",
+                "entryText": "The Transfer dated 21 September 1990 referred to above contains provisions as to light or air and boundary structures."
+              }
+            ]
+          },
+          "proprietorshipRegister": {
+            "registerEntry": [
+              {
+                "entryNumber": "1",
+                "entryDate": "2024-04-12",
+                "entryType": "Proprietor",
+                "entryText": "PROPRIETOR: GRACE JAYNE BRADFORD and JAKE EDWARD BEESLEY of 14 Pinfold Place, Harby, Melton Mowbray LE14 4BX and of jakeebeesley@hotmail.co.uk and of gracejbradford@gmail.com."
+              },
+              {
+                "entryNumber": "2",
+                "entryDate": "2024-04-12",
+                "entryType": "Price Paid",
+                "entryText": "The price stated to have been paid on 5 April 2024 was £265,000."
+              },
+              {
+                "entryNumber": "3",
+                "entryDate": "2024-04-12",
+                "entryType": "Joint Proprietor Restriction",
+                "entryText": "RESTRICTION: No disposition by a sole proprietor of the registered estate (except a trust corporation) under which capital money arises is to be registered unless authorised by an order of the court."
+              },
+              {
+                "entryNumber": "4",
+                "entryDate": "2024-04-12",
+                "entryType": "Personal Covenants",
+                "entryText": "A transfer to the proprietor contains a covenant to observe and perform the covenants in the above title and of indemnity in respect thereof."
+              }
+            ]
+          },
+          "chargesRegister": {
+            "registerEntry": [
+              {
+                "entryNumber": "1",
+                "entryType": "Restrictive Covenants/Stipulations - Deed",
+                "entryText": [
+                  "A Deed of Agreement affecting the land in this title and other land dated 15 July 1988 made between (1) The Council of the Borough of Melton and (2) Henry Stokes Coy and Peggy Coy contains the following covenants:-",
+                  "The Applicants hereby jointly and severally COVENANT that if they are granted planning permission in accordance with their application numbered 88/0038 (whether or not such permission is granted subject to conditions) the internal floorspace excluding garages of the residential units to be built on the site will not exceed 660 square feet and there will be no extensions to the residential units in the future."
+                ]
+              },
+              {
+                "entryNumber": "2",
+                "entryType": "Restrictive Covenants/Stipulations - Deed",
+                "entryText": [
+                  "A Conveyance of the land in this title and other land dated 28 April 1989 made between (1) Henry Stokes Coy and Peggy Coy (Vendors) and (2) Peter John Fletcher (Purchaser) contains the following covenants:-",
+                  "\"THE PURCHASER hereby covenants with the Vendors and each of them not to use the property hereby conveyed or allow the same to be so used so as to cause a nuisance or annoyance to the owner or occupier for the time being of the Retained Property provided that this covenant shall not in any way restrict or prevent the Purchaser from developing the property hereby conveyed for residential occupation and use.\""
+                ]
+              },
+              {
+                "entryNumber": "3",
+                "entryType": "Subjective Easements - C Register",
+                "entryText": [
+                  "The land is subject to the following rights reserved by the Conveyance dated 28 April 1989 referred to above:-",
+                  "\"Subject as provided in the said First Schedule",
+                  ".........................................................................",
+                  "EXCEPTING AND RESERVING unto the Vendors and their successors in title owners for the time being of the Vendors Retained Property:-",
+                  "(a) the right (subject to obtaining all necessary Local Authority approval) to connect into the foul sewer and surface water drain to be laid by the Purchaser in or through the property hereby conveyed (such connections to be made at the Vendors expense and in such position as shall be approved by the Purchaser) and thereafter a right to use the said foul sewer and surface water drain for the free and uninterrupted passage and running of water and sewerage but without any warranty by the Purchaser that such sewer and drain shall be sufficient capacity as to permit the exercise of such rights",
+                  "(b) the right upon reasonably prior notice (except in the case of emergency) to enter upon the Property hereby conveyed so far as may be necessary for the purpose of inspecting cleansing maintaining repairing and renewing the connections to be made to the foul sewer and surface water drain in accordance with sub-clause (a) above and also the fence or any other boundary structure to be erected by the Vendors in accordance with the covenant on their part herein contained.\""
+                ]
+              },
+              {
+                "entryNumber": "4",
+                "entryType": "Subjective Easements - C Register",
+                "entryText": [
+                  "The land is subject to the following rights granted by a Transfer of an Electricity Sub-Station dated 9 July 1990 made between (1) Peter John Fletcher (Transferor) and (2) East Midlands Electricity Plc (Company):-",
+                  "Together with any rights appurent to that property as may be set out in the Second Schedule",
+                  ".........................................................................",
+                  "THE RIGHTS APPURTENANT TO THE PROPERTY TRANSFERRED",
+                  ".........................................................................",
+                  "(iv) A right to lay electric lines within the meaning of Section 64 of the Electricity Act 1989",
+                  "(i)  In the position indicated on the attached plan and shown by broken red lines together also to erect and maintain a pole and stay together with all necessary guards wires and appliances as shown on the said plan",
+                  ".........................................................................",
+                  "(v)  A right to break up the surface of any of the above land roads or footpaths for the purpose of laying repairing and maintaining the electric lines doing as little damage as possible and making good any damage caused.",
+                  "The said Transfer also contains the following covenants by the Transferor:-",
+                  "The Transferor covenants with the Company and its successors in title to observe and perform the matters set out in the Third Schedule",
+                  "THE THIRD SCHEDULE",
+                  "COVENANTS TO BE OBSERVED BY THE TRANSFEROR:",
+                  "(i)    To indemnify the Company against all costs charges and expenses involved in the construction and adoption of any roads and footpaths on the adjoining estate",
+                  "(ii)   Not at any time after the date of this Deed to excavate under or alter the level of ground over nor construct or permit to be constructed any building or structure or erection of any kind whatsoever over or within one metre on either side of the route of the electric lines referred to in The Second Schedule to this Transfer other than any buildings structures or erections marked on the attached plan",
+                  "(iii)  Not to erect or cause or permit to be erected any building structure or other erection plant or materials in such proximity to the said sty as to cause damage or danger to the same or anyone working thereon.",
+                  "NOTE: The red broken lines referred to are shown by a blue broken line on the filed plan so far as they affect the land in this title."
+                ]
+              },
+              {
+                "entryNumber": "5",
+                "entryType": "Restrictive Covenants/Stipulations - Deed",
+                "entryText": [
+                  "A Transfer of the land in this title dated 21 September 1990 made between (1) Peter John Fletcher and (2) Nicholas Giles Clarke and Debra Jayne Bone contains restrictive covenants.",
+                  "NOTE: Original filed."
+                ]
+              },
+              {
+                "entryNumber": "6",
+                "entryDate": "2024-04-12",
+                "entryType": "Registered Charges",
+                "entryText": "REGISTERED CHARGE dated 5 April 2024."
+              },
+              {
+                "entryNumber": "7",
+                "entryDate": "2024-04-12",
+                "entryType": "Chargee",
+                "entryText": "Proprietor: NATIONWIDE BUILDING SOCIETY of Nationwide House, Pipers Way, Swindon L SN38 1NW."
+              }
+            ]
+          }
+        }
+      },
+      "/propertyPack/titlesToBeSold/0/documentAvailability": {
+        "titleStatus": "Title number is valid.",
+        "titleStatusCode": "VALID",
+        "titleNumber": "LT236144",
+        "applicationsPending": false,
+        "referredToDocuments": [
+          {
+            "type": "Charge",
+            "typeCode": "Charge",
+            "entryNumbers": [
+              "C6",
+              "C7"
+            ],
+            "date": "2024-04-05",
+            "filedUnder": "LT236144",
+            "availability": "available for immediate download",
+            "availabilityCode": "IMMEDIATE"
+          },
+          {
+            "type": "Conveyance",
+            "typeCode": "Conveyance",
+            "entryNumbers": [
+              "A3",
+              "C2",
+              "C3"
+            ],
+            "date": "1989-04-28",
+            "filedUnder": "LT236144",
+            "availability": "not available",
+            "availabilityCode": "UNAVAILABLE"
+          },
+          {
+            "type": "Deed of agreement",
+            "typeCode": "Deed of Agreement",
+            "entryNumbers": [
+              "C1"
+            ],
+            "date": "1988-07-15",
+            "filedUnder": "LT236144",
+            "availability": "not available",
+            "availabilityCode": "UNAVAILABLE"
+          },
+          {
+            "type": "Transfer",
+            "typeCode": "Transfer",
+            "entryNumbers": [
+              "A4",
+              "A5",
+              "C5"
+            ],
+            "date": "1990-09-21",
+            "filedUnder": "LT236144",
+            "availability": "available for immediate download",
+            "availabilityCode": "IMMEDIATE"
+          },
+          {
+            "type": "Transfer",
+            "typeCode": "Transfer",
+            "entryNumbers": [
+              "C4"
+            ],
+            "date": "1990-07-09",
+            "filedUnder": "LT236144",
+            "availability": "not available",
+            "availabilityCode": "UNAVAILABLE"
+          }
+        ],
+        "register": {
+          "type": "register",
+          "typeCode": "REGISTER",
+          "availability": "available for immediate download",
+          "availabilityCode": "IMMEDIATE",
+          "backdated": false
+        },
+        "titlePlan": {
+          "type": "plan",
+          "typeCode": "TITLEPLAN",
+          "availability": "available for immediate download",
+          "availabilityCode": "IMMEDIATE",
+          "backdated": false
+        }
+      }
+    }
+  },
+  {
+    "id": "q4GQNmzJQn2OVLuXt8FN",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2024-12-03T10:58:26.527Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai Title Deed Summarizer. This content is AI generated and should not be relied upon for legal purposes."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/keyFacts": {
+        "beneficialOwners": [],
+        "propertyAndLandDescription": "The Freehold land is defined by the red edge on the title plan. The address is 14 Pinfold Place, Harby, Melton Mowbray, LE14 4BX. The title also notes that mines and minerals below 100 yards are not included.",
+        "legalOwners": [
+          "Grace Jayne Bradford",
+          "Jake Edward Beesley"
+        ],
+        "relatedDocuments": [
+          "Charge dated 5 April 2024, entries C6 and C7, document not specific to a location but relevant to financial obligations.",
+          "Transfer dated 21 September 1990, entries A4, A5, and C5, provides details about easements and certain rights and obligations related to the property."
+        ],
+        "chargesAndFinancialBurdens": [
+          "A mortgage or financial charge is held by Nationwide Building Society, registered on 5 April 2024."
+        ],
+        "restrictionsOrRestrictiveCovenants": [
+          "No sole proprietor can sell or mortgage the property without a court order unless it's a trust corporation.",
+          "The property cannot be developed or extended beyond a living space of 660 square feet without violating an agreement with Melton Borough Council.",
+          "Must not cause nuisance or annoyance to surrounding properties. No buildings or structures can be erected within one metre of electricity lines."
+        ],
+        "rightsOrEasements": [
+          "Right to connect to and use sewage and drainage systems established by neighbouring property owners.",
+          "Limited rights for East Midlands Electricity Plc to lay electric lines and maintenance access through the property."
+        ]
+      }
+    }
+  },
+  {
+    "id": "BZ4GwGmbpP3SYMnLiucm",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2024-12-03T11:48:29.822Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Carl Partridge"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/ownership/numberOfSellers": 1
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "xoNRrwvTWPtTyKL0EpBt",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:21:47.011Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan 6jbt7GHbqtg4NeFGShawltY5Aat1.",
+              "organisation": "Peter Alan"
+            }
+          }
+        },
+        {
+          "type": "electronic_record",
+          "record": {
+            "type": "Reapit API",
+            "source": {
+              "name": "Obtained from Peter Alan linked to Andrew Kilgannan 6jbt7GHbqtg4NeFGShawltY5Aat1."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/participants/-": {
+        "name": {
+          "firstName": "Andrew",
+          "lastName": "Kilgannan"
+        },
+        "email": "andrew+pa@moverly.com",
+        "role": "Estate Agent",
+        "externalIds": {
+          "Moverly": "6jbt7GHbqtg4NeFGShawltY5Aat1"
+        },
+        "organisation": "Peter Alan"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "w0VVoAKcZY0XN89rqq6a",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:21:47.357Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/typeOfConstruction/isStandardForm": {
+        "yesNo": "Yes"
+      },
+      "/propertyPack/typeOfConstruction/buildingSafety": {
+        "yesNo": "No"
+      },
+      "/propertyPack/typeOfConstruction/accessibilityAndAdaptations": [
+        "None"
+      ]
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "FpnxfdOlGiy0tyAFksjE",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2025-01-13T14:21:52.184Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "type": "official_copy_documents",
+            "source": {
+              "name": "HMLR Official Copy Charge via OC2 Service v2.1"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "0JsPsiUKnqIFkx8O1taMjQ=="
+              },
+              "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/title_LT236144_50_2024_04_05_official_copy_f2e148f1-1bed-4ec6-a5a8-d1c3209d0293.pdf?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=1989014400&Signature=IvUoSyR7LcH1XsgIllQwbAZcoaE9YTiPOAKJqIohWgrTrRQI8gf59J09LnPRGcqqCq4GxBGL7xNt641YMuz9%2FWgqkzXeIo2mtoiOpsynByMIle6DagddfiOgJ6N7%2FwL%2B3Tv2kfcW8J%2FTofcuBw8LMXFhaQX4uUbWmBasd7i%2BmTFcyoSE%2BNKfCfOHiPYlMj%2F7%2BKbNCrpMZykZnSAt3Qh6fipg6cUwhGErCJMtcQPFiQJOiQ6yfUdDbLkEuaLObH2pQ9kfyujSgYnDJUM5j5hMX%2BKn4M6kMZuGp2lPuowVqSwS09itT1XWps7m7FPcAXKJDkm9LC7crm%2BiDGYpVmRfEQ%3D%3D&fileId=qNiRECj6vXyzBnvU1BSB",
+              "desc": "title-LT236144-50-2024-04-05-official-copy.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/-": {
+        "filedUnder": "LT236144",
+        "documentType": "Charge",
+        "documentTypeCode": "50",
+        "documentDate": "2024-04-05",
+        "retrievedOn": "2025-01-13T14:21:52.184Z",
+        "externalIds": {
+          "Moverly": "qNiRECj6vXyzBnvU1BSB"
+        }
+      }
+    }
+  },
+  {
+    "id": "yGfLxwElOsDKiWZlhcXU",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2025-01-13T14:21:51.666Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "type": "official_copy_documents",
+            "source": {
+              "name": "HMLR Official Copy Plan via OC2 Service v2.1"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "tOBTXf/7szuvJhFMHW2Rzg=="
+              },
+              "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/title_LT236144_110_2024_12_03_official_copy_10120307-7129-4d9e-a1f5-306119800d6f.pdf?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=1989014400&Signature=OD2umjFaoTUh98EvK2RaA99BUXGAD3zNLk%2Brwg3LnXyaH02tQTGTcggPiYp2IbtQc3lcoYiRWHTLbLpRPPH3LeaAZ9A3tZzZ7cF09PTUp74K8MBvNsvvpoIAsLN3E4g9Jp5Y3ptU2zkHp9zJ%2F3Hrf1jT8d6KZsv3qGsAAJQsZw24bi7cmsjC4RWtCWG%2BB%2BShPsKOReR4zjKueHlDtKIYJ2s%2FFHbMUhyfErB%2FGSsK60rolfZmm7JnOwTTFo9aDDMPMMlmEi7OwEY%2F5E4m06ipj0he8GcCFMW8hR4LzJA61p%2BFs09uuj%2FWvo3qAZaCTHjqhFl32cFbG%2BGQ%2BELzb28YcQ%3D%3D&fileId=H3KyYC6aVUN70BHxB5Hf",
+              "desc": "title-LT236144-110-2024-12-03-official-copy.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/-": {
+        "filedUnder": "LT236144",
+        "documentType": "Plan",
+        "documentTypeCode": "110",
+        "documentDate": "2024-12-03",
+        "retrievedOn": "2025-01-13T14:21:51.666Z",
+        "externalIds": {
+          "Moverly": "H3KyYC6aVUN70BHxB5Hf"
+        }
+      }
+    }
+  },
+  {
+    "id": "7HIQjBmmBEKYzPSyzmuz",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2025-01-13T14:21:53.139Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "type": "official_copy_documents",
+            "source": {
+              "name": "HMLR Official Copy Transfer via OC2 Service v2.1"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "O5bpXV0/t/G9v6jBH8juoA=="
+              },
+              "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/title_LT236144_130_1990_09_21_official_copy_ea4fd9da-5b13-46fb-b004-cf10cb92ad30.pdf?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=1989014400&Signature=fRtvdf5tvVyxMwsmbFeKV69bWcr91vAAmzFedlzeyJZwiHavaK0S5S96ev%2FVxRzpcn%2FqP4N3xCOMMaRglc1pwdU0%2F0ygKzXcai7%2FpnPXCXDeGVYThHSu%2BDslAsv2qXPAlKZJbzJa2QXhnjqftEKxzrr8Pa3hlsxB%2FCN17IoImVzC0EyZr90sDdgtJG1FE%2BujQ%2F5xpYBAML3vK4OUfHXtGfmHPmoDzCqLQ9sQ8IxzpZXEZCO%2BDFJ3NQke4MsnKg%2FTmQmq7k0gK0kB5HI11RV4ENn6D3IcaPI82xMOdUXVuv53obdMfIR9Q2uN2Tq0xlyLZa4G5s5uG7MJb4tc4vTTQg%3D%3D&fileId=a3SahMw9WeIOdjlv2cnu",
+              "desc": "title-LT236144-130-1990-09-21-official-copy.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/-": {
+        "filedUnder": "LT236144",
+        "documentType": "Transfer",
+        "documentTypeCode": "130",
+        "documentDate": "1990-09-21",
+        "retrievedOn": "2025-01-13T14:21:53.139Z",
+        "externalIds": {
+          "Moverly": "a3SahMw9WeIOdjlv2cnu"
+        }
+      }
+    }
+  },
+  {
+    "id": "lGVnPlT44WbUdTivDam8",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:22:05.479Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/electricity/mainsElectricity": {
+        "yesNo": "Yes"
+      },
+      "/propertyPack/electricity/solarPanels": {
+        "yesNo": "No"
+      },
+      "/propertyPack/electricity/heatPump": {
+        "yesNo": "No"
+      },
+      "/propertyPack/electricity/otherSources": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "e0sLyFJVu2mD7rIIQu5C",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:22:19.631Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/waterAndDrainage/water": {
+        "mainsWater": {
+          "yesNo": "Yes"
+        }
+      },
+      "/propertyPack/waterAndDrainage/drainage": {
+        "mainsSurfaceWaterDrainage": {
+          "yesNo": "Yes"
+        },
+        "mainsFoulDrainage": {
+          "yesNo": "Yes"
+        }
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "u5EL4lualL0xsDtoc4kG",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:22:42.784Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/heating/otherHeatingFeatures": [
+        "Double glazing",
+        "Wood burner"
+      ]
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "BV2TF9hKQB5Zq6T08A4O",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:23:00.125Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/parking/parkingArrangements": [
+        "Driveway"
+      ],
+      "/propertyPack/parking/disabledParking": {
+        "yesNo": "No"
+      },
+      "/propertyPack/parking/controlledParking": {
+        "yesNo": "No"
+      },
+      "/propertyPack/parking/electricVehicleChargingPoint": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "KpH416ehIplAJgx9Kaal",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:24:05.269Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/listingAndConservation/isListed": {
+        "yesNo": "No"
+      },
+      "/propertyPack/listingAndConservation/isConservationArea": {
+        "yesNo": "No"
+      },
+      "/propertyPack/listingAndConservation/hasTreePreservationOrder": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "r2Jub2x0MtVvFdd9GHjH",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:24:08.887Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements": {
+        "publicRightOfWay": {
+          "yesNo": "No"
+        }
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "3hzFKX8gE5cFsVhp9fwS",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:24:14.723Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/environmentalIssues/flooding/historicalFlooding/hasBeenFlooded": "No"
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "D9usR4usdaupC90Sy1oJ",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:24:17.617Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/notices/planningApplication/yesNo": "No"
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "eNfqAWyj8DHBUR7Ko8EY",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:24:30.897Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/waterMeter": {
+        "isSupplyMetered": "Yes"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "fLTglQcml7ihMX6uAnsH",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:25:03.808Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/legalBoundaries/ownership": {
+        "areBoundariesUniform": "Yes",
+        "uniformBoundaries": {
+          "left": "Neighbour",
+          "right": "Seller",
+          "rear": "Seller",
+          "front": "Neighbour"
+        }
+      },
+      "/propertyPack/legalBoundaries/haveBoundaryFeaturesMoved": {
+        "yesNo": "No"
+      },
+      "/propertyPack/legalBoundaries/adjacentLandIncluded": {
+        "yesNo": "No"
+      },
+      "/propertyPack/legalBoundaries/flyingFreehold": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "LpmJQdQ8lC39wkEIJB4D",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:25:08.189Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/disputesAndComplaints/hasDisputesAndComplaints": {
+        "yesNo": "No"
+      },
+      "/propertyPack/disputesAndComplaints/leadingToDisputesAndComplaints": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "E4ZBZ6117qk38DkVizK6",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:25:17.228Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/notices/neighbourDevelopment": {
+        "yesNo": "No"
+      },
+      "/propertyPack/notices/requiredMaintenance": {
+        "yesNo": "No"
+      },
+      "/propertyPack/notices/listedBuildingApplication": {
+        "yesNo": "No"
+      },
+      "/propertyPack/notices/infrastructureProject": {
+        "yesNo": "No"
+      },
+      "/propertyPack/notices/partyWallAct": {
+        "yesNo": "No"
+      },
+      "/propertyPack/notices/otherNotices": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "NgXG6KHP0uxnddLcKJ5k",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:25:49.886Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/alterationsAndChanges/hasStructuralAlterations": {
+        "yesNo": "Yes",
+        "details": "Conservatory roof\nGarage conversion",
+        "buildingRegApproval": {
+          "yesNo": "Yes",
+          "attachments": "Attached"
+        },
+        "planningPermission": {
+          "yesNo": "Yes",
+          "attachments": "Attached"
+        }
+      },
+      "/propertyPack/alterationsAndChanges/changeOfUse": {
+        "yesNo": "No"
+      },
+      "/propertyPack/alterationsAndChanges/windowReplacementsSince2002": {
+        "yesNo": "No"
+      },
+      "/propertyPack/alterationsAndChanges/hasAddedConservatory": {
+        "yesNo": "No"
+      },
+      "/propertyPack/alterationsAndChanges/worksUnfinished": {
+        "yesNo": "No"
+      },
+      "/propertyPack/alterationsAndChanges/planningPermissionBreaches": {
+        "yesNo": "No"
+      },
+      "/propertyPack/alterationsAndChanges/unresolvedPlanningIssues": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "eNJhjzc4gTjhZ5vZAt5K",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:26:08.299Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/hasValidGuaranteesOrWarranties": "Yes",
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/newHomeWarranty": {
+        "yesNo": "No"
+      },
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/roofingWork": {
+        "yesNo": "Yes",
+        "attachments": "Attached"
+      },
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/dampProofingTreatment": {
+        "yesNo": "No"
+      },
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/timberRotOrInfestationTreatment": {
+        "yesNo": "No"
+      },
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/centralHeatingAndorPlumbing": {
+        "yesNo": "No"
+      },
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/doubleGlazing": {
+        "yesNo": "No"
+      },
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/electricalRepairOrInstallation": {
+        "yesNo": "No"
+      },
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/subsidenceWork": {
+        "yesNo": "No"
+      },
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/otherGuarantees": {
+        "yesNo": "No"
+      },
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/outstandingClaimsOrApplications": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "Jq5BA5sQ1xsLk3EqmCzQ",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:27:02.753Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/insurance/isInsured": "Yes",
+      "/propertyPack/insurance/insuranceClaims": {
+        "yesNo": "No"
+      },
+      "/propertyPack/insurance/difficultiesObtainingInsurance": {
+        "refused": {
+          "yesNo": "No"
+        },
+        "subjectToUnusualConditions": {
+          "yesNo": "No"
+        },
+        "subjectToHighExcesses": {
+          "yesNo": "No"
+        },
+        "abnormalRiseInPremiums": {
+          "yesNo": "No"
+        }
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "OAhPRYeHbthPlzEMLiyR",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:27:11.127Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/environmentalIssues/radon/radonTest": {
+        "yesNo": "No"
+      },
+      "/propertyPack/environmentalIssues/radon/remedialMeasuresOnConstruction": {
+        "yesNo": "Not known"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "hlVJFccPqvqhMfjDeoH6",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:27:19.070Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/specialistIssues/japaneseKnotweed/yesNo": "No"
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "k6gheNIEZBfWYOrVxKkw",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:27:36.755Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsOfLight": {
+        "yesNo": "No"
+      },
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsOfSupport": {
+        "yesNo": "No"
+      },
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsCreatedThroughCustom": {
+        "yesNo": "No"
+      },
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsToTakeFromLand": {
+        "yesNo": "No"
+      },
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/minesAndMinerals": {
+        "yesNo": "No"
+      },
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/churchChancel": {
+        "yesNo": "No"
+      },
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/otherRights": {
+        "yesNo": "No"
+      },
+      "/propertyPack/rightsAndInformalArrangements/sharedContributions": {
+        "yesNo": "No"
+      },
+      "/propertyPack/rightsAndInformalArrangements/neighbouringLandRights": {
+        "yesNo": "No"
+      },
+      "/propertyPack/rightsAndInformalArrangements/accessRestrictionAttempts": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "HmuuXyncqcLeY76hkPJC",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:27:52.100Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/servicesCrossing/pipesWiresCablesDrainsToProperty": {
+        "yesNo": "Yes",
+        "details": "Sewer pipe"
+      },
+      "/propertyPack/servicesCrossing/pipesWiresCablesDrainsFromProperty": {
+        "yesNo": "No"
+      },
+      "/propertyPack/servicesCrossing/formalOrInformalAgreements": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "HJIn5IZeAChhmcEHuAMU",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:27:54.513Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/additionalInformation/otherCharges/yesNo": "No"
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "N2hx23CyvdrBfvLniJQj",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:27:59.828Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/occupiers/sellerLivesAtProperty": {
+        "yesNo": "Yes"
+      },
+      "/propertyPack/occupiers/othersAged17OrOver": {
+        "hasOthersAged17OrOver": "No"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "VsGHQICZ6wGZL0kZKsj7",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:28:12.562Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/electricalWorks/testedByQualifiedElectrician": {
+        "yesNo": "Yes",
+        "yearTested": 2022,
+        "attachments": "Attached"
+      },
+      "/propertyPack/electricalWorks/electricalWorkSince2005": {
+        "yesNo": "Yes",
+        "suppliedCertificate": {
+          "certificateType": "Electrical Safety Certificate (BS7671)",
+          "attachments": "Attached"
+        }
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "G2dEjtHnasy9vOezazl7",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:28:43.510Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/waterAndDrainage/drainage/mainsFoulDrainage/supplier": "Severn Trent"
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "H4xwvkh6EwyNNn5BkEiF",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:29:01.480Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/electricity/mainsElectricity/supplier": "British GAs",
+      "/propertyPack/electricity/mainsElectricity/electricityMeter": {
+        "location": "Rear of property on right hand side"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "GWFJaI5uAHkaLxLl3W6m",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:29:18.366Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/waterMeter/location": "End of drive in pavement",
+      "/propertyPack/waterAndDrainage/water/mainsWater/supplier": "Severn Trent",
+      "/propertyPack/waterAndDrainage/water/mainsWater/stopcock": {
+        "location": "Under stairs"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "29GfIwLfGpi24WcKFzSV",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:29:26.775Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/connectivity/telephone": {
+        "yesNo": "Yes",
+        "supplier": "Talk Talk"
+      },
+      "/propertyPack/connectivity/cableSatelliteTV": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "BSEZ6YXnZpjvLxYMgVLC",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:29:40.292Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/completionAndMoving/sellerWillEnsure": {
+        "removeRubbish": true,
+        "replaceLightFittings": true,
+        "leaveKeys": true,
+        "takeReasonableCare": true
+      },
+      "/propertyPack/completionAndMoving/otherPropertyInChain": {
+        "yesNo": "Yes"
+      },
+      "/propertyPack/completionAndMoving/moveRestrictionDates": {
+        "yesNo": "No"
+      },
+      "/propertyPack/completionAndMoving/sufficientToRepayAllMortgages": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "YT8KSMxSHqyioe7AHeNd",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-01-13T14:29:42.818Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Andrew Kilgannan"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/confirmationOfAccuracyByOwners/confirmInformationIsAccurate": true
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "7XY90Fp6AjASZFFkhiif",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-02-10T11:37:13.789Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Carl Partridge"
+            }
+          },
+          "attachments": [
+            {
+              "desc": "Floorplan - 14 Pinfold Place.png",
+              "digest": {
+                "alg": "md5",
+                "value": "LVYlI/YDQRPhtJDJm2nf2Q=="
+              },
+              "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/Floorplan_14_Pinfold_Place_03de1f42-a45f-4605-b278-6ae8b197322e.png?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=1991606400&Signature=qXV02oPcWa6V%2FZGIOuLE2BWtidSQNsuFBUHU8DukRZbIXb8TcuRGcvxV4cdgKvP7BbnbYOg5BnJi0d0XwNbk2aT%2BN9rYaz2MZQkYyZVQ%2FlxUOAkBc8P5wHP3LU5xqzloOSfko5dosJ1q%2B1B4%2FvK1LBkajqq9QskQEN8yuNCkHL8JQPh%2F1a7BN4lC2baupBoTdht7x%2FZ3ZhRTDxxzWmc132ZtGhjJkULgSbgbsL3oI9edOUj3vn6rtcpgZffs2ieXsF4QxNSs1%2FX2KKlb9CmdJqXu0NtHvEOGg0iNeICsZ%2B85UoP8EyAVeZ0u%2B45tx5hPuQuRzQKKcDa7w98awUt9Bg%3D%3D&fileId=ohnzZik8nLE5Kofs9jUY"
+            }
+          ]
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/-": {
+        "displayName": "Floorplan - 14 Pinfold Place.png",
+        "fileName": "Floorplan_14_Pinfold_Place.png",
+        "mimeType": "image/png",
+        "externalIds": {
+          "Moverly": "ohnzZik8nLE5Kofs9jUY"
+        }
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "XNTuM5ULdyRw0TYi7VKB",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-02-10T11:37:13.789Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Carl Partridge"
+            }
+          },
+          "attachments": [
+            {
+              "desc": "Property_Brochure.pdf",
+              "digest": {
+                "alg": "md5",
+                "value": "KKiK055N7YDa/SvaRj5DGQ=="
+              },
+              "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/Property_Brochure_bf4b4636-e9eb-4618-8353-e6de2ea36c89.pdf?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=1991606400&Signature=fKFky1atJHk%2FQutEWpWcWsebhZ1NibRW%2B6zwm1ost648X0broCmREsWatlRo2Wn2nSJ1yblcyQm2kLnGejc00vu1nKIE869MxeGtTi%2BV2LyB9NuUTFeQxAziyPBHXShraJqcPB5VvqZvu4UxsElwnR40s2B8JRMUbLrhVsZl5%2FTJXNRL6%2Fc5YQ%2BYZtHCtsGjCVhVFqwpysJL5R8MKMYsH%2F8Qxi7BNVgOtdTYa8eKxCdJDaEB%2FO6ODrtLFoDxkG6%2Fy5vYUJ6UI2eX7OlUnFX%2FEycOOCehhDm0ajy%2BDVVmbsxKE6DrSF6XYxQh4eytcB4Zrylks2XLA0o%2FktlRKJSkQA%3D%3D&fileId=dXJKpw9qYARGyBdH70V8"
+            }
+          ]
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/-": {
+        "displayName": "Property_Brochure.pdf",
+        "fileName": "Property_Brochure.pdf",
+        "mimeType": "application/pdf",
+        "externalIds": {
+          "Moverly": "dXJKpw9qYARGyBdH70V8"
+        }
+      }
+    },
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr"
+  },
+  {
+    "id": "uEkbHDZofle9Dkk11zGZ",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2025-02-10T11:37:25.508Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai File Classifier. This content is AI generated and should not be relied upon for legal purposes."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/0/documentType": "Floorplan"
+    }
+  },
+  {
+    "id": "Jqtjbw9SE04eBc3N6q51",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2025-02-10T11:37:28.550Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai File Classifier. This content is AI generated and should not be relied upon for legal purposes."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/1/documentType": "Brochure"
+    }
+  },
+  {
+    "id": "PEPwCcDMjF5mpRmVE4cY",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2025-02-10T11:37:34.246Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai Alterations Extractor (Floorplan). This content is AI generated and should be reviewed by a legal professional."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/0/alterationsInsights": {
+        "alterations": [
+          {
+            "category": "extension",
+            "description": "conservatory",
+            "sourceAttributions": [
+              {
+                "title": "floorplan",
+                "url": "/propertyPack/documents/0",
+                "filename": "floorplan.png",
+                "mimeType": "image/png",
+                "extract": "The ground floor shows a conservatory labeled with dimensions 15'5\" x 10'2\"."
+              }
+            ],
+            "rationale": "The floorplan shows a conservatory on the ground floor, which is an extension to the original structure.",
+            "confidencePercentage": 1
+          },
+          {
+            "category": "structural",
+            "description": "ground floor larger than first floor",
+            "sourceAttributions": [
+              {
+                "title": "floorplan",
+                "url": "/propertyPack/documents/0",
+                "filename": "floorplan.png",
+                "mimeType": "image/png",
+                "extract": "The ground floor includes a lounge/diner, kitchen, utility room, and conservatory, while the first floor has two bedrooms and a bathroom."
+              }
+            ],
+            "rationale": "The ground floor is significantly larger than the first floor, indicating possible structural alterations.",
+            "confidencePercentage": 0.9
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "CoIUzFl40HxXuJhK2d3C",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2025-02-10T13:02:16.350Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "type": "external_id",
+            "source": {
+              "name": "TM Group Project API"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/externalIds/TMGroup": {
+        "projectId": 31925642
+      }
+    }
+  },
+  {
+    "id": "5uktjgVrlZpZrfQjVXAy",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2025-02-24T14:35:34.717Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai Title Deed Restrictive Covenants. This content is AI generated and should be reviewed by a legal professional."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/insights/restrictiveCovenants": {
+        "covenants": [
+          {
+            "covenantType": "Structural Alteration Covenants",
+            "category": "buildingAndDevelopment",
+            "description": "Not at any time to cause the internal floor space of the building (excluding garage) erected or in the course of erection on the property to exceed 660 square feet and not to make any extensions whatsoever to the said building.",
+            "sourceAttributions": [
+              {
+                "title": "Transfer",
+                "url": "Moverly:a3SahMw9WeIOdjlv2cnu",
+                "filename": "Transfer",
+                "mimeType": "application/pdf",
+                "extract": "Not at any time to cause the internal floor space of the building (excluding garage) erected or in the course of erection on the property to exceed 660 square feet and not to make any extensions whatsoever to the said building."
+              }
+            ],
+            "rationale": "This covenant restricts structural alterations by limiting the internal floor space and prohibiting extensions, ensuring the property remains within specified size limits.",
+            "confidencePercentage": 1
+          },
+          {
+            "covenantType": "Nuisance Covenants",
+            "category": "nuisanceAndBehavior",
+            "description": "Not to use the property in a way that causes a nuisance or annoyance to the owner or occupier of the Retained Property.",
+            "sourceAttributions": [
+              {
+                "title": "Charges Register",
+                "url": "propertyPack/ocRegisterData/chargesRegister/registerEntry/1/entryText/1",
+                "filename": "Title Deed",
+                "mimeType": "application/json",
+                "extract": "THE PURCHASER hereby covenants with the Vendors and each of them not to use the property hereby conveyed or allow the same to be so used so as to cause a nuisance or annoyance to the owner or occupier for the time being of the Retained Property."
+              }
+            ],
+            "rationale": "This covenant is aimed at preventing activities that could disturb neighbors, maintaining a peaceful environment.",
+            "confidencePercentage": 1
+          },
+          {
+            "covenantType": "Business Use Covenants",
+            "category": "useOfLandAndBuildings",
+            "description": "Not to use or permit or suffer to be used the Property or any part thereof for the carrying on of any trade manufacture business or occupation whatsoever but to use the same as a private dwellinghouse in single family occupation only.",
+            "sourceAttributions": [
+              {
+                "title": "Transfer",
+                "url": "Moverly:a3SahMw9WeIOdjlv2cnu",
+                "filename": "Transfer",
+                "mimeType": "application/pdf",
+                "extract": "Not to use or permit or suffer to be used the Property or any part thereof for the carrying on of any trade manufacture business or occupation whatsoever but to use the same as a private dwellinghouse in single family occupation only."
+              }
+            ],
+            "rationale": "This covenant restricts the use of the property to residential purposes only, prohibiting any commercial activities.",
+            "confidencePercentage": 1
+          },
+          {
+            "covenantType": "Advertising Covenants",
+            "category": "appearanceAndAesthetics",
+            "description": "Not to affix or display or permit to be affixed or displayed upon any part of the Property any poster advertisement placard or notice of any kind except such as shall relate to the sale or letting of the same.",
+            "sourceAttributions": [
+              {
+                "title": "Transfer",
+                "url": "Moverly:a3SahMw9WeIOdjlv2cnu",
+                "filename": "Transfer",
+                "mimeType": "application/pdf",
+                "extract": "Not to affix or display or permit to be affixed or displayed upon any part of the Property any poster advertisement placard or notice of any kind except such as shall relate to the sale or letting of the same."
+              }
+            ],
+            "rationale": "This covenant restricts the display of advertisements, maintaining the property's aesthetic appearance.",
+            "confidencePercentage": 1
+          },
+          {
+            "covenantType": "Pet or Animal Covenants",
+            "category": "nuisanceAndBehavior",
+            "description": "No animals or birds other than the usual domestic animals or caged birds shall be kept upon the Property.",
+            "sourceAttributions": [
+              {
+                "title": "Transfer",
+                "url": "Moverly:a3SahMw9WeIOdjlv2cnu",
+                "filename": "Transfer",
+                "mimeType": "application/pdf",
+                "extract": "No animals or birds other than the usual domestic animals or caged birds shall be kept upon the Property."
+              }
+            ],
+            "rationale": "This covenant limits the types of animals that can be kept on the property, likely to prevent disturbances or nuisances.",
+            "confidencePercentage": 1
+          },
+          {
+            "covenantType": "Landscaping scheme",
+            "category": "environmentalAndConservation",
+            "description": "To maintain and if necessary replace all trees shrubs and other landscaping planted or effected in accordance with any landscaping scheme affecting the Property.",
+            "sourceAttributions": [
+              {
+                "title": "Transfer",
+                "url": "Moverly:a3SahMw9WeIOdjlv2cnu",
+                "filename": "Transfer",
+                "mimeType": "application/pdf",
+                "extract": "To maintain and if necessary replace all trees shrubs and other landscaping planted or effected in accordance with any landscaping scheme affecting the Property."
+              }
+            ],
+            "rationale": "This covenant ensures the maintenance of landscaping features, preserving the property's environmental and aesthetic value.",
+            "confidencePercentage": 1
+          },
+          {
+            "covenantType": "Boundary Covenants",
+            "category": "appearanceAndAesthetics",
+            "description": "To maintain in a good and substantial state of repair order and condition the fences along the boundaries of the Property.",
+            "sourceAttributions": [
+              {
+                "title": "Transfer",
+                "url": "Moverly:a3SahMw9WeIOdjlv2cnu",
+                "filename": "Transfer",
+                "mimeType": "application/pdf",
+                "extract": "To maintain in a good and substantial state of repair order and condition the fences along the boundaries of the Property."
+              }
+            ],
+            "rationale": "This covenant requires the maintenance of boundary fences, ensuring they remain in good condition and defining property limits.",
+            "confidencePercentage": 1
+          },
+          {
+            "covenantType": "Utilities Covenants",
+            "category": "utilitiesAndInfrastructure",
+            "description": "Not to do or suffer to be done on or about the Property any act which may result in loss or damage to or may amount to interference with the services or the service conduits.",
+            "sourceAttributions": [
+              {
+                "title": "Transfer",
+                "url": "Moverly:a3SahMw9WeIOdjlv2cnu",
+                "filename": "Transfer",
+                "mimeType": "application/pdf",
+                "extract": "Not to do or suffer to be done on or about the Property any act which may result in loss or damage to or may amount to interference with the services or the service conduits."
+              }
+            ],
+            "rationale": "This covenant protects the integrity of utility services and conduits, preventing actions that could disrupt essential services.",
+            "confidencePercentage": 1
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "P42u2YMt1FFV1qB6uw97",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2025-03-10T14:06:23.434Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai Alterations Extractor (Brochure). This content is AI generated and should be reviewed by a legal professional."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/1/alterationsInsights": [
+        {
+          "category": "extension",
+          "description": "Conservatory",
+          "sourceAttributions": [
+            {
+              "title": "Sales brochure",
+              "url": "/propertyPack/documents/1",
+              "filename": "sales_brochure.pdf",
+              "mimeType": "application/pdf",
+              "extract": "The floorplan shows a conservatory at the rear of the property."
+            }
+          ],
+          "rationale": "The floorplan shows a conservatory at the rear of the property.",
+          "confidencePercentage": 0.95
+        },
+        {
+          "category": "fittings",
+          "description": "UPVC double glazing",
+          "sourceAttributions": [
+            {
+              "title": "Sales brochure",
+              "url": "/propertyPack/documents/1",
+              "filename": "sales_brochure.pdf",
+              "mimeType": "application/pdf",
+              "extract": "Benefiting from UPVC double glazing and an upgraded electric heating system."
+            }
+          ],
+          "rationale": "The sales text mentions the property benefits from UPVC double glazing.",
+          "confidencePercentage": 0.9
+        },
+        {
+          "category": "fittings",
+          "description": "Log burner",
+          "sourceAttributions": [
+            {
+              "title": "Sales brochure",
+              "url": "/propertyPack/documents/1",
+              "filename": "sales_brochure.pdf",
+              "mimeType": "application/pdf",
+              "extract": "The living/dining room has a bay window to the front, a feature log burner set in a brick surround."
+            }
+          ],
+          "rationale": "The sales text describes a feature log burner in the living/dining room.",
+          "confidencePercentage": 0.9
+        },
+        {
+          "category": "gardenorland",
+          "description": "Raised decking",
+          "sourceAttributions": [
+            {
+              "title": "Sales brochure",
+              "url": "/propertyPack/documents/1",
+              "filename": "sales_brochure.pdf",
+              "mimeType": "application/pdf",
+              "extract": "The attractive landscaped gardens to the rear of the property back directly onto paddock land."
+            }
+          ],
+          "rationale": "The photograph shows raised decking in the garden area.",
+          "confidencePercentage": 0.85
+        }
+      ]
+    }
+  },
+  {
+    "id": "JOHOqoRrutiuFzephu8O",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2025-05-20T11:35:36.142Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai Document Summarizer. This content is AI generated and should not be relied upon for legal purposes."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/0/transcription": {
+        "title": "Floorplan with Ground Floor and First Floor Layouts",
+        "fullTextBody": "GROUND FLOOR\n\n[FLOORPLAN1]\n\n1ST FLOOR\n\n[FLOORPLAN2]\n\n[LOGO1]\n\nWhilst every attempt has been made to ensure the accuracy of the floorplan contained here, measurements of doors, windows, rooms and any other items are approximate and no responsibility is taken for any error, omission or mis-statement. This plan is for illustrative purposes only and should be used as such by any prospective purchaser. The services, systems and appliances shown have not been tested and no guarantee as to their operability or efficiency can be given.\nMade with Metropix ©2023",
+        "secondaryItems": [
+          {
+            "itemID": "FLOORPLAN1",
+            "itemName": "Ground Floor Plan",
+            "itemType": "diagram",
+            "itemSummary": "Floorplan of the ground floor. It shows a Conservatory (15'5\" x 10'2\", 4.69m x 3.10m) leading to a Lounge/Diner (20'4\" x 9'7\", 6.20m x 2.93m). The Lounge/Diner connects to a Kitchen (9'9\" x 5'9\", 2.96m x 1.76m) and a Hallway. The Kitchen also connects to a Utility Room (7'7\" x 4'11\", 2.32m x 1.49m) which has an Ensuite (7'7\" x 4'5\", 2.32m x 1.35m). The Hallway has stairs leading up, a Store, and access to a Study/Bedroom 3 (9'9\" x 9'0\", 2.96m x 2.74m)."
+          },
+          {
+            "itemID": "FLOORPLAN2",
+            "itemName": "First Floor Plan",
+            "itemType": "diagram",
+            "itemSummary": "Floorplan of the first floor. It shows a Landing with stairs leading down and access to a Store. There is a Bedroom (12'4\" x 9'10\", 3.77m x 2.99m), another Bedroom (9'5\" x 8'1\", 2.88m x 2.47m), and a Bathroom (7'3\" x 6'0\", 2.22m x 1.84m)."
+          },
+          {
+            "itemID": "LOGO1",
+            "itemName": "Thomas James Logo",
+            "itemType": "logo",
+            "itemSummary": "A logo with the letters 'TJ' stylized, and the words 'THOMAS JAMES' underneath."
+          }
+        ],
+        "repeatingItems": [
+          "GROUND FLOOR",
+          "1ST FLOOR"
+        ],
+        "amendments": [],
+        "confidence": 0.95
+      }
+    }
+  },
+  {
+    "id": "wTdxCDzmj7fyANIqd0nh",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2025-05-20T11:36:05.234Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai Document Summarizer. This content is AI generated and should not be relied upon for legal purposes."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/1/transcription": {
+        "title": "H.M. LAND REGISTRY TITLE NUMBER LT 236144",
+        "fullTextBody": "These are the notes referred to on the following official copy\n\nThe electronic official copy of the title plan follows this message.\n\nPlease note that this is the only official copy we will issue. We will not issue a paper official copy.\n\nThis official copy was delivered electronically and when printed will not be to scale. You can obtain a paper official copy by ordering one from HM Land Registry.\n\nThis official copy is issued on 13 January 2025 shows the state of this title plan on 13 January 2025 at 14:21:49. It is admissible in evidence to the same extent as the original (s.67 Land Registration Act 2002). This title plan shows the general position, not the exact line, of the boundaries. It may be subject to distortions in scale. Measurements scaled from this plan may not match measurements between the same points on the ground.\n\nThis title is dealt with by the HM Land Registry, Leicester Office.\n\n[COPYRIGHT2]\n\nH.M. LAND REGISTRY\nTITLE NUMBER LT 236144\nORDNANCE SURVEY PLAN REFERENCE SK 7531\nSECTION A\nScale 1/1250 Enlarged from 1/2500\nCOUNTY LEICESTERSHIRE\nDISTRICT MELTON\n[COPYRIGHT1]\n\n[PLAN1]\n\n[STAMP1]\n\nThis official copy is incomplete without the preceding notes page.",
+        "secondaryItems": [
+          {
+            "itemID": "COPYRIGHT2",
+            "itemName": "Crown Copyright and Ordnance Survey Licence Notice (Notes Page)",
+            "itemType": "note",
+            "itemSummary": "© Crown copyright. Produced by HM Land Registry. Reproduction in whole or in part is prohibited without the prior written permission of Ordnance Survey. Licence Number AC0000851063."
+          },
+          {
+            "itemID": "COPYRIGHT1",
+            "itemName": "Crown Copyright Notice (Plan Page)",
+            "itemType": "note",
+            "itemSummary": "© Crown copyright 1991"
+          },
+          {
+            "itemID": "PLAN1",
+            "itemName": "Title Plan Drawing",
+            "itemType": "diagram",
+            "itemSummary": "A detailed Ordnance Survey plan showing property boundaries, buildings, and roads in a residential area. The specific property to which this title plan relates is outlined in red, appearing as a plot of land located to the north-east of the depicted area, adjacent to 'Pinfold Place'. Roads shown include 'Pinfold Lane', 'Stathern Road', 'Boyer's Orchard', and 'Pinfold Place'. Named properties and features include 'Top End', 'Mayleigh', 'Ammbridge', 'High Gables', 'The Bungalow' (multiple instances), 'Oak Cottage', 'The Myrtles', 'Hillview', 'Stone Gables', 'Manor House', and an 'El Sub Sta' (Electrical Substation). A north arrow indicates orientation. Ordnance Survey grid references SK 7431 and SK 7531 are noted on the plan. The scale is 1/1250, enlarged from 1/2500."
+          },
+          {
+            "itemID": "STAMP1",
+            "itemName": "HM Land Registry Filed Plan Stamp",
+            "itemType": "official stamp",
+            "itemSummary": "A circular stamp with text 'FILED PLAN H.M. LAND REGISTRY' and a handwritten date '5/91' and initials 'MRF' in the center."
+          }
+        ],
+        "repeatingItems": [],
+        "amendments": [],
+        "confidence": 0.99
+      }
+    }
+  },
+  {
+    "id": "qbmreIKT4tv1Jit6JUUY",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2025-06-16T11:39:15.708Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai Document Summarizer. This content is AI generated and should not be relied upon for legal purposes."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/2/transcription": {
+        "title": "TRANSFER OF PART (Fresh Restrictive Covenants)",
+        "fullTextBody": "[NOTE1]\n\n[STAMP1]\n\n[STAMP2]\n\nHM LAND REGISTRY\nLAND REGISTRATION ACTS 1925-1986\n\nTRANSFER OF PART (Fresh Restrictive Covenants)\n\nCOUNTY AND DISTRICT: Leicestershire: Melton\n\nTITLE NUMBER: LT 220006\n£500-00\n\nPROPERTY: Land lying to the North West of Stathern Road, Melton\n\nDATE: 31/1 21st September 1990 my date\n\n1. IN THIS TRANSFER unless the context otherwise requires:-\n(1) \"The Transferor\" shall mean PETER JOHN FLETCHER of Bridge House Farm, Cropwell Bishop Road, Langar, Nottingham\n(2) \"The Transferee\" shall mean NICHOLAS GILES CLARKE and DEBRA JAYNE BONE both of Woodbine Cottage Sutton cum Granby Nottinghamshire\n(3) the expressions \"the Transferor\" and \"the Transferee\" shall include their respective assigns and successors in title\n(4) \"The Perpetuity Period\" shall mean the period commencing on the First day of January One thousand nine hundred and ninety and enduring for Eighty Years\n(5) \"the Plan\" shall mean the plan annexed hereto\n(6) \"the Property\" shall mean the land shown edged red for identification purposes only on the plan\n(7) \"the Estate\" shall mean the land now or formerly belonging to the Transferor comprised in the Title above mentioned\n(8) \"the Services\" shall mean water soil electricity gas telephone and other services (if any)\n(9) \"the Service Conduits\" shall mean the sewers drains watercourses pipes wires cables and other service media (if any)\n(10) words importing the masculine gender include the feminine gender and words importing the singular number include the plural number and vice versa and where the Transferee consists of two or more persons all covenants by the Transferee shall be deemed to be by such persons jointly and severally\n\n2. IN CONSIDERATION of the sum of FIFTEEN THOUSAND POUNDS (£15,000.00) paid to the Transferor by the Transferee (the receipt whereof is hereby acknowledged) the Transferor as Beneficial Owner hereby transfers to the Transferee the Property being part of the land comprised in the Title above referred to TOGETHER WITH (in common with all other persons entitled to the like rights) the rights and easements set out in the First Schedule hereto AND EXCEPT AND RESERVING (in common with all other persons entitled to the like rights) unto the Transferor the rights and easements set out in the Second Schedule hereto SUBJECT TO AND WITH THE BENEFIT OF (as the case may be) the rights exceptions reservations covenants and provisions contained in a Transfer dated 9th July 1990 and made between the Transferor of the one part and East Midlands Electricity PLC of the other part\n\n3. THE TRANSFEREE HEREBY COVENANTS WITH THE TRANSFEROR for the benefit and protection of each and every part of the Estate to the intent and so as to bind the Property into whosesoever hands the same may come but so that the Transferee shall not be personally liable for a breach of this covenant after he shall have parted with all his interest in the property in respect of which any breach occurs at all times hereafter to observe and perform the restrictions and stipulations set out in the Third Schedule hereto\n\n4. THE TRANSFEREE\n(a) (with the object and intent of affording to the Transferor full and sufficient indemnity but not further or otherwise) HEREBY COVENANTS WITH THE TRANSFEROR that the Transferee will at all times hereafter observe and perform the covenants and conditions contained or referred to in the Charges Register of the Title above referred to and also contained in a Transfer dated 9th July 1990 and made between the Transferor of the one part and East Midlands Electricity PLC of the other part so far as the same relate to or affect the property and are subsisting and capable of being enforced and will indemnify and keep indemnified the Transferor its successors in title and assigns from and against all costs claims demands and liabilities in respect of any future breach non-observance or non-performance thereof so far as aforesaid\n(b) (with the object and intent of affording to the Transferor full and sufficient indemnity but not further or otherwise) HEREBY COVENANTS WITH THE TRANSFEROR that the Transferee will at all times hereafter observe and perform the covenants contained in two Agreements one dated 15th July 1988 and made between the Council of the Borough of Melton of the one part and Henry Stokes Coy and Peggy Coy of the other part and the other dated 18th August 1989 and made between the said Council of the Borough of Melton of the first part the Transferor of the second part and the said Henry Stokes Coy and Peggy Coy of the third part and will indemnify and keep indemnified the Transferor from and against all costs claims demands and liabilities arising out of any breach non-observance or non-performance of the same PROVIDED THAT the Transferee shall not be personally liable for any breach of covenant after he shall have parted with all his interest in the property in respect of which any breach occurs\n(c) grants to the statutory public utilities namely the electricity water gas and telephone authorities the right to enter upon the property for the purpose of laying down and thereafter maintaining such service conduits as each authority may require to serve the property or any other property on the estate with all necessary rights in the future to enter and repair renew and maintain the same subject to making good forthwith all damage caused by the exercise of such right\n\n5. THE TRANSFEROR HEREBY COVENANTS WITH THE TRANSFEREE that the Transferor will construct as soon as conveniently practicable in accordance with the requirements of the appropriate Statutory Authority and maintain until taken over by the appropriate Statutory Authority the road and footpaths intended to serve the Property and will indemnify the Transferee from and against all actions costs claims demands and expenses of the appropriate Statutory Authority in connection with the said road and footpaths until the same are taken over by the appropriate Statutory Authority\n\n6. IT IS HEREBY AGREED AND DECLARED that:-\n(a) The Transferor may at any time hereafter release vary or modify any of the restrictions and stipulations set out in the Third Schedule hereto and the covenants on the part of the Transferee hereinbefore contained shall not operate to impose any restriction on the manner in which the Transferor may deal with any other part of the Estate or be deemed to create a Building Scheme\n(b) Nothing in this Transfer shall operate as a grant either expressed or implied of any right of light or air or other easement which would interfere with or prevent the use by the Transferor of any other part of the Estate for building or any other purposes\n(c) All eaves spouts down rainwater spouts cisterns passages and the service conduits and other matters and things as are now used and enjoyed or intended to be used and enjoyed in common by the owners and occupiers for the time being of the building erected or in the course of erection on the property and any other part of the Estate shall continue to be so used and enjoyed and shall be repaired and maintained at the fair and proportionate expense of the owners of the properties entitled to use the same\n(d) Any wall dividing any building erected or to be erected within the Perpetuity Period on the Property from any building erected or to be erected on any adjoining part of the Estate shall be a party wall and shall at all times hereafter be maintained and repaired accordingly\n\n7. THE TRANSFEREE DECLARES that the survivor of them can give a valid receipt for capital money arising on a disposition of the property\n\n8. THE TRANSFEROR AND THE TRANSFEREE HEREBY APPLY to the Registrar to enter in the Register such of the said appurtenant rights reservations exceptions covenants conditions and stipulations as are capable of registration\n\n9. IT IS HEREBY CERTIFIED that the transaction hereby effected does not form part of a larger transaction or series of transactions in respect of which the amount or value or the aggregate amount or value of the consideration exceeds Thirty thousand pounds (£30,000.00)\n\nTHE FIRST SCHEDULE\n1. A right of way with or without motor vehicles at all times and for all purposes over and along all roads and footpaths forming Part of the Estate for the purposes of gaining access to and egress from the Property until the road and footpaths are adopted by the appropriate Statutory Authority\n2. Full right and liberty for the free passage and running of the services through the service conduits laid or to be laid within the Perpetuity Period under along or over the Estate and serving the Property\n3. The right within the Perpetuity Period to erect (so far as not already erected) and forever thereafter to maintain the foundations and flues eaves gutters and spouts over the adjoining part of the Estate and the right to discharge surface water onto or into drains ditches or watercourses on or in the adjoining parts of the Estate\n4. The right at all reasonable times to enter on to the adjoining parts of the Estate (with the exception of the property comprised in a Transfer dated 9th July 1990 and made between the Transferor of the one part and East Midlands Electricity PLC of the other part) with or without workmen tools and materials for the purposes of repairing renewing maintaining supporting inspecting or cleansing and where appropriate rebuilding or repointing the services and the service conduits and any building or structure (including the foundations flues eaves gutters and spouts forming part thereof) erected or to be erected within the Perpetuity Period upon the Property causing as little damage and disturbance as possible and forthwith making good any damage thereby caused\n\nTHE SECOND SCHEDULE\n1. Full right and liberty for the free passage and running of the services through the service conduits laid or to be laid within the Perpetuity Period under along or over the Property and serving the Estate\n2. The right within the Perpetuity Period to erect (so far as not already erected) and forever thereafter to maintain the foundations flues eaves gutters spouts in and over the Property and the right to discharge surface water on or into drains ditches or watercourses on or in the Property\n3. The right at all reasonable times to enter on to the Property with or without workmen tools and materials for the purposes of painting repairing renewing maintaining supporting inspecting or cleansing and where appropriate laying constructing and connecting the services and service conduits and any building or structure (including the foundations flues eaves gutters and spouts forming part thereof) erected or to be erected within the Perpetuity Period upon the adjoining parts of the Estate causing as little damage and disturbance as possible and forthwith making good any damage thereby caused\n4. The right to enter upon the Property to plant trees or shrubs in accordance with any scheme which may at any time be required by the appropriate Statutory Authority\n\nTHE THIRD SCHEDULE\n1. To maintain in a good and substantial state of repair order and condition the fences along the boundaries of the Property shown with an inward \"T\" on the Plan\n2. Not to keep place or erect any building structure fence hedge or wall or other erection whatsoever including any caravan ocean or river craft or anything of a like nature on the Property in front of the building line and not without the written consent of the Transferor first had and obtained to keep place or erect any shed greenhouse screen or other similar structure on the Property\n3. Not to use or permit or suffer to be used the Property or any part thereof for the carrying on of any trade manufacture business or occupation whatsoever but to use the same as a private dwellinghouse in single family occupation only\n4. Not to affix or display or permit to be affixed or displayed upon any part of the Property any poster advertisement placard or notice of any kind except such as shall relate to the sale or letting of the same and in the case of any breach of this restriction the Transferor shall have the right at any time without notice to the owner or occupiers of the property to enter upon the property and to remove at the expense of the owners or occupiers any poster or signboard advertisement placard or notice of any kind displayed erected or exhibited in contravention hereof\n5. No animals or birds other than the usual domestic animals or caged birds shall be kept upon the Property\n6. At all times to cultivate as a garden in accordance with the rules of good horticulture and husbandry the curtilage of the Property and to maintain and if necessary replace (if so required by the Transferor or the appropriate Statutory Authority) all trees shrubs and other landscaping planted or effected in accordance with any landscaping scheme affecting the Property\n7. Not to cut down remove or otherwise damage any tree or trees or shrubs (but this shall not preclude the proper trimming thereof) any tree hedge or bush now growing or to be planted on the Property but at all times hereafter to maintain the same and to replace any part or parts thereof which may die or otherwise become damaged and not to remove alter or damage any screen fence or wall or similar structure erected upon the Property in accordance with any Planning Permission relating to the same\n8. Not at any time to cause the internal floor space of the building (excluding garage) erected or in the course of erection on the property to exceed 660 square feet and not to make any extensions whatsoever to the said building\n9. Not at any time within the period of Three Years from the date hereof without the prior written consent of the Transferor to paint distemper whitewash colourwash or otherwise cover any part of any house bungalow garage or other building on any part of the property not formerly so treated\n10. Not to do or permit or suffer to be done on or about the Property anything which may be or become a damage disturbance nuisance or annoyance to the Transferor or the owners lessees or occupiers for the time being of any other parts of the Estate\n11. To pay a fair and proportionate part according to user of the cost of cleansing maintaining repairing supporting and renewing the services and the service conduits serving the property in so far as the same are not now or later maintained by the appropriate Statutory Authority\n12. Not to do or suffer to be done on or about the Property any act which may result in loss or damage to or may amount to interference with the services or the service conduits laid or to be laid during the Perpetuity Period under the Property which may be or become maintainable at the Public expense or which are used jointly with the Transferor or with the owners lessees or occupiers of any other parts of the Estate\n13. The Transferee will pay the reasonable costs and fees (including value added tax thereon) of the Transferor for any consent or approval required in this Schedule\n\n[SIGNATUREBLOCK1]\n\n[SEAL1]\n\n[SIGNATUREBLOCK2]\n\n[SEAL2]\n\n[HANDWRITTENNOTE1]\n\n[PLAN1]\n\n[PLANSIGNATURES1]\n\n[STAMP3]\n\n[BARCODE1]\n\n[LEGEND1]",
+        "secondaryItems": [
+          {
+            "itemID": "NOTE1",
+            "itemName": "Handwritten Annotations Page 2 Top Margin",
+            "itemType": "note",
+            "itemSummary": "Handwritten note 'Please forward the Agreement and share the (18/2 duty)' and 'LT 236144' (copy title number) at the top of page 2."
+          },
+          {
+            "itemID": "STAMP1",
+            "itemName": "HM Land Registry Stamp",
+            "itemType": "official stamp",
+            "itemSummary": "HM Land Registry stamp indicating 'RECEIVED 21 FEB 1991 FINANCE ACT 1931 (IMPRESSED) INLAND REVENUE ADJUDICATION CONVEYANCE ON SALE'. Handwritten annotations 'J 61630' (top left of stamp area), '£300', '24/1'."
+          },
+          {
+            "itemID": "STAMP2",
+            "itemName": "Inland Revenue Stamp",
+            "itemType": "official stamp",
+            "itemSummary": "Inland Revenue 'ADJUDGED DULY STAMPED' stamp with a crown emblem. Handwritten annotation '18/2'."
+          },
+          {
+            "itemID": "SIGNATUREBLOCK1",
+            "itemName": "Signature Block for Peter John Fletcher",
+            "itemType": "signature block",
+            "itemSummary": "Execution clause: 'SIGNED SEALED AND DELIVERED by the said PETER JOHN FLETCHER in the presence of:'. Signature of P. J. Fletcher. Witness details: Signature 'Nathan', Name 'Nathan', Address '5, Albert St Radcliffe-on-Trent Notts.'."
+          },
+          {
+            "itemID": "SEAL1",
+            "itemName": "Seal for Peter John Fletcher",
+            "itemType": "seal",
+            "itemSummary": "A circular black seal mark adjacent to Peter John Fletcher's signature block."
+          },
+          {
+            "itemID": "SIGNATUREBLOCK2",
+            "itemName": "Signature Block for Nicholas Giles Clarke and Debra Jayne Bone",
+            "itemType": "signature block",
+            "itemSummary": "Execution clause: 'SIGNED SEALED AND DELIVERED by the said NICHOLAS GILES CLARKE and DEBRA JAYNE BONE in the presence of:'. Signatures of N. G. Clarke (with handwritten initials 'N G C' alongside) and D. J. Bone (with handwritten initials 'D J B' alongside). Witness details: Signature 'B. Pearce', Name 'B. Pearce', Address 'Long Acre Sutton cum Granby', Occupation 'Housewife'."
+          },
+          {
+            "itemID": "SEAL2",
+            "itemName": "Seals for Nicholas Giles Clarke and Debra Jayne Bone",
+            "itemType": "seal",
+            "itemSummary": "Two circular black seal marks adjacent to the signatures of Nicholas Giles Clarke and Debra Jayne Bone."
+          },
+          {
+            "itemID": "HANDWRITTENNOTE1",
+            "itemName": "Handwritten Note Page 11",
+            "itemType": "note",
+            "itemSummary": "Handwritten text 'R R A/C.' and 'LT236144' on an otherwise blank page (page 11 of PDF)."
+          },
+          {
+            "itemID": "PLAN1",
+            "itemName": "Property Plan",
+            "itemType": "plan",
+            "itemSummary": "A detailed site plan annexed to the transfer, showing the layout of properties, roads (Pinfold Lane, Pinfold Place, Hilary Close), and land parcels. The property subject to transfer is indicated (referred to in the document as 'edged red'). Includes a legend, existing hedges, and new road layouts. The plan is titled 'PLOT No. STARTER HOMES HARBY, LEICESTERSHIRE'."
+          },
+          {
+            "itemID": "PLANSIGNATURES1",
+            "itemName": "Signatures on Plan",
+            "itemType": "signature",
+            "itemSummary": "Handwritten signatures 'D Bone' and 'N G Clarke' appear on the plan (page 12 of PDF)."
+          },
+          {
+            "itemID": "STAMP3",
+            "itemName": "Stamp on Plan",
+            "itemType": "official stamp",
+            "itemSummary": "Rectangular stamp with text 'LT236144' on the plan (page 12 of PDF)."
+          },
+          {
+            "itemID": "BARCODE1",
+            "itemName": "Barcode on Plan",
+            "itemType": "barcode",
+            "itemSummary": "A barcode at the bottom left of the plan (page 12 of PDF), with 'HMLR' printed below it."
+          },
+          {
+            "itemID": "LEGEND1",
+            "itemName": "Legend on Plan",
+            "itemType": "legend",
+            "itemSummary": "Legend on the left side of the plan titled 'SPECIFICA' detailing: 'FACING BRI', 'ROOF TILE', 'FRONT GAR', 'SCREEN W.', 'DRIVES P.A.', 'ROAD TYPE', 'NEW ROAD'. Below this, 'LANDSCAP' details: 'TREES', 'SHRUBS'."
+          }
+        ],
+        "repeatingItems": [
+          "This official copy is incomplete without the preceding notes page."
+        ],
+        "amendments": [
+          {
+            "amendmentType": "handwritten",
+            "previousText": "TITLE NUMBER: LT 220006",
+            "amendedText": "TITLE NUMBER: LT 220006\n£500-00",
+            "amendment": "Handwritten '£500-00' inserted on a new line below 'TITLE NUMBER: LT 220006'."
+          },
+          {
+            "amendmentType": "handwritten",
+            "previousText": "DATE: 21st September 1990",
+            "amendedText": "DATE: 31/1 21st September 1990 my date",
+            "amendment": "Handwritten '31/1' inserted before the typed date '21st September 1990', and handwritten 'my date' inserted after the typed date in the 'DATE:' field."
+          }
+        ],
+        "confidence": 0.95
+      }
+    }
+  },
+  {
+    "id": "4zk8qUNjMiA4EKeuiq1v",
+    "transactionId": "CNZSJBPzkKuefQogiBUKcr",
+    "verification": {
+      "time": "2025-06-16T12:15:29.148Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai Document Summarizer. This content is AI generated and should not be relied upon for legal purposes."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/0/transcription": {
+        "title": "Mortgage Deed",
+        "fullTextBody": "These are the notes referred to on the following official copy\n\nTitle Number LT236144\n\nThe electronic official copy of the document follows this message.\n\nThis copy may not be the same size as the original.\n\nPlease note that this is the only official copy we will issue. We will not issue a paper official copy.\n\n[LOGO1]\n\nMortgage Deed\n\nDate: 5.4.2024\n\nWe (us) are: Nationwide Building Society, Nationwide House, Pipers Way, Swindon, SN3B 1NW\n\nYou, the Borrower are: Jake Edward Beesley and Grace Jayne Bradford\n\nThe Mortgage Conditions are Nationwide Building Society General Mortgage Conditions 2019\n\nThe Property is: 14 Pinfold Place, Harby, Melton Mowbray, Leicestershire\n\nPostcode: LE14 4BX\n\nTitle No: LT236144\n\n1. The Mortgage Conditions form part of this mortgage. You confirm receipt of a copy of the Mortgage Conditions.\n\n2. You charge the Property by way of legal mortgage with payment of all the money payable to us under the Mortgage Conditions. This mortgage is made with full title guarantee.\n\n3. This mortgage secures further advances.\n\nSIGNED AS A DEED by:\n\n(Signature of the borrower)\n(Each signature to be separately witnessed)\n\n[SIGBLOCK1]\n\n[SIGBLOCK2]\n\n(Signature, name (in BLOCK CAPITALS) and addresses of each witness)\n\nIn the presence of\n\n(Signature, name (in BLOCK CAPITALS) and addresses of each witness)\n\nIn the presence of\n\nForm of charge filed at H M Land Registry under reference MD921T\n\nOccupier(s) Consent to Mortgage\n\nI/We\n\nwill be in occupation of the Property at the time the mortgage is made. I/We agree with Nationwide that any right of occupation or share or interest in the Property which I/We may have now or later are postponed and subject to the rights of Nationwide as first mortgagee.\n\nSigned and delivered as a deed by the Occupier(s)\n\nWitness Signature\nName\nAddress\n\nWitness Signature\nName\nAddress\n\nSigned on behalf of Nationwide\n\nGuarantor's Covenant\n(To be completed last)\n\nI/We\n\nof\n\nagree to act as Guarantor of this mortgage and I accept the Mortgage Conditions. I understand that this means I will carry out all the obligations of the Borrower named on the front of this deed if Nationwide requires me to until I am released from this guarantee in writing by Nationwide. My liability will be limited to (a) the amount of the original advance (b) any further loans made to the Borrower for which I have given consent, and (c) interest and costs referred to in the Mortgage Conditions.\nI understand I should get independent legal advice before signing this document.\n\nSigned and delivered as a deed by the Guarantor\n\nWitness Signature\nName\nAddress\n\nSigned and delivered as a deed by the Guarantor\n\nWitness Signature\nName\nAddress\n\nThis deed will be sent to H M Land Registry for registration of the charge between Nationwide and the Borrowers. No information relating to any Occupier or Guarantor will be registered by H M Land Registry.",
+        "secondaryItems": [
+          {
+            "itemID": "LOGO1",
+            "itemName": "Nationwide Building Society Logo",
+            "itemType": "logo",
+            "itemSummary": "Logo of Nationwide Building Society, featuring a stylised village scene within a house outline, with the text 'Nationwide Building Society' below."
+          },
+          {
+            "itemID": "SIGBLOCK1",
+            "itemName": "Signature area for Grace Jayne Bradford and witness",
+            "itemType": "signature block",
+            "itemSummary": "Signature block for borrower Grace Jayne Bradford. Her printed name 'GRACE JAYNE BRADFORD' appears below the signature line. She signed 'G.J. Bradford'. Witnessed by Anthony Beesley, who signed, and whose printed name is 'ANTHONY BEESLEY' and address is '17 HILLSIDE AVE MELTON MOWBRAY LE13 ONJ LEICESTERSHIRE'."
+          },
+          {
+            "itemID": "SIGBLOCK2",
+            "itemName": "Signature area for Jake Edward Beesley and witness",
+            "itemType": "signature block",
+            "itemSummary": "Signature block for borrower Jake Edward Beesley. His printed name 'JAKE EDWARD BEESLEY' appears below the signature line. He signed 'Beesley'. Witnessed by Anthony Beesley, who signed, and whose printed name is 'ANTHONY BEESLEY' and address is '17 HILLSIDE AVE Melton Mowbray LE13 ONJ LEICESTERSHIRE'."
+          }
+        ],
+        "repeatingItems": [
+          "Nationwide Building Society is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority under registration number 106078.",
+          "This official copy is incomplete without the preceding notes page."
+        ],
+        "amendments": [],
+        "confidence": 0.95
+      }
+    }
+  }
+]

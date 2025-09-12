@@ -1,0 +1,4223 @@
+[
+  {
+    "id": "AA2jtJGMERGE6A",
+    "claims": {
+      "/propertyPack/priceInformation": {
+        "price": 184000,
+        "priceQualifier": "Offers in region of"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.044Z"
+    }
+  },
+  {
+    "id": "nB6HKwA8QmCkg",
+    "claims": {
+      "/propertyPack/uprn": 799425638234
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.044Z"
+    }
+  },
+  {
+    "id": "WKcpO7crhjusTA",
+    "claims": {
+      "/status": "For sale"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.044Z"
+    }
+  },
+  {
+    "id": "5ZY2q76RApbClQ",
+    "claims": {
+      "/externalIds": {
+        "Matchmaker": {
+          "matchmakerId": "MM18B789E0"
+        }
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.044Z"
+    }
+  },
+  {
+    "id": "eF6CT4Y9nv2BPg",
+    "claims": {
+      "/participants/-": {
+        "role": "Estate Agent",
+        "name": {
+          "firstName": "Sarah",
+          "lastName": "Mitchell",
+          "title": "Ms"
+        },
+        "email": "sarah.mitchell@property-partners.co.uk",
+        "organisation": "Property Partners",
+        "externalIds": {
+          "propertyPartnersId": "EA2024001"
+        }
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property Partners Estate Agents - Professional Services Registry"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "ohPzWMCrySiZA",
+    "claims": {
+      "/participants/-": {
+        "role": "Seller",
+        "name": {
+          "firstName": "Neha",
+          "lastName": "Hunt",
+          "title": "Ms"
+        },
+        "email": "neha.hunt@hotmail.com",
+        "externalIds": {
+          "sandboxPersonId": "P00002610"
+        }
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "KIpXVIjN8YITiw",
+    "claims": {
+      "/participants/-": {
+        "role": "Seller",
+        "name": {
+          "firstName": "Mark",
+          "lastName": "Hunt",
+          "title": "Mr"
+        },
+        "email": "mark.hunt@gmail.com",
+        "externalIds": {
+          "sandboxPersonId": "P00002611"
+        }
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "1P1AtV53uAgPg",
+    "claims": {
+      "/propertyPack/energyEfficiency/certificate": {
+        "certificateNumber": "7994-2563-8234-1756734105045",
+        "currentEnergyRating": "C",
+        "currentEnergyEfficiency": 73,
+        "potentialEnergyRating": "B",
+        "potentialEnergyEfficiency": 84,
+        "environmentImpactCurrent": 58,
+        "environmentImpactPotential": 68,
+        "co2EmissionsCurrent": 1.9,
+        "co2EmissionsPotential": 1.2,
+        "totalFloorArea": 78.39,
+        "propertyType": "Terraced",
+        "builtForm": "Terraced",
+        "numberHabitableRooms": 2,
+        "numberHeatedRooms": 2,
+        "mainFuel": "mains gas (not community)",
+        "mainsGasFlag": "Y",
+        "energyConsumptionCurrent": 1723,
+        "energyConsumptionPotential": 1378,
+        "heatingCostCurrent": 368,
+        "heatingCostPotential": 230,
+        "inspectionDate": "2025-06-03"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Energy Performance Certificate obtained from https://find-energy-certificate.service.gov.uk/"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "fmujXW4wSAk3HSu6Hwn73g=="
+              },
+              "url": "https://find-energy-certificate.service.gov.uk/energy-certificate/synthetic-cert",
+              "desc": "Energy Performance Certificate from GOV.UK"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "A4pTkoEfOqmK3Q",
+    "claims": {
+      "/propertyPack/energyEfficiency/certificateIsSupplied": "Attached"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Energy Performance Certificate obtained from https://find-energy-certificate.service.gov.uk/"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "00jdB86Vm4cOPMY686I8fQ=="
+              },
+              "url": "https://find-energy-certificate.service.gov.uk/energy-certificate/synthetic-cert",
+              "desc": "Energy Performance Certificate from GOV.UK"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "l4ZBpqAfmrkSA",
+    "claims": {
+      "/propertyPack/energyEfficiency/greenDealLoan/hasGreenDealLoan/yesNo": "No"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "sdc8iniT4AXSA",
+    "claims": {
+      "/propertyPack/buildInformation/internalArea": {
+        "area": 78.39,
+        "unit": "square metres"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "l5AR7q3DcKd3Yg",
+    "claims": {
+      "/propertyPack/heating/heatingSystem/heatingType": "Central heating"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "opDJG7J66sy1A",
+    "claims": {
+      "/propertyPack/buildInformation/building/propertyType": "House"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "8inKJS6G9uMNnQ",
+    "claims": {
+      "/propertyPack/buildInformation/building/builtForm": "Terraced"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "24cPpdAuCwU2aA",
+    "claims": {
+      "/externalIds/LMS": {
+        "workspaceId": "workspace-1a2bf5540bf8bad3"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "i1PTONVbzYYEg",
+    "claims": {
+      "/propertyPack/address": {
+        "line1": "101 Broadbridge Close",
+        "line2": "",
+        "town": "MANCHESTER",
+        "county": "Greater Manchester",
+        "postcode": "M41 9NQ"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "egvsL5BaeGGOA",
+    "claims": {
+      "/propertyPack/location": {
+        "latitude": 53.4808,
+        "longitude": -2.2426
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Address coordinates obtained from Ordnance Survey API"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "Ta7At95Ysm1Y9g",
+    "claims": {
+      "/propertyPack/connectivity/broadband": {
+        "yesNo": "Yes",
+        "typeOfConnection": "FTTP (Fibre to the Premises)",
+        "predictedSpeed": {
+          "maxBbPredictedDown": 16,
+          "maxBbPredictedUp": 1,
+          "maxSfbbPredictedDown": 67,
+          "maxSfbbPredictedUp": 20,
+          "maxUfbbPredictedDown": 1000,
+          "maxUfbbPredictedUp": 220,
+          "maxPredictedDown": 1000,
+          "maxPredictedUp": 220
+        }
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "czON99xHYo3GAw",
+    "claims": {
+      "/propertyPack/connectivity/mobilePhone/predictedCoverage": {
+        "eeDataOutdoor": 4,
+        "eeVoiceOutdoor": 4,
+        "voDataOutdoor": 4,
+        "voVoiceOutdoor": 4,
+        "h3DataOutdoor": 4,
+        "h3VoiceOutdoor": 4,
+        "tfDataOutdoor": 4,
+        "tfVoiceOutdoor": 4,
+        "eeDataIndoor": 3,
+        "eeDataIndoorNo4g": 3,
+        "eeDataOutdoorNo4g": 3,
+        "eeVoiceIndoor": 3,
+        "eeVoiceIndoorNo4g": 3,
+        "eeVoiceOutdoorNo4g": 4,
+        "h3DataIndoor": 0,
+        "h3DataIndoorNo4g": 0,
+        "h3DataOutdoorNo4g": 3,
+        "h3VoiceIndoor": 0,
+        "h3VoiceIndoorNo4g": 0,
+        "h3VoiceOutdoorNo4g": 4,
+        "tfDataIndoor": 3,
+        "tfDataIndoorNo4g": 3,
+        "tfDataOutdoorNo4g": 3,
+        "tfVoiceIndoor": 3,
+        "tfVoiceIndoorNo4g": 3,
+        "tfVoiceOutdoorNo4g": 4,
+        "voDataIndoor": 3,
+        "voDataIndoorNo4g": 0,
+        "voDataOutdoorNo4g": 0,
+        "voVoiceIndoor": 3,
+        "voVoiceIndoorNo4g": 3,
+        "voVoiceOutdoorNo4g": 4
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "48HRwpOP42IfYg",
+    "claims": {
+      "/propertyPack/localAuthority/localAuthorityName": "Manchester City Council"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "ihX2ZsCsTYLwg",
+    "claims": {
+      "/propertyPack/localAuthority/countyCouncil": "Greater Manchester Combined Authority"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "flxPToRf0WIFw",
+    "claims": {
+      "/propertyPack/localAuthority/districtCouncil": "Manchester City Council"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "iRqk7nS2FSV9g",
+    "claims": {
+      "/propertyPack/localAuthority/regulatedSearchTurnaroundTimeInWorkingDays": 10
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "X6ElxSymRvAH5Q",
+    "claims": {
+      "/propertyPack/councilTax": {
+        "councilTaxBand": "D",
+        "councilTaxAnnualCharge": 1555.04,
+        "councilTaxAnnualChargeTaxYear": "2024-2025",
+        "councilTaxAffectingAlterations": {
+          "yesNo": "No"
+        }
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Council Tax information obtained from the Valuation Office Agency"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "P9HKfAJnC42X4Zn0blhwjA=="
+              },
+              "url": "https://www.tax.service.gov.uk/check-council-tax-band/property/synthetic",
+              "desc": "Council Tax band on GOV.UK"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "Hge5uhKXRO0BoQ",
+    "claims": {
+      "/propertyPack/environmentalIssues/coalMining": {
+        "result": "Not identified",
+        "summary": "No coal mining risk has been identified.",
+        "riskIndicator": "No",
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "wC08RG3l3D5ZuA",
+    "claims": {
+      "/propertyPack/environmentalIssues/nonCoalMining": {
+        "result": "Not identified",
+        "summary": "No non-coal mining risk has been identified.",
+        "riskIndicator": "No",
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "crEr69nGFj0WQ",
+    "claims": {
+      "/propertyPack/localSearches/localAuthoritySearches/planningAndBuildingRegulations/decisionsAndPendingApplications/planningPermission": []
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "UbAKTnnezshD9Q",
+    "claims": {
+      "/propertyPack/environmentalIssues/coastalErosion": {
+        "result": "Not close to an area potentially affected by future coastal erosion.",
+        "summary": "The property is not close to any area potentially impacted by coastal erosion.",
+        "riskIndicator": "No",
+        "actionAlertRating": 1,
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "EWIuGsWtVIngQ",
+    "claims": {
+      "/propertyPack/environmentalIssues/flooding/floodRisk": {
+        "summary": "Flooding from rivers: Very low risk; Flooding from the sea: Very low risk",
+        "riskSubcategories": [
+          {
+            "result": "Very low risk",
+            "summary": "Risk less than 0.1% chance each year",
+            "subCategory": "Flooding from rivers",
+            "actionAlertRating": 1
+          },
+          {
+            "result": "Very low risk",
+            "summary": "Risk less than 0.1% chance each year",
+            "subCategory": "Flooding from the sea",
+            "actionAlertRating": 1
+          }
+        ],
+        "riskIndicator": "No",
+        "actionAlertRating": 1,
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environment Agency Long-term Flood Risk service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "jxSh9GCc21MQINRyXmCSUA=="
+              },
+              "url": "https://check-long-term-flood-risk.service.gov.uk/synthetic-report",
+              "desc": "Environment Agency flood risk report"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "0vcKxCfyswjVHw",
+    "claims": {
+      "/propertyPack/titlesToBeSold": [
+        {
+          "titleNumber": "TF799425",
+          "titleIncludedInSale": true
+        }
+      ]
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "P/9DCBiFGDaVVRm1cGlD8Q=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "D8rwnba6enffGA",
+    "claims": {
+      "/propertyPack/marketingTenure": "Freehold"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "mATgHN1PUE4zNQ",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/titleExtents": "{\"type\":\"Polygon\",\"coordinates\":[[[-2.2427,53.4807],[-2.2424999999999997,53.4807],[-2.2424999999999997,53.480900000000005],[-2.2427,53.480900000000005],[-2.2427,53.4807]]]}"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "isDYyLpxg1v4xnhZijuMAg=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "XKfF5YAXKPO5zQ",
+    "claims": {
+      "/propertyPack/ownership/ownershipsToBeTransferred/-": {
+        "ownershipType": "Freehold",
+        "titleNumber": "TF799425",
+        "percentageOwned": 100,
+        "owner": [
+          {
+            "firstName": "Neha",
+            "lastName": "Hunt"
+          },
+          {
+            "firstName": "Mark",
+            "lastName": "Hunt"
+          }
+        ]
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "0v8Pz76vWRq0fPVlTdnnAA=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "i9MMsHoUWSd2Q",
+    "claims": {
+      "/propertyPack/legalOwners/namesOfLegalOwners": [
+        {
+          "ownerType": "Private individual",
+          "firstName": "Neha",
+          "middleNames": "",
+          "lastName": "Hunt"
+        },
+        {
+          "ownerType": "Private individual",
+          "firstName": "Mark",
+          "middleNames": "",
+          "lastName": "Hunt"
+        }
+      ]
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "IoMwXk3DvV0RA",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/registerExtract": {
+        "ocSummaryData": {
+          "documentDetails": {
+            "document": [
+              {
+                "documentDate": "2019-01-01",
+                "documentType": "60",
+                "planOnlyIndicator": "false",
+                "entryNumber": [
+                  "A1",
+                  "B1"
+                ],
+                "registerDescription": "Transfer"
+              }
+            ]
+          },
+          "officialCopyDateTime": "2025-09-01T13:41:45.045Z",
+          "proprietorship": {
+            "currentProprietorshipDate": "2019-01-01",
+            "registeredProprietorParty": [
+              {
+                "privateIndividual": {
+                  "name": {
+                    "forenamesName": "Neha",
+                    "surnameName": "Hunt"
+                  }
+                },
+                "address": {
+                  "postcodeZone": {
+                    "postcode": "M41 9NQ"
+                  },
+                  "addressLine": {
+                    "line": [
+                      "101 Broadbridge Close",
+                      "MANCHESTER"
+                    ]
+                  }
+                }
+              },
+              {
+                "privateIndividual": {
+                  "name": {
+                    "forenamesName": "Mark",
+                    "surnameName": "Hunt"
+                  }
+                },
+                "address": {
+                  "postcodeZone": {
+                    "postcode": "M41 9NQ"
+                  },
+                  "addressLine": {
+                    "line": [
+                      "101 Broadbridge Close",
+                      "MANCHESTER"
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "propertyAddress": {
+            "postcodeZone": {
+              "postcode": "M41 9NQ"
+            },
+            "addressLine": {
+              "line": [
+                "101 Broadbridge Close",
+                "MANCHESTER"
+              ]
+            }
+          },
+          "editionDate": "2025-08-02",
+          "title": {
+            "titleNumber": "TF799425",
+            "commonholdIndicator": false,
+            "classOfTitleCode": "10",
+            "titleRegistrationDetails": {
+              "postcodeZone": {
+                "postcode": "M41 9NQ"
+              },
+              "districtName": "MANCHESTER",
+              "registrationDate": "2019-01-01",
+              "administrativeArea": "MANCHESTER",
+              "landRegistryOfficeName": "Manchester Office",
+              "latestEditionDate": "2025-08-02"
+            }
+          },
+          "registerEntryIndicators": {
+            "multipleChargeIndicator": false,
+            "chargeeIndicator": false,
+            "homeRightsIndicator": false,
+            "leaseHoldTitleIndicator": false,
+            "pricePaidIndicator": true
+          },
+          "pricePaidEntry": {
+            "entryDetails": {
+              "entryText": "The price stated to have been paid on 2019-01-01 was £165000.",
+              "registrationDate": "2019-01-01",
+              "infills": {
+                "date": "2019-01-01",
+                "amount": "£165000"
+              },
+              "entryNumber": "1",
+              "subRegisterCode": "B"
+            }
+          }
+        },
+        "ocRegisterData": {
+          "proprietorshipRegister": {
+            "registerEntry": [
+              {
+                "entryType": "Proprietor",
+                "entryText": "PROPRIETOR: NEHA HUNT and MARK HUNT of 101 Broadbridge Close, MANCHESTER, M41 9NQ.",
+                "entryDate": "2019-01-01",
+                "entryNumber": "1"
+              }
+            ]
+          },
+          "propertyRegister": {
+            "registerEntry": [
+              {
+                "entryType": "Property Description",
+                "entryText": "The Freehold land shown edged with red on the plan of the above title filed at the Registry and being 101 Broadbridge Close, MANCHESTER (M41 9NQ).",
+                "entryDate": "2019-01-01",
+                "entryNumber": "1"
+              }
+            ],
+            "districtDetails": {
+              "entryText": "MANCHESTER"
+            }
+          }
+        }
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "biLnmtQfsOTXCk892Cb4Hg=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "vmpF8pk6ZiJhVQ",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/documentAvailability": {
+        "titlePlan": {
+          "availabilityCode": "IMMEDIATE",
+          "availability": "available for immediate download",
+          "type": "plan",
+          "backdated": false,
+          "typeCode": "TITLEPLAN"
+        },
+        "titleStatus": "Title number is valid.",
+        "titleNumber": "TF799425",
+        "applicationsPending": false,
+        "titleStatusCode": "VALID",
+        "referredToDocuments": [
+          {
+            "date": "2019-01-01",
+            "availabilityCode": "IMMEDIATE",
+            "availability": "available for immediate download",
+            "type": "Transfer",
+            "entryNumbers": [
+              "A1",
+              "B1"
+            ],
+            "filedUnder": "TF799425",
+            "typeCode": "Transfer"
+          }
+        ],
+        "register": {
+          "availabilityCode": "IMMEDIATE",
+          "availability": "available for immediate download",
+          "type": "register",
+          "backdated": false,
+          "typeCode": "REGISTER"
+        }
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "v79B1fTdCLc4ckQm0706Tg=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "QNf4o4ksU7KnVg",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/keyFacts": {
+        "chargesAndFinancialBurdens": [],
+        "relatedDocuments": [
+          "A transfer dated 2019-01-01 showing the transfer of property ownership."
+        ],
+        "legalOwners": [
+          "Neha Hunt",
+          "Mark Hunt"
+        ],
+        "rightsOrEasements": [
+          "Standard property rights as detailed in the title register."
+        ],
+        "beneficialOwners": [
+          "Neha Hunt",
+          "Mark Hunt"
+        ],
+        "restrictionsOrRestrictiveCovenants": [],
+        "propertyAndLandDescription": "The property is the freehold (full ownership) of the land located at 101 Broadbridge Close, MANCHESTER, with postcode M41 9NQ. This means the owners own the land and property outright.",
+        "complexityScore": 1
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "oANbC1d6zZ8BfwMuSIcS5Q=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "wjOQsOVrfbWZvg",
+    "claims": {
+      "/propertyPack/ownership/numberOfSellers": 2
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "IasZBwd4MAj6yW/T53BIEw=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "zihidtaUIygtaA",
+    "claims": {
+      "/propertyPack/typeOfConstruction/isStandardForm": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "cWxwSCmn4aykkw",
+    "claims": {
+      "/propertyPack/typeOfConstruction/buildingSafety": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "LmBO3nJRErbA",
+    "claims": {
+      "/propertyPack/typeOfConstruction/accessibilityAndAdaptations": []
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "euTXkfQQ3Ey25g",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/-": {
+        "documentType": "Transfer",
+        "documentDate": "2019-01-01",
+        "documentReference": "TR-79942563"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "RvX+bKFQkIoX6QBokfElIQ=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "tks6qEJX4Ipug",
+    "claims": {
+      "/propertyPack/electricity/mainsElectricity": {
+        "yesNo": "Yes",
+        "supplier": "British Gas",
+        "electricityMeter": {
+          "type": "Smart meter",
+          "location": "External meter box"
+        }
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "LP8M6Il4te1cQ",
+    "claims": {
+      "/propertyPack/electricity/solarPanels": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "wd0vmxAR5bxDQ",
+    "claims": {
+      "/propertyPack/electricity/heatPump": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "BGa8m5B7Gn6gCA",
+    "claims": {
+      "/propertyPack/electricity/otherSources": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "ZH2Oay0CoBBjGQ",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water": {
+        "mainsWater": {
+          "yesNo": "No",
+          "supplier": "United Utilities",
+          "waterMeter": {
+            "isSupplyMetered": "Yes",
+            "location": "Front garden"
+          },
+          "stopcock": {
+            "location": "Under kitchen sink"
+          }
+        }
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "QdbjWZsTrAGqLw",
+    "claims": {
+      "/propertyPack/waterAndDrainage/drainage": {
+        "mainsSurfaceWaterDrainage": {
+          "yesNo": "No"
+        },
+        "mainsFoulDrainage": {
+          "yesNo": "No",
+          "supplier": "United Utilities"
+        }
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.045Z"
+    }
+  },
+  {
+    "id": "Ze0NtAr1o80zfg",
+    "claims": {
+      "/propertyPack/heating/otherHeatingFeatures": [
+        "None"
+      ]
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "AurZ2uw87OoqQ",
+    "claims": {
+      "/propertyPack/parking/parkingArrangements": [
+        "On-street"
+      ]
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "tqBVeN297EtUqA",
+    "claims": {
+      "/propertyPack/parking/disabledParking": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "9L31LSw9uXeUbA",
+    "claims": {
+      "/propertyPack/parking/controlledParking": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "uHxyPohlXrI0Rg",
+    "claims": {
+      "/propertyPack/parking/electricVehicleChargingPoint": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "K3AKGn5ifebOog",
+    "claims": {
+      "/propertyPack/listingAndConservation/isListed": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "YxJuNhoYgCYeFw",
+    "claims": {
+      "/propertyPack/listingAndConservation/isConservationArea": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "nDWBMMjwZrG2eg",
+    "claims": {
+      "/propertyPack/listingAndConservation/hasTreePreservationOrder": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "SXIDR3A9Hi9EQ",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements": {
+        "publicRightOfWay": {
+          "yesNo": "No"
+        },
+        "rightsOfLight": {
+          "yesNo": "No"
+        },
+        "rightsOfSupport": {
+          "yesNo": "No"
+        },
+        "rightsCreatedThroughCustom": {
+          "yesNo": "No"
+        },
+        "rightsToTakeFromLand": {
+          "yesNo": "No"
+        },
+        "minesAndMinerals": {
+          "yesNo": "No"
+        },
+        "churchChancel": {
+          "yesNo": "No"
+        },
+        "otherRights": {
+          "yesNo": "No"
+        }
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "esSDKzCIKeE9YQ",
+    "claims": {
+      "/propertyPack/environmentalIssues/flooding/historicalFlooding/hasBeenFlooded": "No"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environment Agency Long-term Flood Risk service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "4jNDvXfigJbw7HfdWJD71Q=="
+              },
+              "url": "https://check-long-term-flood-risk.service.gov.uk/synthetic-report",
+              "desc": "Environment Agency flood risk report"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "IjiE0GcF7DjYNA",
+    "claims": {
+      "/propertyPack/notices/planningApplication/yesNo": "No"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "Vzs32zoQ9zPRA",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/waterMeter": {
+        "isSupplyMetered": "Yes",
+        "location": "Front garden"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "ev6mMaLnBdS4w",
+    "claims": {
+      "/propertyPack/legalBoundaries/ownership": {
+        "areBoundariesUniform": "Yes",
+        "uniformBoundaries": {
+          "rear": "Shared",
+          "left": "Seller",
+          "right": "Shared",
+          "front": "Highway"
+        }
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "dUPXO6QgcHAgneoCjt3LJg=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "ijZ47arPxkKBPw",
+    "claims": {
+      "/propertyPack/legalBoundaries/haveBoundaryFeaturesMoved": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "J9hi0bpeZkD93Q",
+    "claims": {
+      "/propertyPack/legalBoundaries/adjacentLandIncluded": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "5XNOFgxCQjA7Q",
+    "claims": {
+      "/propertyPack/legalBoundaries/flyingFreehold": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "ahG9qR6Ei7w7Xw",
+    "claims": {
+      "/propertyPack/disputesAndComplaints/hasDisputesAndComplaints": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "WqSjQiMdE2aLPQ",
+    "claims": {
+      "/propertyPack/disputesAndComplaints/leadingToDisputesAndComplaints": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "tWUEjPVj52oFuw",
+    "claims": {
+      "/propertyPack/notices/neighbourDevelopment": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "ucS4wbp2t4cdKA",
+    "claims": {
+      "/propertyPack/notices/requiredMaintenance": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "7lHR7sZNpxNSnQ",
+    "claims": {
+      "/propertyPack/notices/listedBuildingApplication": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "Y6H7fEb3UC1O0w",
+    "claims": {
+      "/propertyPack/notices/infrastructureProject": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "gmjN83LKN4YdyQ",
+    "claims": {
+      "/propertyPack/notices/partyWallAct": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "N4DGWxg2tzYTQ",
+    "claims": {
+      "/propertyPack/notices/otherNotices": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "kr3YIJgmvR1BMg",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/hasStructuralAlterations": {
+        "yesNo": "No",
+        "buildingRegApproval": "N/A",
+        "details": "No structural alterations",
+        "planningPermission": "Not required"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "JzbLro9KHx0AQ",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/changeOfUse": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "pqn6yxBNeoiAA",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/windowReplacementsSince2002": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "3NDLTf9AIekJkA",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/hasAddedConservatory": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "NHZelGXJrGP5Q",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/worksUnfinished": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "b18c1JoXE6CsLA",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/planningPermissionBreaches": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "sIjZ2RRQk5IAQ",
+    "claims": {
+      "/propertyPack/alterationsAndChanges/unresolvedPlanningIssues": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "GjGp9AKgmNSsSA",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/hasValidGuaranteesOrWarranties": "No"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "jkW8kaLWT8yRA",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/newHomeWarranty": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "G9rTNNfQfzG1A",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/roofingWork": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "24fRZGP38onlg",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/dampProofingTreatment": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "fCuPIsAcr38DRg",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/timberRotOrInfestationTreatment": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "dyjNynMhXVoTJg",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/centralHeatingAndorPlumbing": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "btFaYc8rcBwMjQ",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/doubleGlazing": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "eM1w4FyLKXaXIQ",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/electricalRepairOrInstallation": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "dV3TWHen1SOOXQ",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/subsidenceWork": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "YJDW1qvhD19gQ",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/otherGuarantees": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "uVfhvX13uszimA",
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/outstandingClaimsOrApplications": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "mDUUpzTqfbFQRA",
+    "claims": {
+      "/propertyPack/insurance/isInsured": "Yes"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "o8JfKhdlyUtF3g",
+    "claims": {
+      "/propertyPack/insurance/insuranceClaims": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "8Rz3tBuT9C0vA",
+    "claims": {
+      "/propertyPack/insurance/difficultiesObtainingInsurance": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "Fxz26u6R5LSBw",
+    "claims": {
+      "/propertyPack/environmentalIssues/radon/radonTest": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "z4CNH72O9l8w3w",
+    "claims": {
+      "/propertyPack/environmentalIssues/radon/remedialMeasuresOnConstruction": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "WRYXUkrm2nGeLA",
+    "claims": {
+      "/propertyPack/specialistIssues/japaneseKnotweed/yesNo": "No"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "NXpitlKfCcqGg",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsOfLight": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "tKPbYHKDR5xkw",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsOfSupport": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "OnzldQC2300Mg",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsCreatedThroughCustom": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "FSJubohqUYfGA",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsToTakeFromLand": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "sEs4DOWgnjrSxA",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/minesAndMinerals": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "vZKsyGp2OZq9A",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/churchChancel": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "OPCGj8VL2L8Hyw",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/otherRights": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "5bgskI4itMzlDA",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/sharedContributions": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "AmIK55kOkmy2w",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/neighbouringLandRights": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "hTuvPoXwIMuY3g",
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/accessRestrictionAttempts": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "2rmCyCN6vdNIug",
+    "claims": {
+      "/propertyPack/servicesCrossing/pipesWiresCablesDrainsToProperty": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "XVhuew4Fe1HxXw",
+    "claims": {
+      "/propertyPack/servicesCrossing/pipesWiresCablesDrainsFromProperty": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "9UvgKbxJXrKag",
+    "claims": {
+      "/propertyPack/servicesCrossing/formalOrInformalAgreements": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "bZvFcwyNImbbXQ",
+    "claims": {
+      "/propertyPack/additionalInformation/otherCharges/yesNo": "No"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "lTbV9ww634fLvQ",
+    "claims": {
+      "/propertyPack/occupiers/sellerLivesAtProperty": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "SZAqkGYJiHvR0w",
+    "claims": {
+      "/propertyPack/occupiers/othersAged17OrOver": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "8s4wMpPv4XLM0w",
+    "claims": {
+      "/propertyPack/electricalWorks/testedByQualifiedElectrician": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "xIFF8GB1IvMLg",
+    "claims": {
+      "/propertyPack/electricalWorks/electricalWorkSince2005": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "7FvLaqIU2nFcag",
+    "claims": {
+      "/propertyPack/waterAndDrainage/drainage/mainsFoulDrainage/supplier": "United Utilities"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "wuvTo8hLNYNezg",
+    "claims": {
+      "/propertyPack/electricity/mainsElectricity/supplier": "British Gas"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "FmZy8ch2GmHhbA",
+    "claims": {
+      "/propertyPack/electricity/mainsElectricity/electricityMeter": {
+        "type": "Smart meter",
+        "location": "External meter box"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "vkTohNSeO2ROCA",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/waterMeter/location": "Front garden"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Address coordinates obtained from Ordnance Survey API"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "sXrlztXy2mypRA",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/supplier": "United Utilities"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "hywrYL2zLAAViQ",
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/stopcock": {
+        "location": "Under kitchen sink"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "cMM5Er5Lu3Scw",
+    "claims": {
+      "/propertyPack/connectivity/telephone": {
+        "yesNo": "Yes",
+        "supplier": "BT"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "390PfrPHKnT5TQ",
+    "claims": {
+      "/propertyPack/connectivity/cableSatelliteTV": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "OTYnfGMjjIKiog",
+    "claims": {
+      "/propertyPack/completionAndMoving/sellerWillEnsure": {
+        "removeRubbish": true,
+        "replaceLightFittings": true,
+        "leaveKeys": true,
+        "takeReasonableCare": true
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "VT9KcaXC9fE7Q",
+    "claims": {
+      "/propertyPack/completionAndMoving/otherPropertyInChain": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "CGO8I9z3QWitow",
+    "claims": {
+      "/propertyPack/completionAndMoving/moveRestrictionDates": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "HqrT7hQEeBcBA",
+    "claims": {
+      "/propertyPack/completionAndMoving/sufficientToRepayAllMortgages": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "S2ct43e2luk8FA",
+    "claims": {
+      "/propertyPack/confirmationOfAccuracyByOwners/confirmInformationIsAccurate": true
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Neha Hunt"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "bvrKwy7wXrlQ6w",
+    "claims": {
+      "/propertyPack/documents/-": {
+        "documentType": "Floorplan",
+        "documentId": "FP-R00001428"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "9sqh9PBrpxxKbQ",
+    "claims": {
+      "/propertyPack/documents/-": {
+        "documentType": "Brochure",
+        "documentId": "BR-R00001428"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "sYruo4STlx67HA",
+    "claims": {
+      "/propertyPack/documents/0/documentType": "Floorplan"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "UWPnsc5w8t8XVg",
+    "claims": {
+      "/propertyPack/documents/1/documentType": "Brochure"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "O8PHrIZQ21trxQ",
+    "claims": {
+      "/propertyPack/documents/0/alterationsInsights": {
+        "hasAlterations": false,
+        "summary": "No significant alterations identified"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "n0V2BvR86i6ozQ",
+    "claims": {
+      "/externalIds/TMGroup": {
+        "projectId": 79942563
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "0D59g3JL4kYfw",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/insights/restrictiveCovenants": {
+        "summary": "No significant restrictive covenants identified",
+        "items": [],
+        "riskLevel": "Low"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "DdGBQknEQpgMZ7cGYe8WpQ=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "WXMm4xp1XXckEA",
+    "claims": {
+      "/propertyPack/documents/1/alterationsInsights": []
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "IqzbTGvTxG169g",
+    "claims": {
+      "/propertyPack/documents/0/transcription": {
+        "rawText": "Property: 101 Broadbridge Close, MANCHESTER\nFloor Plan - Terraced property with 1 bedrooms",
+        "processedText": "Standard floor plan layout"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "U0nCSRlZulqhQ",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/1/transcription": {
+        "rawText": "Property register extract",
+        "processedText": "Standard register entry"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "SozgsqDHON1O7Wchl8YfZw=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "zJt6ClEue2haw",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/2/transcription": {
+        "rawText": "Title plan",
+        "processedText": "Standard title plan showing property boundaries"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "G9smaWG31CuJ74S+XMRx0Q=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "NgcrSMHgDUMFQ",
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/0/transcription": {
+        "rawText": "Transfer dated 2019-01-01",
+        "processedText": "Standard property transfer document"
+      }
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "2nVIW+G4rgaoXm/ugeKr9Q=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:41:45.046Z"
+    }
+  },
+  {
+    "id": "SHnY1T6UyFuInw",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/bedrooms": 1
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.782Z"
+    }
+  },
+  {
+    "id": "PTSwrhATkW23sA",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/bathrooms": 1
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.782Z"
+    }
+  },
+  {
+    "id": "IgrxknMr91LzHw",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/receptions": 1
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.782Z"
+    }
+  },
+  {
+    "id": "568CekV3zntdAQ",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/kitchens": 1
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.782Z"
+    }
+  },
+  {
+    "id": "RLTKAylBs9afTA",
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures/outsideAreas": [
+        "Rear yard",
+        "Front area"
+      ]
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.782Z"
+    }
+  },
+  {
+    "id": "HFTH6xmOj0OXw",
+    "claims": {
+      "/propertyPack/buildInformation/floorplan/rooms": [
+        {
+          "roomName": "Master Bedroom",
+          "description": "Primary bedroom with built-in storage",
+          "length": 5.31,
+          "width": 3.98,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        },
+        {
+          "roomName": "Living Room",
+          "description": "Main reception room with natural light",
+          "length": 6.2,
+          "width": 4.87,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        },
+        {
+          "roomName": "Kitchen",
+          "description": "Fitted kitchen with modern appliances",
+          "length": 4.43,
+          "width": 3.54,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        },
+        {
+          "roomName": "Bathroom",
+          "description": "Main family bathroom with bath and shower",
+          "length": 3.1,
+          "width": 2.66,
+          "units": "meters",
+          "dimensionDetails": "Approximate dimensions"
+        }
+      ]
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.782Z"
+    }
+  },
+  {
+    "id": "w94FEbXzC735Uw",
+    "claims": {
+      "/propertyPack/buildInformation/floorplan/hasFloorplan": "Yes"
+    },
+    "transactionId": "p7AS2rOFOgeJOA",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Smart Data Challenge Sandbox - Property Survey"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-01T13:55:47.782Z"
+    }
+  }
+]

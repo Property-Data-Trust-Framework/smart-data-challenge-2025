@@ -1,0 +1,988 @@
+[
+  {
+    "id": "LjVGc7Bj5NZfweaW1Leo",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-14T09:44:59.307Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Richard Saville"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/status": "For sale"
+    },
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi"
+  },
+  {
+    "id": "cRRqFnc7DDA7DC23CGFN",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-14T09:44:59.325Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Richard Saville"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/participants/-": {
+        "name": {
+          "firstName": "Richard",
+          "lastName": "Saville"
+        },
+        "email": "richard.saville@lms.com",
+        "role": "Estate Agent",
+        "externalIds": {
+          "Moverly": "fn00iY8hjufxgvR0vnCA2r49GoF3"
+        },
+        "organisation": "NPTN Estates"
+      }
+    },
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi"
+  },
+  {
+    "id": "jyhSDET0ty3ctq6P38Q3",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-14T09:44:59.326Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Richard Saville"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/uprn": 100080835209
+    },
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi"
+  },
+  {
+    "id": "ORL1NwQvIuhtVjqjaylj",
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi",
+    "verification": {
+      "time": "2023-11-22T10:19:06.620Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Address and co-ordinates obtained from Postcode Address File via Loquate API at https://services.postcodeanywhere.co.uk"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/address": {
+        "buildingName": "",
+        "buildingNumber": "47",
+        "subBuilding": "",
+        "street": "Park Mount",
+        "line1": "47 Park Mount",
+        "line2": "",
+        "line3": "",
+        "town": "Harpenden",
+        "county": "Hertfordshire",
+        "postcode": "AL5 3AS",
+        "homeNation": "England"
+      },
+      "/propertyPack/location": {
+        "latitude": 51.822392,
+        "longitude": -0.368078
+      }
+    }
+  },
+  {
+    "id": "5pUkuYMMUekAw53QrvED",
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-14T09:45:03.219Z",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations Broadband and Mobile Coverage APIs"
+            }
+          },
+          "attachments": []
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/connectivity/broadband": {
+        "typeOfConnection": "FTTP (Fibre to the Premises)",
+        "predictedSpeed": {
+          "maxBbPredictedDown": 14,
+          "maxBbPredictedUp": 1,
+          "maxSfbbPredictedDown": 80,
+          "maxSfbbPredictedUp": 20,
+          "maxUfbbPredictedDown": 1800,
+          "maxUfbbPredictedUp": 1000,
+          "maxPredictedDown": 1800,
+          "maxPredictedUp": 1000
+        }
+      },
+      "/propertyPack/connectivity/mobilePhone/predictedCoverage": {
+        "eeVoiceOutdoor": 4,
+        "eeVoiceOutdoorNo4g": 4,
+        "eeVoiceIndoor": 3,
+        "eeVoiceIndoorNo4g": 3,
+        "eeDataOutdoor": 4,
+        "eeDataOutdoorNo4g": 0,
+        "eeDataIndoor": 3,
+        "eeDataIndoorNo4g": 0,
+        "h3VoiceOutdoor": 4,
+        "h3VoiceOutdoorNo4g": 4,
+        "h3VoiceIndoor": 0,
+        "h3VoiceIndoorNo4g": 0,
+        "h3DataOutdoor": 4,
+        "h3DataOutdoorNo4g": 3,
+        "h3DataIndoor": 0,
+        "h3DataIndoorNo4g": 0,
+        "tfVoiceOutdoor": 4,
+        "tfVoiceOutdoorNo4g": 4,
+        "tfVoiceIndoor": 4,
+        "tfVoiceIndoorNo4g": 4,
+        "tfDataOutdoor": 4,
+        "tfDataOutdoorNo4g": 3,
+        "tfDataIndoor": 3,
+        "tfDataIndoorNo4g": 3,
+        "voVoiceOutdoor": 4,
+        "voVoiceOutdoorNo4g": 4,
+        "voVoiceIndoor": 3,
+        "voVoiceIndoorNo4g": 3,
+        "voDataOutdoor": 4,
+        "voDataOutdoorNo4g": 0,
+        "voDataIndoor": 3,
+        "voDataIndoorNo4g": 0
+      }
+    }
+  },
+  {
+    "id": "LN009fqWlzVS3Dx9y2yH",
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-14T09:45:03.251Z",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council(s) for AL5 3AS retrieved from https://www.gov.uk/find-local-council"
+            }
+          },
+          "attachments": []
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/localAuthority/localAuthorityName": "St Albans City and District Council",
+      "/propertyPack/localAuthority/countyCouncil": "Hertfordshire County Council",
+      "/propertyPack/localAuthority/districtCouncil": "St Albans City and District Council"
+    }
+  },
+  {
+    "id": "Q7VfCfWTmWuUTRFlfCi3",
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-14T09:45:03.251Z",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Regulated search turnaround times obtained for St Albans City and District Council from OneSearch Direct"
+            }
+          },
+          "attachments": []
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/localAuthority/regulatedSearchTurnaroundTimeInWorkingDays": 19
+    }
+  },
+  {
+    "id": "A6ogxEROVu2FvB4iewkR",
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-14T09:45:03.482Z",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Energy Performance Certificate obtained from https://find-energy-certificate.service.gov.uk/energy-certificate/8860-7526-7990-1052-7292"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/energyEfficiency/certificate/certificateNumber": "8860-7526-7990-1052-7292",
+      "/propertyPack/energyEfficiency/certificate/currentEnergyRating": "D",
+      "/propertyPack/energyEfficiency/certificate/potentialEnergyRating": "B",
+      "/propertyPack/energyEfficiency/certificate/inspectionDate": "2020-06-12",
+      "/propertyPack/energyEfficiency/certificate/lodgementDate": "2020-06-23",
+      "/propertyPack/energyEfficiency/certificate/currentEnergyEfficiency": 66,
+      "/propertyPack/energyEfficiency/certificate/potentialEnergyEfficiency": 81,
+      "/propertyPack/energyEfficiency/certificate/co2EmissionsCurrent": 6.7,
+      "/propertyPack/energyEfficiency/certificate/co2EmissionsPotential": 3.8,
+      "/propertyPack/buildInformation/building/builtForm": "Semi-detached",
+      "/propertyPack/buildInformation/building/propertyType": "House",
+      "/propertyPack/heating/heatingSystem/heatingType": "Central heating",
+      "/propertyPack/heating/heatingSystem/centralHeatingDetails/centralHeatingFuel/centralHeatingFuelType": "Mains gas",
+      "/propertyPack/energyEfficiency/greenDealLoan/hasGreenDealLoan/yesNo": "No"
+    }
+  },
+  {
+    "id": "srVlPPfe538kBwajNOD4",
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-14T09:45:07.647Z",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Energy Performance Certificate obtained from https://find-energy-certificate.service.gov.uk/energy-certificate/8860-7526-7990-1052-7292"
+            }
+          },
+          "attachments": [
+            {
+              "desc": "Energy Performance Certificate from GOV.UK",
+              "digest": {
+                "alg": "md5",
+                "value": "t44ymagSjYH58d0fzfrJ+g=="
+              },
+              "url": "https://find-energy-certificate.service.gov.uk/energy-certificate/8860-7526-7990-1052-7292"
+            },
+            {
+              "desc": "EPC_47 Park Mount_AL5 3AS_2020-06-23_EXPIRES_ON_2030-06-23.pdf",
+              "digest": {
+                "alg": "md5",
+                "value": "pkRQDSDU7cgJnzGH/gDMCg=="
+              },
+              "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/EPC_47_Park_Mount_AL5_3AS_2020_06_23_EXPIRES_ON_2030_06_23_d170eee4-3c9c-41f9-b744-2747e4ae7417.pdf?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=2007590400&Signature=cavryfNVY4L4hrqgzDQ7LJaTMGWZiCrlHIjsoH4ytlvWztLEJAZNcywBElvof4tllhlvkX3R1YnzWw%2FopoXXOaxtsWsAmyqBrl8tbhcInm5%2FAqqC5vq5AxvOpCdgYzPNLibtwfEuFPiqT%2BfuxccUHxxYt3EuIgZYOYHQHKbiPgY0571wi5tSfHFIukPqcjSFKNEzEZcd37D0CIfeS1RF%2BKoJBlxQcXYAqgRX0oXvgQvao8F5KaDFT8UBSnfNzz7mlP6g%2Fu0FuDVqdA5ElYqCZ7YhukZ5laIjPz7AKWYuqp3%2BeZ7pvDRhkQJiFHyyQ0M3mdEp9hYKsWUIYwxIvaffZA%3D%3D&fileId=6upuWl3be8dOyMqfn2Ya"
+            }
+          ]
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/energyEfficiency/certificateIsSupplied": "Attached"
+    }
+  },
+  {
+    "id": "5XyqWKFQhl1d1VU8y6CR",
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi",
+    "verification": {
+      "time": "2025-08-14T09:45:19.048Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Groundsure Hazard Alerts, for indicative use only. Order the relevant Groundsure search product for full details and legal reliance."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/environmentalIssues/coalMining": {
+        "riskIndicator": "No",
+        "result": "Not identified",
+        "summary": "No coal mining risk has been identified.",
+        "datasetAttribution": "Groundsure Hazard Alerts, for indicative use only. Order the relevant Groundsure search product for full details and legal reliance."
+      },
+      "/propertyPack/environmentalIssues/nonCoalMining": {
+        "riskIndicator": "No",
+        "result": "Identified",
+        "summary": "No non-coal mining risks have been identified.",
+        "datasetAttribution": "Groundsure Hazard Alerts, for indicative use only. Order the relevant Groundsure search product for full details and legal reliance."
+      }
+    }
+  },
+  {
+    "id": "lOpLae9Wou9jExBkQx9f",
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-14T09:45:20.412Z",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Historical planning application data retrieved from Planit.org.uk for 47 Park Mount."
+            }
+          },
+          "attachments": []
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/localSearches/localAuthoritySearches/planningAndBuildingRegulations/decisionsAndPendingApplications/planningPermission": [
+        {
+          "address": "47 Park Mount Harpenden Al5 3As",
+          "areaName": "St Albans",
+          "refNumber": "5/2004/1266",
+          "description": "Loft conversion with rear dormer window",
+          "isProposal": "No",
+          "applicationDate": "2004-06-11",
+          "decision": "DC3 Conditional Permission",
+          "decisionDate": "2004-08-05",
+          "applicationType": "Full Planning Application (pre-2009)",
+          "url": "https://planningapplications.stalbans.gov.uk/planning/search-applications#VIEW?RefType=PBDC&KeyNo=17310"
+        },
+        {
+          "address": "47 Park Mount Harpenden Hertfordshire Al5 3As",
+          "areaName": "St Albans",
+          "refNumber": "5/2014/0620",
+          "description": "Demolition of existing conservatory and erection of part single, part two storey rear extension",
+          "isProposal": "No",
+          "applicationDate": "2014-03-07",
+          "decision": "DC3 Conditional Permission",
+          "decisionDate": "2014-05-02",
+          "applicationType": "Householder",
+          "url": "https://planningapplications.stalbans.gov.uk/planning/search-applications#VIEW?RefType=PBDC&KeyNo=88688"
+        },
+        {
+          "address": "47 Park Mount Harpenden Hertfordshire Al5 3As",
+          "areaName": "St Albans",
+          "refNumber": "5/2022/1991",
+          "description": "Demolition of conservatory and construction of single storey rear extension and alterations to openings",
+          "isProposal": "No",
+          "applicationDate": "2022-08-08",
+          "decision": "DC3 Conditional Permission",
+          "decisionDate": "2023-01-20",
+          "applicationType": "Householder",
+          "url": "https://planningapplications.stalbans.gov.uk/planning/search-applications#VIEW?RefType=PBDC&KeyNo=124484"
+        },
+        {
+          "address": "47 Park Mount Harpenden Hertfordshire Al5 3As",
+          "areaName": "St Albans",
+          "refNumber": "5/2017/1057",
+          "description": "Demolition of existing conservatory and erection of part single, part two storey rear extension (resubmission following approval of 5/2014/0620 dated 02/05/2014)",
+          "isProposal": "No",
+          "applicationDate": "2017-04-11",
+          "decision": "DC3 Conditional Permission",
+          "decisionDate": "2017-07-07",
+          "applicationType": "Householder",
+          "url": "https://planningapplications.stalbans.gov.uk/planning/search-applications#VIEW?RefType=PBDC&KeyNo=101471"
+        }
+      ]
+    }
+  },
+  {
+    "id": "4753mhsb2gMLujqMY4EB",
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi",
+    "verification": {
+      "time": "2025-08-14T09:45:21.096Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Indicative coastal erosion analysis from the National Coastal Erosion Risk Mapping (NCERM) dataset",
+              "rights": "National Coastal Erosion Risk Mapping © Environment Agency copyright and/or database right; NCERM is usable under the Environment Agency Conditional Licence"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/environmentalIssues/coastalErosion": {
+        "riskIndicator": "No",
+        "actionAlertRating": 1,
+        "result": "Not close to an area potentially affected by future coastal erosion.",
+        "summary": "The property is not close to any area potentially impacted by coastal erosion, according to the National Coastal Erosion Risk Mapping (NCERM) dataset. ",
+        "datasetAttribution": "National Coastal Erosion Risk Mapping © Environment Agency copyright and/or database right; NCERM is usable under the Environment Agency Conditional Licence"
+      }
+    }
+  },
+  {
+    "id": "YWsS5WRBjRFoMVtu9Ey5",
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi",
+    "verification": {
+      "time": "2025-08-14T09:45:33.064Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Gov.uk Long-term Flood Risk service at https://check-long-term-flood-risk.service.gov.uk, under Open Government License v3.0"
+            },
+            "attachments": [
+              {
+                "digest": {
+                  "alg": "md5",
+                  "value": "JWvjJ3KdfdlHiCFnB3gWIQ=="
+                },
+                "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/Long_term_flood_risk_report_2171d037-61c7-4eee-9fe3-1aea98a2629a.png?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=2007590400&Signature=o8R1XXOB1FCjtnc4Nb5nmaDEwOVZJX%2BB3M9CdGK4ivyCjOD4ddIp%2BHbQZp%2Bf474HWvvf4FYdHZ%2FvMtItW1F3tOatEsU373yLyReP0Sqk%2FwHWsuTF%2FXk5cBc26Syu%2BIdoH31pg0wAyjvTQIuGVWejrLdWJeSxEgjLorQX%2FHvRhasEt%2FSUlqDbkzwIURvOWJUmWHMwJVB3WEHisrj3qOhs5FeFfICg2YvStP3dAF3oaFF2Kj%2Bxg2fV%2FDetLqs8ruo3GUXKi3cw3PiQ2oIMSk%2BoqOSeX080o45S%2B3SpmbhsmJ5%2B9uNmwi0lWBb7lzkXkThPAW11hl%2BuxLvakGiDhrozxg%3D%3D&fileId=myj73Y12oeHlkswYCRHm",
+                "desc": "Long-term_flood_risk_report.png"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/environmentalIssues/flooding/floodRisk": {
+        "riskIndicator": "No",
+        "actionAlertRating": 1,
+        "summary": "River and sea flooding risk: Very low; Surface water flooding risk: Very low; Reservoir flooding risk: Not at risk; Groundwater flooding risk: Unlikely",
+        "datasetAttribution": "Environment Agency via https://www.gov.uk/check-long-term-flood-risk, data under Open Government License v3.0",
+        "riskSubcategories": [
+          {
+            "subCategory": "Surface water",
+            "actionAlertRating": 1,
+            "result": "Very low",
+            "summary": "Each year, the area has a chance of flooding of less than 1 in 1000 (0.1%). This flood risk summary reports the highest risk from surface water within a 15 metre radius of this property. This information is suitable for identifying: which parts of counties or towns are at risk, or have the most risk the approximate extent and depth of flooding. It's unlikely to be reliable for a local area and very unlikely to be reliable for identifying individual properties at risk."
+          },
+          {
+            "subCategory": "Rivers and sea",
+            "actionAlertRating": 1,
+            "result": "Very low",
+            "summary": "Each year, the area has a chance of flooding of less than 1 in 1000 (0.1%). This flood risk summary is not property specific. This service takes into account any flood defences."
+          },
+          {
+            "subCategory": "Reservoirs",
+            "actionAlertRating": 1,
+            "result": "Not at risk",
+            "summary": "A reservoir is a large natural or artificial lake that is designed to collect and store water. We use predicted scenarios to understand the risk of flooding from reservoirs. Flooding from reservoirs is extremely unlikely. An area is considered at risk if people's lives could be threatened in the very unlikely event of a dam or reservoir failure."
+          },
+          {
+            "subCategory": "Groundwater",
+            "actionAlertRating": 1,
+            "result": "Unlikely",
+            "summary": "Flooding caused by groundwater happens when water underground that is usually held in the rocks and soil (known as the water table) gets so high that it flows above the surface. We use flood alert data to check the risk of flooding from groundwater."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "M4sfiTWLMvIDYJYHisnB",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-14T09:45:38.573Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Moverly"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/marketingTenure": "Freehold"
+    },
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi"
+  },
+  {
+    "id": "tarCULVcRm8uJMYMnYJs",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-14T09:45:38.572Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Moverly"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/titlesToBeSold/-": {
+        "titleNumber": "HD291736",
+        "titleIncludedInSale": true
+      }
+    },
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi"
+  },
+  {
+    "id": "BxaIsxwwbNkpl9Asnw4T",
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi",
+    "verification": {
+      "time": "2025-08-14T09:45:41.054Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "type": "nps",
+            "source": {
+              "name": "HMLR National Polygon Service via MyNestBox.co.uk"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/titleExtents": "{\"type\":\"Polygon\",\"coordinates\":[[[-0.36822675663945326,51.822451752643886],[-0.3682209067827277,51.82245302027144],[-0.3682077080662551,51.82245688352679],[-0.3682054839214834,51.82245820146547],[-0.3681658877569455,51.82246979122177],[-0.3680529490108455,51.8225032927913],[-0.3680255348773792,51.822458851478075],[-0.36798571788959816,51.822396254000815],[-0.36797616683335443,51.82237948622309],[-0.367944753590863,51.82234533020251],[-0.3679014840286064,51.82229797119905],[-0.3678882585993152,51.82228250121845],[-0.3678657200621215,51.822263754771555],[-0.3676071625626815,51.82206674763747],[-0.36770432764445454,51.82201198623825],[-0.36787058696030495,51.822149174145686],[-0.3680129579559666,51.822268855535896],[-0.36805013772616124,51.82230003428109],[-0.3680916542664625,51.82233567928364],[-0.3681508122179382,51.82238505710005],[-0.36818467713640596,51.822411603873576],[-0.36822675663945326,51.822451752643886]]]}"
+    }
+  },
+  {
+    "id": "HFdZgkLTFyMZUZgRXuqD",
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi",
+    "verification": {
+      "time": "2025-08-14T09:45:42.349Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "type": "register_extract",
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "cRo2J2FLRI1U0cfi9N3NCw=="
+              },
+              "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/1_Register_HD291736_a43b2b0d-73b0-4f81-a952-c64040c4c6a9.pdf?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=2007590400&Signature=TU20FqFBF2s3dmjfKmuaXTCSSU3M%2B62AuHKCEFjcYCJ1EP1HdyrP6tH9D6YR51iWGnZuuoVW9HYm1jYMJFrvb3vLvNHtxycj%2BCXui5%2BwErCbeoaioYvAzugyoMtPM3MvNK%2FA5%2FLa8uttdWnUQbV57m7Y6wJeIbVQ3x8vTKdl0hyJu5iJozuA5hGz1W%2F0MySD9zWLLTplp4%2Fs3FlnRT5iz7tVuibz7MGuBdtIceeliKFvHAQCIAiSMjaUbXbeVWBmbvfqsig5Xn8AB4PVJscS2eseUQDhzGpr68cYjfv2wpNje5AZFhe8o1P4r%2BwhYm4lX1EOYX%2FP64p%2FETkAbj0jwg%3D%3D&fileId=Lta7yAVqDy173Ous40No",
+              "desc": "1-Register - HD291736.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/ownership/ownershipsToBeTransferred/-": {
+        "titleNumber": "HD291736",
+        "titlePropertyDescription": "The Freehold land shown edged with red on the plan of the above Title filed at the Registry and being 47 Park Mount, Harpenden (AL5 3AS).",
+        "ownershipType": "Freehold"
+      },
+      "/propertyPack/legalOwners/namesOfLegalOwners": [
+        {
+          "ownerType": "Private individual",
+          "firstName": "Philip",
+          "middleNames": "Christopher",
+          "lastName": "Cooper"
+        },
+        {
+          "ownerType": "Private individual",
+          "firstName": "Chloe",
+          "middleNames": "Jane",
+          "lastName": "Cooper"
+        }
+      ],
+      "/propertyPack/titlesToBeSold/0/registerExtract": {
+        "ocSummaryData": {
+          "officialCopyDateTime": "2021-12-16T08:39:52",
+          "editionDate": "2020-11-24",
+          "pricePaidEntry": {
+            "entryDetails": {
+              "entryNumber": "2",
+              "entryText": "The price stated to have been paid on 3 November 2020 was £1,100,000.",
+              "registrationDate": "2020-11-24",
+              "subRegisterCode": "B",
+              "infills": {
+                "date": "2020-11-03",
+                "amount": "£1,100,000"
+              }
+            }
+          },
+          "propertyAddress": {
+            "postcodeZone": {
+              "postcode": "AL5 3AS"
+            },
+            "addressLine": {
+              "line": [
+                "47 Park Mount",
+                "Harpenden"
+              ]
+            }
+          },
+          "title": {
+            "titleNumber": "HD291736",
+            "classOfTitleCode": "10",
+            "commonholdIndicator": false,
+            "titleRegistrationDetails": {
+              "districtName": "ST ALBANS",
+              "administrativeArea": "HERTFORDSHIRE",
+              "landRegistryOfficeName": "Leicester Office",
+              "latestEditionDate": "2020-11-24",
+              "postcodeZone": {
+                "postcode": "AL5 3AS"
+              },
+              "registrationDate": "1991-11-11"
+            }
+          },
+          "registerEntryIndicators": {
+            "agreedNoticeIndicator": false,
+            "bankruptcyIndicator": false,
+            "cautionIndicator": false,
+            "ccbiIndicator": false,
+            "chargeeIndicator": true,
+            "chargeIndicator": true,
+            "chargeRelatedRestrictionIndicator": false,
+            "chargeRestrictionIndicator": true,
+            "creditorsNoticeIndicator": false,
+            "deathOfProprietorIndicator": false,
+            "deedOfPostponementIndicator": false,
+            "discountChargeIndicator": false,
+            "equitableChargeIndicator": false,
+            "greenOutEntryIndicator": false,
+            "homeRightsChangeOfAddressIndicator": false,
+            "homeRightsIndicator": false,
+            "leaseHoldTitleIndicator": false,
+            "multipleChargeIndicator": false,
+            "nonChargeRestrictionIndicator": false,
+            "notedChargeIndicator": false,
+            "pricePaidIndicator": true,
+            "propertyDescriptionNotesIndicator": false,
+            "rentChargeIndicator": false,
+            "rightOfPreEmptionIndicator": false,
+            "scheduleOfLeasesIndicator": false,
+            "subChargeIndicator": false,
+            "unidentifiedEntryIndicator": false,
+            "unilateralNoticeBeneficiaryIndicator": false,
+            "unilateralNoticeIndicator": false,
+            "vendorsLienIndicator": false
+          },
+          "proprietorship": {
+            "currentProprietorshipDate": "2020-11-24",
+            "registeredProprietorParty": [
+              {
+                "privateIndividual": {
+                  "name": {
+                    "forenamesName": "Philip Christopher",
+                    "surnameName": "Cooper"
+                  }
+                },
+                "address": {
+                  "postcodeZone": {
+                    "postcode": "AL5 3AS"
+                  },
+                  "addressLine": {
+                    "line": [
+                      "47 Park Mount",
+                      "Harpenden"
+                    ]
+                  }
+                }
+              },
+              {
+                "privateIndividual": {
+                  "name": {
+                    "forenamesName": "Chloe Jane",
+                    "surnameName": "Cooper"
+                  }
+                },
+                "address": {
+                  "postcodeZone": {
+                    "postcode": "AL5 3AS"
+                  },
+                  "addressLine": {
+                    "line": [
+                      "47 Park Mount",
+                      "Harpenden"
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "restrictionDetails": {
+            "restrictionEntry": {
+              "chargeRestriction": {
+                "restrictionTypeCode": "30",
+                "chargeID": "1",
+                "entryDetails": {
+                  "entryNumber": "3",
+                  "entryText": "RESTRICTION: No disposition of the registered estate by the proprietor of the registered estate is to be registered without a written consent signed by the proprietor for the time being of the Charge dated 3 November 2020 in favour of Barclays Bank UK PLC referred to in the Charges Register.",
+                  "subRegisterCode": "B",
+                  "infills": {
+                    "chargeDate": "2020-11-03",
+                    "chargeParty": "Barclays Bank UK PLC"
+                  }
+                }
+              }
+            }
+          },
+          "charge": {
+            "chargeEntry": {
+              "chargeID": "1",
+              "chargeDate": "2020-11-03",
+              "registeredCharge": {
+                "entryDetails": {
+                  "entryNumber": "2",
+                  "entryText": "REGISTERED CHARGE dated 3 November 2020.",
+                  "registrationDate": "2020-11-24",
+                  "subRegisterCode": "C",
+                  "infills": {
+                    "chargeDate": "2020-11-03"
+                  }
+                }
+              },
+              "chargeProprietor": {
+                "chargeeParty": {
+                  "organization": {
+                    "name": "Barclays Bank UK PLC"
+                  },
+                  "address": {
+                    "postcodeZone": {
+                      "postcode": "LS11 1AN"
+                    },
+                    "addressLine": {
+                      "line": [
+                        "P.O. Box 187",
+                        "Leeds"
+                      ]
+                    }
+                  }
+                },
+                "entryDetails": {
+                  "entryNumber": "3",
+                  "entryText": "Proprietor: BARCLAYS BANK UK PLC (Co. Regn. No. 9740322) of P.O. Box 187, Leeds LS11 1AN.",
+                  "registrationDate": "2020-11-24",
+                  "subRegisterCode": "C"
+                }
+              }
+            }
+          },
+          "documentDetails": {
+            "document": {
+              "documentType": "50",
+              "documentDate": "2020-11-03",
+              "entryNumber": [
+                "B3",
+                "C2",
+                "C3",
+                "C4"
+              ],
+              "planOnlyIndicator": false,
+              "registerDescription": "Charge"
+            }
+          }
+        },
+        "ocRegisterData": {
+          "propertyRegister": {
+            "districtDetails": {
+              "entryText": "HERTFORDSHIRE : ST ALBANS"
+            },
+            "registerEntry": [
+              {
+                "entryNumber": "1",
+                "entryDate": "1991-11-11",
+                "entryType": "Property Description",
+                "entryText": "The Freehold land shown edged with red on the plan of the above Title filed at the Registry and being 47 Park Mount, Harpenden (AL5 3AS)."
+              },
+              {
+                "entryNumber": "2",
+                "entryDate": "1991-11-11",
+                "entryType": "Provisions",
+                "entryText": [
+                  "The Conveyance dated 7 June 1946 referred to in the Charges Register contains the following provision:-",
+                  "\"IT IS hereby declared that the Purchaser shall not be entitled to any right of light or air which will restrict the free use of the adjoining property of the Vendor for building or other purpose.\""
+                ]
+              }
+            ]
+          },
+          "proprietorshipRegister": {
+            "registerEntry": [
+              {
+                "entryNumber": "1",
+                "entryDate": "2020-11-24",
+                "entryType": "Proprietor",
+                "entryText": "PROPRIETOR: PHILIP CHRISTOPHER COOPER and CHLOE JANE COOPER of 47 Park Mount, Harpenden AL5 3AS."
+              },
+              {
+                "entryNumber": "2",
+                "entryDate": "2020-11-24",
+                "entryType": "Price Paid",
+                "entryText": "The price stated to have been paid on 3 November 2020 was £1,100,000."
+              },
+              {
+                "entryNumber": "3",
+                "entryDate": "2020-11-24",
+                "entryType": "Charge Restriction - B Register",
+                "entryText": "RESTRICTION: No disposition of the registered estate by the proprietor of the registered estate is to be registered without a written consent signed by the proprietor for the time being of the Charge dated 3 November 2020 in favour of Barclays Bank UK PLC referred to in the Charges Register."
+              }
+            ]
+          },
+          "chargesRegister": {
+            "registerEntry": [
+              {
+                "entryNumber": "1",
+                "entryDate": "1991-11-11",
+                "entryType": "Restrictive Covenants/Stipulations - Deed",
+                "entryText": [
+                  "A Conveyance of the land in this title dated 7 June 1946 made between (1) Jesse Catton (Vendor) and (2) Henry Dick Goodman Cunnold (Purchaser) contains the following covenants:-",
+                  "\"THE Purchaser for himself his successors in title and assigns and to the intent that this covenant will run with the land but not so that the Purchaser is liable after he has parted with the same hereby covenants with the Vendor and his successors in title that he the Purchaser and his successors in title will observe and perform the covenants contained in the Schedule hereto.",
+                  "THE SCHEDULE before referred to",
+                  "(1)  For ever to maintain a proper fence on the side of the boundary of the land marked !\"T\" within the boundary on the said plan.",
+                  "(2)  To observe a building line of fifteen feet from the boundary of the land fronting Park Mount",
+                  "(3)  That the house or any buildings erected on the said land shall not at any time be used for the purpose of any trade manufacture or business of any description or as an asylum hospital or other institution but are to be used only as a private dwellinghouse or professional residence of a Physician Surgeon or Solicitor.",
+                  "(4)  That only one such dwellinghouse shall be on the said piece of land.\"",
+                  "NOTE: The North Eastern boundary of the land in this title is marked \"T\""
+                ]
+              },
+              {
+                "entryNumber": "2",
+                "entryDate": "2020-11-24",
+                "entryType": "Registered Charges",
+                "entryText": "REGISTERED CHARGE dated 3 November 2020."
+              },
+              {
+                "entryNumber": "3",
+                "entryDate": "2020-11-24",
+                "entryType": "Chargee",
+                "entryText": "Proprietor: BARCLAYS BANK UK PLC (Co. Regn. No. 9740322) of P.O. Box 187, Leeds LS11 1AN."
+              },
+              {
+                "entryNumber": "4",
+                "entryDate": "2020-11-24",
+                "entryType": "Obligation",
+                "entryText": "The proprietor of the Charge dated 3 November 2020 referred to above is under an obligation to make further advances. These advances will have priority to the extent afforded by section 49(3) Land Registration Act 2002."
+              }
+            ]
+          }
+        }
+      },
+      "/propertyPack/titlesToBeSold/0/documentAvailability": {
+        "titleStatus": "Title number is valid.",
+        "titleStatusCode": "VALID",
+        "titleNumber": "HD291736",
+        "applicationsPending": false,
+        "referredToDocuments": [
+          {
+            "type": "Charge",
+            "typeCode": "Charge",
+            "entryNumbers": [
+              "B3",
+              "C2",
+              "C3",
+              "C4"
+            ],
+            "date": "2020-11-03",
+            "filedUnder": "HD291736",
+            "availability": "available for immediate download",
+            "availabilityCode": "IMMEDIATE"
+          },
+          {
+            "type": "Conveyance",
+            "typeCode": "Conveyance",
+            "entryNumbers": [
+              "A2",
+              "C1"
+            ],
+            "date": "1946-06-07",
+            "filedUnder": "HD291736",
+            "availability": "requires further investigation",
+            "availabilityCode": "UNAVAILABLE"
+          }
+        ],
+        "register": {
+          "type": "register",
+          "typeCode": "REGISTER",
+          "availability": "available for immediate download",
+          "availabilityCode": "IMMEDIATE",
+          "backdated": false
+        },
+        "titlePlan": {
+          "type": "plan",
+          "typeCode": "TITLEPLAN",
+          "availability": "available for immediate download",
+          "availabilityCode": "IMMEDIATE",
+          "backdated": false
+        }
+      }
+    }
+  },
+  {
+    "id": "Fn6BtFAkU73b1E6O1HO8",
+    "transactionId": "2MefoP93oE5DbYpyZy9Tzi",
+    "verification": {
+      "time": "2025-08-14T10:10:11.575Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Council Tax information obtained from the Valuation Office Agency at https://www.tax.service.gov.uk/check-council-tax-band/property/2475c93a-c81a-1192-9288-33e50fd7226a"
+            }
+          },
+          "attachments": [
+            {
+              "desc": "Council Tax band on GOV.UK",
+              "digest": {
+                "alg": "md5",
+                "value": "aCnUGQcEB7uBJe3rXmhXQA=="
+              },
+              "url": "https://www.tax.service.gov.uk/check-council-tax-band/property/2475c93a-c81a-1192-9288-33e50fd7226a"
+            }
+          ]
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/councilTax": {
+        "councilTaxBand": "G",
+        "councilTaxAffectingAlterations": {
+          "yesNo": "No"
+        }
+      }
+    }
+  }
+]
