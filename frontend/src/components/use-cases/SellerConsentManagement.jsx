@@ -89,7 +89,7 @@ const PARTICIPANT_ROLES = [
 
 function SellerConsentManagement() {
   const [transactionId] = useState("78HJ1ggqJBuMjED6bvhdx7");
-  const [transactionState, setTransactionState] = useState(null);
+  const [, setTransactionState] = useState(null);
   const [participants, setParticipants] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -308,7 +308,7 @@ function SellerConsentManagement() {
         }
         
         // Handle other objects by showing key-value pairs
-        const entries = Object.entries(val).filter(([_, v]) => v !== null && v !== undefined);
+        const entries = Object.entries(val).filter(([, v]) => v !== null && v !== undefined);
         if (entries.length === 1) {
           const [key, value] = entries[0];
           return `${key}: ${value}`;

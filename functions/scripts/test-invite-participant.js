@@ -5,9 +5,9 @@ async function testInviteParticipant() {
   const transactionId = "78HJ1ggqJBuMjED6bvhdx7";
   const testParticipant = {
     firstName: "John",
-    lastName: "Smith", 
+    lastName: "Smith",
     email: "john.smith@example.com",
-    role: "Surveyor"
+    role: "Surveyor",
   };
 
   console.log("=== Testing Invite Participant ==>");

@@ -2,8 +2,6 @@ const { onRequest } = require("firebase-functions/v2/https");
 const { logger } = require("firebase-functions");
 const { defineString } = require("firebase-functions/params");
 const cors = require("cors")({ origin: true });
-const path = require("path");
-const fs = require("fs").promises;
 
 // Define environment parameters
 const smartDataApiKey = defineString("SMART_DATA_CHALLENGE_API_KEY");
