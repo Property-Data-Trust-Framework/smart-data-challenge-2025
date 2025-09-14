@@ -14,8 +14,14 @@ import PropertyViewer from '@/components/use-cases/PropertyViewer';
 import MigratedClaimsViewer from '@/components/use-cases/MigratedClaimsViewer';
 import PDTFViewer from '@/components/use-cases/PDTFViewer';
 import SellerConsentManagement from '@/components/use-cases/SellerConsentManagement';
+import ConveyancingDiligence from '@/components/use-cases/ConveyancingDiligence';
 
 const useCases = [
+  {
+    id: 'conveyancing-diligence',
+    name: 'Conveyancing Diligence',
+    component: ConveyancingDiligence,
+  },
   {
     id: 'pdtf-viewer',
     name: 'PDTF Viewer',
@@ -49,7 +55,7 @@ const useCases = [
 ];
 
 function App() {
-  const [selectedUseCase, setSelectedUseCase] = useState(useCases.find(uc => uc.id === 'seller-consent-management') || useCases[0]); // Start with Seller Consent Management
+  const [selectedUseCase, setSelectedUseCase] = useState(useCases.find(uc => uc.id === 'conveyancing-diligence') || useCases[0]); // Start with Conveyancing Diligence
   
   const CurrentComponent = selectedUseCase.component;
 

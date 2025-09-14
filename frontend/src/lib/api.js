@@ -99,6 +99,20 @@ export const pdtfAPI = {
     return response.data;
   },
 
+  // Generate AI-powered legal diligence analysis report - PUBLIC wrapper
+  generateDiligenceReport: async (stateData, claimsData, analysisType = 'legal-diligence') => {
+    const endpoint = import.meta.env.DEV
+      ? `http://127.0.0.1:5001/demo-test/us-central1/generateDiligenceReport`
+      : `https://generatediligencereport-sufe6opz3a-uc.a.run.app`;
+
+    const response = await axios.post(endpoint, {
+      stateData,
+      claimsData,
+      analysisType
+    });
+    return response.data;
+  },
+
   // PRIVATE FUNCTIONS - Disabled in frontend for security
   // These would require proper authentication tokens in a production app
   

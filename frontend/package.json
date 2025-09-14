@@ -22,10 +22,12 @@
     "axios": "^1.11.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "json-pointer": "^0.6.2",
     "lucide-react": "^0.539.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "tailwind-merge": "^3.3.1"
+    "tailwind-merge": "^3.3.1",
+    "traverse": "^0.6.11"
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",

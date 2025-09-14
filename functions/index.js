@@ -7,6 +7,7 @@ const sandboxDataHandlers = require("./handlers/sandbox-data");
 const propertyPackHandlers = require("./handlers/property-pack");
 const pdtfViewerHandlers = require("./handlers/pdtf-viewer");
 const sellerConsentHandlers = require("./handlers/seller-consent-management");
+const conveyancingDiligenceHandlers = require("./handlers/conveyancing-diligence");
 
 // Export all functions from different handlers
 
@@ -26,3 +27,6 @@ exports.getPDTFState = pdtfViewerHandlers.getPDTFState;
 // Seller Consent Management use case
 exports.updateParticipantStatus = sellerConsentHandlers.updateParticipantStatus;
 exports.inviteParticipant = sellerConsentHandlers.inviteParticipant;
+
+// Conveyancing Diligence use case
+exports.generateDiligenceReport = conveyancingDiligenceHandlers.generateDiligenceReport;

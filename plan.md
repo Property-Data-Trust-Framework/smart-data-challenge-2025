@@ -56,10 +56,23 @@
 
 # Demo app - Simply Conveyancing Diligence
 
-- [ ] Tabbed view of property pack data, unfold source data into contributing claims
-- [ ] Backend calls to GPT-5 summary report
-- [ ] Frontend click-to-analyse, display summary report inc provenance
-- [ ] Basic evolution of summary prompt for decent results
+- [x] Add new front end use case "Conveyancing Diligence"
+- [x] Loads state and claims from the Moverly (nptn) API and let's start with a simple presentation of the
+      property pack but structured to how a conveyancer would want to see it
+- [x] Add a function in the frontend to generate a claims map from the claims (a map of paths to the constituent data at that path from the claims)
+- [x] Include UI for each data element (using its path in the state) to show a dialog of the contributing claims
+- [x] Add Backend calls to OpenAI to generate aGPT-5 summary report using a simple legal-focussed diligence prompt and including the state
+- [x] Frontend click-to-analyse to trigger the report generation, display summary report inc provenance
+- [x] Basic evolution of summary prompt for better results
+- [x] Default to transaction ID '78HJ1ggqJBuMjED6bvhdx7' with auto-load on mount
+- [x] Use property address as page title/subtitle, remove service and transaction selectors
+- [x] Implement comprehensive property data display across 14 organized categories
+- [x] Advanced claims mapping using JSON Pointer and traverse library for hierarchical data navigation
+- [x] Fixed claims dialog integration with proper parent/child claim relationships
+- [x] Enhanced evidence display showing meaningful source information for electronic records
+- [x] Separate Land Registry title deed summary with proper legal owners claims mapping
+- [x] Clean transaction ID display (discrete top-right corner positioning)
+- [x] Professional conveyancer-focused interface with complete PDTF claims provenance tracking
 
 # Demo app - Survey view and submit
 
