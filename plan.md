@@ -41,7 +41,7 @@
 - [x] Add Show History button for displaying participant-related claims with friendly formatting
 - [x] Implement human-readable history display using participant names instead of indices
 - [x] Enhanced claim formatting to show friendly descriptions of JSON changes (names, addresses, contact info, etc.)
-- [ ] Test Seller Consent Management with live NPTN SIT environment (available during working hours only)
+- [x] Reconfigure Seller Consent Management to use the live LMS NPTN SIT environment
 
 # Frontend UI Infrastructure and Consistency
 
@@ -52,10 +52,10 @@
 - [x] Audit entire frontend for consistent component library usage
 - [x] Implement proper loading states with content-aware skeleton layouts
 - [x] Enhanced button loading states using Loader2 icon instead of custom spinners
+- [ ] Add UI for demo category (production live exchange, prototype live exchange, redacted-live exchange, mocked exchange)
 
 # Demo app - Simply Conveyancing Diligence
 
-- [ ] Add UI for demo category (production live exchange, prototype live exchange, redacted-live exchange, mocked exchange)
 - [ ] Tabbed view of property pack data, unfold source data into contributing claims
 - [ ] Backend calls to GPT-5 summary report
 - [ ] Frontend click-to-analyse, display summary report inc provenance

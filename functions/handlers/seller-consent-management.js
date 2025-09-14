@@ -3,6 +3,49 @@ const { logger } = require("firebase-functions");
 const cors = require("cors")({ origin: true });
 const axios = require("axios");
 
+// OAuth token storage
+let oauthToken = null;
+let tokenExpiry = null;
+
+// LMS NPTN server configuration
+const LMS_NPTN_BASE_URL = process.env.LMS_NPTN_BASE_URL;
+const OAUTH_TOKEN_URL = process.env.LMS_OAUTH_TOKEN_URL;
+const CLIENT_ID = process.env.LMS_NPTN_CLIENT_ID;
+const CLIENT_SECRET = process.env.LMS_NPTN_CLIENT_SECRET;
+
+/**
+ * Get OAuth token using client credentials flow.
+ * @return {Promise<string>} The OAuth token.
+ */
+async function getOAuthToken() {
+  if (oauthToken && tokenExpiry && Date.now() < tokenExpiry) {
+    return oauthToken;
+  }
+
+  try {
+    const response = await axios.post(
+      OAUTH_TOKEN_URL,
+      new URLSearchParams({
+        grant_type: "client_credentials",
+        client_id: CLIENT_ID,
+        client_secret: CLIENT_SECRET,
+      }),
+      {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      },
+    );
+
+    oauthToken = response.data.access_token;
+    tokenExpiry = Date.now() + response.data.expires_in * 1000 - 60000;
+    return oauthToken;
+  } catch (error) {
+    logger.error("OAuth token error:", error);
+    throw new Error("Failed to obtain OAuth token");
+  }
+}
+
 // Public endpoint to update participant status via Moverly NPTN API
 exports.updateParticipantStatus = onRequest(
   {
@@ -34,7 +77,7 @@ exports.updateParticipantStatus = onRequest(
         };
         const apiStatus = statusMap[status];
 
-        // Use Moverly NPTN API to create claim
+        // Use Moverly NPTN API
         const MOVERLY_NPTN_BASE_URL = "https://www.api-staging.moverly.com/nptnService/transactions";
         const apiKey = process.env.MOVERLY_NPTN_API_KEY;
 
@@ -47,6 +90,7 @@ exports.updateParticipantStatus = onRequest(
         // Create a claim with the participant status update using the working array structure
         const claimData = [
           {
+            transactionId: transactionId,
             claims: {
               [`/participants/${participantIndex}/participantStatus`]: apiStatus,
             },
@@ -112,6 +156,7 @@ exports.inviteParticipant = onRequest(
           });
         }
 
+        // Use Moverly NPTN API
         const MOVERLY_NPTN_BASE_URL = "https://www.api-staging.moverly.com/nptnService/transactions";
         const apiKey = process.env.MOVERLY_NPTN_API_KEY;
 
@@ -124,6 +169,7 @@ exports.inviteParticipant = onRequest(
         // Create a claim to add a new participant using the /participants/- path
         const claimData = [
           {
+            transactionId: transactionId,
             claims: {
               "/participants/-": {
                 name: {

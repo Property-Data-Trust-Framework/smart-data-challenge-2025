@@ -28,6 +28,12 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs";
+import {
   Users,
   UserCheck,
   UserX,
@@ -89,7 +95,7 @@ const PARTICIPANT_ROLES = [
 
 function SellerConsentManagement() {
   const [transactionId] = useState("78HJ1ggqJBuMjED6bvhdx7");
-  const [, setTransactionState] = useState(null);
+  const [transactionState, setTransactionState] = useState(null);
   const [participants, setParticipants] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -122,8 +128,9 @@ function SellerConsentManagement() {
       );
       setTransactionState(stateResponse);
 
-      // Extract participants from transaction state
-      const extractedParticipants = stateResponse?.participants || [];
+      // Extract participants from transaction state and filter out null values
+      const rawParticipants = stateResponse?.participants || [];
+      const extractedParticipants = rawParticipants.filter(participant => participant !== null && participant !== undefined);
       setParticipants(extractedParticipants);
     } catch (err) {
       console.error("Failed to load transaction data:", err);
@@ -513,24 +520,111 @@ function SellerConsentManagement() {
       {/* Header */}
       <div>
         <h2 className="text-2xl font-bold text-gray-900">
-          Seller Consent Management
+          {transactionState?.propertyPack?.address ?
+            `${transactionState.propertyPack.address.line1}, ${transactionState.propertyPack.address.town}` :
+            "91 South Hill Avenue, Manchester"
+          }
         </h2>
         <p className="text-gray-600">
-          91 South Hill Avenue • Manage participant access and sharing
-          permissions
+          Property transaction management
         </p>
       </div>
 
-      {/* Error Display */}
-      {error && (
-        <Alert variant="destructive">
-          <AlertCircle className="h-4 w-4" />
-          <AlertTitle>Error</AlertTitle>
-          <AlertDescription>{error}</AlertDescription>
-        </Alert>
-      )}
+      {/* Navigation Tabs */}
+      <Tabs defaultValue="manage" className="w-full">
+        <TabsList className="grid w-full grid-cols-2">
+          <TabsTrigger value="home" className="flex items-center space-x-2">
+            <Home className="h-4 w-4" />
+            <span>Home</span>
+          </TabsTrigger>
+          <TabsTrigger value="manage" className="flex items-center space-x-2">
+            <Users className="h-4 w-4" />
+            <span>Manage</span>
+          </TabsTrigger>
+        </TabsList>
 
-      {/* Loading State */}
+        {/* Home Tab Content */}
+        <TabsContent value="home" className="mt-6">
+          {transactionState ? (
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {/* Property Overview */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-2">
+                    <Home className="h-5 w-5" />
+                    <span>Property Details</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2">
+                    <p className="text-sm text-gray-600">Price: £{transactionState.propertyPack?.priceInformation?.price?.toLocaleString()}</p>
+                    <p className="text-sm text-gray-600">Tenure: {transactionState.propertyPack?.marketingTenure}</p>
+                    <p className="text-sm text-gray-600">Status: {transactionState.status}</p>
+                    <p className="text-sm text-gray-600">UPRN: {transactionState.propertyPack?.uprn}</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Participants Summary */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-2">
+                    <Users className="h-5 w-5" />
+                    <span>Participants</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2">
+                    <p className="text-sm text-gray-600">Total: {participants.length} participants</p>
+                    <p className="text-sm text-gray-600">Active: {participants.filter(p => p?.participantStatus === "Active" || !p?.participantStatus).length}</p>
+                    <p className="text-sm text-gray-600">Invited: {participants.filter(p => p?.participantStatus === "Invited").length}</p>
+                    <p className="text-sm text-gray-600">Removed: {participants.filter(p => p?.participantStatus === "Removed").length}</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Energy Rating */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-2">
+                    <Shield className="h-5 w-5" />
+                    <span>Energy Rating</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2">
+                    <p className="text-sm text-gray-600">Current: {transactionState.propertyPack?.energyEfficiency?.certificate?.currentEnergyRating}</p>
+                    <p className="text-sm text-gray-600">Potential: {transactionState.propertyPack?.energyEfficiency?.certificate?.potentialEnergyRating}</p>
+                    <p className="text-sm text-gray-600">Efficiency: {transactionState.propertyPack?.energyEfficiency?.certificate?.currentEnergyEfficiency}/100</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          ) : (
+            <Card className="border-dashed">
+              <CardContent className="text-center py-12">
+                <Home className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+                <p className="text-gray-600 mb-2">No transaction data available</p>
+                <p className="text-sm text-gray-500">
+                  Transaction data will appear here once loaded.
+                </p>
+              </CardContent>
+            </Card>
+          )}
+        </TabsContent>
+
+        {/* Manage Tab Content */}
+        <TabsContent value="manage" className="mt-6">
+          {/* Error Display */}
+          {error && (
+            <Alert variant="destructive" className="mb-6">
+              <AlertCircle className="h-4 w-4" />
+              <AlertTitle>Error</AlertTitle>
+              <AlertDescription>{error}</AlertDescription>
+            </Alert>
+          )}
+
+          {/* Loading State */}
       {loading && (
         <div className="space-y-4">
           <div className="text-center mb-4">
@@ -892,6 +986,8 @@ function SellerConsentManagement() {
           </div>
         </DialogContent>
       </Dialog>
+        </TabsContent>
+      </Tabs>
     </div>
   );
 }
