@@ -39,7 +39,7 @@ const useCases = [
   },
   {
     id: 'property-viewer',
-    name: 'Property Data Explorer',
+    name: 'SDC Sandbox Data',
     component: PropertyViewer,
   },
   {

@@ -81,7 +81,7 @@ function PropertyViewer() {
       <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-8 rounded-lg">
         <div className="flex items-center gap-3 mb-4">
           <Building2 className="h-8 w-8 text-emerald-600" />
-          <h1 className="text-3xl font-bold text-gray-900">Property Data Explorer</h1>
+          <h1 className="text-3xl font-bold text-gray-900">SDC Sandbox Data</h1>
         </div>
         <p className="text-gray-600 mb-4">
           Select a property to view comprehensive data including owners, energy performance, and conveyancing details
