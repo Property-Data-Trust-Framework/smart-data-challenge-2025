@@ -4,10 +4,10 @@ import axios from 'axios';
 const PUBLIC_FUNCTION_URLS = {
   getPropertyData: 'https://getpropertydata-sufe6opz3a-uc.a.run.app',
   getPropertyPackData: import.meta.env.DEV
-    ? 'http://127.0.0.1:5001/demo-test/us-central1/getPropertyPackData'
+    ? 'http://127.0.0.1:5001/moverly-smart-data-challenge/us-central1/getPropertyPackData'
     : 'https://getpropertypackdata-sufe6opz3a-uc.a.run.app',
   getAggregatedState: import.meta.env.DEV
-    ? 'http://127.0.0.1:5001/demo-test/us-central1/getAggregatedState'
+    ? 'http://127.0.0.1:5001/moverly-smart-data-challenge/us-central1/getAggregatedState'
     : 'https://getaggregatedstate-sufe6opz3a-uc.a.run.app'
 };
 
@@ -48,7 +48,7 @@ export const pdtfAPI = {
   // Get PDTF claims from specified service (Moverly or LMS NPTN) - PUBLIC wrapper
   getPDTFClaims: async (service, transactionId) => {
     const endpoint = import.meta.env.DEV
-      ? `http://127.0.0.1:5001/demo-test/us-central1/getPDTFClaims`
+      ? `http://127.0.0.1:5001/moverly-smart-data-challenge/us-central1/getPDTFClaims`
       : `https://getpdtfclaims-sufe6opz3a-uc.a.run.app`;
 
     const response = await axios.get(endpoint, {
@@ -60,7 +60,7 @@ export const pdtfAPI = {
   // Get PDTF state from specified service (Moverly or LMS NPTN) - PUBLIC wrapper
   getPDTFState: async (service, transactionId) => {
     const endpoint = import.meta.env.DEV
-      ? `http://127.0.0.1:5001/demo-test/us-central1/getPDTFState`
+      ? `http://127.0.0.1:5001/moverly-smart-data-challenge/us-central1/getPDTFState`
       : `https://getpdtfstate-sufe6opz3a-uc.a.run.app`;
 
     const response = await axios.get(endpoint, {
@@ -72,7 +72,7 @@ export const pdtfAPI = {
   // Update participant status in a transaction - PUBLIC wrapper
   updateParticipantStatus: async (transactionId, participantIndex, status) => {
     const endpoint = import.meta.env.DEV
-      ? `http://127.0.0.1:5001/demo-test/us-central1/updateParticipantStatus`
+      ? `http://127.0.0.1:5001/moverly-smart-data-challenge/us-central1/updateParticipantStatus`
       : `https://updateparticipantstatus-sufe6opz3a-uc.a.run.app`;
 
     const response = await axios.post(endpoint, {
@@ -86,7 +86,7 @@ export const pdtfAPI = {
   // Invite a new participant to a transaction - PUBLIC wrapper
   inviteParticipant: async (transactionId, firstName, lastName, email, role) => {
     const endpoint = import.meta.env.DEV
-      ? `http://127.0.0.1:5001/demo-test/us-central1/inviteParticipant`
+      ? `http://127.0.0.1:5001/moverly-smart-data-challenge/us-central1/inviteParticipant`
       : `https://inviteparticipant-sufe6opz3a-uc.a.run.app`;
 
     const response = await axios.post(endpoint, {
@@ -102,7 +102,7 @@ export const pdtfAPI = {
   // Generate AI-powered legal diligence analysis report - PUBLIC wrapper
   generateDiligenceReport: async (stateData, claimsData, analysisType = 'legal-diligence') => {
     const endpoint = import.meta.env.DEV
-      ? `http://127.0.0.1:5001/demo-test/us-central1/generateDiligenceReport`
+      ? `http://127.0.0.1:5001/moverly-smart-data-challenge/us-central1/generateDiligenceReport`
       : `https://generatediligencereport-sufe6opz3a-uc.a.run.app`;
 
     const response = await axios.post(endpoint, {

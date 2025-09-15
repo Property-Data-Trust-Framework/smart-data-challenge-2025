@@ -20,7 +20,8 @@
     "dotenv": "^17.2.2",
     "firebase-admin": "^12.7.0",
     "firebase-functions": "^5.1.1",
-    "jsonpointer": "^5.0.1"
+    "jsonpointer": "^5.0.1",
+    "openai": "^5.20.2"
   },
   "devDependencies": {
     "eslint": "^8.15.0",

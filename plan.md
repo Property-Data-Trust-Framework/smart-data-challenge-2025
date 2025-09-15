@@ -54,25 +54,23 @@
 - [x] Enhanced button loading states using Loader2 icon instead of custom spinners
 - [ ] Add UI for demo category (production live exchange, prototype live exchange, redacted-live exchange, mocked exchange)
 
-# Demo app - Simply Conveyancing Diligence
+# Demo app - Conveyancing Diligence & AI Report on Title
 
-- [x] Add new front end use case "Conveyancing Diligence"
-- [x] Loads state and claims from the Moverly (nptn) API and let's start with a simple presentation of the
-      property pack but structured to how a conveyancer would want to see it
-- [x] Add a function in the frontend to generate a claims map from the claims (a map of paths to the constituent data at that path from the claims)
-- [x] Include UI for each data element (using its path in the state) to show a dialog of the contributing claims
-- [x] Add Backend calls to OpenAI to generate aGPT-5 summary report using a simple legal-focussed diligence prompt and including the state
-- [x] Frontend click-to-analyse to trigger the report generation, display summary report inc provenance
-- [x] Basic evolution of summary prompt for better results
-- [x] Default to transaction ID '78HJ1ggqJBuMjED6bvhdx7' with auto-load on mount
-- [x] Use property address as page title/subtitle, remove service and transaction selectors
-- [x] Implement comprehensive property data display across 14 organized categories
-- [x] Advanced claims mapping using JSON Pointer and traverse library for hierarchical data navigation
-- [x] Fixed claims dialog integration with proper parent/child claim relationships
-- [x] Enhanced evidence display showing meaningful source information for electronic records
-- [x] Separate Land Registry title deed summary with proper legal owners claims mapping
-- [x] Clean transaction ID display (discrete top-right corner positioning)
-- [x] Professional conveyancer-focused interface with complete PDTF claims provenance tracking
+- [x] Add Conveyancing Diligence use case with comprehensive property data display
+- [x] Load state and claims from Moverly PDTF API for transaction analysis
+- [x] Implement claims mapping using JSON Pointer for hierarchical data navigation
+- [x] Add UI to show contributing claims for each data element with provenance tracking
+- [x] Create tabbed interface: Property Details, Title Register, and AI Report on Title
+- [x] Add comprehensive property data display across 14 organized categories
+- [x] Implement dedicated Title Register tab with complete Land Registry data
+- [x] **Simplified AI Report on Title generation using GPT-4.1**
+- [x] **Backend integration with OpenAI API for comprehensive title analysis**
+- [x] **Enhanced prompt engineering for professional legal document format**
+- [x] **Markdown-formatted report output with proper legal document structure**
+- [x] **Professional React rendering with enhanced typography and formatting**
+- [x] **Full property transaction state analysis without token limitations**
+- [x] Fixed address object rendering issues and API endpoint configuration
+- [x] Professional conveyancer-focused interface with complete PDTF claims provenance
 
 # Demo app - Survey view and submit
 

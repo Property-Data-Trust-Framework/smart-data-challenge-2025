@@ -11,6 +11,7 @@ import { useToast } from '@/hooks/use-toast';
 import { pdtfAPI } from '@/lib/api';
 import jp from 'json-pointer';
 import traverse from 'traverse';
+import ReactMarkdown from 'react-markdown';
 
 const PDTF_SERVICES = [
   {
@@ -713,7 +714,7 @@ function ConveyancingDiligence() {
     setClaimsDialogOpen(true);
   };
 
-  const generateDiligenceReport = async () => {
+  const generateReportOnTitle = async () => {
     if (!stateData) {
       toast({
         title: "No data available",
@@ -726,28 +727,27 @@ function ConveyancingDiligence() {
     setAnalysisLoading(true);
 
     try {
-      const response = await pdtfAPI.generateDiligenceReport(stateData, claimsData, 'legal-diligence');
+      const response = await pdtfAPI.generateDiligenceReport(stateData, claimsData, 'report-on-title');
 
       if (response.success && response.report) {
         setAnalysisResult({
-          summary: response.report.executiveSummary,
-          riskLevel: response.report.riskAssessment.overallRisk,
-          keyFindings: response.report.riskAssessment.riskFactors.map(factor => factor.description),
+          reportOnTitle: response.report.reportOnTitle,
+          property: response.report.property,
           fullReport: response.report
         });
 
         toast({
-          title: "Analysis complete",
-          description: "Legal diligence report generated successfully",
+          title: "Report on Title generated",
+          description: "AI-powered Report on Title completed successfully",
         });
       } else {
-        throw new Error('Invalid response from diligence service');
+        throw new Error('Invalid response from Report on Title service');
       }
 
     } catch (err) {
       toast({
-        title: "Analysis failed",
-        description: err.response?.data?.error || err.message || "Failed to generate diligence report",
+        title: "Report generation failed",
+        description: err.response?.data?.error || err.message || "Failed to generate Report on Title",
         variant: "destructive"
       });
     } finally {
@@ -843,18 +843,41 @@ function ConveyancingDiligence() {
 
       {stateData && !loading && (
         <Tabs defaultValue="property" className="w-full">
-          <TabsList className="grid w-full grid-cols-2">
+          <TabsList className="grid w-full grid-cols-3">
             <TabsTrigger value="property" className="flex items-center gap-2">
               <Building className="h-4 w-4" />
               Property Details
             </TabsTrigger>
+            <TabsTrigger value="title" className="flex items-center gap-2">
+              <FileText className="h-4 w-4" />
+              Title Register
+            </TabsTrigger>
             <TabsTrigger value="analysis" className="flex items-center gap-2">
               <Bot className="h-4 w-4" />
-              AI Analysis
+              Report on Title
             </TabsTrigger>
           </TabsList>
 
           <TabsContent value="property" className="space-y-6">
+            {/* Title Register Summary - Featured at Top */}
+            {stateData.propertyPack?.titlesToBeSold?.[0]?.registerExtract?.ocSummaryData && (
+              <Card className="border-2 border-amber-200 bg-gradient-to-r from-amber-50 to-yellow-50">
+                <CardHeader>
+                  <CardTitle className="text-lg flex items-center gap-2">
+                    <FileText className="h-5 w-5 text-amber-600" />
+                    Title Register Summary
+                  </CardTitle>
+                  <p className="text-sm text-gray-600">Key title information - see full details in Title Register tab</p>
+                </CardHeader>
+                <CardContent className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {renderDataElement('Title Number', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/title/titleNumber', stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.title?.titleNumber)}
+                  {renderDataElement('Class of Title', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/title/classOfTitleCode', stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.title?.classOfTitleCode)}
+                  {stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.pricePaidEntry &&
+                    renderDataElement('Last Sale Price', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/pricePaidEntry/entryDetails/infills/amount', stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.pricePaidEntry?.entryDetails?.infills?.amount, formatCurrency)}
+                </CardContent>
+              </Card>
+            )}
+
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               {/* Property Pack Data */}
               <div className="lg:col-span-2">
@@ -1207,129 +1230,154 @@ function ConveyancingDiligence() {
             </div>
           </TabsContent>
 
+          <TabsContent value="title" className="space-y-6">
+            {stateData.propertyPack?.titlesToBeSold?.[0]?.registerExtract?.ocSummaryData ? (
+              <div className="space-y-6">
+                {/* Complete Title Register Extract */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-xl flex items-center gap-2">
+                      <FileText className="h-6 w-6 text-amber-600" />
+                      Land Registry Title Register - Complete Extract
+                    </CardTitle>
+                    <p className="text-gray-600">Full official copy of the Land Registry title for this property</p>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+
+                    {/* Title Details */}
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h3 className="font-semibold text-lg mb-4">Title Information</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {renderDataElement('Title Number', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/title/titleNumber', stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.title?.titleNumber)}
+                        {renderDataElement('Class of Title', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/title/classOfTitleCode', stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.title?.classOfTitleCode)}
+                        {renderDataElement('Registration Date', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/title/titleRegistrationDetails/registrationDate', stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.title?.titleRegistrationDetails?.registrationDate, formatDate)}
+                        {renderDataElement('Edition Date', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/editionDate', stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.editionDate, formatDate)}
+                        {renderDataElement('Official Copy Date & Time', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/officialCopyDateTime', stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.officialCopyDateTime, formatDate)}
+                        {renderDataElement('Land Registry Office', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/title/titleRegistrationDetails/landRegistryOfficeName', stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.title?.titleRegistrationDetails?.landRegistryOfficeName)}
+                      </div>
+                    </div>
+
+                    {/* Registered Proprietors */}
+                    {stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.proprietorship?.registeredProprietorParty && (
+                      <div className="bg-blue-50 p-4 rounded-lg">
+                        <h3 className="font-semibold text-lg mb-4">Registered Proprietors (Legal Owners)</h3>
+                        <div className="space-y-4">
+                          {stateData.propertyPack.titlesToBeSold[0].registerExtract.ocSummaryData.proprietorship.registeredProprietorParty.map((proprietor, index) => (
+                            <div key={index} className="border border-blue-200 p-3 rounded">
+                              <h4 className="font-medium mb-2">Proprietor {index + 1}</h4>
+                              {renderDataElement('Details', `/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/proprietorship/registeredProprietorParty/${index}`, proprietor, formatPrettyJson)}
+                            </div>
+                          ))}
+                          {renderDataElement('Current Proprietorship Date', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/proprietorship/currentProprietorshipDate', stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.proprietorship?.currentProprietorshipDate, formatDate)}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Price Paid Information */}
+                    {stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.pricePaidEntry && (
+                      <div className="bg-green-50 p-4 rounded-lg">
+                        <h3 className="font-semibold text-lg mb-4">Price Paid Information</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          {renderDataElement('Last Sale Price', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/pricePaidEntry/entryDetails/infills/amount', stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.pricePaidEntry?.entryDetails?.infills?.amount, formatCurrency)}
+                          {renderDataElement('Last Sale Date', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/pricePaidEntry/entryDetails/infills/date', stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.pricePaidEntry?.entryDetails?.infills?.date, formatDate)}
+                          {renderDataElement('Price Paid Registration Date', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/pricePaidEntry/entryDetails/registrationDate', stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.pricePaidEntry?.entryDetails?.registrationDate, formatDate)}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Additional Title Data */}
+                    {stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData && (
+                      <div className="bg-purple-50 p-4 rounded-lg">
+                        <h3 className="font-semibold text-lg mb-4">Additional Register Information</h3>
+                        {renderDataElement('Complete Register Extract', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData', stateData.propertyPack.titlesToBeSold[0].registerExtract.ocSummaryData, formatPrettyJson)}
+                      </div>
+                    )}
+
+                  </CardContent>
+                </Card>
+              </div>
+            ) : (
+              <Alert>
+                <AlertCircle className="h-4 w-4" />
+                <AlertTitle>No Title Register Data</AlertTitle>
+                <AlertDescription>
+                  Title register information is not available for this property.
+                </AlertDescription>
+              </Alert>
+            )}
+          </TabsContent>
+
           <TabsContent value="analysis" className="space-y-6">
-            {/* AI Legal Analysis Section */}
+            {/* AI Report on Title Section */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
                   <Bot className="h-5 w-5 text-blue-600" />
-                  AI Legal Analysis
+                  AI Report on Title
                 </CardTitle>
                 <CardDescription>
-                  Generate comprehensive conveyancing diligence report using AI analysis
+                  Generate a comprehensive Report on Title using AI analysis of the property data
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   <Button
-                    onClick={generateDiligenceReport}
+                    onClick={generateReportOnTitle}
                     disabled={analysisLoading || !stateData}
                     className="w-full sm:w-auto"
                   >
                     {analysisLoading ? (
                       <>
                         <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2" />
-                        Generating Analysis...
+                        Generating Report on Title...
                       </>
                     ) : (
                       <>
                         <Bot className="h-4 w-4 mr-2" />
-                        Generate Diligence Report
+                        Generate Report on Title
                       </>
                     )}
                   </Button>
 
                   {analysisResult && (
                     <div className="mt-6 space-y-4">
-                      <div className="border rounded-lg p-4 bg-gradient-to-r from-blue-50 to-indigo-50">
-                        <h4 className="font-semibold text-lg mb-2 flex items-center gap-2">
-                          <Shield className="h-5 w-5 text-blue-600" />
-                          Executive Summary
-                        </h4>
-                        <p className="text-gray-700 leading-relaxed">{analysisResult.summary}</p>
-                      </div>
-
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="border rounded-lg p-4">
-                          <h4 className="font-semibold mb-3 flex items-center gap-2">
-                            <AlertCircle className={`h-5 w-5 ${
-                              analysisResult.riskLevel === 'HIGH' ? 'text-red-600' :
-                              analysisResult.riskLevel === 'MEDIUM' ? 'text-yellow-600' : 'text-green-600'
-                            }`} />
-                            Risk Assessment:
-                            <Badge variant={
-                              analysisResult.riskLevel === 'HIGH' ? 'destructive' :
-                              analysisResult.riskLevel === 'MEDIUM' ? 'secondary' : 'default'
-                            }>
-                              {analysisResult.riskLevel}
-                            </Badge>
+                      {/* Property Summary */}
+                      {analysisResult.property && (
+                        <div className="border rounded-lg p-4 bg-gradient-to-r from-blue-50 to-indigo-50">
+                          <h4 className="font-semibold text-lg mb-2 flex items-center gap-2">
+                            <Building className="h-5 w-5 text-blue-600" />
+                            Property Summary
                           </h4>
-                          {analysisResult.keyFindings && analysisResult.keyFindings.length > 0 && (
-                            <ul className="space-y-1 text-sm">
-                              {analysisResult.keyFindings.slice(0, 5).map((finding, index) => (
-                                <li key={index} className="flex items-start gap-2">
-                                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                                  <span>{finding}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                        </div>
-
-                        <div className="border rounded-lg p-4">
-                          <h4 className="font-semibold mb-3 flex items-center gap-2">
-                            <FileText className="h-5 w-5 text-purple-600" />
-                            Action Items
-                          </h4>
-                          {analysisResult.fullReport?.actionItems && analysisResult.fullReport.actionItems.length > 0 ? (
-                            <ul className="space-y-2 text-sm">
-                              {analysisResult.fullReport.actionItems.slice(0, 3).map((action, index) => (
-                                <li key={index} className="flex items-start gap-2">
-                                  <Badge variant="outline" className="text-xs">
-                                    {action.priority || 'MEDIUM'}
-                                  </Badge>
-                                  <span className="flex-1">{action.description}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          ) : (
-                            <p className="text-sm text-gray-500">No specific action items identified</p>
-                          )}
-                        </div>
-                      </div>
-
-                      {analysisResult.fullReport?.aiAnalysis && (
-                        <details className="border rounded-lg">
-                          <summary className="p-4 cursor-pointer hover:bg-gray-50 font-semibold flex items-center gap-2">
-                            <Eye className="h-4 w-4" />
-                            View Full AI Analysis Report
-                          </summary>
-                          <div className="p-4 border-t bg-gray-50">
-                            {typeof analysisResult.fullReport.aiAnalysis === 'string' ? (
-                              <pre className="whitespace-pre-wrap text-sm leading-relaxed">
-                                {analysisResult.fullReport.aiAnalysis}
-                              </pre>
-                            ) : (
-                              <div className="space-y-4">
-                                {analysisResult.fullReport.aiAnalysis.fullAnalysis && (
-                                  <pre className="whitespace-pre-wrap text-sm leading-relaxed">
-                                    {analysisResult.fullReport.aiAnalysis.fullAnalysis}
-                                  </pre>
-                                )}
-                                {!analysisResult.fullReport.aiAnalysis.fullAnalysis && (
-                                  <pre className="text-xs bg-white p-3 rounded border overflow-x-auto">
-                                    {JSON.stringify(analysisResult.fullReport.aiAnalysis, null, 2)}
-                                  </pre>
-                                )}
-                              </div>
-                            )}
+                          <div className="text-sm text-gray-700">
+                            <div><strong>Address:</strong> {formatAddress(analysisResult.property.address)}</div>
+                            <div><strong>Title Number:</strong> {analysisResult.property.titleNumber}</div>
                           </div>
-                        </details>
+                        </div>
                       )}
 
-                      <div className="text-xs text-gray-500 italic border-l-4 border-blue-200 pl-3 py-2 bg-blue-50">
-                        <strong>Disclaimer:</strong> This analysis is generated by AI for demonstration purposes.
-                        Professional legal advice should always be sought for actual conveyancing matters.
+                      {/* Report on Title Content */}
+                      {analysisResult.reportOnTitle && (
+                        <div className="border rounded-lg">
+                          <div className="p-4 border-b bg-gradient-to-r from-amber-50 to-yellow-50">
+                            <h4 className="font-semibold text-lg flex items-center gap-2">
+                              <FileText className="h-5 w-5 text-amber-600" />
+                              Report on Title
+                            </h4>
+                            <p className="text-sm text-gray-600 mt-1">AI-generated comprehensive title analysis</p>
+                          </div>
+                          <div className="p-6">
+                            <div className="prose prose-sm max-w-none prose-headings:text-slate-900 prose-p:text-slate-700 prose-strong:text-slate-900 prose-ul:text-slate-700 prose-ol:text-slate-700 prose-li:text-slate-700 prose-table:text-slate-700">
+                              <ReactMarkdown>
+                                {analysisResult.reportOnTitle}
+                              </ReactMarkdown>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+
+                      <div className="text-xs text-gray-500 italic border-l-4 border-amber-200 pl-3 py-2 bg-amber-50">
+                        <strong>Important Notice:</strong> This Report on Title is generated by AI for demonstration purposes only.
+                        This analysis should not be relied upon for actual conveyancing transactions. Professional legal advice should always be sought.
                       </div>
                     </div>
                   )}
