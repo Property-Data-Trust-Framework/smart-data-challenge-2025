@@ -1,4 +1,5 @@
 const { onRequest } = require("firebase-functions/v2/https");
+const { config } = require("firebase-functions");
 const { OpenAI } = require("openai");
 
 /**
@@ -59,14 +60,17 @@ const generateDiligenceReport = onRequest(
 // OpenAI Integration for Report on Title
 async function generateReportOnTitle(stateData, claimsData) {
   try {
-    const openai = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY,
-    });
+    // Get OpenAI API key from environment variables (local) or Firebase config (production)
+    const openaiApiKey = process.env.OPENAI_API_KEY || config().openai?.api_key;
 
-    if (!process.env.OPENAI_API_KEY) {
+    if (!openaiApiKey) {
       console.log("OpenAI API key not found, skipping AI Report on Title generation");
       return null;
     }
+
+    const openai = new OpenAI({
+      apiKey: openaiApiKey,
+    });
 
     // Create comprehensive prompt for Report on Title
     const prompt = createReportOnTitlePrompt(stateData, claimsData);

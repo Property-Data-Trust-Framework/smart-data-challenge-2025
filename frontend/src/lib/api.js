@@ -2,7 +2,9 @@ import axios from 'axios';
 
 // Public function URLs - These remain publicly accessible for demo purposes
 const PUBLIC_FUNCTION_URLS = {
-  getPropertyData: 'https://getpropertydata-sufe6opz3a-uc.a.run.app',
+  getPropertyData: import.meta.env.DEV
+    ? 'http://127.0.0.1:5001/moverly-smart-data-challenge/us-central1/getPropertyData'
+    : 'https://getpropertydata-sufe6opz3a-uc.a.run.app',
   getPropertyPackData: import.meta.env.DEV
     ? 'http://127.0.0.1:5001/moverly-smart-data-challenge/us-central1/getPropertyPackData'
     : 'https://getpropertypackdata-sufe6opz3a-uc.a.run.app',

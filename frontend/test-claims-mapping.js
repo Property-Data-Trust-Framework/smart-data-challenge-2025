@@ -72,7 +72,7 @@ const getClaimsMap = (verifiedClaims) => {
           if (existingIndexedObject) {
             subIndex = existingIndexedObject.length;
           }
-        } catch (e) {
+        } catch {
           // Path doesn't exist yet, use 0
           subIndex = 0;
         }
@@ -96,7 +96,7 @@ const getClaimsMap = (verifiedClaims) => {
             } else {
               jp.set(claimsMap, fullPath, [verifiedClaim]);
             }
-          } catch (e) {
+          } catch {
             // Path doesn't exist, create it
             jp.set(claimsMap, fullPath, [verifiedClaim]);
           }
@@ -112,7 +112,7 @@ const getClaimsMap = (verifiedClaims) => {
 const flatten = (obj, prefix = '') => {
   let result = {};
   for (let key in obj) {
-    if (obj.hasOwnProperty(key)) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
       const newKey = prefix ? `${prefix}/${key}` : key;
       if (typeof obj[key] === 'object' && obj[key] !== null && !Array.isArray(obj[key])) {
         Object.assign(result, flatten(obj[key], newKey));
@@ -153,7 +153,7 @@ testPaths.forEach(path => {
   let claims = null;
   try {
     claims = jp.get(claimsMap, path);
-  } catch (e) {
+  } catch {
     // Path doesn't exist
   }
   console.log(`Path: ${path}`);
@@ -179,7 +179,7 @@ const contributingClaimsFromMapForData = (claimsMap, dataPath, data) => {
       if (directClaims && Array.isArray(directClaims)) {
         claims.push(...directClaims);
       }
-    } catch (e) {
+    } catch {
       // Path doesn't exist in claims map
     }
   } else {
@@ -195,7 +195,7 @@ const contributingClaimsFromMapForData = (claimsMap, dataPath, data) => {
           if (claimsToBeAdded && Array.isArray(claimsToBeAdded)) {
             claims.push(...claimsToBeAdded);
           }
-        } catch (e) {
+        } catch {
           // Path doesn't exist in claims map
         }
       }
