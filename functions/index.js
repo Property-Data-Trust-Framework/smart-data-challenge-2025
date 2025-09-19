@@ -8,6 +8,7 @@ const propertyPackHandlers = require("./handlers/property-pack");
 const pdtfViewerHandlers = require("./handlers/pdtf-viewer");
 const sellerConsentHandlers = require("./handlers/seller-consent-management");
 const conveyancingDiligenceHandlers = require("./handlers/conveyancing-diligence");
+const diligenceInsightsHandlers = require("./handlers/diligence-insights");
 
 // Export all functions from different handlers
 
@@ -30,3 +31,6 @@ exports.inviteParticipant = sellerConsentHandlers.inviteParticipant;
 
 // Conveyancing Diligence use case
 exports.generateDiligenceReport = conveyancingDiligenceHandlers.generateDiligenceReport;
+
+// Diligence Insights use case
+exports.generateDiligenceInsights = diligenceInsightsHandlers.generateDiligenceInsights;
