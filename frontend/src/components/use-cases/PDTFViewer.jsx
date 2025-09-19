@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -7,7 +7,7 @@ import { Label } from '@/components/ui/label';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Building, MapPin, Users, FileText, Shield, Clock, ExternalLink, Verified, Server, AlertCircle } from 'lucide-react';
+import { Building, MapPin, Users, FileText, Shield, Clock, ExternalLink, Verified, Server, AlertCircle, Settings, Eye } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
 import { pdtfAPI } from '@/lib/api';
 
@@ -26,14 +26,18 @@ const PDTF_SERVICES = [
   }
 ];
 
+// Default transaction ID - same as other components
+const DEFAULT_TRANSACTION_ID = '78HJ1ggqJBuMjED6bvhdx7';
+
 function PDTFViewer() {
   const [selectedService, setSelectedService] = useState(PDTF_SERVICES[0]);
-  const [transactionId, setTransactionId] = useState('');
+  const [transactionId, setTransactionId] = useState(DEFAULT_TRANSACTION_ID);
   const [claimsData, setClaimsData] = useState(null);
   const [stateData, setStateData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [hasSearched, setHasSearched] = useState(false);
+  const [showConfig, setShowConfig] = useState(false);
 
   const loadPDTFData = useCallback(async () => {
     if (!transactionId.trim()) {
@@ -71,6 +75,11 @@ function PDTFViewer() {
       setLoading(false);
     }
   }, [selectedService, transactionId]);
+
+  // Auto-load data on component mount with default settings
+  useEffect(() => {
+    loadPDTFData();
+  }, [loadPDTFData]);
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
@@ -111,13 +120,26 @@ function PDTFViewer() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div>
-        <h2 className="text-2xl font-bold text-gray-900">PDTF Viewer</h2>
-        <p className="text-gray-600">Query claims and state from PDTF services</p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h2 className="text-2xl font-bold text-gray-900">PDTF Viewer</h2>
+          <p className="text-gray-600">
+            Viewing transaction {transactionId} from {selectedService.name}
+          </p>
+        </div>
+        <Button
+          variant="outline"
+          onClick={() => setShowConfig(!showConfig)}
+          className="flex items-center gap-2"
+        >
+          <Settings className="h-4 w-4" />
+          {showConfig ? 'Hide Config' : 'Show Config'}
+        </Button>
       </div>
 
       {/* Service Selection and Transaction Input */}
-      <Card>
+      {showConfig && (
+        <Card>
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
             <Server className="h-5 w-5" />
@@ -195,7 +217,8 @@ function PDTFViewer() {
             </Alert>
           )}
         </CardContent>
-      </Card>
+        </Card>
+      )}
 
       {/* Error Display */}
       {error && (

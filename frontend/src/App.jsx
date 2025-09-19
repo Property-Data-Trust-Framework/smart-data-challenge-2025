@@ -9,6 +9,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { Toaster } from '@/components/ui/toaster';
 import BuyerViewPropertyPack from '@/components/use-cases/BuyerViewPropertyPack';
+import BuyerConsentAtom from '@/components/use-cases/BuyerConsentAtom';
 import SurveyorReportSurvey from '@/components/use-cases/SurveyorReportSurvey';
 import PropertyViewer from '@/components/use-cases/PropertyViewer';
 import MigratedClaimsViewer from '@/components/use-cases/MigratedClaimsViewer';
@@ -46,6 +47,11 @@ const useCases = [
     id: 'buyer-property-pack',
     name: 'Buyer View Property Pack',
     component: BuyerViewPropertyPack,
+  },
+  {
+    id: 'buyer-consent-atom',
+    name: 'Buyer Consent to Share Data with Atom',
+    component: BuyerConsentAtom,
   },
   {
     id: 'surveyor-report',

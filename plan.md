@@ -26,8 +26,9 @@
 - [x] Using the claims from moverly-properties/47 Park Mount.json as a template and updating with realistic data, add a planning application claim to 91 South Hill Avenue claims working on a copy of the original file as moverly-properties/91 South Hill Avenue - updated.json
 - [ ] Add synthetic milestone and chain links
 - [ ] Add partial survey report data
-- [ ] Add searches data from example Moverly test transactions?
+- [ ] Add title OC2 document data from example Moverly test transactions
 - [ ] Create two additional chain transactions in Moverly/NPTN
+- [ ] Update claims data to reflect deliberate discrepancies in e.g. seller name to be highlighted in the AI report on title
 - [ ] Push all additional claims data to Moverly, ensure reflected in NPTN
 - [ ] Script to generate new transactions and push claims data to make demo reproducible?
 
@@ -48,7 +49,7 @@
 - [x] Establish comprehensive shadcn/ui component usage throughout the application
 - [x] Replace custom loading spinners with official Skeleton components across all use cases
 - [x] Replace browser alert() calls with shadcn/ui Toast notifications for better UX
-- [x] Install and configure missing shadcn/ui components: Dialog, Label, Toast, Skeleton, Tooltip
+- [x] Install and configure missing shadcn/ui components: Dialog, Label, Toast, Skeleton, Tooltip, Checkbox
 - [x] Audit entire frontend for consistent component library usage
 - [x] Implement proper loading states with content-aware skeleton layouts
 - [x] Enhanced button loading states using Loader2 icon instead of custom spinners
@@ -63,14 +64,16 @@
 - [x] Create tabbed interface: Property Details, Title Register, and AI Report on Title
 - [x] Add comprehensive property data display across 14 organized categories
 - [x] Implement dedicated Title Register tab with complete Land Registry data
-- [x] **Simplified AI Report on Title generation using GPT-4.1**
-- [x] **Backend integration with OpenAI API for comprehensive title analysis**
-- [x] **Enhanced prompt engineering for professional legal document format**
-- [x] **Markdown-formatted report output with proper legal document structure**
-- [x] **Professional React rendering with enhanced typography and formatting**
-- [x] **Full property transaction state analysis without token limitations**
+- [x] Simplified AI Report on Title generation using GPT-4.1
+- [x] Backend integration with OpenAI API for comprehensive title analysis
+- [x] Enhanced prompt engineering for professional legal document format
+- [x] Markdown-formatted report output with proper legal document structure
+- [x] Professional React rendering with enhanced typography and formatting
+- [x] Full property transaction state analysis without token limitations
 - [x] Fixed address object rendering issues and API endpoint configuration
 - [x] Professional conveyancer-focused interface with complete PDTF claims provenance
+- [ ] Add backend support for Insights AI analysis - we'll run a prompt through Open AI based on a small structured set of checks and scenarios and return structured outputs of the results of those checks and a risk score for each
+- [ ] The initial checks will be to test for any restrictive covenants that may affect the transaction and any mismatch between the names of the sellers and those on the title register, but make the checks set extensible so we can add more checks in the future
 
 # Demo app - Survey view and submit
 
@@ -96,11 +99,22 @@
 - [ ] Display as Nationwide Mortgage Ready - click to view
 - [ ] Friendly view of DIP results
 
-# Demo app - Broker retrieve Offer
+# Demo app - Buyer consent to share data with Atom, retrieve offer
 
-- [ ] UI for Broker view of buyer factfind
-- [ ] Mocked retrieve offer
-- [ ] UI to display offer as data and view PDF
+- [x] Show basic property view which is the property to be mortgaged (use the same transaction ID as the conveyancer view)
+- [x] Show UI to ask for Buyer consent to share ID, credit score and other data with lender
+- [x] Simulate retrieving offer when consent is given
+- [x] View offer as data (just use demo mortgage demo fields for now) and show button to view PDF (which we'll add support for later)
+- [x] Integrate with real Moverly PDTF API data instead of mock data
+- [x] Use actual property data (91 South Hill Avenue, Manchester) with correct pricing (£161,000)
+- [x] Remove fallback data and show proper API error handling
+
+# Demo app - PDTF Viewer improvements
+
+- [x] Set default transaction ID to 78HJ1ggqJBuMjED6bvhdx7 (consistent across all use cases)
+- [x] Add Show/Hide Config button to toggle API configuration panel visibility
+- [x] Auto-load PDTF data on component mount with default settings
+- [x] Streamline interface to focus on data viewing rather than configuration
 
 # Validate other demos of existing functionality
 
