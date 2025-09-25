@@ -1,15 +1,19 @@
 #!/usr/bin/env node
 
-// Load environment variables from .env file
-require("dotenv").config({ quiet: true });
-
 const fs = require("fs").promises;
 const path = require("path");
 const axios = require("axios");
 
+// Load environment variables from .env file
+require("dotenv").config({
+  path: path.join(__dirname, "../.env"),
+  quiet: true,
+});
+
 // Moverly NPTN API configuration
-const MOVERLY_BASE_URL = "https://www.api-staging.moverly.com/nptnService/transactions";
-const TRANSACTION_ID = "78HJ1ggqJBuMjED6bvhdx7";
+const MOVERLY_BASE_URL =
+  "https://www.api-staging.moverly.com/nptnService/transactions";
+const TRANSACTION_ID = "6bQY64R5mjzRDzkiVhDWf1";
 const PROPERTY_ID = "91-south-hill-avenue-142222";
 
 /**
@@ -42,20 +46,31 @@ async function pushClaimToMoverly(claim) {
   const claimData = [updatedClaim];
 
   try {
-    const response = await axios.post(`${MOVERLY_BASE_URL}/${TRANSACTION_ID}/claims`, claimData, {
-      headers: {
-        "Moverly-Api-Key": apiKey,
-        "Content-Type": "application/json",
-        "Accept": "application/json",
+    const response = await axios.post(
+      `${MOVERLY_BASE_URL}/${TRANSACTION_ID}/claims`,
+      claimData,
+      {
+        headers: {
+          "Moverly-Api-Key": apiKey,
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
       },
-    });
+    );
 
     return response.data;
   } catch (error) {
     if (error.response) {
-      console.error(`❌ Moverly API error for claim ${claim.id}: ${error.response.status}`);
-      console.error("Response data:", JSON.stringify(error.response.data, null, 2));
-      throw new Error(`Moverly API error: ${error.response.status} - ${JSON.stringify(error.response.data)}`);
+      console.error(`❌ Moverly API error for claim: ${error.response.status}`);
+      console.error(
+        "Response data:",
+        JSON.stringify(error.response.data, null, 2),
+      );
+      throw new Error(
+        `Moverly API error: ${error.response.status} - ${JSON.stringify(
+          error.response.data,
+        )}`,
+      );
     }
     console.error("❌ Network error pushing claim:", error.message);
     throw error;
@@ -72,7 +87,11 @@ async function pushPropertyClaimsToMoverly() {
 
   try {
     // Load claims data
-    const claimsFilePath = path.join(__dirname, "../data/sandbox-claims-v3", `${PROPERTY_ID}-claims.json`);
+    const claimsFilePath = path.join(
+      __dirname,
+      "../data/moverly-properties",
+      "91 South Hill Avenue.json",
+    );
     const claimsData = await fs.readFile(claimsFilePath, "utf8");
     const claims = JSON.parse(claimsData);
 
@@ -89,17 +108,26 @@ async function pushPropertyClaimsToMoverly() {
       const batchNum = Math.floor(i / BATCH_SIZE) + 1;
       const totalBatches = Math.ceil(claims.length / BATCH_SIZE);
 
-      console.log(`📦 Processing batch ${batchNum}/${totalBatches} (${batch.length} claims)`);
+      console.log(
+        `📦 Processing batch ${batchNum}/${totalBatches} (${batch.length} claims)`,
+      );
 
       // Process batch concurrently
       const batchPromises = batch.map(async (claim, index) => {
+        const claimIdentifier = `batch-${batchNum}-claim-${index + 1}`;
         try {
           await pushClaimToMoverly(claim);
-          console.log(`✅ Claim ${claim.id} pushed successfully`);
-          return { success: true, claimId: claim.id };
+          console.log(`✅ Claim ${claimIdentifier} pushed successfully`);
+          return { success: true, claimId: claimIdentifier };
         } catch (error) {
-          console.log(`❌ Failed to push claim ${claim.id}: ${error.message}`);
-          return { success: false, claimId: claim.id, error: error.message };
+          console.log(
+            `❌ Failed to push claim ${claimIdentifier}: ${error.message}`,
+          );
+          return {
+            success: false,
+            claimId: claimIdentifier,
+            error: error.message,
+          };
         }
       });
 
@@ -114,7 +142,11 @@ async function pushPropertyClaimsToMoverly() {
         }
       });
 
-      console.log(`   Batch ${batchNum} completed: ${batchResults.filter((r) => r.success).length} success, ${batchResults.filter((r) => !r.success).length} errors`);
+      console.log(
+        `   Batch ${batchNum} completed: ${
+          batchResults.filter((r) => r.success).length
+        } success, ${batchResults.filter((r) => !r.success).length} errors`,
+      );
 
       // Add delay between batches to be respectful to the API
       if (i + BATCH_SIZE < claims.length) {
@@ -130,11 +162,15 @@ async function pushPropertyClaimsToMoverly() {
     console.log(`✅ Successfully pushed: ${successCount} claims`);
     console.log(`❌ Failed to push: ${errorCount} claims`);
     console.log(`📊 Total processed: ${claims.length} claims`);
-    console.log(`🎯 Success rate: ${((successCount / claims.length) * 100).toFixed(1)}%`);
+    console.log(
+      `🎯 Success rate: ${((successCount / claims.length) * 100).toFixed(1)}%`,
+    );
 
     if (successCount > 0) {
       console.log("");
-      console.log(`🔗 View transaction at: ${MOVERLY_BASE_URL}/${TRANSACTION_ID}`);
+      console.log(
+        `🔗 View transaction at: ${MOVERLY_BASE_URL}/${TRANSACTION_ID}`,
+      );
     }
   } catch (error) {
     console.error("❌ Fatal error during claims push:", error.message);
