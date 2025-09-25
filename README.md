@@ -156,26 +156,55 @@ All processed property data includes trust framework metadata:
    firebase deploy
    ```
 
-## 📱 Features
+## 📱 Features & Demo Use Cases
 
-### Property Data Explorer
-- **Property Selection**: Dropdown with 10+ real properties from SDC sandbox
+### Property Data Explorer (TRL6)
+- **SDC Sandbox Data**: Dropdown with 10+ real properties from Smart Data Challenge
 - **Comprehensive Views**: Tabbed interface for different data categories
 - **Owner Information**: Personal details, contact info, verification status
 - **Energy Performance**: EPC ratings, consumption data, efficiency metrics
 - **Conveyancing Details**: Legal checks, risk assessments, transaction history
 
-### Data Quality & Trust
-- **Data Completeness Scoring**: Percentage of required fields populated
-- **Multi-Source Verification**: Cross-references between people, property, and legal data
-- **Trust Indicators**: Visual indicators for data verification levels
-- **UPRN Matching**: Unique Property Reference Number validation
+### PDTF Claims & State Viewer (TRL9)
+- **Real PDTF Integration**: Live connection to Moverly PDTF staging API
+- **Claims Provenance**: Individual data claims with verification metadata
+- **Transaction State**: Aggregated property transaction state
+- **Confidentiality Management**: Display and manage data access levels
+- **Multi-Service Support**: Moverly and LMS NPTN service integration
 
-### Use Case Scenarios
-- **Buyer Due Diligence**: Complete property information for purchase decisions
-- **Surveyor Reports**: Energy and structural data for assessments  
-- **Legal Verification**: Conveyancing and ownership verification
-- **Market Analysis**: Property trends and comparative data
+### Consent Management Dashboard (TRL6)
+- **Seller Control**: View and manage who has access to property data
+- **Participant Management**: Invite, activate, or remove transaction participants
+- **Real-time NPTN Integration**: Live updates to participant status via NPTN API
+- **History Tracking**: Comprehensive audit trail of data sharing decisions
+- **Role-Based Access**: Different permission levels for different stakeholders
+
+### Seller Conveyancer Workspace (TRL6)
+- **AI-Assisted Analysis**: GPT-powered insights highlighting potential issues
+- **Comprehensive Property Data**: 14+ organized categories of property information
+- **Claims Provenance**: View source data for every property detail
+- **Title Register Integration**: Complete Land Registry data display
+- **Professional Report Generation**: AI-generated Report on Title documents
+
+### Buyer Dashboard View (TRL6)
+- **User-Friendly Interface**: Clean property summaries with risk flags
+- **Decision Support**: Clear presentation of key property information
+- **Multi-Source Data**: Combined property pack from various sources
+- **Risk Assessment**: Visual indicators for potential issues
+- **Purchase Decision Tools**: Supporting information for buying decisions
+
+### Lender Interaction - Atom Bank (TRL5)
+- **Automated Mortgage Checks**: Property pack validation for lending decisions
+- **Consent Management**: Buyer consent to share data with lenders
+- **Real-Time Offers**: Automated mortgage offer generation
+- **Realistic Calculations**: Based on actual property values (£161K, 85% LTV)
+- **Integration Ready**: Framework for lender API connections
+
+### Surveyor Interface (TRL6)
+- **Pre-Filled Reports**: Reduce duplication with existing property data
+- **Structured Data Entry**: Standardized survey data collection
+- **Integration Points**: Connect survey findings to property records
+- **Quality Assurance**: Cross-reference with existing property information
 
 ## 🔒 Security & Privacy
 
@@ -217,18 +246,26 @@ All processed property data includes trust framework metadata:
 ## 📈 PDTF Implementation Highlights
 
 ### Trust Framework Components
-1. **Data Provenance**: Track data sources and transformation history
-2. **Verification Levels**: Sandbox-verified data with completeness scoring
+1. **Data Provenance**: Complete traceability from source to display with claim IDs
+2. **Verification Levels**: Multi-level verification from sandbox to production data
 3. **Property-Centric Architecture**: Unified view combining multiple data domains
-4. **Interoperability Standards**: Clean APIs for property platform integration
-5. **Quality Assurance**: UPRN matching and cross-source data validation
+4. **Confidentiality Management**: Granular access control with "restricted", "private", "public" levels
+5. **Claims Integration**: Real PDTF claims with Moverly and NPTN network integration
+
+### Advanced PDTF Features
+- **Live API Integration**: Direct connection to Moverly PDTF staging environment
+- **Claims Provenance**: Every data point traceable to its source claim
+- **State Aggregation**: JSON Pointer-based transaction state building
+- **Multi-Service Support**: Both Moverly and LMS NPTN service integration
+- **Confidentiality Badges**: Visual indicators showing data sensitivity levels
+- **Schema Validation**: Proper PDTF schema compliance with attachment handling
 
 ### Smart Data Challenge Integration
 - **Real Data Usage**: Actual property records from SDC sandbox (10 properties)
-- **Streamlined Processing**: Two focused data processors handle all operations
+- **Enhanced Claims Data**: 149 verified claims with restricted confidentiality levels
 - **Multi-Domain Joining**: Combines people, property, and conveyancing data
 - **Industry Standards**: Follows UK property conventions (UPRN, EPC, etc.)
-- **Production Ready**: Clean, maintainable codebase designed for scaling
+- **Production PDTF**: Real integration with staging PDTF network
 
 ## 🔮 Future Development
 
@@ -251,10 +288,11 @@ All processed property data includes trust framework metadata:
 This project demonstrates innovative use of the Smart Data Challenge dataset to create a unified property data ecosystem. The PDTF approach addresses key industry challenges around data fragmentation, trust, and interoperability while maintaining privacy and security standards.
 
 ### Key Innovations
-- **Property-Centric Data Model**: Unified view across people, property, and legal data
-- **Trust-by-Design**: Built-in verification and data quality scoring  
-- **Streamlined Architecture**: Two focused processors handle all data operations
-- **Industry Integration**: Standards-based approach using UPRN, EPC, and UK conventions
+- **Production PDTF Integration**: Real connection to staging PDTF network with 149+ verified claims
+- **Trust-by-Design**: Built-in verification, data quality scoring, and confidentiality management
+- **Advanced Claims System**: Complete provenance tracking with JSON Pointer state aggregation
+- **Multi-Stakeholder Platform**: 7 distinct use cases covering entire property transaction lifecycle
+- **Industry Integration**: Standards-based approach using UPRN, EPC, PDTF schemas, and UK conventions
 
 ## 📄 License
 
