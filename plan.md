@@ -24,12 +24,16 @@
 - [x] Updated validate-claims.js to use proper JSON Pointer-based state aggregation mechanism from state-aggregator.js for consistent PDTF transaction state building
 - [x] Pull claims from moverly staging for transaction id 2MefoP93oE5DbYpyZy9Tzi using the fetch-moverly-claims script (47 Park Mount)
 - [x] Using the claims from moverly-properties/47 Park Mount.json as a template and updating with realistic data, add a planning application claim to 91 South Hill Avenue claims working on a copy of the original file as moverly-properties/91 South Hill Avenue - updated.json
+- [x] Remove ID fields from all verified claims in preparation for Moverly API integration
+- [x] Update confidentiality levels to "restricted" for sensitive claim types (participants, insurance, servicesCrossing, occupiers, legalBoundaries)
+- [x] Fix schema validation issues with empty attachments arrays in electronic_record evidence
+- [x] Successfully push enhanced claims data to Moverly NPTN API (transaction 6bQY64R5mjzRDzkiVhDWf1)
+- [x] Add confidentiality level display to PDTF viewer with proper color coding and capitalization
 - [ ] Add synthetic milestone and chain links
 - [ ] Add partial survey report data
 - [ ] Add title OC2 document data from example Moverly test transactions
 - [ ] Create two additional chain transactions in Moverly/NPTN
 - [ ] Update claims data to reflect deliberate discrepancies in e.g. seller name to be highlighted in the AI report on title
-- [ ] Push all additional claims data to Moverly, ensure reflected in NPTN
 - [ ] Script to generate new transactions and push claims data to make demo reproducible?
 
 # Demo app - Seller Consent management
@@ -53,7 +57,7 @@
 - [x] Audit entire frontend for consistent component library usage
 - [x] Implement proper loading states with content-aware skeleton layouts
 - [x] Enhanced button loading states using Loader2 icon instead of custom spinners
-- [ ] Add UI for demo category (production live exchange, prototype live exchange, redacted-live exchange, mocked exchange)
+- [ ] Add UI for demo TRL level (TRL1, TRL2, TRL3, TRL4)
 
 # Demo app - Conveyancing Diligence & AI Report on Title
 
@@ -72,8 +76,12 @@
 - [x] Full property transaction state analysis without token limitations
 - [x] Fixed address object rendering issues and API endpoint configuration
 - [x] Professional conveyancer-focused interface with complete PDTF claims provenance
-- [ ] Add backend support for Insights AI analysis - we'll run a prompt through Open AI based on a small structured set of checks and scenarios and return structured outputs of the results of those checks and a risk score for each
-- [ ] The initial checks will be to test for any restrictive covenants that may affect the transaction and any mismatch between the names of the sellers and those on the title register, but make the checks set extensible so we can add more checks in the future
+- [x] Add backend support for Insights AI analysis - we'll run a prompt through Open AI based on a small structured set of checks and scenarios and return structured outputs of the results of those checks and a risk score for each
+- [x] The initial checks will be to test for any restrictive covenants that may affect the transaction and any mismatch between the names of the sellers and those on the title register, but make the checks set extensible so we can add more checks in the future
+- [x] Add frontend support for Insights AI analysis - it's a new tab in conveyancing diligence and we'll show the results of the checks in a table and a risk score for each check
+- [x] Enhanced AI insights with comprehensive context system providing specific guidance for risk assessment
+- [x] AI responses include claim ID tracking for transparency and provenance
+- [x] Frontend displays claim references with "View Source Claims" functionality
 
 # Demo app - Survey view and submit
 

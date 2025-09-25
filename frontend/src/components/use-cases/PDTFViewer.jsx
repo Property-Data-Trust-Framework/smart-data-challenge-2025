@@ -117,6 +117,17 @@ function PDTFViewer() {
     return evidence.record?.source?.name || 'Unknown source';
   };
 
+  const getConfidentialityBadgeVariant = (level) => {
+    if (!level) return 'outline';
+    switch (level.toLowerCase()) {
+      case 'restricted': return 'destructive';
+      case 'confidential': return 'destructive';
+      case 'private': return 'secondary';
+      case 'public': return 'default';
+      default: return 'outline';
+    }
+  };
+
   return (
     <div className="space-y-6">
       {/* Header */}
@@ -331,14 +342,21 @@ function PDTFViewer() {
                         <CardHeader className="pb-3">
                           <div className="flex items-center justify-between">
                             <CardTitle className="text-lg">
-                              {claim.claims ? Object.keys(claim.claims).map(formatClaimPath).join(', ') : 
+                              {claim.claims ? Object.keys(claim.claims).map(formatClaimPath).join(', ') :
                                claim.path ? formatClaimPath(claim.path) : `Claim ${index + 1}`}
                             </CardTitle>
-                            {claim.verification?.evidence?.[0] && (
-                              <Badge variant={getSourceBadgeVariant(claim.verification.evidence[0])}>
-                                {getSourceName(claim.verification.evidence[0])}
-                              </Badge>
-                            )}
+                            <div className="flex items-center gap-2">
+                              {claim.verification?.evidence?.[0] && (
+                                <Badge variant={getSourceBadgeVariant(claim.verification.evidence[0])}>
+                                  {getSourceName(claim.verification.evidence[0])}
+                                </Badge>
+                              )}
+                              {claim.terms_of_use?.confidentiality_level && (
+                                <Badge variant={getConfidentialityBadgeVariant(claim.terms_of_use.confidentiality_level)}>
+                                  {claim.terms_of_use.confidentiality_level.charAt(0).toUpperCase() + claim.terms_of_use.confidentiality_level.slice(1)}
+                                </Badge>
+                              )}
+                            </div>
                           </div>
                           {claim.verification && (
                             <div className="flex items-center space-x-4 text-sm text-gray-600">

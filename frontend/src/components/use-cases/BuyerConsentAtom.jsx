@@ -83,17 +83,25 @@ function BuyerConsentAtom() {
 
     // Simulate API call delay for retrieving offer
     setTimeout(() => {
+      // Calculate realistic mortgage for £161,000 property (85% LTV)
+      const propertyValue = propertyDetails?.price || 161000;
+      const ltvPercentage = 85;
+      const loanAmount = Math.round((propertyValue * ltvPercentage) / 100);
+      const deposit = propertyValue - loanAmount;
+
       setOffer({
         lenderName: "Atom Bank",
-        loanAmount: "£600,000",
-        interestRate: "4.85%",
+        loanAmount: `£${loanAmount.toLocaleString()}`,
+        interestRate: "4.89%",
         term: "25 years",
-        monthlyPayment: "£3,442",
+        monthlyPayment: "£784",
         arrangement_fee: "£999",
         valuation_fee: "£350",
         legal_fees: "£850",
-        ltv: "80%",
-        apr: "5.1%",
+        ltv: `${ltvPercentage}%`,
+        apr: "5.2%",
+        deposit: `£${deposit.toLocaleString()}`,
+        propertyValue: `£${propertyValue.toLocaleString()}`,
         offerId: "ATM-" + Math.random().toString(36).substr(2, 9).toUpperCase(),
         validUntil: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toLocaleDateString(),
         status: "Provisional Offer"
@@ -369,18 +377,33 @@ function BuyerConsentAtom() {
             </Badge>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            <div className="p-4 bg-white rounded-lg">
+              <div className="text-sm text-gray-600">Property Value</div>
+              <div className="text-xl font-bold text-gray-900">{offer.propertyValue}</div>
+            </div>
             <div className="p-4 bg-white rounded-lg">
               <div className="text-sm text-gray-600">Loan Amount</div>
-              <div className="text-2xl font-bold text-green-700">{offer.loanAmount}</div>
+              <div className="text-xl font-bold text-green-700">{offer.loanAmount}</div>
             </div>
+            <div className="p-4 bg-white rounded-lg">
+              <div className="text-sm text-gray-600">Deposit Required</div>
+              <div className="text-xl font-bold text-blue-700">{offer.deposit}</div>
+            </div>
+            <div className="p-4 bg-white rounded-lg">
+              <div className="text-sm text-gray-600">Monthly Payment</div>
+              <div className="text-xl font-bold text-orange-700">{offer.monthlyPayment}</div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <div className="p-4 bg-white rounded-lg">
               <div className="text-sm text-gray-600">Interest Rate</div>
               <div className="text-2xl font-bold text-blue-700">{offer.interestRate}</div>
             </div>
             <div className="p-4 bg-white rounded-lg">
-              <div className="text-sm text-gray-600">Monthly Payment</div>
-              <div className="text-2xl font-bold text-gray-900">{offer.monthlyPayment}</div>
+              <div className="text-sm text-gray-600">Loan to Value</div>
+              <div className="text-2xl font-bold text-purple-700">{offer.ltv}</div>
             </div>
           </div>
 
@@ -397,12 +420,12 @@ function BuyerConsentAtom() {
                   <span className="font-medium">{offer.term}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-600">LTV:</span>
-                  <span className="font-medium">{offer.ltv}</span>
-                </div>
-                <div className="flex justify-between">
                   <span className="text-gray-600">APR:</span>
                   <span className="font-medium">{offer.apr}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Product Type:</span>
+                  <span className="font-medium">Fixed Rate</span>
                 </div>
               </div>
             </div>

@@ -548,7 +548,35 @@ function ConveyancingDiligence() {
   const [analysisLoading, setAnalysisLoading] = useState(false);
   const [analysisResult, setAnalysisResult] = useState(null);
 
+  // Diligence Insights state
+  const [insightsLoading, setInsightsLoading] = useState(false);
+  const [insightsResult, setInsightsResult] = useState(null);
+
   const { toast } = useToast();
+
+  // Helper function to filter claims by IDs
+  const getClaimsByIds = (claimIds) => {
+    if (!claimIds || !Array.isArray(claimIds) || !claimsData) {
+      return [];
+    }
+
+    // claimsData might be an array or have a data property with array
+    const claims = Array.isArray(claimsData) ? claimsData : claimsData.data || [];
+    if (!Array.isArray(claims)) return [];
+
+    return claims.filter(claim => claimIds.includes(claim.id));
+  };
+
+  // Helper to open claims dialog with filtered claims
+  const showClaimsForCheck = (check) => {
+    const relevantClaims = getClaimsByIds(check.relevantClaimIds);
+    setSelectedClaims({
+      label: `${check.name} - Supporting Evidence`,
+      path: `Relevant Claims for ${check.name}`,
+      claims: relevantClaims
+    });
+    setClaimsDialogOpen(true);
+  };
 
   // Helper formatting functions
   const formatAddress = (address) => {
@@ -755,6 +783,43 @@ function ConveyancingDiligence() {
     }
   };
 
+  const generateDiligenceInsights = async () => {
+    if (!stateData) {
+      toast({
+        title: "No data available",
+        description: "Please load transaction data first",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    setInsightsLoading(true);
+
+    try {
+      const response = await pdtfAPI.generateDiligenceInsights(stateData, claimsData);
+
+      if (response.success && response.insights) {
+        setInsightsResult(response.insights);
+
+        toast({
+          title: "Diligence Insights generated",
+          description: "AI-powered diligence checks completed successfully",
+        });
+      } else {
+        throw new Error('Invalid response from Diligence Insights service');
+      }
+
+    } catch (err) {
+      toast({
+        title: "Insights generation failed",
+        description: err.response?.data?.error || err.message || "Failed to generate Diligence Insights",
+        variant: "destructive"
+      });
+    } finally {
+      setInsightsLoading(false);
+    }
+  };
+
   // Auto-load data on component mount
   useEffect(() => {
     loadPDTFData();
@@ -843,7 +908,7 @@ function ConveyancingDiligence() {
 
       {stateData && !loading && (
         <Tabs defaultValue="property" className="w-full">
-          <TabsList className="grid w-full grid-cols-3">
+          <TabsList className="grid w-full grid-cols-4">
             <TabsTrigger value="property" className="flex items-center gap-2">
               <Building className="h-4 w-4" />
               Property Details
@@ -856,10 +921,77 @@ function ConveyancingDiligence() {
               <Bot className="h-4 w-4" />
               Report on Title
             </TabsTrigger>
+            <TabsTrigger value="insights" className="flex items-center gap-2">
+              <Shield className="h-4 w-4" />
+              Insights
+            </TabsTrigger>
           </TabsList>
 
           <TabsContent value="property" className="space-y-6">
-            {/* Title Register Summary - Featured at Top */}
+            {/* Transaction Participants - Featured at Top */}
+            {stateData.participants && stateData.participants.length > 0 && (
+              <Card className="border-2 border-blue-200 bg-gradient-to-r from-blue-50 to-indigo-50">
+                <CardHeader>
+                  <CardTitle className="text-lg flex items-center gap-2">
+                    <Users className="h-5 w-5 text-blue-600" />
+                    Transaction Participants
+                  </CardTitle>
+                  <p className="text-sm text-gray-600">People and organizations involved in this property transaction</p>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {stateData.participants.map((participant, index) => (
+                      <div key={index} className="bg-white rounded-lg border p-4 space-y-2">
+                        <div className="flex items-center justify-between">
+                          <h4 className="font-semibold text-gray-900">
+                            {participant.name ?
+                              `${participant.name.title || ''} ${participant.name.firstName || ''} ${participant.name.middleName || ''} ${participant.name.lastName || ''}`.trim() :
+                              `${participant.firstName || ''} ${participant.lastName || ''}`.trim()
+                            }
+                          </h4>
+                          <Badge variant={
+                            participant.participantStatus === 'Active' ? 'default' :
+                            participant.participantStatus === 'Invited' ? 'secondary' : 'outline'
+                          }>
+                            {participant.role}
+                          </Badge>
+                        </div>
+                        <div className="text-sm text-gray-600 space-y-1">
+                          {participant.email && (
+                            <div className="flex items-center gap-1">
+                              <span className="font-medium">Email:</span>
+                              <span>{participant.email}</span>
+                            </div>
+                          )}
+                          {participant.phone && (
+                            <div className="flex items-center gap-1">
+                              <span className="font-medium">Phone:</span>
+                              <span>{participant.phone}</span>
+                            </div>
+                          )}
+                          {participant.organisation && (
+                            <div className="flex items-center gap-1">
+                              <span className="font-medium">Organisation:</span>
+                              <span>{participant.organisation}</span>
+                            </div>
+                          )}
+                          {participant.participantStatus && (
+                            <div className="flex items-center gap-1">
+                              <span className="font-medium">Status:</span>
+                              <Badge variant="outline" className="text-xs">
+                                {participant.participantStatus}
+                              </Badge>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Title Register Summary */}
             {stateData.propertyPack?.titlesToBeSold?.[0]?.registerExtract?.ocSummaryData && (
               <Card className="border-2 border-amber-200 bg-gradient-to-r from-amber-50 to-yellow-50">
                 <CardHeader>
@@ -948,9 +1080,9 @@ function ConveyancingDiligence() {
                         </CardHeader>
                         <CardContent className="space-y-3">
                           {renderDataElement('Electricity Supplier', '/propertyPack/electricity/mainsElectricity/supplier', stateData.propertyPack?.electricity?.mainsElectricity?.supplier)}
-                          {renderDataElement('Electricity Meter', '/propertyPack/electricity/mainsElectricity/electricityMeter', stateData.propertyPack?.electricity?.mainsElectricity?.electricityMeter, formatPrettyJson)}
-                          {renderDataElement('Water Supplier', '/propertyPack/waterAndDrainage/water/mainsWater/supplier', stateData.propertyPack?.waterAndDrainage?.water?.mainsWater?.supplier)}
-                          {renderDataElement('Water Meter', '/propertyPack/waterAndDrainage/water/mainsWater/waterMeter', stateData.propertyPack?.waterAndDrainage?.water?.mainsWater?.waterMeter, formatPrettyJson)}
+                          {renderDataElement('Electricity Meter', '/propertyPack/electricity/mainsElectricity/electricityMeter', stateData.propertyPack?.electricity?.mainsElectricity?.electricityMeter, (meter) => meter ? `${meter.type || 'Unknown type'} - ${meter.location || 'Location not specified'}` : 'Not provided')}
+                          {renderDataElement('Water Supplier', '/propertyPack/waterAndDrainage/mainsWater/supplier', stateData.propertyPack?.waterAndDrainage?.mainsWater?.supplier)}
+                          {renderDataElement('Water Meter', '/propertyPack/waterAndDrainage/mainsWater/waterMeter', stateData.propertyPack?.waterAndDrainage?.mainsWater?.waterMeter, formatPrettyJson)}
                           {renderDataElement('Drainage', '/propertyPack/waterAndDrainage/drainage', stateData.propertyPack?.waterAndDrainage?.drainage, formatPrettyJson)}
                         </CardContent>
                       </Card>
@@ -962,10 +1094,12 @@ function ConveyancingDiligence() {
                         </CardHeader>
                         <CardContent className="space-y-3">
                           {renderDataElement('Heating Type', '/propertyPack/heating/heatingSystem/heatingType', stateData.propertyPack?.heating?.heatingSystem?.heatingType)}
-                          {renderDataElement('Central Heating Details', '/propertyPack/heating/heatingSystem/centralHeatingDetails', stateData.propertyPack?.heating?.heatingSystem?.centralHeatingDetails, formatPrettyJson)}
+                          {renderDataElement('Central Heating Fuel', '/propertyPack/heating/heatingSystem/centralHeatingDetails/centralHeatingFuel/centralHeatingFuelType', stateData.propertyPack?.heating?.heatingSystem?.centralHeatingDetails?.centralHeatingFuel?.centralHeatingFuelType)}
+                          {renderDataElement('Heating Last Serviced', '/propertyPack/heating/heatingSystem/centralHeatingDetails/heatingLastServicedDate', stateData.propertyPack?.heating?.heatingSystem?.centralHeatingDetails?.heatingLastServicedDate, formatDate)}
+                          {renderDataElement('Heating Working Order', '/propertyPack/heating/heatingSystem/centralHeatingDetails/heatingInGoodWorkingOrder/yesNo', stateData.propertyPack?.heating?.heatingSystem?.centralHeatingDetails?.heatingInGoodWorkingOrder?.yesNo)}
                           {renderDataElement('Other Heating Features', '/propertyPack/heating/otherHeatingFeatures', stateData.propertyPack?.heating?.otherHeatingFeatures, (features) => Array.isArray(features) ? features.join(', ') : formatPrettyJson(features))}
-                          {renderDataElement('Heat Pump', '/propertyPack/electricity/heatPump', stateData.propertyPack?.electricity?.heatPump, formatPrettyJson)}
-                          {renderDataElement('Solar Panels', '/propertyPack/electricity/solarPanels', stateData.propertyPack?.electricity?.solarPanels, formatPrettyJson)}
+                          {renderDataElement('Heat Pump', '/propertyPack/electricity/heatPump/yesNo', stateData.propertyPack?.electricity?.heatPump?.yesNo)}
+                          {renderDataElement('Solar Panels', '/propertyPack/electricity/solarPanels/yesNo', stateData.propertyPack?.electricity?.solarPanels?.yesNo)}
                         </CardContent>
                       </Card>
 
@@ -975,10 +1109,11 @@ function ConveyancingDiligence() {
                           <CardTitle className="text-base">Connectivity</CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-3">
+                          {renderDataElement('Broadband Available', '/propertyPack/connectivity/broadband/yesNo', stateData.propertyPack?.connectivity?.broadband?.yesNo)}
                           {renderDataElement('Broadband Type', '/propertyPack/connectivity/broadband/typeOfConnection', stateData.propertyPack?.connectivity?.broadband?.typeOfConnection)}
-                          {renderDataElement('Broadband Speed', '/propertyPack/connectivity/broadband/predictedSpeed', stateData.propertyPack?.connectivity?.broadband?.predictedSpeed, (speed) => speed ? `Max Download: ${speed.maxPredictedDown || speed.maxBbPredictedDown}Mbps, Max Upload: ${speed.maxPredictedUp || speed.maxBbPredictedUp}Mbps` : formatPrettyJson(speed))}
+                          {renderDataElement('Broadband Speed', '/propertyPack/connectivity/broadband/predictedSpeed', stateData.propertyPack?.connectivity?.broadband?.predictedSpeed, (speed) => speed ? `Max Download: ${speed.maxPredictedDown || speed.maxBbPredictedDown}Mbps, Max Upload: ${speed.maxPredictedUp || speed.maxBbPredictedUp}Mbps` : 'Not provided')}
                           {renderDataElement('Cable/Satellite TV', '/propertyPack/connectivity/cableSatelliteTV', stateData.propertyPack?.connectivity?.cableSatelliteTV, formatPrettyJson)}
-                          {renderDataElement('Mobile Coverage', '/propertyPack/connectivity/mobilePhone/predictedCoverage', stateData.propertyPack?.connectivity?.mobilePhone?.predictedCoverage, formatPrettyJson)}
+                          {renderDataElement('Mobile Coverage', '/propertyPack/connectivity/mobilePhone/predictedCoverage', stateData.propertyPack?.connectivity?.mobilePhone?.predictedCoverage, (coverage) => coverage ? `Indoor: EE ${coverage.eeDataIndoor}/4, Outdoor: EE ${coverage.eeDataOutdoor}/4` : 'Not provided')}
                         </CardContent>
                       </Card>
 
@@ -988,12 +1123,12 @@ function ConveyancingDiligence() {
                           <CardTitle className="text-base">Environmental Issues</CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-3">
-                          {renderDataElement('Flood Risk', '/propertyPack/environmental/flooding', stateData.propertyPack?.environmental?.flooding, formatPrettyJson)}
-                          {renderDataElement('Coal Mining', '/propertyPack/environmental/coalMining', stateData.propertyPack?.environmental?.coalMining, formatPrettyJson)}
-                          {renderDataElement('Coastal Erosion', '/propertyPack/environmental/coastalErosion', stateData.propertyPack?.environmental?.coastalErosion, formatPrettyJson)}
-                          {renderDataElement('Ground Stability', '/propertyPack/environmental/groundStability', stateData.propertyPack?.environmental?.groundStability, formatPrettyJson)}
-                          {renderDataElement('Contaminated Land', '/propertyPack/environmental/contaminatedLand', stateData.propertyPack?.environmental?.contaminatedLand, formatPrettyJson)}
-                          {renderDataElement('Radon', '/propertyPack/environmental/radon', stateData.propertyPack?.environmental?.radon, formatPrettyJson)}
+                          {renderDataElement('Flood Risk', '/propertyPack/environmentalIssues/flooding/floodRisk/summary', stateData.propertyPack?.environmentalIssues?.flooding?.floodRisk?.summary)}
+                          {renderDataElement('Historical Flooding', '/propertyPack/environmentalIssues/flooding/historicalFlooding/hasBeenFlooded', stateData.propertyPack?.environmentalIssues?.flooding?.historicalFlooding?.hasBeenFlooded)}
+                          {renderDataElement('Coal Mining Risk', '/propertyPack/environmentalIssues/coalMining/result', stateData.propertyPack?.environmentalIssues?.coalMining?.result)}
+                          {renderDataElement('Non-Coal Mining Risk', '/propertyPack/environmentalIssues/nonCoalMining/result', stateData.propertyPack?.environmentalIssues?.nonCoalMining?.result)}
+                          {renderDataElement('Coastal Erosion Risk', '/propertyPack/environmentalIssues/coastalErosion/result', stateData.propertyPack?.environmentalIssues?.coastalErosion?.result)}
+                          {renderDataElement('Radon Test Required', '/propertyPack/environmentalIssues/radon/radonTest/yesNo', stateData.propertyPack?.environmentalIssues?.radon?.radonTest?.yesNo)}
                         </CardContent>
                       </Card>
 
@@ -1044,11 +1179,11 @@ function ConveyancingDiligence() {
                           <CardTitle className="text-base">Local Authority Information</CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-3">
-                          {renderDataElement('Local Authority', '/propertyPack/localAuthority/name', stateData.propertyPack?.localAuthority?.name)}
+                          {renderDataElement('Local Authority', '/propertyPack/localAuthority/localAuthorityName', stateData.propertyPack?.localAuthority?.localAuthorityName)}
+                          {renderDataElement('District Council', '/propertyPack/localAuthority/districtCouncil', stateData.propertyPack?.localAuthority?.districtCouncil)}
+                          {renderDataElement('County Council', '/propertyPack/localAuthority/countyCouncil', stateData.propertyPack?.localAuthority?.countyCouncil)}
                           {renderDataElement('Council Tax Band', '/propertyPack/councilTax/councilTaxBand', stateData.propertyPack?.councilTax?.councilTaxBand)}
-                          {renderDataElement('Council Tax Amount', '/propertyPack/councilTax/councilTaxAmount', stateData.propertyPack?.councilTax?.councilTaxAmount, formatCurrency)}
-                          {renderDataElement('Planning History', '/propertyPack/planning/planningHistory', stateData.propertyPack?.planning?.planningHistory, formatPrettyJson)}
-                          {renderDataElement('Building Control History', '/propertyPack/planning/buildingControlHistory', stateData.propertyPack?.planning?.buildingControlHistory, formatPrettyJson)}
+                          {renderDataElement('Council Tax Annual Charge', '/propertyPack/councilTax/councilTaxAnnualCharge', stateData.propertyPack?.councilTax?.councilTaxAnnualCharge, formatCurrency)}
                         </CardContent>
                       </Card>
 
@@ -1058,10 +1193,9 @@ function ConveyancingDiligence() {
                           <CardTitle className="text-base">Planning & Conservation</CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-3">
-                          {renderDataElement('Listed Building', '/propertyPack/conservation/listedBuilding', stateData.propertyPack?.conservation?.listedBuilding, formatPrettyJson)}
-                          {renderDataElement('Conservation Area', '/propertyPack/conservation/conservationArea', stateData.propertyPack?.conservation?.conservationArea, formatPrettyJson)}
-                          {renderDataElement('Tree Preservation Orders', '/propertyPack/conservation/treePreservationOrders', stateData.propertyPack?.conservation?.treePreservationOrders, formatPrettyJson)}
-                          {renderDataElement('Article 4 Directions', '/propertyPack/conservation/article4Directions', stateData.propertyPack?.conservation?.article4Directions, formatPrettyJson)}
+                          {renderDataElement('Listed Building', '/propertyPack/listingAndConservation/isListed/yesNo', stateData.propertyPack?.listingAndConservation?.isListed?.yesNo)}
+                          {renderDataElement('Conservation Area', '/propertyPack/listingAndConservation/isConservationArea/yesNo', stateData.propertyPack?.listingAndConservation?.isConservationArea?.yesNo)}
+                          {renderDataElement('Tree Preservation Order', '/propertyPack/listingAndConservation/hasTreePreservationOrder/yesNo', stateData.propertyPack?.listingAndConservation?.hasTreePreservationOrder?.yesNo)}
                           {renderDataElement('Planning Applications', '/planningApplications', stateData.planningApplications, (apps) => Array.isArray(apps) ? apps.map(app => `${app.reference}: ${app.proposal} (${app.status})`).join(' • ') : formatPrettyJson(apps))}
                         </CardContent>
                       </Card>
@@ -1072,10 +1206,10 @@ function ConveyancingDiligence() {
                           <CardTitle className="text-base">Transport & Access</CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-3">
-                          {renderDataElement('Parking', '/propertyPack/transport/parking', stateData.propertyPack?.transport?.parking, formatPrettyJson)}
-                          {renderDataElement('Garage', '/propertyPack/transport/garage', stateData.propertyPack?.transport?.garage, formatPrettyJson)}
-                          {renderDataElement('Public Transport', '/propertyPack/transport/publicTransport', stateData.propertyPack?.transport?.publicTransport, formatPrettyJson)}
-                          {renderDataElement('Road Access', '/propertyPack/transport/roadAccess', stateData.propertyPack?.transport?.roadAccess, formatPrettyJson)}
+                          {renderDataElement('Parking Arrangements', '/propertyPack/parking/parkingArrangements', stateData.propertyPack?.parking?.parkingArrangements, (arrangements) => Array.isArray(arrangements) ? arrangements.join(', ') : arrangements)}
+                          {renderDataElement('Controlled Parking', '/propertyPack/parking/controlledParking/yesNo', stateData.propertyPack?.parking?.controlledParking?.yesNo)}
+                          {renderDataElement('Disabled Parking', '/propertyPack/parking/disabledParking/yesNo', stateData.propertyPack?.parking?.disabledParking?.yesNo)}
+                          {renderDataElement('EV Charging Point', '/propertyPack/parking/electricVehicleChargingPoint/yesNo', stateData.propertyPack?.parking?.electricVehicleChargingPoint?.yesNo)}
                         </CardContent>
                       </Card>
 
@@ -1093,21 +1227,6 @@ function ConveyancingDiligence() {
                       </Card>
                     </div>
 
-                    {/* Participants Section */}
-                    {stateData.participants && stateData.participants.length > 0 && (
-                      <Card>
-                        <CardHeader>
-                          <CardTitle className="text-base">Transaction Participants</CardTitle>
-                        </CardHeader>
-                        <CardContent className="space-y-3">
-                          {stateData.participants.map((participant, index) => (
-                            <div key={index}>
-                              {renderDataElement(`${participant.name?.firstName} ${participant.name?.lastName} (${participant.role})`, `/participants/${index}`, participant)}
-                            </div>
-                          ))}
-                        </CardContent>
-                      </Card>
-                    )}
 
                     {/* Legal Owners - Land Registry Title Information */}
                     {(stateData.propertyPack?.registeredProprietor || stateData.propertyPack?.legalOwners) && (
@@ -1263,12 +1382,37 @@ function ConveyancingDiligence() {
                         <h3 className="font-semibold text-lg mb-4">Registered Proprietors (Legal Owners)</h3>
                         <div className="space-y-4">
                           {stateData.propertyPack.titlesToBeSold[0].registerExtract.ocSummaryData.proprietorship.registeredProprietorParty.map((proprietor, index) => (
-                            <div key={index} className="border border-blue-200 p-3 rounded">
-                              <h4 className="font-medium mb-2">Proprietor {index + 1}</h4>
-                              {renderDataElement('Details', `/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/proprietorship/registeredProprietorParty/${index}`, proprietor, formatPrettyJson)}
+                            <div key={index} className="bg-white border border-blue-200 p-4 rounded-lg">
+                              <h4 className="font-medium text-lg mb-3">Proprietor {index + 1}</h4>
+                              <div className="space-y-2">
+                                {proprietor.privateIndividual?.name && (
+                                  <div>
+                                    <span className="font-medium text-gray-700">Name: </span>
+                                    <span className="text-gray-900">
+                                      {proprietor.privateIndividual.name.forenamesName} {proprietor.privateIndividual.name.surnameName}
+                                    </span>
+                                  </div>
+                                )}
+                                {proprietor.address && (
+                                  <div>
+                                    <span className="font-medium text-gray-700">Address: </span>
+                                    <span className="text-gray-900">
+                                      {Array.isArray(proprietor.address.addressLine?.line)
+                                        ? proprietor.address.addressLine.line.join(', ')
+                                        : proprietor.address.addressLine?.line
+                                      }
+                                      {proprietor.address.postcodeZone?.postcode &&
+                                        `, ${proprietor.address.postcodeZone.postcode}`
+                                      }
+                                    </span>
+                                  </div>
+                                )}
+                              </div>
                             </div>
                           ))}
-                          {renderDataElement('Current Proprietorship Date', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/proprietorship/currentProprietorshipDate', stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.proprietorship?.currentProprietorshipDate, formatDate)}
+                          <div className="mt-4">
+                            {renderDataElement('Current Proprietorship Date', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData/proprietorship/currentProprietorshipDate', stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.proprietorship?.currentProprietorshipDate, formatDate)}
+                          </div>
                         </div>
                       </div>
                     )}
@@ -1285,11 +1429,52 @@ function ConveyancingDiligence() {
                       </div>
                     )}
 
-                    {/* Additional Title Data */}
-                    {stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData && (
+                    {/* Document Details */}
+                    {stateData.propertyPack.titlesToBeSold[0].registerExtract?.ocSummaryData?.documentDetails?.document && (
                       <div className="bg-purple-50 p-4 rounded-lg">
-                        <h3 className="font-semibold text-lg mb-4">Additional Register Information</h3>
-                        {renderDataElement('Complete Register Extract', '/propertyPack/titlesToBeSold/0/registerExtract/ocSummaryData', stateData.propertyPack.titlesToBeSold[0].registerExtract.ocSummaryData, formatPrettyJson)}
+                        <h3 className="font-semibold text-lg mb-4">Document History</h3>
+                        <div className="space-y-3">
+                          {stateData.propertyPack.titlesToBeSold[0].registerExtract.ocSummaryData.documentDetails.document.map((doc, index) => (
+                            <div key={index} className="bg-white border border-purple-200 p-3 rounded">
+                              <div className="grid grid-cols-2 gap-4 text-sm">
+                                <div>
+                                  <span className="font-medium text-gray-700">Date: </span>
+                                  <span className="text-gray-900">{formatDate(doc.documentDate)}</span>
+                                </div>
+                                <div>
+                                  <span className="font-medium text-gray-700">Type: </span>
+                                  <span className="text-gray-900">{doc.registerDescription || `Document Type ${doc.documentType}`}</span>
+                                </div>
+                                {doc.entryNumber && (
+                                  <div className="col-span-2">
+                                    <span className="font-medium text-gray-700">Entry Numbers: </span>
+                                    <span className="text-gray-900">
+                                      {Array.isArray(doc.entryNumber) ? doc.entryNumber.join(', ') : doc.entryNumber}
+                                    </span>
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Title Extents (Boundary Information) */}
+                    {stateData.propertyPack.titlesToBeSold[0].titleExtents && (
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <h3 className="font-semibold text-lg mb-4">Property Boundaries</h3>
+                        <div className="text-sm text-gray-600">
+                          <p>Boundary coordinates are available in GeoJSON format for mapping applications.</p>
+                          <details className="mt-2">
+                            <summary className="cursor-pointer font-medium text-gray-700 hover:text-gray-900">
+                              View Boundary Data
+                            </summary>
+                            <pre className="mt-2 p-2 bg-white border rounded text-xs overflow-x-auto">
+                              {stateData.propertyPack.titlesToBeSold[0].titleExtents}
+                            </pre>
+                          </details>
+                        </div>
                       </div>
                     )}
 
@@ -1378,6 +1563,198 @@ function ConveyancingDiligence() {
                       <div className="text-xs text-gray-500 italic border-l-4 border-amber-200 pl-3 py-2 bg-amber-50">
                         <strong>Important Notice:</strong> This Report on Title is generated by AI for demonstration purposes only.
                         This analysis should not be relied upon for actual conveyancing transactions. Professional legal advice should always be sought.
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          <TabsContent value="insights" className="space-y-6">
+            {/* AI Diligence Insights Section */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <Shield className="h-5 w-5 text-purple-600" />
+                  AI Diligence Insights
+                </CardTitle>
+                <CardDescription>
+                  Structured AI checks for common conveyancing issues with risk scoring
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <Button
+                    onClick={generateDiligenceInsights}
+                    disabled={insightsLoading || !stateData}
+                    className="w-full sm:w-auto"
+                  >
+                    {insightsLoading ? (
+                      <>
+                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2" />
+                        Analyzing Property Data...
+                      </>
+                    ) : (
+                      <>
+                        <Shield className="h-4 w-4 mr-2" />
+                        Generate Diligence Insights
+                      </>
+                    )}
+                  </Button>
+
+                  {insightsResult && (
+                    <div className="mt-6 space-y-6">
+                      {/* Overall Risk Assessment */}
+                      <div className="border rounded-lg p-6 bg-gradient-to-r from-slate-50 to-gray-50">
+                        <h4 className="font-semibold text-lg mb-4 flex items-center gap-2">
+                          <Shield className="h-5 w-5 text-purple-600" />
+                          Overall Risk Assessment
+                        </h4>
+                        <div className="flex items-center gap-4">
+                          <Badge
+                            variant={
+                              insightsResult.overallRisk.level === 'critical' ? 'destructive' :
+                              insightsResult.overallRisk.level === 'high' ? 'destructive' :
+                              insightsResult.overallRisk.level === 'medium' ? 'secondary' : 'outline'
+                            }
+                            className="text-sm px-3 py-1"
+                          >
+                            {insightsResult.overallRisk.level.toUpperCase()} RISK
+                          </Badge>
+                          <span className="text-gray-700">{insightsResult.overallRisk.description}</span>
+                        </div>
+
+                        {/* Summary Statistics */}
+                        <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+                          <div className="text-center p-2 bg-white rounded border">
+                            <div className="text-2xl font-bold text-green-600">{insightsResult.summary.passedChecks}</div>
+                            <div className="text-xs text-gray-600">Passed</div>
+                          </div>
+                          <div className="text-center p-2 bg-white rounded border">
+                            <div className="text-2xl font-bold text-yellow-600">{insightsResult.summary.warningChecks}</div>
+                            <div className="text-xs text-gray-600">Warnings</div>
+                          </div>
+                          <div className="text-center p-2 bg-white rounded border">
+                            <div className="text-2xl font-bold text-red-600">{insightsResult.summary.failedChecks}</div>
+                            <div className="text-xs text-gray-600">Failed</div>
+                          </div>
+                          <div className="text-center p-2 bg-white rounded border">
+                            <div className="text-2xl font-bold text-blue-600">{insightsResult.summary.totalChecks}</div>
+                            <div className="text-xs text-gray-600">Total</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Individual Check Results */}
+                      <div className="space-y-4">
+                        <h4 className="font-semibold text-lg flex items-center gap-2">
+                          <FileText className="h-5 w-5 text-blue-600" />
+                          Individual Check Results
+                        </h4>
+
+                        {insightsResult.checks.map((check, index) => (
+                          <Card key={check.checkId || index} className={`border-l-4 ${
+                            check.status === 'fail' ? 'border-red-500 bg-red-50' :
+                            check.status === 'warning' ? 'border-yellow-500 bg-yellow-50' :
+                            'border-green-500 bg-green-50'
+                          }`}>
+                            <CardHeader className="pb-3">
+                              <div className="flex items-start justify-between">
+                                <div className="flex-1">
+                                  <CardTitle className="text-base flex items-center gap-2">
+                                    {check.name}
+                                    <Badge
+                                      variant={
+                                        check.status === 'fail' ? 'destructive' :
+                                        check.status === 'warning' ? 'secondary' : 'default'
+                                      }
+                                      className="text-xs"
+                                    >
+                                      {check.status.toUpperCase()}
+                                    </Badge>
+                                  </CardTitle>
+                                  <p className="text-sm text-gray-600 mt-1">{check.description}</p>
+                                </div>
+                                <div className="flex flex-col items-end gap-1">
+                                  <Badge
+                                    variant={
+                                      check.riskLevel === 'critical' ? 'destructive' :
+                                      check.riskLevel === 'high' ? 'destructive' :
+                                      check.riskLevel === 'medium' ? 'secondary' : 'outline'
+                                    }
+                                    className="text-xs"
+                                  >
+                                    {check.riskLevel.toUpperCase()}
+                                  </Badge>
+                                  <Badge variant="outline" className="text-xs">
+                                    {check.confidence} confidence
+                                  </Badge>
+                                </div>
+                              </div>
+                            </CardHeader>
+                            <CardContent className="space-y-3">
+                              <div>
+                                <h5 className="font-medium text-sm mb-1">Findings</h5>
+                                <p className="text-sm text-gray-700">{check.findings}</p>
+                              </div>
+
+                              <div>
+                                <h5 className="font-medium text-sm mb-1">Details</h5>
+                                <p className="text-sm text-gray-700">{check.details}</p>
+                              </div>
+
+                              <div>
+                                <h5 className="font-medium text-sm mb-1">Recommendations</h5>
+                                <p className="text-sm text-gray-700">{check.recommendations}</p>
+                              </div>
+
+                              {/* Relevant Claims Section */}
+                              {check.relevantClaimIds && check.relevantClaimIds.length > 0 && (
+                                <div className="pt-3 border-t border-gray-200">
+                                  <div className="flex items-center justify-between mb-2">
+                                    <h5 className="font-medium text-sm text-gray-700">Supporting Evidence</h5>
+                                    <Badge variant="outline" className="text-xs">
+                                      {check.relevantClaimIds.length} claim{check.relevantClaimIds.length > 1 ? 's' : ''}
+                                    </Badge>
+                                  </div>
+                                  <Button
+                                    variant="outline"
+                                    size="sm"
+                                    onClick={() => showClaimsForCheck(check)}
+                                    className="text-xs h-7 px-3"
+                                  >
+                                    <FileText className="h-3 w-3 mr-1" />
+                                    View Source Claims ({check.relevantClaimIds.length})
+                                  </Button>
+                                </div>
+                              )}
+
+                              <div className="flex items-center justify-between text-xs text-gray-500 pt-2 border-t border-gray-200">
+                                <span>Category: {check.category}</span>
+                                <span>Analyzed: {new Date(check.timestamp).toLocaleString()}</span>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        ))}
+                      </div>
+
+                      {/* Property Summary */}
+                      {insightsResult.property && (
+                        <div className="border rounded-lg p-4 bg-gradient-to-r from-blue-50 to-indigo-50">
+                          <h4 className="font-semibold text-lg mb-2 flex items-center gap-2">
+                            <Building className="h-5 w-5 text-blue-600" />
+                            Property Summary
+                          </h4>
+                          <div className="text-sm text-gray-700">
+                            <div><strong>Address:</strong> {formatAddress(insightsResult.property.address)}</div>
+                            <div><strong>Title Number:</strong> {insightsResult.property.titleNumber}</div>
+                          </div>
+                        </div>
+                      )}
+
+                      <div className="text-xs text-gray-500 italic border-l-4 border-purple-200 pl-3 py-2 bg-purple-50">
+                        <strong>Important Notice:</strong> {insightsResult.disclaimer}
                       </div>
                     </div>
                   )}

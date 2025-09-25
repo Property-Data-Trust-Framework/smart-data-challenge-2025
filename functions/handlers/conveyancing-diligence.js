@@ -1,15 +1,71 @@
 const { onRequest } = require("firebase-functions/v2/https");
 const { config } = require("firebase-functions");
 const { OpenAI } = require("openai");
+const { zodResponseFormat } = require("openai/helpers/zod");
+const { z } = require("zod");
 
 /**
  * Generate AI-powered Report on Title
  * This function integrates with OpenAI to provide comprehensive title analysis
  */
+
+// Zod schema for the Report on Title response
+const ReportOnTitleSchema = z.object({
+  property: z.object({
+    address: z.string().describe("Property address"),
+    titleNumber: z.string().describe("Title number"),
+    date: z.string().describe("Report date"),
+  }),
+  titleSummary: z.object({
+    description: z.string().describe("Brief description of the property and title"),
+    registeredProprietor: z.string().describe("Registered proprietor details"),
+    classOfTitle: z.string().describe("Class of title and tenure"),
+  }),
+  titleExamination: z.object({
+    titleDocuments: z.string().describe("Review of title documents and entries"),
+    restrictions: z.string().describe("Analysis of any restrictions on the register"),
+    charges: z.string().describe("Examination of charges and incumbrances"),
+    covenants: z.string().describe("Review of covenants affecting the property"),
+  }),
+  planningStatutory: z.object({
+    planning: z.string().describe("Planning permissions and applications"),
+    buildingRegulations: z.string().describe("Building regulations compliance"),
+    conservation: z.string().describe("Conservation area or listed building status"),
+    environmental: z.string().describe("Environmental and contamination issues"),
+  }),
+  thirdPartyRights: z.object({
+    rightsOfWay: z.string().describe("Rights of way and easements"),
+    restrictiveCovenants: z.string().describe("Restrictive covenants"),
+    rightsOfLight: z.string().describe("Rights of light"),
+    partyWall: z.string().describe("Party wall matters"),
+  }),
+  financialCharges: z.object({
+    existingMortgages: z.string().describe("Existing mortgages and charges"),
+    liabilities: z.string().describe("Financial liabilities affecting the property"),
+    redemption: z.string().describe("Redemption requirements"),
+  }),
+  titleDefects: z.object({
+    defects: z.string().describe("Any defects in title identified"),
+    missingDocuments: z.string().describe("Missing documents or information"),
+    issues: z.string().describe("Potential issues requiring resolution"),
+  }),
+  recommendations: z.object({
+    actions: z.string().describe("Actions required before completion"),
+    searches: z.string().describe("Additional searches recommended"),
+    insurance: z.string().describe("Insurance recommendations"),
+    riskMitigation: z.string().describe("Risk mitigation advice"),
+  }),
+  conclusion: z.object({
+    assessment: z.string().describe("Overall assessment of the title"),
+    mortgageSuitability: z.string().describe("Suitability for mortgage purposes"),
+    reservations: z.string().describe("Any reservations or qualifications"),
+  }),
+});
 const generateDiligenceReport = onRequest(
   {
     cors: true,
     invoker: "public", // Demo access - would be "private" in production
+    timeoutSeconds: 300, // 5 minutes for AI processing
   },
   async (req, res) => {
     try {
@@ -75,31 +131,58 @@ async function generateReportOnTitle(stateData, claimsData) {
     // Create comprehensive prompt for Report on Title
     const prompt = createReportOnTitlePrompt(stateData, claimsData);
 
-    const response = await openai.chat.completions.create({
-      model: "gpt-4.1", // Use GPT-4.1 which has a 1 million token context window
+    // Use OpenAI's zodResponseFormat helper for structured output
+    const responseFormat = zodResponseFormat(ReportOnTitleSchema, "ReportOnTitle");
+
+    // Set appropriate parameters for GPT-5
+    const requestConfig = {
+      model: "gpt-5-mini", // Use GPT-5 Mini for Report on Title generation
       messages: [
         {
           role: "system",
-          content: "You are an experienced conveyancing solicitor preparing a comprehensive Report on Title. Your response should be a detailed, professional report examining the title to the property, identifying any issues, risks, or concerns that could affect the transaction.",
+          content: "You are an experienced conveyancing solicitor preparing a comprehensive Report on Title. Your response should be a detailed, professional report examining the title to the property, identifying any issues, risks, or concerns that could affect the transaction. Provide thorough analysis in each section with specific details relevant to the property data provided.",
         },
         {
           role: "user",
           content: prompt,
         },
       ],
-      temperature: 0.3, // Lower temperature for more consistent, professional analysis
-      // Remove max_tokens limit to allow full-length reports
-    });
+      response_format: responseFormat,
+    };
 
-    const aiContent = response.choices[0]?.message?.content;
-    if (!aiContent) return null;
+    // GPT-5 models only support temperature = 1
+    if (requestConfig.model.startsWith("gpt-5")) {
+      requestConfig.temperature = 1;
+      requestConfig.max_completion_tokens = 8000; // Use max_completion_tokens for GPT-5
+      console.log("[AI Request] Using GPT-5 Mini with temperature=1 for Report on Title");
+    } else {
+      requestConfig.temperature = 0.3; // Lower temperature for consistent analysis
+      requestConfig.max_tokens = 8000;
+    }
 
-    // Try to parse structured response or return as text
+    const response = await openai.chat.completions.create(requestConfig);
+
+    // Parse the structured response - zodResponseFormat ensures valid structure
+    let aiResult;
     try {
-      return JSON.parse(aiContent);
-    } catch (e) {
-      // Return the full report as text
-      return aiContent;
+      const aiContent = response.choices[0]?.message?.content;
+      if (!aiContent) return null;
+
+      aiResult = JSON.parse(aiContent);
+
+      // Additional validation with Zod to be extra safe
+      const validationResult = ReportOnTitleSchema.safeParse(aiResult);
+      if (!validationResult.success) {
+        console.warn("Invalid AI response for Report on Title:", validationResult.error);
+        return aiContent; // Fallback to raw content if validation fails
+      }
+
+      return validationResult.data;
+    } catch (parseError) {
+      console.error("Failed to parse Report on Title AI response:", parseError);
+      // Fallback to raw content if parsing fails
+      const aiContent = response.choices[0]?.message?.content;
+      return aiContent || null;
     }
   } catch (error) {
     console.error("Error generating Report on Title:", error);
@@ -116,63 +199,23 @@ Please prepare a comprehensive Report on Title for the following property transa
 COMPLETE PROPERTY TRANSACTION STATE:
 ${JSON.stringify(stateData, null, 2)}
 
-Please prepare a formal Report on Title structured as follows:
+${claimsData ? `\nINDIVIDUAL CLAIMS DATA:\n${JSON.stringify(claimsData, null, 2)}` : ""}
 
-REPORT ON TITLE
+Please analyze the provided property data and prepare a detailed Report on Title. For each section of the report, provide thorough professional analysis based on the specific data available. Where information is limited, note this and recommend appropriate action.
 
-PROPERTY: [Address]
-TITLE NUMBER: [Title Number]
-DATE: [Current Date]
+Your response should be structured according to the schema provided, with detailed professional content in each field. Focus on:
 
-1. TITLE SUMMARY
-- Brief description of the property and title
-- Registered proprietor details
-- Class of title and tenure
+1. **Property Details**: Extract accurate property address, title number, and set current date
+2. **Title Summary**: Analyze ownership, title class, and tenure from the data provided
+3. **Title Examination**: Review any title documents, restrictions, charges, and covenants mentioned in the data
+4. **Planning & Statutory**: Examine any planning permissions, building regulations, conservation status, environmental issues
+5. **Third Party Rights**: Identify easements, rights of way, restrictive covenants, party wall matters
+6. **Financial Charges**: Detail any mortgages, charges, or financial liabilities requiring redemption
+7. **Title Defects**: Identify any defects, missing documents, or potential issues
+8. **Recommendations**: Provide specific actionable advice for the transaction
+9. **Conclusion**: Give overall assessment, mortgage suitability, and any reservations
 
-2. TITLE EXAMINATION
-- Review of title documents and entries
-- Analysis of any restrictions on the register
-- Examination of charges and incumbrances
-- Review of covenants affecting the property
-
-3. PLANNING AND STATUTORY MATTERS
-- Planning permissions and applications
-- Building regulations compliance
-- Conservation area or listed building status
-- Environmental and contamination issues
-
-4. THIRD PARTY RIGHTS
-- Rights of way and easements
-- Restrictive covenants
-- Rights of light
-- Party wall matters
-
-5. FINANCIAL CHARGES
-- Existing mortgages and charges
-- Financial liabilities affecting the property
-- Redemption requirements
-
-6. TITLE DEFECTS AND CONCERNS
-- Any defects in title identified
-- Missing documents or information
-- Potential issues requiring resolution
-
-7. RECOMMENDATIONS
-- Actions required before completion
-- Additional searches recommended
-- Insurance recommendations
-- Risk mitigation advice
-
-8. CONCLUSION
-- Overall assessment of the title
-- Suitability for mortgage purposes
-- Any reservations or qualifications
-
-Please write this as a professional legal document that would be suitable for presentation to a client and their lender. Use formal legal language appropriate for conveyancing practice. Highlight any serious issues or concerns that could affect the transaction.
-
-The report should be comprehensive but focused specifically on title matters - this is not a general due diligence report but specifically a Report on Title examining the legal ownership and rights affecting the property.
-
-IMPORTANT: Please format your response as well-structured Markdown with proper headings, bullet points, tables where appropriate, and clear formatting. Use # for main sections, ## for subsections, and proper markdown syntax throughout.
+Write in formal legal language appropriate for conveyancing practice. Be specific about issues found in the data and provide practical recommendations. If information is missing from the provided data, note this and recommend obtaining it.
 `;
 }
 

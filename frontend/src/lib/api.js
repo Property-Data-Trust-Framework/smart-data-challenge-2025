@@ -115,6 +115,19 @@ export const pdtfAPI = {
     return response.data;
   },
 
+  // Generate AI-powered diligence insights with structured checks - PUBLIC wrapper
+  generateDiligenceInsights: async (stateData, claimsData) => {
+    const endpoint = import.meta.env.DEV
+      ? `http://127.0.0.1:5001/moverly-smart-data-challenge/us-central1/generateDiligenceInsights`
+      : `https://generatediligenceinsights-sufe6opz3a-uc.a.run.app`;
+
+    const response = await axios.post(endpoint, {
+      stateData,
+      claimsData
+    });
+    return response.data;
+  },
+
   // PRIVATE FUNCTIONS - Disabled in frontend for security
   // These would require proper authentication tokens in a production app
   
