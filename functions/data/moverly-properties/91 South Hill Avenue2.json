@@ -1,0 +1,5172 @@
+[
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-02T12:25:59.423Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/participants/-": {
+        "name": {
+          "firstName": "Ed",
+          "lastName": "Molyneux"
+        },
+        "email": "ed+nptn@moverly.com",
+        "role": "Estate Agent",
+        "externalIds": {
+          "Moverly": "2Mpx7TnWEDQKKp4PcQZ0QgRo0m62"
+        },
+        "organisation": "NPTN Estates"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-02T12:25:59.423Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/residentialPropertyFeatures": {
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "receptions": 1,
+        "kitchens": 1
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-02T12:26:01.850Z",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Regulated search turnaround times obtained for Trafford Metropolitan Borough Council from OneSearch Direct"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/localAuthority/regulatedSearchTurnaroundTimeInWorkingDays": 5
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-02T12:25:59.414Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/status": "For sale"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-02T12:26:01.850Z",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council(s) for M41 8TZ retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/localAuthority/localAuthorityName": "Trafford Metropolitan Borough Council",
+      "/propertyPack/localAuthority/unitaryAuthority": "Trafford Metropolitan Borough Council"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-02T12:25:59.425Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/address": {
+        "buildingNumber": "91",
+        "buildingName": "",
+        "subBuilding": "",
+        "street": "South Hill Avenue",
+        "line1": "91 South Hill Avenue",
+        "line2": "",
+        "line3": "",
+        "town": "Manchester",
+        "county": "Greater Manchester",
+        "postcode": "M41 8TZ"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/priceInformation": {
+        "price": 161000,
+        "priceQualifier": "Fixed price"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.744Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/status": "For sale"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.744Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/priceInformation": {
+        "price": 161000,
+        "priceQualifier": "Fixed price"
+      }
+    },
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-09-02T12:47:57.049Z"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/uprn": 142222141245
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.744Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/externalIds": {}
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.744Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/energyEfficiency/greenDealLoan/hasGreenDealLoan/yesNo": "No"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/energyEfficiency/certificate": {
+        "certificateNumber": "1422-2214-1245-1754988381745",
+        "currentEnergyRating": "C",
+        "currentEnergyEfficiency": 79,
+        "potentialEnergyRating": "B",
+        "potentialEnergyEfficiency": 91,
+        "environmentImpactCurrent": 64,
+        "environmentImpactPotential": 77,
+        "co2EmissionsCurrent": 1.86,
+        "co2EmissionsPotential": 1.2,
+        "totalFloorArea": 66.87,
+        "propertyType": "Semi-detached",
+        "builtForm": "Semi-detached",
+        "numberHabitableRooms": 2,
+        "numberHeatedRooms": 2,
+        "mainFuel": "mains gas (not community)",
+        "mainsGasFlag": "Y",
+        "energyConsumptionCurrent": 1646,
+        "energyConsumptionPotential": 1317,
+        "heatingCostCurrent": 363,
+        "heatingCostPotential": 227,
+        "inspectionDate": "2025-05-14"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Energy Performance Certificate obtained from https://find-energy-certificate.service.gov.uk/"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "fd5gheuQ/9EzUkbzfcRyYw=="
+              },
+              "url": "https://find-energy-certificate.service.gov.uk/energy-certificate/synthetic-cert",
+              "desc": "Energy Performance Certificate from GOV.UK"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/energyEfficiency/certificateIsSupplied": "Attached"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Energy Performance Certificate obtained from https://find-energy-certificate.service.gov.uk/energy-certificate/8790-6428-6380-6753-4226"
+            }
+          },
+          "attachments": [
+            {
+              "desc": "EPC_91A_CF24 2JY_2020-08-28_EXPIRES_ON_2030-08-28.pdf",
+              "digest": {
+                "alg": "md5",
+                "value": "TDINXdgZC5Rp5LPgHE3phg=="
+              },
+              "url": "https://storage.googleapis.com/moveready-production.appspot.com/files/EPC_91A_CF24_2JY_2020_08_28_EXPIRES_ON_2030_08_28_ef6e37b1-7182-484a-a943-b316adc49aaf.pdf?GoogleAccessId=moveready-production%40appspot.gserviceaccount.com&Expires=2003443200&Signature=sYIGS3IbLZa%2BhC8a2GS2EW3kMkc0MCabSDjbvvSCbpwxU7ZFi4zCHOO68nBd7fwaSWFx7C0nkKM3evMAST8Cxj9kc8NFipKqvaWwyLXcXJ07PRuqcB3cPZ%2F7RuLZopMBkdxoZYQBzYZxqg3LiwZByb6bDdEnTxf5uXF0AjSXjkOmbknCdcHVwxz65DcVhTJdSTXO3Rr5jRPpfEhXGs3Gbo%2BRk5x%2FikLpRzROEzLMNr9wVeYDdgPh%2F59NLMSjEtD6Y9%2FwXMi1X8I4sMfw97aTRV2Q3iZp8ln24wnyGqm52lB6XanIrn0ATZF2q5f5MDOAbkIl30FMk4%2F8cIkDPcnf3A%3D%3D&fileId=10KgmBuh0HclZskzg73J"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/buildInformation/building/builtForm": "Semi-detached"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/buildInformation/internalArea": {
+        "area": 66.87,
+        "unit": "square metres"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/connectivity/mobilePhone/predictedCoverage": {
+        "eeDataOutdoor": 4,
+        "eeVoiceOutdoor": 4,
+        "voDataOutdoor": 4,
+        "voVoiceOutdoor": 4,
+        "h3DataOutdoor": 4,
+        "h3VoiceOutdoor": 4,
+        "tfDataOutdoor": 4,
+        "tfVoiceOutdoor": 4,
+        "eeDataIndoor": 3,
+        "eeDataIndoorNo4g": 3,
+        "eeDataOutdoorNo4g": 3,
+        "eeVoiceIndoor": 3,
+        "eeVoiceIndoorNo4g": 3,
+        "eeVoiceOutdoorNo4g": 4,
+        "h3DataIndoor": 0,
+        "h3DataIndoorNo4g": 0,
+        "h3DataOutdoorNo4g": 3,
+        "h3VoiceIndoor": 0,
+        "h3VoiceIndoorNo4g": 0,
+        "h3VoiceOutdoorNo4g": 4,
+        "tfDataIndoor": 3,
+        "tfDataIndoorNo4g": 3,
+        "tfDataOutdoorNo4g": 3,
+        "tfVoiceIndoor": 3,
+        "tfVoiceIndoorNo4g": 3,
+        "tfVoiceOutdoorNo4g": 4,
+        "voDataIndoor": 3,
+        "voDataIndoorNo4g": 0,
+        "voDataOutdoorNo4g": 0,
+        "voVoiceIndoor": 3,
+        "voVoiceIndoorNo4g": 3,
+        "voVoiceOutdoorNo4g": 4
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/address": {
+        "line1": "91 South Hill Avenue",
+        "line2": "",
+        "town": "MANCHESTER",
+        "county": "Greater Manchester",
+        "postcode": "M41 8TZ"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/heating/heatingSystem/heatingType": "Central heating"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/buildInformation/building/propertyType": "House"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/localAuthority/regulatedSearchTurnaroundTimeInWorkingDays": 10
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/localAuthority/districtCouncil": "Manchester City Council"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/localAuthority/localAuthorityName": "Manchester City Council"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/connectivity/broadband": {
+        "yesNo": "Yes",
+        "typeOfConnection": "FTTP (Fibre to the Premises)",
+        "predictedSpeed": {
+          "maxBbPredictedDown": 16,
+          "maxBbPredictedUp": 1,
+          "maxSfbbPredictedDown": 67,
+          "maxSfbbPredictedUp": 20,
+          "maxUfbbPredictedDown": 1000,
+          "maxUfbbPredictedUp": 220,
+          "maxPredictedDown": 1000,
+          "maxPredictedUp": 220
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Coverage retrieved from Ofcom Connected Nations APIs"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/location": {
+        "latitude": 51.483822,
+        "longitude": -3.149326
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Address coordinates obtained from Ordnance Survey API"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/environmentalIssues/flooding/floodRisk": {
+        "summary": "Flooding from rivers: Very low risk; Flooding from the sea: Very low risk",
+        "riskSubcategories": [
+          {
+            "result": "Very low risk",
+            "summary": "Risk less than 0.1% chance each year",
+            "subCategory": "Flooding from rivers",
+            "actionAlertRating": 1
+          },
+          {
+            "result": "Very low risk",
+            "summary": "Risk less than 0.1% chance each year",
+            "subCategory": "Flooding from the sea",
+            "actionAlertRating": 1
+          }
+        ],
+        "riskIndicator": "No",
+        "actionAlertRating": 1,
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environment Agency Long-term Flood Risk service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "/gjdv2Zh72W582ruJcY3JQ=="
+              },
+              "url": "https://check-long-term-flood-risk.service.gov.uk/synthetic-report",
+              "desc": "Environment Agency flood risk report"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/councilTax": {
+        "councilTaxBand": "A",
+        "councilTaxAnnualCharge": 1845.45,
+        "councilTaxAnnualChargeTaxYear": "2024-2025",
+        "councilTaxAffectingAlterations": {
+          "yesNo": "No"
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Council Tax information obtained from the Valuation Office Agency"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "Mkc7kwA+RANxriVKJLXdjg=="
+              },
+              "url": "https://www.tax.service.gov.uk/check-council-tax-band/property/synthetic",
+              "desc": "Council Tax band on GOV.UK"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/localAuthority/countyCouncil": "Greater Manchester Combined Authority"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Local council information retrieved from https://www.gov.uk/find-local-council"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/titlesToBeSold": [
+        {
+          "titleNumber": "TF142222",
+          "titleIncludedInSale": true
+        }
+      ]
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "SVL5SDftBbI/z8yW4mHVuQ=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/environmentalIssues/coalMining": {
+        "result": "Not identified",
+        "summary": "No coal mining risk has been identified.",
+        "riskIndicator": "No",
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/marketingTenure": "Freehold"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/environmentalIssues/coastalErosion": {
+        "result": "Not close to an area potentially affected by future coastal erosion.",
+        "summary": "The property is not close to any area potentially impacted by coastal erosion.",
+        "riskIndicator": "No",
+        "actionAlertRating": 1,
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/titleExtents": "{\"type\":\"Polygon\",\"coordinates\":[[[-3.149553565352809,51.483890489806605],[-3.149524770780623,51.48391954590055],[-3.149510733435072,51.48393407041276],[-3.149331419824742,51.48386526285516],[-3.1492847993486364,51.483847377150056],[-3.1492308064481254,51.483826668419994],[-3.1492232353611613,51.48381190635079],[-3.14925622403685,51.48377786284786],[-3.149278755814734,51.48378618421107],[-3.149377633748398,51.48382387907677],[-3.1495157805546397,51.48387692342989],[-3.149553565352809,51.483890489806605]]]}"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Title Extents Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "1TJosSOc8a0mNdAeMVUseA=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Title Extents from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/legalOwners/namesOfLegalOwners": [
+        {
+          "ownerType": "Private individual",
+          "firstName": "Diane",
+          "middleNames": "Marion",
+          "lastName": "Hardy"
+        },
+        {
+          "ownerType": "Private individual",
+          "firstName": "Neil",
+          "middleNames": "",
+          "lastName": "Hardy"
+        }
+      ]
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/environmentalIssues/nonCoalMining": {
+        "result": "Not identified",
+        "summary": "No non-coal mining risk has been identified.",
+        "riskIndicator": "No",
+        "datasetAttribution": "Smart Data Challenge Sandbox Assessment"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/ownership/ownershipsToBeTransferred/-": {
+        "ownershipType": "Freehold",
+        "titleNumber": "TF142222",
+        "percentageOwned": 100,
+        "owner": [
+          {
+            "firstName": "Diane",
+            "lastName": "Hardy"
+          },
+          {
+            "firstName": "Neil",
+            "lastName": "Hardy"
+          }
+        ]
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "lUEFz180G22SxpH8rbZkXA=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.745Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/ownership/numberOfSellers": 2
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "EcvbogFkq7qYOVgf0aNk2A=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/registerExtract": {
+        "ocSummaryData": {
+          "documentDetails": {
+            "document": [
+              {
+                "documentDate": "2021-12-27",
+                "documentType": "60",
+                "planOnlyIndicator": "false",
+                "entryNumber": ["A1", "B1"],
+                "registerDescription": "Transfer"
+              }
+            ]
+          },
+          "officialCopyDateTime": "2025-08-12T08:46:21.745Z",
+          "proprietorship": {
+            "currentProprietorshipDate": "2021-12-27",
+            "registeredProprietorParty": [
+              {
+                "privateIndividual": {
+                  "name": {
+                    "forenamesName": "Diane",
+                    "surnameName": "Hardy"
+                  }
+                },
+                "address": {
+                  "postcodeZone": {
+                    "postcode": "M41 8TZ"
+                  },
+                  "addressLine": {
+                    "line": ["91 South Hill Avenue", "MANCHESTER"]
+                  }
+                }
+              },
+              {
+                "privateIndividual": {
+                  "name": {
+                    "forenamesName": "Neil",
+                    "surnameName": "Hardy"
+                  }
+                },
+                "address": {
+                  "postcodeZone": {
+                    "postcode": "M41 8TZ"
+                  },
+                  "addressLine": {
+                    "line": ["91 South Hill Avenue", "MANCHESTER"]
+                  }
+                }
+              }
+            ]
+          },
+          "propertyAddress": {
+            "postcodeZone": {
+              "postcode": "M41 8TZ"
+            },
+            "addressLine": {
+              "line": ["91 South Hill Avenue", "MANCHESTER"]
+            }
+          },
+          "editionDate": "2025-07-13",
+          "title": {
+            "titleNumber": "TF142222",
+            "commonholdIndicator": false,
+            "classOfTitleCode": "10",
+            "titleRegistrationDetails": {
+              "postcodeZone": {
+                "postcode": "M41 8TZ"
+              },
+              "districtName": "MANCHESTER",
+              "registrationDate": "2021-12-27",
+              "administrativeArea": "MANCHESTER",
+              "landRegistryOfficeName": "Manchester Office",
+              "latestEditionDate": "2025-07-13"
+            }
+          },
+          "registerEntryIndicators": {
+            "multipleChargeIndicator": false,
+            "chargeeIndicator": false,
+            "homeRightsIndicator": false,
+            "leaseHoldTitleIndicator": false,
+            "pricePaidIndicator": true
+          },
+          "pricePaidEntry": {
+            "entryDetails": {
+              "entryText": "The price stated to have been paid on 2021-12-27 was £145000.",
+              "registrationDate": "2021-12-27",
+              "infills": {
+                "date": "2021-12-27",
+                "amount": "£145000"
+              },
+              "entryNumber": "1",
+              "subRegisterCode": "B"
+            }
+          }
+        },
+        "ocRegisterData": {
+          "proprietorshipRegister": {
+            "registerEntry": [
+              {
+                "entryType": "Proprietor",
+                "entryText": "PROPRIETOR: DIANE HARDY and NEIL HARDY of 91 South Hill Avenue, MANCHESTER, M41 8TZ.",
+                "entryDate": "2021-12-27",
+                "entryNumber": "1"
+              }
+            ]
+          },
+          "propertyRegister": {
+            "registerEntry": [
+              {
+                "entryType": "Property Description",
+                "entryText": "The Freehold land shown edged with red on the plan of the above title filed at the Registry and being 91 South Hill Avenue, MANCHESTER (M41 8TZ).",
+                "entryDate": "2021-12-27",
+                "entryNumber": "1"
+              }
+            ],
+            "districtDetails": {
+              "entryText": "MANCHESTER"
+            },
+            "chargesRegister": {
+              "registerEntry": [
+                {
+                  "entryNumber": "1",
+                  "entryType": "Restrictive Covenants/Stipulations - Deed",
+                  "entryText": [
+                    "A Deed of Agreement affecting the land in this title and other land dated 15 July 1988 made between (1) Manchester City Council and (2) David Michael Harrison and Emma Louise Taylor contains the following covenants:-",
+                    "The Applicants hereby jointly and severally COVENANT that if they are granted planning permission in accordance with their application numbered 88/0038 (whether or not such permission is granted subject to conditions) the internal floorspace excluding garages of the residential units to be built on the site will not exceed 660 square feet and there will be no extensions to the residential units in the future."
+                  ]
+                },
+                {
+                  "entryNumber": "2",
+                  "entryType": "Restrictive Covenants/Stipulations - Deed",
+                  "entryText": [
+                    "A Conveyance of the land in this title and other land dated 28 April 1989 made between (1) David Michael Harrison and Emma Louise Taylor (Vendors) and (2) Andrew James Wilson (Purchaser) contains the following covenants:-",
+                    "\"THE PURCHASER hereby covenants with the Vendors and each of them not to use the property hereby conveyed or allow the same to be so used so as to cause a nuisance or annoyance to the owner or occupier for the time being of the Retained Property provided that this covenant shall not in any way restrict or prevent the Purchaser from developing the property hereby conveyed for residential occupation and use.\""
+                  ]
+                },
+                {
+                  "entryNumber": "3",
+                  "entryType": "Subjective Easements - C Register",
+                  "entryText": [
+                    "The land is subject to the following rights reserved by the Conveyance dated 28 April 1989 referred to above:-",
+                    "\"Subject as provided in the said First Schedule",
+                    ".........................................................................",
+                    "EXCEPTING AND RESERVING unto the Vendors and their successors in title owners for the time being of the Vendors Retained Property:-",
+                    "(a) the right (subject to obtaining all necessary Local Authority approval) to connect into the foul sewer and surface water drain to be laid by the Purchaser in or through the property hereby conveyed (such connections to be made at the Vendors expense and in such position as shall be approved by the Purchaser) and thereafter a right to use the said foul sewer and surface water drain for the free and uninterrupted passage and running of water and sewerage but without any warranty by the Purchaser that such sewer and drain shall be sufficient capacity as to permit the exercise of such rights",
+                    "(b) the right upon reasonably prior notice (except in the case of emergency) to enter upon the Property hereby conveyed so far as may be necessary for the purpose of inspecting cleansing maintaining repairing and renewing the connections to be made to the foul sewer and surface water drain in accordance with sub-clause (a) above and also the fence or any other boundary structure to be erected by the Vendors in accordance with the covenant on their part herein contained.\""
+                  ]
+                },
+                {
+                  "entryNumber": "4",
+                  "entryType": "Subjective Easements - C Register",
+                  "entryText": [
+                    "The land is subject to the following rights granted by a Transfer of an Electricity Sub-Station dated 9 July 1990 made between (1) Andrew James Wilson (Transferor) and (2) Electricity North West Limited (Company):-",
+                    "Together with any rights appurent to that property as may be set out in the Second Schedule",
+                    ".........................................................................",
+                    "THE RIGHTS APPURTENANT TO THE PROPERTY TRANSFERRED",
+                    ".........................................................................",
+                    "(iv) A right to lay electric lines within the meaning of Section 64 of the Electricity Act 1989",
+                    "(i)  In the position indicated on the attached plan and shown by broken red lines together also to erect and maintain a pole and stay together with all necessary guards wires and appliances as shown on the said plan",
+                    ".........................................................................",
+                    "(v)  A right to break up the surface of any of the above land roads or footpaths for the purpose of laying repairing and maintaining the electric lines doing as little damage as possible and making good any damage caused.",
+                    "The said Transfer also contains the following covenants by the Transferor:-",
+                    "The Transferor covenants with the Company and its successors in title to observe and perform the matters set out in the Third Schedule",
+                    "THE THIRD SCHEDULE",
+                    "COVENANTS TO BE OBSERVED BY THE TRANSFEROR:",
+                    "(i)    To indemnify the Company against all costs charges and expenses involved in the construction and adoption of any roads and footpaths on the adjoining estate",
+                    "(ii)   Not at any time after the date of this Deed to excavate under or alter the level of ground over nor construct or permit to be constructed any building or structure or erection of any kind whatsoever over or within one metre on either side of the route of the electric lines referred to in The Second Schedule to this Transfer other than any buildings structures or erections marked on the attached plan",
+                    "(iii)  Not to erect or cause or permit to be erected any building structure or other erection plant or materials in such proximity to the said sty as to cause damage or danger to the same or anyone working thereon.",
+                    "NOTE: The red broken lines referred to are shown by a blue broken line on the filed plan so far as they affect the land in this title."
+                  ]
+                },
+                {
+                  "entryNumber": "5",
+                  "entryType": "Restrictive Covenants/Stipulations - Deed",
+                  "entryText": [
+                    "A Transfer of the land in this title dated 21 September 1990 made between (1) Andrew James Wilson and (2) Michael Thompson and Sarah Johnson contains restrictive covenants.",
+                    "NOTE: Original filed."
+                  ]
+                },
+                {
+                  "entryNumber": "6",
+                  "entryDate": "2021-12-27",
+                  "entryType": "Registered Charges",
+                  "entryText": "REGISTERED CHARGE dated 27 December 2021."
+                },
+                {
+                  "entryNumber": "7",
+                  "entryDate": "2021-12-27",
+                  "entryType": "Chargee",
+                  "entryText": "Proprietor: HALIFAX BUILDING SOCIETY of Trinity Road, Halifax HX1 2RG."
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "k8PD0mo62PvJCzQUEwARag=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/typeOfConstruction/isStandardForm": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/typeOfConstruction/buildingSafety": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/electricity/mainsElectricity": {
+        "yesNo": "Yes",
+        "supplier": "British Gas",
+        "electricityMeter": {
+          "type": "Smart meter",
+          "location": "External meter box"
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/electricity/solarPanels": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/electricity/heatPump": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/titlesToBeSold/0/additionalDocuments/-": {
+        "documentType": "Transfer",
+        "documentDate": "2021-12-27",
+        "documentReference": "TR-14222214"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "HMLR Register Extract Service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "Cd2u8N5lL3RnRBSLuL/GhA=="
+              },
+              "url": "https://landregistry.data.gov.uk/synthetic-extract",
+              "desc": "Register Extract from HMLR"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/typeOfConstruction/accessibilityAndAdaptations": []
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Property data verification service - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/listingAndConservation/isListed": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/waterAndDrainage/drainage": {
+        "mainsSurfaceWaterDrainage": {
+          "yesNo": "Yes"
+        },
+        "mainsFoulDrainage": {
+          "yesNo": "Yes",
+          "supplier": "United Utilities"
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/electricity/otherSources": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/heating/otherHeatingFeatures": ["None"]
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/waterAndDrainage/water": {
+        "mainsWater": {
+          "yesNo": "Yes",
+          "supplier": "United Utilities",
+          "waterMeter": {
+            "isSupplyMetered": "Yes",
+            "location": "Front garden"
+          },
+          "stopcock": {
+            "location": "Under kitchen sink"
+          }
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/waterAndDrainage/water/mainsWater/waterMeter": {
+        "isSupplyMetered": "Yes",
+        "location": "Front garden"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/parking/disabledParking": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/parking/controlledParking": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/listingAndConservation/isConservationArea": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/parking/electricVehicleChargingPoint": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements": {
+        "publicRightOfWay": {
+          "yesNo": "No"
+        },
+        "rightsOfLight": {
+          "yesNo": "No"
+        },
+        "rightsOfSupport": {
+          "yesNo": "No"
+        },
+        "rightsCreatedThroughCustom": {
+          "yesNo": "No"
+        },
+        "rightsToTakeFromLand": {
+          "yesNo": "No"
+        },
+        "minesAndMinerals": {
+          "yesNo": "No"
+        },
+        "churchChancel": {
+          "yesNo": "No"
+        },
+        "otherRights": {
+          "yesNo": "No"
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/listingAndConservation/hasTreePreservationOrder": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/legalBoundaries/haveBoundaryFeaturesMoved": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/notices/planningApplication/yesNo": "No"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/environmentalIssues/flooding/historicalFlooding/hasBeenFlooded": "No"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environment Agency Long-term Flood Risk service"
+            }
+          },
+          "attachments": [
+            {
+              "digest": {
+                "alg": "md5",
+                "value": "bGV9xHAt1HQzeix1uLPhbg=="
+              },
+              "url": "https://check-long-term-flood-risk.service.gov.uk/synthetic-report",
+              "desc": "Environment Agency flood risk report"
+            }
+          ]
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/legalBoundaries/adjacentLandIncluded": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/notices/listedBuildingApplication": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/disputesAndComplaints/leadingToDisputesAndComplaints": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/legalBoundaries/flyingFreehold": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/disputesAndComplaints/hasDisputesAndComplaints": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/notices/infrastructureProject": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/notices/neighbourDevelopment": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/alterationsAndChanges/windowReplacementsSince2002": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/notices/partyWallAct": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/notices/requiredMaintenance": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/alterationsAndChanges/hasAddedConservatory": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/notices/otherNotices": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/alterationsAndChanges/hasStructuralAlterations": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/alterationsAndChanges/unresolvedPlanningIssues": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/alterationsAndChanges/changeOfUse": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/hasValidGuaranteesOrWarranties": "No"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/newHomeWarranty": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/roofingWork": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/alterationsAndChanges/planningPermissionBreaches": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/alterationsAndChanges/worksUnfinished": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/timberRotOrInfestationTreatment": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/doubleGlazing": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/dampProofingTreatment": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/centralHeatingAndorPlumbing": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/otherGuarantees": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/insurance/insuranceClaims": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/environmentalIssues/radon/remedialMeasuresOnConstruction": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/electricalRepairOrInstallation": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/subsidenceWork": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/guaranteesWarrantiesAndIndemnityInsurances/outstandingClaimsOrApplications": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsOfLight": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/environmentalIssues/radon/radonTest": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Environmental risk assessment - Smart Data Challenge Sandbox"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/specialistIssues/japaneseKnotweed/yesNo": "No"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/insurance/difficultiesObtainingInsurance": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/insurance/isInsured": "Yes"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/otherRights": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/neighbouringLandRights": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsOfSupport": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsCreatedThroughCustom": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/rightsOrArrangements/rightsToTakeFromLand": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-08-12T08:46:21.746Z"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:16:59.486Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/heating/heatingSystem/centralHeatingDetails": {
+        "centralHeatingFuel": {
+          "centralHeatingFuelType": "Mains gas"
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:17:08.671Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/parking/parkingArrangements": ["Garage"]
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:17:34.014Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/insurance/difficultiesObtainingInsurance/abnormalRiseInPremiums": {
+        "yesNo": "No"
+      },
+      "/propertyPack/insurance/difficultiesObtainingInsurance/subjectToHighExcesses": {
+        "yesNo": "No"
+      },
+      "/propertyPack/insurance/difficultiesObtainingInsurance/subjectToUnusualConditions": {
+        "yesNo": "No"
+      },
+      "/propertyPack/insurance/difficultiesObtainingInsurance/refused": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:17:44.315Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/rightsAndInformalArrangements/sharedContributions": {
+        "yesNo": "No"
+      },
+      "/propertyPack/rightsAndInformalArrangements/accessRestrictionAttempts": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:17:50.388Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/servicesCrossing/pipesWiresCablesDrainsToProperty": {
+        "yesNo": "No"
+      },
+      "/propertyPack/servicesCrossing/pipesWiresCablesDrainsFromProperty": {
+        "yesNo": "No"
+      },
+      "/propertyPack/servicesCrossing/formalOrInformalAgreements": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:17:53.119Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/additionalInformation/otherCharges/yesNo": "No"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:18:01.115Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/occupiers/sellerLivesAtProperty": {
+        "yesNo": "Yes"
+      },
+      "/propertyPack/occupiers/othersAged17OrOver": {
+        "hasOthersAged17OrOver": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:18:10.883Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/electricalWorks/testedByQualifiedElectrician": {
+        "yesNo": "No"
+      },
+      "/propertyPack/electricalWorks/electricalWorkSince2005": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:18:47.111Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/heating/heatingSystem/centralHeatingDetails/centralHeatingFuel/supplier": "Manchester Utilities",
+      "/propertyPack/heating/heatingSystem/centralHeatingDetails/centralHeatingFuel/gasMeter": {
+        "location": "Under stairs"
+      },
+      "/propertyPack/heating/heatingSystem/centralHeatingDetails/centralHeatingInstalled": "Not known",
+      "/propertyPack/heating/heatingSystem/centralHeatingDetails/boilerInstallationCertificate": {
+        "yesNo": "No"
+      },
+      "/propertyPack/heating/heatingSystem/centralHeatingDetails/heatingLastServicedDate": "2013-06-04",
+      "/propertyPack/heating/heatingSystem/centralHeatingDetails/heatingLastServicedReport": "To follow",
+      "/propertyPack/heating/heatingSystem/centralHeatingDetails/heatingInGoodWorkingOrder": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:18:53.970Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/connectivity/telephone": {
+        "yesNo": "No"
+      },
+      "/propertyPack/connectivity/cableSatelliteTV": {
+        "yesNo": "No"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:19:05.034Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/completionAndMoving/sellerWillEnsure": {
+        "removeRubbish": true,
+        "replaceLightFittings": true,
+        "takeReasonableCare": true,
+        "leaveKeys": true
+      },
+      "/propertyPack/completionAndMoving/otherPropertyInChain": {
+        "yesNo": "Yes"
+      },
+      "/propertyPack/completionAndMoving/moveRestrictionDates": {
+        "yesNo": "No"
+      },
+      "/propertyPack/completionAndMoving/sufficientToRepayAllMortgages": {
+        "yesNo": "Yes"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:19:21.115Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/legalBoundaries/ownership": {
+        "areBoundariesUniform": "Yes",
+        "uniformBoundaries": {
+          "left": "Neighbour",
+          "right": "Seller",
+          "rear": "Neighbour",
+          "front": "Seller"
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:19:54.332Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/fixturesAndFittings/basicFittings/boilerImmersionHeater": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/basicFittings/radiatorsWallHeaters": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/basicFittings/nightStorageHeaters": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/basicFittings/freeStandingHeaters": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/basicFittings/gasFiresWithSurround": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/basicFittings/electricFiresWithSurround": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/basicFittings/lightSwitches": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/basicFittings/roofInsulation": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/basicFittings/windowFittings": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/basicFittings/windowShuttersGrilles": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/basicFittings/internalDoorFittings": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/basicFittings/externalDoorFittings": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/basicFittings/doorbellChime": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/basicFittings/electricSockets": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/basicFittings/burglarAlarm": {
+        "isIncludedExcludedOrNone": "Included"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:20:23.108Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/fixturesAndFittings/kitchen/hob": {
+        "isIncludedExcludedOrNone": "Included",
+        "fittedOrFreestanding": {
+          "fittedOrFreestanding": "Fitted"
+        }
+      },
+      "/propertyPack/fixturesAndFittings/kitchen/extractorHood": {
+        "isIncludedExcludedOrNone": "Included",
+        "fittedOrFreestanding": {
+          "fittedOrFreestanding": "Fitted"
+        }
+      },
+      "/propertyPack/fixturesAndFittings/kitchen/ovenGrill": {
+        "isIncludedExcludedOrNone": "Included",
+        "fittedOrFreestanding": {
+          "fittedOrFreestanding": "Fitted"
+        }
+      },
+      "/propertyPack/fixturesAndFittings/kitchen/cooker": {
+        "isIncludedExcludedOrNone": "Included",
+        "fittedOrFreestanding": {
+          "fittedOrFreestanding": "Fitted"
+        }
+      },
+      "/propertyPack/fixturesAndFittings/kitchen/microwave": {
+        "isIncludedExcludedOrNone": "Included",
+        "fittedOrFreestanding": {
+          "fittedOrFreestanding": "Fitted"
+        }
+      },
+      "/propertyPack/fixturesAndFittings/kitchen/refrigeratorFridgeFreezer": {
+        "isIncludedExcludedOrNone": "Included",
+        "fittedOrFreestanding": {
+          "fittedOrFreestanding": "Fitted"
+        }
+      },
+      "/propertyPack/fixturesAndFittings/kitchen/freezer": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/kitchen/dishwasher": {
+        "isIncludedExcludedOrNone": "Included",
+        "fittedOrFreestanding": {
+          "fittedOrFreestanding": "Fitted"
+        }
+      },
+      "/propertyPack/fixturesAndFittings/kitchen/tumbleDryer": {
+        "isIncludedExcludedOrNone": "Included",
+        "fittedOrFreestanding": {
+          "fittedOrFreestanding": "Freestanding"
+        }
+      },
+      "/propertyPack/fixturesAndFittings/kitchen/washingMachine": {
+        "isIncludedExcludedOrNone": "Included",
+        "fittedOrFreestanding": {
+          "fittedOrFreestanding": "Freestanding"
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:20:36.207Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/fixturesAndFittings/bathroom/bath": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/bathroom/showerFittingForBath": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/bathroom/showerCurtain": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/bathroom/bathroomCabinet": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/bathroom/taps": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/bathroom/separateShowersAndFittings": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/bathroom/towelRail": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/bathroom/soapToothbrushHolders": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/bathroom/toiletRollHolders": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/bathroom/bathroomMirror": {
+        "isIncludedExcludedOrNone": "Included"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:20:48.250Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/fixturesAndFittings/carpets/hallStairsLanding": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/carpets/livingRoom": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/carpets/diningRoom": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/carpets/kitchen": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/carpets/bedroom1": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/carpets/bedroom2": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/carpets/bedroom3": {
+        "isIncludedExcludedOrNone": "None"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:21:14.145Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/fixturesAndFittings/curtainsAndCurtainRails/curtainRailsPolesPelmets": {
+        "hallStairsLanding": {
+          "isIncludedExcludedOrNone": "Included"
+        },
+        "livingRoom": {
+          "isIncludedExcludedOrNone": "Included"
+        },
+        "diningRoom": {
+          "isIncludedExcludedOrNone": "Included"
+        },
+        "kitchen": {
+          "isIncludedExcludedOrNone": "Included"
+        },
+        "bedroom1": {
+          "isIncludedExcludedOrNone": "Included"
+        },
+        "bedroom2": {
+          "isIncludedExcludedOrNone": "Included"
+        },
+        "bedroom3": {
+          "isIncludedExcludedOrNone": "None"
+        },
+        "otherRooms": []
+      },
+      "/propertyPack/fixturesAndFittings/curtainsAndCurtainRails/curtainsBlinds": {
+        "hallStairsLanding": {
+          "isIncludedExcludedOrNone": "Included"
+        },
+        "livingRoom": {
+          "isIncludedExcludedOrNone": "Included"
+        },
+        "diningRoom": {
+          "isIncludedExcludedOrNone": "Included"
+        },
+        "kitchen": {
+          "isIncludedExcludedOrNone": "Included"
+        },
+        "bedroom1": {
+          "isIncludedExcludedOrNone": "Included"
+        },
+        "bedroom2": {
+          "isIncludedExcludedOrNone": "Included"
+        },
+        "bedroom3": {
+          "isIncludedExcludedOrNone": "None"
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:21:23.748Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/fixturesAndFittings/lightFittings/hallStairsLanding": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/lightFittings/livingRoom": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/lightFittings/diningRoom": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/lightFittings/kitchen": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/lightFittings/bedroom1": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/lightFittings/bedroom2": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/lightFittings/bedroom3": {
+        "isIncludedExcludedOrNone": "Included"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:21:34.952Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/fixturesAndFittings/fittedUnits/hallStairsLanding": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/fittedUnits/livingRoom": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/fittedUnits/diningRoom": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/fittedUnits/kitchen": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/fittedUnits/bedroom1": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/fittedUnits/bedroom2": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/fittedUnits/bedroom3": {
+        "isIncludedExcludedOrNone": "None"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:21:50.943Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/fixturesAndFittings/outdoorArea/gardenFurniture": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/outdoorArea/gardenOrnaments": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/outdoorArea/treesPlantsShrubs": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/outdoorArea/barbecue": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/outdoorArea/dustbins": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/outdoorArea/gardenShed": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/outdoorArea/greenhouse": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/outdoorArea/outdoorHeater": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/outdoorArea/outdoorLights": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/outdoorArea/waterButt": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/outdoorArea/clothesLine": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/outdoorArea/rotaryLine": {
+        "isIncludedExcludedOrNone": "None"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:21:59.120Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/fixturesAndFittings/televisionAndTelephone/telephoneReceivers": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/televisionAndTelephone/televisionAerial": {
+        "isIncludedExcludedOrNone": "Included"
+      },
+      "/propertyPack/fixturesAndFittings/televisionAndTelephone/radioAerial": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/televisionAndTelephone/satelliteDish": {
+        "isIncludedExcludedOrNone": "None"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:22:04.192Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/fixturesAndFittings/stockOfFuel/oil": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/stockOfFuel/wood": {
+        "isIncludedExcludedOrNone": "None"
+      },
+      "/propertyPack/fixturesAndFittings/stockOfFuel/lpg": {
+        "isIncludedExcludedOrNone": "None"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "claims": {
+      "/propertyPack/documents/-": {
+        "displayName": "Material Information Certificate as at 05/10/2025 11:26",
+        "fileName": "Material_Info_Cert_91_South_Hill_Avenue_M41_8TZ_05_10_2025_1126.pdf",
+        "mimeType": "application/pdf",
+        "documentType": "Material Information Certificate",
+        "externalIds": {
+          "Moverly": "jS0PIaCByZtGl7DmE9a2"
+        },
+        "metadata": {
+          "aggregatedSourceDataHash": "bb2b6a5cf08450da1d0bfe3d05f49515b5a4ea913d77bfde9a31a6e1b01ed7ca"
+        }
+      }
+    },
+    "verification": {
+      "evidence": [
+        {
+          "attachments": [
+            {
+              "desc": "Material_Info_Cert_91_South_Hill_Avenue_M41_8TZ_05_10_2025_1126.pdf",
+              "digest": {
+                "alg": "md5",
+                "value": "BHQax0mvrd5b1zT3rrzotQ=="
+              },
+              "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/Material_Info_Cert_91_South_Hill_Avenue_M41_8TZ_05_10_2025_1126_5c87f4ef-a088-4ed6-9a9d-e20a15a8cf2c.pdf?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=2011996800&Signature=FgQXS1wN19aZnO7VM%2BfeO8Mypi2wlzKA2ep5BH7DT494DJMYboalrkanW40GwU6QbSs%2BwNYv28%2F0Ho5b%2BkrgnQastgR1cVU21lJK%2BqZQ5UJ0wjFVY%2FvHcCKzG%2BL5nDmpMxkPN2itXWp9MoE%2BuNd%2F6343dM4C1ym5yvDednjzZeTVW1gHzBBsacxW4l%2FPUnRSOKFwrUqRLReM79DIw%2FJcMtgT%2BSO5rdu0WaR6fgTx1cJChlh027tq%2BsLXrtoAdMh1pT27QM%2BmzCGegXiDs7NWmHWDIlYxbRp%2F1F8%2Fl5wLZC4R9tAtObW13yRz02tonawLhhPL3EvBBnLYqRZYm4a0sg%3D%3D&fileId=jS0PIaCByZtGl7DmE9a2"
+            }
+          ],
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Moverly"
+            }
+          },
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          }
+        }
+      ],
+      "time": "2025-10-05T10:26:19.840Z",
+      "trust_framework": "uk_pdtf"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:53:26.425Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          },
+          "attachments": [
+            {
+              "desc": "2957916 26712910 PLAS_Template_2016_20221020.pdf",
+              "digest": {
+                "alg": "md5",
+                "value": "+dyhZKlOxwPparHaZng4wQ=="
+              },
+              "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/2957916_26712910_PLAS_Template_2016_20221020_44d47e5f-ac14-4170-b9ba-62ce661204a0.pdf?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=2012083200&Signature=AauyIftbYYJucITkwiew1rZyeBHJ72blLPogTzUXoLoYOy6MaASCQDZtmnpNOQXaIcrWxY%2FDqCmbTjpOKoUTmLywIkC%2FwVSK637NmAcbuGD6UdEzFhqjVcOxAXg%2FRJKVAM94plS3OAGeDfIw%2FRYaTYtFJOAIn072N%2BsZ4z0M3XNYN9bAhjpcyHnq8iEUuAfZloJp2p7LaTsAvXmSFNBK%2F5Hfkdl7tA37RsQdYTB5ocZwhvGXXLrKV0jcT6nvTD7fnqYucJ%2FSQN7Vp1k2PeV9T4WBfI9JviQxY3vR9gEn0YQJDyc9WF2lP7mm4eLQi3rlZ9YmTlg9IdDBdxbj836YBQ%3D%3D&fileId=363HGqJSjEeScSKQ5zka"
+            }
+          ]
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/-": {
+        "displayName": "2957916 26712910 PLAS_Template_2016_20221020.pdf",
+        "fileName": "2957916_26712910_PLAS_Template_2016_20221020.pdf",
+        "mimeType": "application/pdf",
+        "externalIds": {
+          "Moverly": "363HGqJSjEeScSKQ5zka"
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:53:26.425Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          },
+          "attachments": [
+            {
+              "desc": "2936915 26630297 PWDTemplate20240903Standard.pdf",
+              "digest": {
+                "alg": "md5",
+                "value": "/n0is46DPgOQ4YiDLSROEw=="
+              },
+              "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/2936915_26630297_PWDTemplate20240903Standard_ff846db2-e400-4460-9e17-14f38c86c53c.pdf?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=2012083200&Signature=gLSN5ZcYV5UPssnKXv85Qz1G%2Ft6bkBfsC3kb5y6iFSnwyuQxYBFuyhNsJlDkqvmCPeyGBa9o572SJk6B4rvLa7%2FSkZPzjkBy7v9x4AHeCsgVr1eodR9ZKo%2BJKH8v6FJWcnIMxVW787Ug1UbumvQai6BIJ1K91Gae5qmslErn%2BuUP%2FeQJVdn0GlLlwoO2ddDcQ34LgoDJZoi%2FB2boNzZ%2F51rLLNwRPUgiqlX65VvB4eTs4cWanU7Bp9%2FmlSaV%2FWdCKOq6PwTaar0Ue5OSYEFe6e1mWvYqq4tqaTQJJ7fJHgMIo9dIFzTbiT68qzev4%2FDJQoHz5isFk7vYQeDiiF7Hbg%3D%3D&fileId=Us3JAK7iGVHkBmueN8hX"
+            }
+          ]
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/-": {
+        "displayName": "2936915 26630297 PWDTemplate20240903Standard.pdf",
+        "fileName": "2936915_26630297_PWDTemplate20240903Standard.pdf",
+        "mimeType": "application/pdf",
+        "externalIds": {
+          "Moverly": "Us3JAK7iGVHkBmueN8hX"
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:53:26.425Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          },
+          "attachments": [
+            {
+              "desc": "26608836.pdf",
+              "digest": {
+                "alg": "md5",
+                "value": "4zS637Np+J0AhJcIK7C2aA=="
+              },
+              "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/26608836_a56fca50-5b7c-4b48-a942-1fdde81f6d43.pdf?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=2012083200&Signature=DfHmGGD7Q%2FzbrNgYWCDNi7t6uXZDx9RbNuPYZ1Z%2BS1VqxHS5YFWVFaMaBj0wsE6V7xjOfnkUfko2nrODQoRwtOCg6Lys5vkWnq32ykCsY6Ij9vn1pmVMBiuGvCRXNObCVcDQFi3bCn5Ihz6DlCh0Jp75mJLQaGq2BEU0DnaaVg9dhY2SJWekfq0eedHCnv4%2BRI5%2Fr3srDTuxKd5mZvKCPL6HYiu2xTqXMGy7uyYDc0HZlGtf7mUA9koZoJvC2O4YaUHEFDKYMOpMK%2FRhJACKOPEQ6AQh%2BT4Rj5EIdchz%2FgtVM%2FPwurdV0Fp00hiAAwIAGKjROhBg7i%2Bm5J8LXHbCdg%3D%3D&fileId=yeeEQUb5n356DNFWmGLt"
+            }
+          ]
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/-": {
+        "displayName": "26608836.pdf",
+        "fileName": "26608836.pdf",
+        "mimeType": "application/pdf",
+        "externalIds": {
+          "Moverly": "yeeEQUb5n356DNFWmGLt"
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T10:55:51.594Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          },
+          "attachments": [
+            {
+              "desc": "title_GM123458_130_2004_06_24.pdf",
+              "digest": {
+                "alg": "md5",
+                "value": "M2RhNyhywBE8ZqlQrkr5tg=="
+              },
+              "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/title_GM123458_130_2004_06_24_b70dbf56-cf02-4d18-b393-50511ff96aa6.pdf?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=2012083200&Signature=eyZFmHYmb2YmHexh1JB5CEIhSHN%2BXPewnZbd8MwYwFdNijWapHisEMPJHS0rk6ldjaQlgpz%2Fen2lNh3Rfs9XuVdqzOkcSsvU0YSSRXlxLj1tWd6BxY0D%2B6eLga6aa2Ts4vMyXPAg99QRoUUtNiL%2F1ODOur3Qsy3wWCmswlwCtw0R0WTHI7blpqWj9uKmSEiouQOJIFDzDBHifWETh2obsR%2B2LgRM%2FgGq5%2FyU%2FRejHKM18sbfsXZpHVshexeann3UtkRzVeY4xYKWilWbyd67Ap%2F0j%2FhRioTbM3duTTl%2BPuL1mxyQX2%2F%2FTVVc%2F0gb3IxndzOfW%2BrWoEqGDJp%2B2qBycA%3D%3D&fileId=G4SmM3xD0fIXJxUNkVQG"
+            }
+          ]
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/-": {
+        "displayName": "title_GM123458_130_2004_06_24.pdf",
+        "fileName": "title_GM123458_130_2004_06_24.pdf",
+        "mimeType": "application/pdf",
+        "externalIds": {
+          "Moverly": "G4SmM3xD0fIXJxUNkVQG"
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T11:05:06.959Z",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Historical planning application data retrieved from Planit.org.uk for 91 South Hill Avenue."
+            }
+          },
+          "attachments": []
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/localSearches/localAuthoritySearches/planningAndBuildingRegulations/decisionsAndPendingApplications/planningPermission": []
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "time": "2025-10-05T11:05:25.864Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai File Classifier. This content is AI generated and should not be relied upon for legal purposes."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/3/documentType": "Environmental Search"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "time": "2025-10-05T11:05:33.255Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai File Classifier. This content is AI generated and should not be relied upon for legal purposes."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/2/documentType": "Water and Drainage Search"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "time": "2025-10-05T11:05:34.738Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai File Classifier. This content is AI generated and should not be relied upon for legal purposes."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/1/documentType": "Regulated Personal Search"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "time": "2025-10-05T11:05:41.124Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai File Classifier. This content is AI generated and should not be relied upon for legal purposes."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/4/documentType": "Transfer"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "time": "2025-10-05T11:06:36.379Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai Document Summarizer. This content is AI generated and should not be relied upon for legal purposes. [Trace: 953e2681-6d10-432c-94db-18272d5b5ded]"
+            }
+          },
+          "traceId": "953e2681-6d10-432c-94db-18272d5b5ded"
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/waterAndDrainage/maps/publicSewerMapAttached": "Extract included",
+      "/propertyPack/waterAndDrainage/water/mainsWater/yesNo": "Yes",
+      "/propertyPack/waterAndDrainage/water/waterMainsWithinBoundaries/yesNo": "No",
+      "/propertyPack/waterAndDrainage/drainage/mainsFoulDrainage/yesNo": "Yes",
+      "/propertyPack/waterAndDrainage/drainage/mainsSurfaceWaterDrainage/yesNo": "Yes",
+      "/propertyPack/waterAndDrainage/drainage/sewersSubjectOfAdoptionAgreement/yesNo": "No",
+      "/propertyPack/waterAndDrainage/drainage/publicDrainWithinBoundaries/yesNo": "Yes",
+      "/propertyPack/waterAndDrainage/drainage/publicSewerWithin100ft/yesNo": "Yes",
+      "/propertyPack/waterAndDrainage/drainage/sewerageUndertakerApproval/yesNo": "No",
+      "/propertyPack/waterAndDrainage/charging/sewerageProvider": "United Utilities",
+      "/propertyPack/waterAndDrainage/charging/waterProvider": "United Utilities",
+      "/propertyPack/waterAndDrainage/charging/currentChargingBasis": "Please refer to vendor or pre-contract documents."
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "time": "2025-10-05T11:06:42.243Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai Document Summarizer. This content is AI generated and should not be relied upon for legal purposes. [Trace: 36bd52f3-e74c-4636-9c89-4a96d407842c]"
+            }
+          },
+          "traceId": "36bd52f3-e74c-4636-9c89-4a96d407842c"
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/3/summary": {
+        "metadata": {
+          "documentQuality": "Excellent",
+          "extractionConfidence": 0.85,
+          "documentCondition": {
+            "scanQuality": "High",
+            "completeness": "Complete",
+            "stamps": false,
+            "seals": false,
+            "alterations": []
+          },
+          "handwrittenAmendments": "[unknown]",
+          "extractionIssues": [],
+          "signatureQuality": [],
+          "witnessQuality": []
+        },
+        "floodRisk": {
+          "fluvialFloodRisk": "Very Low",
+          "pluvialFloodRisk": "Negligible",
+          "coastalFloodRisk": "Very Low",
+          "groundwaterFloodRisk": "Negligible",
+          "reservoirFloodRisk": "Information not available"
+        },
+        "groundStability": {
+          "subsidenceRisk": "Low",
+          "landslideRisk": "Information not available",
+          "groundInstabilityRisk": null,
+          "shrinkSwellClayRisk": "Information not available"
+        },
+        "contamination": {
+          "contaminatedLandRisk": "Passed",
+          "landfillSiteNearby": "No",
+          "industrialLandUseHistory": "No",
+          "fuelStationNearby": "No"
+        },
+        "mining": {
+          "coalMiningRisk": null,
+          "nonCoalMiningRisk": null,
+          "miningSubsidenceRisk": "Information not available",
+          "coalMiningSearchRecommended": "Yes"
+        },
+        "radon": {
+          "radonRisk": null,
+          "radonProtectionRequired": null,
+          "radonAffectedArea": "Yes"
+        },
+        "environmental": {
+          "airQualityRisk": "Identified",
+          "noiseRisk": "Not identified",
+          "lightPollutionRisk": "Information not available"
+        },
+        "planningSuitability": {
+          "greenBeltRestrictions": "No",
+          "conservationAreaRestrictions": "No",
+          "listedBuildingRestrictions": "No",
+          "treePreservationOrders": "No"
+        },
+        "additionalHazards": {
+          "energyAndInfrastructure": "Nearest overhead electricity transmission line/pylon c.216m from the property; multiple wind farms and proposed/proposed wind turbines and solar installations identified within 5km; a large energy project (Tidal Lagoon Manchester Bay) identified approx 3-4 km to the south.",
+          "transportLinks": "Rail: Manchester station referenced (approx 6 minutes by car); Motorway: M4 J22 travel times included (approx 55-60 minutes by car depending on time of day); Airports: Manchester approx 46 minutes by car. Travel times to key hubs are provided in the report.",
+          "naturalHazards": "Coal mining (surface or sub-surface) and infilled land identified near the property; radon affected area identified."
+        },
+        "reportSummary": {
+          "overallRiskAssessment": "Further Investigation Required",
+          "recommendedActions": [
+            "Obtain a CON29M (Official Coal Mining) search",
+            "If no radon testing has been done, arrange a 3 month radon test at the property",
+            "Commission a suitably qualified structural/ground investigation or survey where ground instability or infilled land is a concern",
+            "Check presence/coverage of any NHBC or other structural warranty",
+            "Make enquiries with the Local Authority and relevant operators about identified wind/solar/energy infrastructure"
+          ],
+          "reportProvider": "Groundsure Ltd",
+          "reportDate": "8 November 2024"
+        }
+      }
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "time": "2025-10-05T11:06:52.545Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai Document Summarizer. This content is AI generated and should not be relied upon for legal purposes. [Trace: 5f15919f-f3a0-45e9-8fa7-a07e49b5afd8]"
+            }
+          },
+          "traceId": "5f15919f-f3a0-45e9-8fa7-a07e49b5afd8"
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/4/summary": {
+        "metadata": {
+          "documentQuality": "Good",
+          "extractionConfidence": 0.85,
+          "documentCondition": {
+            "scanQuality": "Medium",
+            "completeness": "Complete",
+            "stamps": false,
+            "seals": false,
+            "alterations": [
+              "Handwritten signatures and witness details added",
+              "Witness names/addresses partly struck-through and re-written"
+            ]
+          },
+          "handwrittenAmendments": "Signatures for seller and buyers present; witness names and addresses handwritten (one witness name crossed out and re-written); some hand-written notes next to signature boxes.",
+          "extractionIssues": [
+            {
+              "field": "titleNumbers",
+              "issue": "Two different title numbers appear on the pages (header notes show GM123457; TP1 field 2 shows GM123456). It is unclear which is the primary title affected versus document reference.",
+              "confidence": 0.7
+            },
+            {
+              "field": "declarationOfTrust",
+              "issue": "Declaration of trust check boxes are blank or not clearly marked; unable to determine whether buyers hold as joint tenants or tenants in common.",
+              "confidence": 0.95
+            },
+            {
+              "field": "witness names and addresses",
+              "issue": "Witness name and address text is partly crossed through and re-written, reducing legibility for one entry.",
+              "confidence": 0.6
+            }
+          ],
+          "signatureQuality": [
+            {
+              "party": "Seller / Ideal Developments Limited (attorneys)",
+              "legibility": "Partially Clear",
+              "dateAdded": false,
+              "witnessPresent": true
+            },
+            {
+              "party": "Buyer - David Pocock",
+              "legibility": "Partially Clear",
+              "dateAdded": false,
+              "witnessPresent": true
+            },
+            {
+              "party": "Buyer - Natalie Elizabeth Pocock",
+              "legibility": "Partially Clear",
+              "dateAdded": false,
+              "witnessPresent": true
+            }
+          ],
+          "witnessQuality": [
+            {
+              "name": "S. Downing",
+              "address": "22 Newport Road, Manchester",
+              "signatureLegibility": "Partially Clear",
+              "addressLegibility": "Partially Clear"
+            },
+            {
+              "name": "[unknown]",
+              "address": "22 Newport Road, Manchester",
+              "signatureLegibility": "Partially Clear",
+              "addressLegibility": "Partially Clear"
+            }
+          ]
+        },
+        "transferOfPartOrWhole": "Part",
+        "titleNumbers": ["GM123456", "GM123457"],
+        "propertyAddress": "91 South Hill Avenue. Postal address: 91 South Hill Avenue, Manchester, M20 2SG",
+        "dateOfTransfer": "24 June 2004",
+        "transferors": [
+          "Ideal Developments Limited, Registered Office: Persimmon House, Manchester, North Yorkshire YO19 4FE. Company No: 818490"
+        ],
+        "transferees": ["David Pocock", "Natalie Elizabeth Pocock"],
+        "transfereesAddressesForService": [
+          "91 South Hill Avenue, Manchester, M20 2SG"
+        ],
+        "consideration": "One hundred and fifty eight thousand pounds (£158,000)",
+        "transferTitleGuarantee": "Full title guarantee",
+        "additionalProvisions": {
+          "definitions": [
+            "Accessway means the footpath or driveway shown cross hatched on the Plan",
+            "Easement Strip means the drainage easement strip shown on the Plan (if any)",
+            "Estate includes all the land now or formerly comprised in or subsequently added to the above title and on which the Seller is carrying out a residential development",
+            "Estate Roads includes the carriageways footpaths and verges on the Estate and their intended sites which serve the Property and which are intended to become maintainable at public expense part of which are shown hatched on the Plan",
+            "Estate Sewers means the main foul and surface water sewers and any accessories as defined by Section 219 of the Water Industry Act 1991 now or within the Perpetuity Period constructed within the Estate which are intended to become sewers maintainable at the public expense",
+            "Perpetuity Period means the period of 80 years from 1st January 2003",
+            "Plan means the plan annexed hereto",
+            "Projections includes foundations chimneys flues eaves guttering drainpipes fence posts wall piers and similar projections now or within the Perpetuity Period constructed within the Estate",
+            "Property means the land shown edged red on the Plan being part of the land in the above title",
+            "Public Authority includes local authorities and statutory corporations and authorities and bodies exercising some statutory right or obligation",
+            "Service Media includes all drains pipes wires cables conducting media and apparatus for surface and foul water drainage (except the Estate Sewers) gas light oil electricity water electronic transmissions and similar services now or within the Perpetuity Period constructed on the Estate",
+            "Water Company means the water company which will adopt the Estate Sewers and its successors in title"
+          ],
+          "rightsGrantedForTheBenefitOfTheProperty": [
+            "A right of way at all times for all lawful purposes on foot over the footpaths and with vehicles over the carriageways of the Estate Roads",
+            "A right of way at all times for all lawful purposes on foot over the footpaths or on foot or with vehicles over the driveway comprising the Accessway on the Estate which serves the Property but is not edged red on the Plan (if any)",
+            "The right to use the Estate Sewers for the passage of water and sewage",
+            "The right to use inspect maintain and renew any Service Media on the Estate which serve the Property",
+            "The right of support and protection from any adjoining parts of the Estate for the Property including any buildings now or to be constructed by the Seller on the Property",
+            "The right to keep and use on adjoining parts of the Estate any Projections from the Property as constructed by the Seller",
+            "The right to enter upon adjoining parts of the Estate to inspect maintain or renew any part of the Property or the Service Media or Accessway (if any) serving the Property (subject to proviso regarding electricity sub-stations)"
+          ],
+          "rightsReservedForTheBenefitOfOtherLand": [
+            "A right of way at all times and for all purposes over the Accessway (if any) on the Property which serves any other part of the Estate or any land adjoining the Estate",
+            "The right to retain connect to and use inspect maintain and renew any Service Media or Estate Sewers which cross the Property",
+            "The right of support and protection from the Property and any buildings on the Property for the Estate and any buildings now or to be constructed by the Seller on the Estate",
+            "The right to keep and use on the Property any Projections from any buildings on the Estate now or to be constructed by the Seller on the Estate",
+            "The right to enter on the Property to inspect maintain or renew any part of the Estate adjoining the Property or the Service Media",
+            "The right for the Seller or the Public Authority to enter the Property for purposes including altering existing Service Media and laying new Service Media, erecting scaffolding and enforcing compliance of covenants in Clause 13 Part 5",
+            "The right to comply with requirements of any Public Authority"
+          ],
+          "restrictiveCovenantsByTheTransferee": [
+            "Not to use the Property other than as or incidental to one private residential dwelling and not for any trade or business",
+            "Not to erect or construct any building or other structure whether temporary or permanent on the Property (except for domestic sheds and greenhouses) without prior written consent of the Seller",
+            "Not to erect walls fences or other structures nor allow hedges to grow on the Property between any building on the Property and the Estate Roads",
+            "Not to allow fences walls hedges or other means of enclosure to fall into disrepair on any boundary of the Property marked with an inward 'T' on the Plan",
+            "Not to cut down damage neglect or remove any existing tree or hedge on the Property or any other plant planted pursuant to requirements of the Public Authority",
+            "Not to permit nuisance or cause damage to the Seller or owners/occupiers of neighbouring property",
+            "Not to erect advertising hoardings or similar; limited right to erect one notice of up to half square metre after Sales Office closure",
+            "Not to keep or feed animals other than normal household domestic pets",
+            "Not to park commercial vehicles caravans or boats on the Property between any building and the Estate Road",
+            "Not to park on or obstruct the Estate Roads or Accessway (if any)",
+            "Not to erect aerials or satellite dishes on front elevations until the Seller has completed sale of last dwellings on the Estate",
+            "Not to cultivate erect or place anything on visibility splay or service strip shown on the Plan without Public Authority consent",
+            "Not to do anything that may impede adoption or vesting in the Public Authority of the Estate Roads Estate Sewers or Service Media",
+            "Not to alter the existing exterior colour of whole or part of the dwellinghouse within three years",
+            "Not to cut down or damage the Woodland nor erect walls fences or other structures on the Woodland"
+          ],
+          "restrictiveCovenantsByTheTransferor": [],
+          "otherProvisions": [
+            "Part 6: Positive covenants by the Seller to construct and maintain the Estate Roads and Estate Sewers to public authority requirements and to indemnify the Buyer for costs until adoption",
+            "Part 7: Rights reserved for the benefit of the Water Company and the Dominant Tenement including rights to enter the Property to access the Easement Strip and to erect markers and excavate as necessary",
+            "Covenants for the benefit of the Water Company imposing restrictions on the Buyers regarding works within the Easement Strip (e.g. not to alter ground levels, not to plant trees within Easement Strip, not to construct within the Easement Strip etc.)"
+          ]
+        }
+      }
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "time": "2025-10-05T11:07:05.245Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai Document Summarizer. This content is AI generated and should not be relied upon for legal purposes. [Trace: 7543abda-c95c-4a2d-b926-8e333f51cbf5]"
+            }
+          },
+          "traceId": "7543abda-c95c-4a2d-b926-8e333f51cbf5"
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/1/summary": {
+        "metadata": {
+          "documentQuality": "Excellent",
+          "extractionConfidence": 0.88,
+          "documentCondition": {
+            "scanQuality": "High",
+            "completeness": "Complete",
+            "stamps": false,
+            "seals": false,
+            "alterations": []
+          },
+          "handwrittenAmendments": "None visible",
+          "extractionIssues": [
+            {
+              "field": "Building Regulations entries",
+              "issue": "Several building regulation entries are densely formatted and partially overlapping; some dates and short notes (e.g. 'Decision: Defects') were difficult to read with absolute certainty.",
+              "confidence": 0.75
+            },
+            {
+              "field": "Client address (Client Details block)",
+              "issue": "Small caps and line breaks made the second line of the client address marginally unclear (exact unit name/road formatting); interpreted to best read.",
+              "confidence": 0.85
+            },
+            {
+              "field": "Charging authority for miscellaneous grant (DIS/M/140263)",
+              "issue": "The charging authority is not explicitly stated beside the grant entry in the Local Land Charges table; left as unknown.",
+              "confidence": 0.6
+            }
+          ],
+          "signatureQuality": [
+            {
+              "party": "Conveyancing Data Services Limited (signed on report)",
+              "legibility": "Partially Clear",
+              "dateAdded": false,
+              "witnessPresent": false
+            }
+          ],
+          "witnessQuality": []
+        },
+        "planningAndBuildingDecisions": {
+          "planningApplicationsLast5Years": [
+            "2020/0027/DS - Old coach house/shop at side of property - noted as dangerous structure / defects - Decision Date: 01/07/2020"
+          ],
+          "buildingRegulationsApplicationsLast5Years": [
+            "2020/0027/DS - Old coach house/shop at side of property - recorded with defects (Decision Date: 01/07/2020)"
+          ],
+          "enforcementActions": [],
+          "certificatesOfLawfulness": []
+        },
+        "roadAndTransport": {
+          "roadAdoptionStatus": "Adopted",
+          "roadMaintenanceSchemes": [],
+          "trafficSchemes": [],
+          "publicRightOfWay": "No"
+        },
+        "landCharges": {
+          "localLandCharges": [
+            "Part Three - Planning Charge: 1982/01589/FUL - Convert existing outbuilding to walk into shop selling fruit and vegetables, flowers and garden supplies - Decision: Approved - Registered Date: 09/11/1982",
+            "Part Four - Miscellaneous Charges: DIS/M/140263 - Grant - 7512.75 Pounds - Registered Date: 13/03/2015"
+          ],
+          "section106Agreements": [],
+          "conservationAreaCharges": []
+        },
+        "environmentalAndSafety": {
+          "contaminatedLandRegister": "No",
+          "specialWasteRegister": "No",
+          "hazardousSubstanceConsents": [],
+          "environmentalPermits": []
+        },
+        "conservationAndHeritage": {
+          "listedBuildingStatus": "Not Listed",
+          "conservationAreaStatus": "No",
+          "scheduledMonumentStatus": "No",
+          "treePreservationOrders": []
+        },
+        "utilities": {
+          "adoptedSewerStatus": "Information not available",
+          "waterMainStatus": "Information not available",
+          "electricitySupply": "[unknown]",
+          "gasSupply": "[unknown]"
+        },
+        "notices": {
+          "compulsoryPurchaseOrders": [],
+          "roadOrderingSchemes": [],
+          "housingActionAreas": [],
+          "noiseAbatementZones": []
+        },
+        "localLandChargesDetail": {
+          "chargesByPart": {
+            "part1GeneralCharges": [],
+            "part2SpecificCharges": [],
+            "part3PlanningCharges": [
+              "1982/01589/FUL - Convert existing outbuilding to walk into shop selling fruit and vegetables, flowers and garden supplies. Decision: Approved. Registered Date: 09/11/1982."
+            ],
+            "part6LightObstructionNotices": [],
+            "part8CoalMiningCharges": [],
+            "part10MiscellaneousCharges": [
+              "DIS/M/140263 - Grant - 7512.75 Pounds - Registered Date: 13/03/2015"
+            ],
+            "part11ComplexCharges": [],
+            "part12LandCompensationCharges": []
+          },
+          "chargeDetails": [
+            {
+              "chargeReference": "1982/01589/FUL",
+              "registrationDate": "09/11/1982",
+              "chargeDescription": "Planning permission to convert existing outbuilding to shop selling fruit and vegetables, flowers and garden supplies. Decision: Approved.",
+              "chargeAmount": "[unknown]",
+              "chargingAuthority": "[unknown]"
+            },
+            {
+              "chargeReference": "DIS/M/140263",
+              "registrationDate": "13/03/2015",
+              "chargeDescription": "Grant recorded on Local Land Charges register.",
+              "chargeAmount": "7512.75 Pounds",
+              "chargingAuthority": "[unknown]"
+            }
+          ]
+        },
+        "searchProvider": {
+          "providerName": "Conveyancing Data Services Limited",
+          "searchType": "Regulated Personal Search",
+          "searchDate": "23/12/2024",
+          "searchReference": "2957916",
+          "localAuthority": "Trafford Metropolitan Borough Council",
+          "complianceCertifications": ["Search Code", "PCCB"],
+          "searchLimitations": []
+        },
+        "summaryForConveyancers": {
+          "keyFindings": [
+            "Local Land Charges: Planning charge 1982/01589/FUL recorded (conversion of outbuilding to shop) - Registered 09/11/1982.",
+            "Local Land Charges: Miscellaneous charge DIS/M/140263 (Grant) recorded - £7,512.75 - Registered 13/03/2015.",
+            "Planning/Building Regulation entries include a 2020 entry (2020/0027/DS) referencing the old coach house/shop at side of property noted as a dangerous structure/defects (further details recommended).",
+            "Radon: Property is indicated in a 'Radon Affected Area' — further environmental search recommended.",
+            "No CIL liability, no outstanding planning enforcement notices, and no listed building entries revealed on the Local Land Charges register."
+          ],
+          "recommendedActions": [
+            "Obtain a full Environmental Search (CON29E or equivalent) to follow up the Radon Affected Area entry and any other environmental risks.",
+            "Request copies of the documentation relating to DIS/M/140263 (grant) from the vendor or local land charges department to confirm the nature and any ongoing obligations.",
+            "Obtain full local authority copies of the 2020 building regulation file (2020/0027/DS) and any related planning/ enforcement correspondence to assess structural/defect implications.",
+            "Consider a specific planning search/history for surrounding properties if transfer of commercial/use rights appears relevant (1982 permission refers to shop use).",
+            "Consider title indemnity insurance for unregistered matters if further enquiries cannot resolve outstanding questions."
+          ],
+          "riskAssessment": "Further Investigation Required",
+          "criticalIssues": [
+            "Radon Affected Area flagged — environmental risk requiring follow-up.",
+            "Recorded planning permission 1982/01589/FUL for conversion to shop (may affect permitted use or historic alterations).",
+            "Miscellaneous grant recorded DIS/M/140263 (£7,512.75) — potential financial obligation or charge."
+          ],
+          "insuranceRecommendations": [
+            "Consider ordering the Search Report Insurance policy provided (First Title) or other indemnity insurance to cover any undisclosed adverse entries if the client requires protection.",
+            "If vendor cannot provide documentary evidence for the grant/charge, consider specific indemnity for that charge."
+          ]
+        }
+      }
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T11:26:24.792Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          },
+          "attachments": [
+            {
+              "desc": "1-Register - TF142222.pdf",
+              "digest": {
+                "alg": "md5",
+                "value": "82DiFyer2QRqgJHiZrpQow=="
+              },
+              "url": "https://storage.googleapis.com/moveready-staging.appspot.com/files/1_Register_TF142222_0ce6eb69-94a5-4250-9752-e31c994f7722.pdf?GoogleAccessId=moveready-staging%40appspot.gserviceaccount.com&Expires=2012083200&Signature=k3UzU0HmnlorM3xdsUJTBT4QlAjexmAZ0RezXmu8xwMm8XBfIPm1JheRUknAadfooiAIwD47oHSay4xh2%2FS1GUycLPJEHHlhEvqWfrJtZRdWGG6Ls0dGM1Wujo%2FrFpg75J%2BSDbbDkzN6iNWeURjysVSxdKH9VUzv9p%2FTGlhb9HBc4SucHNkP61q0fr%2FtFeK8cqAh0zneoE29Lj%2FLOEaMsRhSwZdlC8LcaBwQio33e5y2%2F6Whhdhk%2FJYcmCRO4zRsp7dWhfZDrqb%2BiM98zS6lJO6bxxsC5qPD3%2B6NiQIMS2DU9RaLxxsWd2IijbM5%2Ft%2Bq1LchBTEUBIHgWEC0IDAXJQ%3D%3D&fileId=Um1bLy3BiM6MiIoPNFjz"
+            }
+          ]
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/-": {
+        "displayName": "1-Register - TF142222.pdf",
+        "fileName": "1_Register_TF142222.pdf",
+        "mimeType": "application/pdf",
+        "externalIds": {
+          "Moverly": "Um1bLy3BiM6MiIoPNFjz"
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  },
+  {
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "time": "2025-10-05T11:27:02.482Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai File Classifier. This content is AI generated and should not be relied upon for legal purposes."
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/6/documentType": "Other"
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "time": "2025-10-05T11:28:21.993Z",
+      "trust_framework": "uk_pdtf",
+      "evidence": [
+        {
+          "type": "electronic_record",
+          "record": {
+            "source": {
+              "name": "Moverly.ai Document Summarizer. This content is AI generated and should not be relied upon for legal purposes. [Trace: a1f6434d-9a9a-4d82-9656-eafbcad0b0cd]"
+            }
+          },
+          "traceId": "a1f6434d-9a9a-4d82-9656-eafbcad0b0cd"
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/documents/6/summary": {
+        "metadata": {
+          "documentQuality": "Excellent",
+          "extractionConfidence": 0.9,
+          "documentCondition": {
+            "scanQuality": "High",
+            "completeness": "Complete",
+            "stamps": false,
+            "seals": false,
+            "alterations": []
+          },
+          "handwrittenAmendments": "",
+          "extractionIssues": [
+            {
+              "field": "Charges Register paragraph break",
+              "issue": "The sentence describing the 10 April 1899 Conveyance is split between pages; the continuation on page 3 appears as the single word 'covenants.' It has been reconstructed as a single sentence ('contains covenants.')",
+              "confidence": 0.9
+            }
+          ],
+          "signatureQuality": [],
+          "witnessQuality": []
+        },
+        "title": "Official copy of register of title TF142222 (HM Land Registry)",
+        "fullTextBody": "The electronic official copy of the register follows this message.\n\nPlease note that this is the only official copy we will issue. We will not issue a paper official copy.\n\nOfficial copy of register of title\n\nTitle number TF142222    Edition date 13.07.2025\n\n- This official copy shows the entries on the register of title on 13 July 2025 at 08:37:16.\n- This date must be quoted as the \"search from date\" in any official search application based on this copy.\n- The date at the beginning of an entry is the date on which the entry was made in the register.\n- Issued on 13 Jul 2025.\n- Under s.67 of the Land Registration Act 2002, this copy is admissible in evidence to the same extent as the original.\n- This title is dealt with by HM Land Registry, Gloucester Office.\n\nA: Property Register\n\nThis register describes the land and estate comprised in the title.\n\nCITY OF BRISTOL\n\n1 (29.10.1976) The Freehold land shown edged with red on the plan of the above title filed at the Registry and being 91 South Hill Avenue, MANCHESTER (M41 8TZ).\n\nB: Proprietorship Register\n\nThis register specifies the class of title and identifies the owner. It contains any entries that affect the right of disposal.\n\nTitle absolute\n\n1 (24.10.2017) PROPRIETOR: DIANE HARDY and NEIL HARDY of 91 South Hill Avenue, MANCHESTER, M41 8TZ.\n\n2 (24.10.2017) The price stated to have been paid on 2021-12-27 was £145000.\n\n3 (14.08.2019) RESTRICTION: No disposition of the registered estate by the proprietor of the registered estate is to be registered without a written consent signed by the proprietor for the time being of the Charge dated 27 December 2021 in favour of Halifax UK PLC referred to in the Charges Register.\n\nC: Charges Register\n\nThis register contains any charges and other matters that affect the land.\n\n1 The land in this title is subject to a perpetual yearly rentcharge of £2.10s.0d. created by a Conveyance of the land in this title and other land dated 10 April 1899 made between (1) Charles Egbert Leman Jennings and Frederick Brown and (2) John Alfred Jones.\n\nNOTE: Abstract filed.\n\n2 The Conveyance dated 10 April 1899 referred to above contains covenants.\n\n3 (14.08.2019) REGISTERED CHARGE dated 5 August 2019.\n\n4 (14.08.2019) Proprietor: HALIFAX BUILDING SOCIETY of Trinity Road, Halifax HX1 2RG.\n\nEnd of register",
+        "secondaryItems": [
+          {
+            "itemID": "BOX1",
+            "itemName": "Official copy title box",
+            "itemType": "illustration",
+            "itemSummary": "Rectangular boxed panel containing 'Official copy of register of title' with the title number TF142222 and Edition date 13.07.2025 and a short set of bullet points stating the copy's issue date, the search-from date and admissibility under s.67 Land Registration Act 2002."
+          },
+          {
+            "itemID": "LOGO1",
+            "itemName": "HM Land Registry logo",
+            "itemType": "logo",
+            "itemSummary": "HM Land Registry circular geometrical logo in the top right of the page. Appears on the first page of the register."
+          }
+        ],
+        "repeatingItems": [
+          "Official copy of register of title",
+          "HM Land Registry"
+        ],
+        "amendments": [],
+        "confidence": 0.9
+      }
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T12:00:00.000Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Ed Molyneux"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/propertyPack/media": [
+        {
+          "mediaType": "Image",
+          "mediaUrl": "https://moverly-smart-data-challenge.web.app/91_South_Hill_Avenue/image-0-1024x1024.webp",
+          "caption": "Front exterior view of 91 South Hill Avenue"
+        },
+        {
+          "mediaType": "Image",
+          "mediaUrl": "https://moverly-smart-data-challenge.web.app/91_South_Hill_Avenue/image-1-1024x1024.webp",
+          "caption": "Living room interior with feature fireplace"
+        },
+        {
+          "mediaType": "Image",
+          "mediaUrl": "https://moverly-smart-data-challenge.web.app/91_South_Hill_Avenue/image-3-1024x1024.webp",
+          "caption": "Modern kitchen with integrated appliances"
+        },
+        {
+          "mediaType": "Image",
+          "mediaUrl": "https://moverly-smart-data-challenge.web.app/91_South_Hill_Avenue/image-4-1024x1024.webp",
+          "caption": "Rear garden and patio area"
+        }
+      ]
+    },
+    "terms_of_use": {
+      "confidentiality_level": "public"
+    }
+  },
+  {
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-06T14:30:00.000Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Simply Conveyancing"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/milestones": {
+        "listed": {
+          "completed": "2025-08-15T09:00:00.000Z"
+        },
+        "legalForms": {
+          "started": "2025-08-20T10:30:00.000Z",
+          "completed": "2025-09-05T16:45:00.000Z"
+        },
+        "soldSubjectToContract": {
+          "completed": "2025-10-06T11:15:00.000Z"
+        },
+        "searches": {
+          "started": "2025-09-10T09:00:00.000Z",
+          "completed": "2025-09-28T14:30:00.000Z"
+        }
+      }
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-06T14:35:00.000Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Simply Conveyancing"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/chain": {
+        "onwardPurchase": [
+          {
+            "transactionId": "8HjwFCAy3EY4UmtpfEyAVo",
+            "address": {
+              "buildingNumber": "101",
+              "street": "Broadbridge",
+              "town": "Manchester",
+              "postcode": "M16 8HJ",
+              "homeNation": "England"
+            }
+          }
+        ],
+        "buyersSale": [
+          {
+            "transactionId": "MQhUGTBjv2wuqrJmA34Yue",
+            "address": {
+              "buildingNumber": "107",
+              "street": "Sunbeam Crescent",
+              "town": "Manchester",
+              "postcode": "M16 8HJ",
+              "homeNation": "England"
+            }
+          }
+        ]
+      }
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  }
+]

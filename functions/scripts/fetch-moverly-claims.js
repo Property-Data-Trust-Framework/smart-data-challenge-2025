@@ -15,7 +15,7 @@ function sanitizeFilename(filename) {
   return filename.replace(/[<>:"/\\|?*]/g, "").trim();
 }
 
-async function fetchAndSaveMoverlyClaims(transactionId, useMainApiKey = false) {
+async function fetchAndSaveMoverlyClaims(transactionId, useMainApiKey = false, customFilename = null) {
   if (!transactionId) {
     throw new Error("transactionId is required");
   }
@@ -65,9 +65,14 @@ async function fetchAndSaveMoverlyClaims(transactionId, useMainApiKey = false) {
       throw new Error("Could not find address line1 in the state data");
     }
 
-    // Create filename from address line1
-    const sanitizedAddress = sanitizeFilename(addressLine1);
-    const filename = `${sanitizedAddress}.json`;
+    // Use custom filename if provided, otherwise create from address line1
+    let filename;
+    if (customFilename) {
+      filename = customFilename.endsWith(".json") ? customFilename : `${customFilename}.json`;
+    } else {
+      const sanitizedAddress = sanitizeFilename(addressLine1);
+      filename = `${sanitizedAddress}.json`;
+    }
     const filePath = path.join(outputDir, filename);
 
     // Save only the claims data
@@ -86,16 +91,18 @@ async function fetchAndSaveMoverlyClaims(transactionId, useMainApiKey = false) {
 // Run if executed directly
 if (require.main === module) {
   const transactionId = process.argv[2];
-  const useMainApiKey = process.argv[3] === "--main-key";
+  const useMainApiKey = process.argv.includes("--main-key");
+  const customFilenameIndex = process.argv.indexOf("--filename");
+  const customFilename = customFilenameIndex !== -1 ? process.argv[customFilenameIndex + 1] : null;
 
   if (!transactionId) {
     console.error(
-      "Usage: node fetch-moverly-claims.js <transactionId> [--main-key]",
+      "Usage: node fetch-moverly-claims.js <transactionId> [--main-key] [--filename <custom-filename>]",
     );
     process.exit(1);
   }
 
-  fetchAndSaveMoverlyClaims(transactionId, useMainApiKey)
+  fetchAndSaveMoverlyClaims(transactionId, useMainApiKey, customFilename)
     .then(({ filename, addressLine1 }) => {
       console.log(`\nClaims for "${addressLine1}" saved as ${filename}`);
     })

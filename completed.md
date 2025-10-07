@@ -1,10 +1,12 @@
-# Infrastructure
+# COMPLETED
+
+## Infrastructure
 
 - [x] Establish project repository to manage scripts, code, data and documentation
 - [x] Add backend function invocation and expose API endpoints
 - [x] Build frontend UI infrastructure and deployment model
 
-# Sandbox provenance wrapping and enhancement
+## Sandbox provenance wrapping and enhancement
 
 - [x] Connect to SDC sandbox via API and extract sample people, residences and conveyancing
 - [x] Join SDC sandbox data into transaction-oriented records
@@ -29,14 +31,10 @@
 - [x] Fix schema validation issues with empty attachments arrays in electronic_record evidence
 - [x] Successfully push enhanced claims data to Moverly NPTN API (transaction 6bQY64R5mjzRDzkiVhDWf1)
 - [x] Add confidentiality level display to PDTF viewer with proper color coding and capitalization
-- [ ] Add synthetic milestone and chain links
-- [ ] Add partial survey report data
-- [ ] Add title OC2 document data from example Moverly test transactions
-- [ ] Create two additional chain transactions in Moverly/NPTN
-- [ ] Update claims data to reflect deliberate discrepancies in e.g. seller name to be highlighted in the AI report on title
-- [ ] Script to generate new transactions and push claims data to make demo reproducible?
+- [x] Add title OC2 document data from example Moverly test transactions
+- [x] Upload real searches data to be anonymised and added to base claims data
 
-# Demo app - Seller Consent management
+## Demo app - Seller Consent management
 
 - [x] Add Seller demo mini-app use case for viewing participants and managing sharing - "Manage sharing"
 - [x] Show participant state as list, with pill indicating roles and status (invited, active or removed)
@@ -48,7 +46,7 @@
 - [x] Enhanced claim formatting to show friendly descriptions of JSON changes (names, addresses, contact info, etc.)
 - [x] Reconfigure Seller Consent Management to use the live LMS NPTN SIT environment
 
-# Frontend UI Infrastructure and Consistency
+## Frontend UI Infrastructure and Consistency
 
 - [x] Establish comprehensive shadcn/ui component usage throughout the application
 - [x] Replace custom loading spinners with official Skeleton components across all use cases
@@ -57,9 +55,8 @@
 - [x] Audit entire frontend for consistent component library usage
 - [x] Implement proper loading states with content-aware skeleton layouts
 - [x] Enhanced button loading states using Loader2 icon instead of custom spinners
-- [ ] Add UI for demo TRL level (TRL1, TRL2, TRL3, TRL4)
 
-# Demo app - Conveyancing Diligence & AI Report on Title
+## Demo app - Conveyancing Diligence & AI Report on Title
 
 - [x] Add Conveyancing Diligence use case with comprehensive property data display
 - [x] Load state and claims from Moverly PDTF API for transaction analysis
@@ -83,31 +80,7 @@
 - [x] AI responses include claim ID tracking for transparency and provenance
 - [x] Frontend displays claim references with "View Source Claims" functionality
 
-# Demo app - Survey view and submit
-
-- [ ] Pre-survey property view tab
-- [ ] Pre-populate with hardcoded survey claims
-- [ ] Post-survey add additional claims (inc pictures) indicating realistic problematic issue
-
-# Demo app - Lender AVM and risk view
-
-- [ ] (Retrieve and?) Display AVM results
-- [ ] GPT-5 demo risk analysis and scoring
-- [ ] Display property info view, ensure risk of issue is highlighted
-
-# Demo app - Chain milestones view
-
-- [ ] Traverse chain of transactions either side and fetch milestones
-- [ ] Display milestones in visual chain view
-
-# Demo app - Portal view with property dip
-
-- [ ] Mock up OTM page for core transaction inc MI
-- [ ] Demo UI to fetch property DIP
-- [ ] Display as Nationwide Mortgage Ready - click to view
-- [ ] Friendly view of DIP results
-
-# Demo app - Buyer consent to share data with Atom, retrieve offer
+## Demo app - Buyer consent to share data with Atom, retrieve offer
 
 - [x] Show basic property view which is the property to be mortgaged (use the same transaction ID as the conveyancer view)
 - [x] Show UI to ask for Buyer consent to share ID, credit score and other data with lender
@@ -117,18 +90,46 @@
 - [x] Use actual property data (91 South Hill Avenue, Manchester) with correct pricing (£161,000)
 - [x] Remove fallback data and show proper API error handling
 
-# Demo app - PDTF Viewer improvements
+## Demo app - PDTF Viewer improvements
 
 - [x] Set default transaction ID to 78HJ1ggqJBuMjED6bvhdx7 (consistent across all use cases)
 - [x] Add Show/Hide Config button to toggle API configuration panel visibility
 - [x] Auto-load PDTF data on component mount with default settings
 - [x] Streamline interface to focus on data viewing rather than configuration
 
-# Validate other demos of existing functionality
+## Demo app - Property Chain Timeline View
 
-- [ ] Moverly Agent MI view
-- [ ] Moverly Seller update forms
-- [ ] Moverly Seller quote and instruct via NPTN Select
-- [ ] Moverly (Buyer) public MI view
-- [ ] LMS conveyancer view for Movera
-- [ ] Moverly add buyer
+- [x] Create milestone and chain claims for 91 South Hill Avenue transaction
+- [x] Create two additional chain transactions in Moverly/NPTN:
+  - 107 Sunbeam Crescent (MQhUGTBjv2wuqrJmA34Yue) - Jon and Agnieszka Jones selling to buy 91 South Hill
+  - 101 Broadbridge (8HjwFCAy3EY4UmtpfEyAVo) - Neil and Diane Hardy buying, selling 91 South Hill
+- [x] Push milestone and chain claims to Moverly API for all three transactions
+- [x] Build Property Chain Timeline component with horizontal milestone visualization
+- [x] Implement automatic chain traversal and related transaction data fetching
+- [x] Add visual milestone states: completed (green check), expected (blue clock), not started (gray circle)
+- [x] Display full property addresses from state data (line1, line2, town, postcode)
+- [x] Show chain start/end indicators based on actual chain structure analysis
+- [x] Add proper labels for chain relationships (Onward Purchase, Buyer's Sale)
+- [x] Integrate Chain View into main app navigation (TRL6)
+
+## UI Refinements
+
+- [x] Update milestone labels to "Legal Forms", "Sold STC", and "Completion"
+- [x] Remove redundant "Current Property" label from chain view
+- [x] Hide Surveyor Interface from navigation menu
+- [x] Remove Property Summary section from Seller Conveyancer Insights tab
+
+## Frontend UI Infrastructure and Consistency
+
+- [x] Add UI for demo TRL level (TRL1, TRL2, TRL3, TRL4)
+
+## Demo app - Conveyancing Diligence & AI Report on Title
+
+- [x] Revise insights prompt to produce more concise and actionable insights
+
+## Demo app - Portal view with property dip
+
+- [x] Mock up OTM page for core transaction inc MI
+- [x] Demo UI to fetch property DIP
+- [x] Display as Nationwide Mortgage Ready - click to view
+- [x] Friendly view of DIP results

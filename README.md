@@ -294,6 +294,11 @@ This project demonstrates innovative use of the Smart Data Challenge dataset to 
 - **Multi-Stakeholder Platform**: 7 distinct use cases covering entire property transaction lifecycle
 - **Industry Integration**: Standards-based approach using UPRN, EPC, PDTF schemas, and UK conventions
 
+## 📋 Project Management
+
+- [**TODO**](todo.md) - Current tasks and planned features
+- [**COMPLETED**](completed.md) - Completed milestones and achievements
+
 ## 📄 License
 
 This project is part of the Smart Data Challenge 2025 submission and follows the challenge's terms and conditions for data usage and intellectual property.

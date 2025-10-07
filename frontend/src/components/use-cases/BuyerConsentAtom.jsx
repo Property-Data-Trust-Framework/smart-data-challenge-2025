@@ -199,25 +199,29 @@ function BuyerConsentAtom() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-8 rounded-lg">
-        <div className="flex items-center gap-3 mb-4">
-          <CreditCard className="h-8 w-8 text-green-600" />
-          <h1 className="text-3xl font-bold text-gray-900">Mortgage Application</h1>
+      <div className="bg-[rgb(55,20,80)] p-8 rounded-lg shadow-lg">
+        <div className="flex items-center gap-4 mb-4">
+          <img
+            src="/Atom_Bank.png"
+            alt="Atom Bank"
+            className="h-12 w-auto"
+          />
+          <h1 className="text-3xl font-bold text-white">Mortgage Application</h1>
         </div>
-        <p className="text-gray-600">
-          Share your data securely with Atom Bank to receive a personalized mortgage offer
+        <p className="text-purple-100">
+          Share your data securely with Atom Bank to receive a personalized mortgage offer. Simple, speedy, digital.
         </p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Property Information */}
-        <Card className="p-6 border-green-200 bg-green-50/30">
+        <Card className="p-6 border-[#3E2469] bg-purple-50/30">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-xl font-semibold flex items-center gap-2">
-              <Home className="h-5 w-5 text-green-600" />
+              <Home className="h-5 w-5 text-[#3E2469]" />
               Property to Mortgage
             </h2>
-            <Shield className="h-5 w-5 text-green-600" />
+            <Shield className="h-5 w-5 text-[#FFD500]" />
           </div>
 
           <div className="space-y-3">
@@ -230,7 +234,7 @@ function BuyerConsentAtom() {
                       <span className="text-gray-600">
                         {propertyDetails.priceQualifier ? `Price (${propertyDetails.priceQualifier}):` : 'Price:'}
                       </span>
-                      <div className="font-semibold text-green-700">
+                      <div className="font-semibold text-[#3E2469]">
                         £{propertyDetails.price.toLocaleString()}
                       </div>
                     </div>
@@ -287,10 +291,10 @@ function BuyerConsentAtom() {
               </div>
             )}
 
-            <div className="p-4 bg-green-50 rounded-lg border border-green-200">
+            <div className="p-4 bg-purple-50 rounded-lg border border-purple-200">
               <div className="flex items-center gap-2 mb-2">
-                <CheckCircle className="h-4 w-4 text-green-600" />
-                <span className="text-sm font-semibold text-green-800">PDTF Verified</span>
+                <CheckCircle className="h-4 w-4 text-[#3E2469]" />
+                <span className="text-sm font-semibold text-[#3E2469]">PDTF Verified</span>
               </div>
               <p className="text-sm text-gray-600">
                 Property data verified through the Property Data Trust Framework
@@ -300,9 +304,9 @@ function BuyerConsentAtom() {
         </Card>
 
         {/* Data Consent */}
-        <Card className="p-6 border-blue-200 bg-blue-50/30">
+        <Card className="p-6 border-[#FF6B9D] bg-pink-50/30">
           <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-            <Shield className="h-5 w-5 text-blue-600" />
+            <Shield className="h-5 w-5 text-[#FF6B9D]" />
             Data Sharing Consent
           </h2>
 
@@ -331,7 +335,7 @@ function BuyerConsentAtom() {
                     {label}
                   </label>
                   {consentChecks[key] && (
-                    <CheckCircle className="h-4 w-4 text-green-600" />
+                    <CheckCircle className="h-4 w-4 text-[#3E2469]" />
                   )}
                 </div>
               ))}
@@ -341,7 +345,7 @@ function BuyerConsentAtom() {
               <Button
                 onClick={handleGiveConsent}
                 disabled={!allConsentsGiven || offerLoading || consentGiven || !propertyDetails}
-                className="w-full bg-green-600 hover:bg-green-700"
+                className="w-full bg-[#FFD500] hover:bg-[#FFE033] text-[#3E2469] font-semibold shadow-lg hover:shadow-xl transition-all disabled:bg-gray-300 disabled:text-gray-500"
               >
                 {!propertyDetails ? (
                   "Property Data Required"
@@ -366,44 +370,51 @@ function BuyerConsentAtom() {
 
       {/* Mortgage Offer */}
       {offer && (
-        <Card className="p-6 border-green-200 bg-gradient-to-r from-green-50/50 to-emerald-50/50">
+        <Card className="p-6 border-[#3E2469] bg-gradient-to-br from-purple-50 to-pink-50/30">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold flex items-center gap-2">
-              <CheckCircle className="h-6 w-6 text-green-600" />
-              Your Mortgage Offer
-            </h2>
-            <Badge variant="outline" className="border-green-600 text-green-700">
+            <div className="flex items-center gap-3">
+              <img
+                src="/Atom_Bank.png"
+                alt="Atom Bank"
+                className="h-10 w-auto"
+              />
+              <h2 className="text-2xl font-bold flex items-center gap-2 text-[#3E2469]">
+                <CheckCircle className="h-6 w-6 text-[#FFD500]" />
+                Your Mortgage Offer
+              </h2>
+            </div>
+            <Badge variant="outline" className="border-[#3E2469] text-[#3E2469] font-semibold">
               {offer.status}
             </Badge>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-            <div className="p-4 bg-white rounded-lg">
+            <div className="p-4 bg-white rounded-lg border-2 border-purple-100">
               <div className="text-sm text-gray-600">Property Value</div>
-              <div className="text-xl font-bold text-gray-900">{offer.propertyValue}</div>
+              <div className="text-xl font-bold text-[#3E2469]">{offer.propertyValue}</div>
             </div>
-            <div className="p-4 bg-white rounded-lg">
+            <div className="p-4 bg-white rounded-lg border-2 border-purple-200">
               <div className="text-sm text-gray-600">Loan Amount</div>
-              <div className="text-xl font-bold text-green-700">{offer.loanAmount}</div>
+              <div className="text-xl font-bold text-[#3E2469]">{offer.loanAmount}</div>
             </div>
-            <div className="p-4 bg-white rounded-lg">
+            <div className="p-4 bg-white rounded-lg border-2 border-pink-200">
               <div className="text-sm text-gray-600">Deposit Required</div>
-              <div className="text-xl font-bold text-blue-700">{offer.deposit}</div>
+              <div className="text-xl font-bold text-[#FF6B9D]">{offer.deposit}</div>
             </div>
-            <div className="p-4 bg-white rounded-lg">
+            <div className="p-4 bg-white rounded-lg border-2 border-yellow-200">
               <div className="text-sm text-gray-600">Monthly Payment</div>
-              <div className="text-xl font-bold text-orange-700">{offer.monthlyPayment}</div>
+              <div className="text-xl font-bold text-[#3E2469]">{offer.monthlyPayment}</div>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-            <div className="p-4 bg-white rounded-lg">
+            <div className="p-4 bg-white rounded-lg border-2 border-purple-200">
               <div className="text-sm text-gray-600">Interest Rate</div>
-              <div className="text-2xl font-bold text-blue-700">{offer.interestRate}</div>
+              <div className="text-2xl font-bold text-[#3E2469]">{offer.interestRate}</div>
             </div>
-            <div className="p-4 bg-white rounded-lg">
+            <div className="p-4 bg-white rounded-lg border-2 border-purple-200">
               <div className="text-sm text-gray-600">Loan to Value</div>
-              <div className="text-2xl font-bold text-purple-700">{offer.ltv}</div>
+              <div className="text-2xl font-bold text-[#3E2469]">{offer.ltv}</div>
             </div>
           </div>
 
@@ -462,15 +473,15 @@ function BuyerConsentAtom() {
           </div>
 
           <div className="flex gap-4">
-            <Button className="bg-green-600 hover:bg-green-700">
+            <Button className="bg-[#FFD500] hover:bg-[#FFE033] text-[#3E2469] font-semibold shadow-lg hover:shadow-xl transition-all">
               <CheckCircle className="h-4 w-4 mr-2" />
               Accept Offer
             </Button>
-            <Button variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-50">
+            <Button variant="outline" className="border-[#3E2469] text-[#3E2469] hover:bg-purple-50 font-medium">
               <Eye className="h-4 w-4 mr-2" />
               View Full Terms
             </Button>
-            <Button variant="outline" className="border-gray-300">
+            <Button variant="outline" className="border-[#FF6B9D] text-[#FF6B9D] hover:bg-pink-50 font-medium">
               <Download className="h-4 w-4 mr-2" />
               Download PDF
             </Button>

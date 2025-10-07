@@ -13,8 +13,7 @@ require("dotenv").config({
 // Moverly NPTN API configuration
 const MOVERLY_BASE_URL =
   "https://www.api-staging.moverly.com/nptnService/transactions";
-const TRANSACTION_ID = "HLbVvS2z3LCEVedziZ3kx8";
-const PROPERTY_ID = "91-south-hill-avenue-142222";
+const TRANSACTION_ID = "MQhUGTBjv2wuqrJmA34Yue";
 
 /**
  * Get the Moverly API key from environment
@@ -36,14 +35,8 @@ function getApiKey() {
 async function pushClaimToMoverly(claim) {
   const apiKey = getApiKey();
 
-  // Update the claim with the correct transaction ID and send as array
-  const updatedClaim = {
-    ...claim,
-    transactionId: TRANSACTION_ID,
-  };
-
   // Send as direct array (not wrapped in verified_claims object)
-  const claimData = [updatedClaim];
+  const claimData = [claim];
 
   try {
     const response = await axios.post(
@@ -78,10 +71,10 @@ async function pushClaimToMoverly(claim) {
 }
 
 /**
- * Push all claims for the property to Moverly
+ * Push 107 Sunbeam Crescent claims to Moverly
  */
-async function pushPropertyClaimsToMoverly() {
-  console.log(`🏠 Pushing claims for ${PROPERTY_ID} to Moverly API`);
+async function push107SunbeamToMoverly() {
+  console.log("🏠 Pushing 107 Sunbeam Crescent claims to Moverly API");
   console.log(`📋 Transaction ID: ${TRANSACTION_ID}`);
   console.log("");
 
@@ -90,7 +83,7 @@ async function pushPropertyClaimsToMoverly() {
     const claimsFilePath = path.join(
       __dirname,
       "../data/moverly-properties",
-      "participants-conveyancer.json",
+      "107 Sunbeam Crescent.json",
     );
     const claimsData = await fs.readFile(claimsFilePath, "utf8");
     const claims = JSON.parse(claimsData);
@@ -101,57 +94,26 @@ async function pushPropertyClaimsToMoverly() {
     let successCount = 0;
     let errorCount = 0;
 
-    // Push claims in batches to avoid overwhelming the API
-    const BATCH_SIZE = 5;
-    for (let i = 0; i < claims.length; i += BATCH_SIZE) {
-      const batch = claims.slice(i, i + BATCH_SIZE);
-      const batchNum = Math.floor(i / BATCH_SIZE) + 1;
-      const totalBatches = Math.ceil(claims.length / BATCH_SIZE);
+    // Push each claim
+    for (let i = 0; i < claims.length; i++) {
+      const claim = claims[i];
+      const claimType = Object.keys(claim.claims)[0];
+      const claimNum = i + 1;
 
-      console.log(
-        `📦 Processing batch ${batchNum}/${totalBatches} (${batch.length} claims)`,
-      );
+      try {
+        console.log(`📤 Pushing claim ${claimNum}/${claims.length}: ${claimType}`);
+        await pushClaimToMoverly(claim);
+        console.log(`✅ Claim ${claimNum} pushed successfully`);
+        successCount++;
+      } catch (error) {
+        console.log(`❌ Failed to push claim ${claimNum}: ${error.message}`);
+        errorCount++;
+      }
 
-      // Process batch concurrently
-      const batchPromises = batch.map(async (claim, index) => {
-        const claimIdentifier = `batch-${batchNum}-claim-${index + 1}`;
-        try {
-          await pushClaimToMoverly(claim);
-          console.log(`✅ Claim ${claimIdentifier} pushed successfully`);
-          return { success: true, claimId: claimIdentifier };
-        } catch (error) {
-          console.log(
-            `❌ Failed to push claim ${claimIdentifier}: ${error.message}`,
-          );
-          return {
-            success: false,
-            claimId: claimIdentifier,
-            error: error.message,
-          };
-        }
-      });
-
-      const batchResults = await Promise.all(batchPromises);
-
-      // Count results
-      batchResults.forEach((result) => {
-        if (result.success) {
-          successCount++;
-        } else {
-          errorCount++;
-        }
-      });
-
-      console.log(
-        `   Batch ${batchNum} completed: ${
-          batchResults.filter((r) => r.success).length
-        } success, ${batchResults.filter((r) => !r.success).length} errors`,
-      );
-
-      // Add delay between batches to be respectful to the API
-      if (i + BATCH_SIZE < claims.length) {
-        console.log("   ⏱️  Waiting 2 seconds before next batch...");
-        await new Promise((resolve) => setTimeout(resolve, 2000));
+      // Add delay between claims
+      if (i < claims.length - 1) {
+        console.log("   ⏱️  Waiting 1 second...");
+        await new Promise((resolve) => setTimeout(resolve, 1000));
       }
 
       console.log("");
@@ -162,9 +124,6 @@ async function pushPropertyClaimsToMoverly() {
     console.log(`✅ Successfully pushed: ${successCount} claims`);
     console.log(`❌ Failed to push: ${errorCount} claims`);
     console.log(`📊 Total processed: ${claims.length} claims`);
-    console.log(
-      `🎯 Success rate: ${((successCount / claims.length) * 100).toFixed(1)}%`,
-    );
 
     if (successCount > 0) {
       console.log("");
@@ -180,7 +139,7 @@ async function pushPropertyClaimsToMoverly() {
 
 // Run if called directly
 if (require.main === module) {
-  pushPropertyClaimsToMoverly()
+  push107SunbeamToMoverly()
     .then(() => {
       console.log("");
       console.log("🎉 Claims push completed!");
@@ -193,4 +152,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { pushPropertyClaimsToMoverly, pushClaimToMoverly };
+module.exports = { push107SunbeamToMoverly };

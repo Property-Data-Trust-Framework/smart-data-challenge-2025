@@ -1,0 +1,42 @@
+[
+  {
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    },
+    "claims": {
+      "/propertyPack/valuations/-": {
+        "rentalValue": 0,
+        "capitalValue": 168000,
+        "confidenceBand": "high",
+        "confidenceLevel": 5.5,
+        "valuationId": 791696,
+        "valuationContext": "Basis: Market Value (Red Book VPS 4) - Post-pandemic market recovery considerations - Inspection: External inspection only due to access restrictions - Date: 15/08/2025",
+        "checkValuationResult": "Valuation reflects current market conditions and comparable sales",
+        "instructionType": "Purchase Valuation",
+        "valuationType": "Residential Property Valuation - Methodology: Cost method for specialist properties - Standards: RICS Valuation - Global Standards (Red Book) - Undertaken by RICS Registered Valuer - Limitations: Environmental factors assumed satisfactory",
+        "valuationTimestamp": "2024-03-15T01:29:15.3102777+00:00"
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8",
+    "verification": {
+      "evidence": [
+        {
+          "attestation": {
+            "voucher": {
+              "name": "HomeTrack"
+            },
+            "type": "digital_attestation"
+          },
+          "verification_method": {
+            "type": "auth"
+          },
+          "time": "2025-10-01T16:36:50.9025776Z",
+          "type": "vouch"
+        }
+      ],
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-01T16:36:50.9009632Z"
+    },
+    "timestamp": 1759336610
+  }
+]

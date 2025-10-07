@@ -1,0 +1,94 @@
+[
+  {
+    "transactionId": "8HjwFCAy3EY4UmtpfEyAVo",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T16:45:00.000Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Simply Conveyancing"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/milestones": {
+        "listed": {
+          "completed": "2025-07-20T10:00:00.000Z"
+        },
+        "legalForms": {
+          "started": "2025-07-25T09:30:00.000Z",
+          "completed": "2025-08-15T15:20:00.000Z"
+        },
+        "soldSubjectToContract": {
+          "completed": "2025-09-15T14:30:00.000Z"
+        },
+        "searches": {
+          "started": "2025-08-20T10:00:00.000Z",
+          "completed": "2025-09-10T16:00:00.000Z"
+        },
+        "enquiries": {
+          "started": "2025-09-16T09:00:00.000Z",
+          "completed": "2025-10-04T17:30:00.000Z"
+        },
+        "exchangeOfContracts": {
+          "expected": "2025-10-15T12:00:00.000Z"
+        },
+        "completion": {
+          "expected": "2025-11-06T12:00:00.000Z"
+        }
+      }
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  },
+  {
+    "transactionId": "8HjwFCAy3EY4UmtpfEyAVo",
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-05T16:50:00.000Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Simply Conveyancing"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/chain": {
+        "buyersSale": [
+          {
+            "transactionId": "6bQY64R5mjzRDzkiVhDWf1",
+            "address": {
+              "buildingNumber": "91",
+              "street": "South Hill Avenue",
+              "town": "Harrow",
+              "postcode": "HA2 0DU",
+              "homeNation": "England"
+            }
+          }
+        ]
+      }
+    },
+    "terms_of_use": {
+      "confidentiality_level": "restricted"
+    }
+  }
+]

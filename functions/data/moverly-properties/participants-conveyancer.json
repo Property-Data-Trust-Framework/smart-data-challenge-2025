@@ -1,0 +1,49 @@
+[
+  {
+    "verification": {
+      "trust_framework": "uk_pdtf",
+      "time": "2025-10-06T14:45:30.521Z",
+      "evidence": [
+        {
+          "type": "vouch",
+          "verification_method": {
+            "type": "auth"
+          },
+          "attestation": {
+            "type": "digital_attestation",
+            "voucher": {
+              "name": "Diane Hardy"
+            }
+          }
+        }
+      ]
+    },
+    "claims": {
+      "/participants/-": {
+        "name": {
+          "title": "Mr",
+          "firstName": "John",
+          "middleName": "",
+          "lastName": "Lamb"
+        },
+        "dateOfBirth": "1978-03-15",
+        "phone": "+441619234567",
+        "email": "john.lamb@belllambjoynson.co.uk",
+        "role": "Seller's Conveyancer",
+        "organisation": "Bell, Lamb and Joynson Solicitors",
+        "address": {
+          "line1": "23 King Street",
+          "line2": "",
+          "town": "MANCHESTER",
+          "countryCode": "GBR",
+          "province": "",
+          "postcode": "M2 6AW"
+        },
+        "externalIds": {
+          "Moverly": "JLamb4567BLJSolicitors2025"
+        }
+      }
+    },
+    "transactionId": "HLbVvS2z3LCEVedziZ3kx8"
+  }
+]

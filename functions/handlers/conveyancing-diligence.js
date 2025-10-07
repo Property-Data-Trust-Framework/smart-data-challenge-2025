@@ -194,28 +194,75 @@ function createReportOnTitlePrompt(stateData, claimsData) {
   return `
 REPORT ON TITLE REQUEST
 
-Please prepare a comprehensive Report on Title for the following property transaction. This should be a formal legal document suitable for a conveyancing client.
+Prepare a comprehensive Report on Title analyzing all available property data from the PDTF (Property Data Trust Framework).
 
 COMPLETE PROPERTY TRANSACTION STATE:
 ${JSON.stringify(stateData, null, 2)}
 
-${claimsData ? `\nINDIVIDUAL CLAIMS DATA:\n${JSON.stringify(claimsData, null, 2)}` : ""}
+${claimsData ? `\nINDIVIDUAL CLAIMS DATA WITH PROVENANCE:\n${JSON.stringify(claimsData, null, 2)}` : ""}
 
-Please analyze the provided property data and prepare a detailed Report on Title. For each section of the report, provide thorough professional analysis based on the specific data available. Where information is limited, note this and recommend appropriate action.
+COMPREHENSIVE ANALYSIS REQUIRED - Review ALL available data including:
 
-Your response should be structured according to the schema provided, with detailed professional content in each field. Focus on:
+**TITLE & OWNERSHIP:**
+- Registered proprietors and ownership structure
+- Title number, class, and tenure details
+- Title documents and register entries
+- Any restrictions, notices, or entries on the register
 
-1. **Property Details**: Extract accurate property address, title number, and set current date
-2. **Title Summary**: Analyze ownership, title class, and tenure from the data provided
-3. **Title Examination**: Review any title documents, restrictions, charges, and covenants mentioned in the data
-4. **Planning & Statutory**: Examine any planning permissions, building regulations, conservation status, environmental issues
-5. **Third Party Rights**: Identify easements, rights of way, restrictive covenants, party wall matters
-6. **Financial Charges**: Detail any mortgages, charges, or financial liabilities requiring redemption
-7. **Title Defects**: Identify any defects, missing documents, or potential issues
-8. **Recommendations**: Provide specific actionable advice for the transaction
-9. **Conclusion**: Give overall assessment, mortgage suitability, and any reservations
+**CHARGES & ENCUMBRANCES:**
+- Outstanding mortgages requiring redemption (check propertyPack/titlesToBeSold/charges)
+- Financial charges and their priority
+- Matrimonial rights or other statutory charges
+- Lender details and redemption requirements
 
-Write in formal legal language appropriate for conveyancing practice. Be specific about issues found in the data and provide practical recommendations. If information is missing from the provided data, note this and recommend obtaining it.
+**RESTRICTIONS & COVENANTS:**
+- Restrictive covenants affecting property use
+- Building restrictions or development limitations
+- Consent requirements for alterations
+- Rights of way, easements, and access rights
+
+**PROPERTY CONDITION & ALTERATIONS:**
+- Structural alterations and extensions (check alterationsAndChanges)
+- Planning permissions and building regulations compliance
+- Electrical works certification (electricalWorks)
+- Window replacements and other modifications
+- Works completion status
+
+**ENVIRONMENTAL & STATUTORY:**
+- Flood risk assessment (environmentalIssues/flooding)
+- Coal/non-coal mining risks
+- Radon levels and remediation
+- Coastal erosion concerns
+- Local authority planning issues
+
+**SERVICES & UTILITIES:**
+- Electricity, gas, water, and drainage connections
+- Broadband and telecommunications infrastructure
+- Solar panels, heat pumps, or renewable energy
+- Green Deal loans or energy efficiency schemes
+
+**LEGAL & COMPLIANCE:**
+- Disputes, complaints, or boundary issues (check disputesAndComplaints)
+- Party wall matters
+- Planning breaches or enforcement notices
+- Outstanding statutory notices
+- Building regulation certificates
+
+**TRANSACTION READINESS:**
+- Seller's completion requirements (completionAndMoving)
+- Property chain position
+- Mortgage redemption sufficiency
+- Missing documentation or certificates
+- Items requiring resolution before exchange
+
+**PARTICIPANTS & CHAIN:**
+- All transaction participants and their roles
+- Conveyancers, estate agents, and other professionals
+- Chain implications
+
+Provide SPECIFIC findings from the actual data - reference exact values, dates, amounts, and parties. Don't make generic statements. If data exists (e.g., flood risk = "Low", council tax band = "C"), include it. If critical information is missing, explicitly state what's needed.
+
+Structure your analysis to give the buyer's solicitor complete visibility of all material facts affecting the transaction.
 `;
 }
 

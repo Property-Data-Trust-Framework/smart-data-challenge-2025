@@ -5,31 +5,15 @@ import { Button } from '@/components/ui/button';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Building, MapPin, Users, FileText, Shield, Clock, ExternalLink, Verified, Server, AlertCircle, Bot, Eye } from 'lucide-react';
+import { Building, MapPin, Users, FileText, Shield, Clock, ExternalLink, Verified, Server, AlertCircle, Bot, Eye, FolderOpen, Download, ExternalLinkIcon } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
 import { useToast } from '@/hooks/use-toast';
+import { usePDTF } from '@/contexts/PDTFContext';
 import { pdtfAPI } from '@/lib/api';
 import jp from 'json-pointer';
 import traverse from 'traverse';
 import ReactMarkdown from 'react-markdown';
 
-const PDTF_SERVICES = [
-  {
-    id: 'moverly',
-    name: 'Moverly PDTF Service',
-    description: 'Moverly staging PDTF API',
-    icon: '🏢',
-  },
-  {
-    id: 'lms-nptn',
-    name: 'LMS NPTN Service',
-    description: 'National Property Transaction Network PDTF API',
-    icon: '🏛️',
-  }
-];
-
-// Default transaction ID for demo
-const DEFAULT_TRANSACTION_ID = '78HJ1ggqJBuMjED6bvhdx7';
 
 // Generate a comprehensive claims map from verified claims data - handles nested objects and arrays
 const getClaimsMap = (verifiedClaims) => {
@@ -178,6 +162,10 @@ function ConveyancerPropertyPack({ state, renderDataElement }) {
 
   const formatCurrency = (amount, qualifier = '') => {
     if (!amount) return 'Not specified';
+    // If already a formatted string (e.g., "£145000"), return as-is
+    if (typeof amount === 'string') {
+      return qualifier ? `${amount} (${qualifier})` : amount;
+    }
     const formatted = new Intl.NumberFormat('en-GB', {
       style: 'currency',
       currency: 'GBP',
@@ -534,15 +522,27 @@ function ConveyancerPropertyPack({ state, renderDataElement }) {
 }
 
 function ConveyancingDiligence() {
-  const [claimsData, setClaimsData] = useState(null);
-  const [stateData, setStateData] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  // Use PDTF Context for shared state and claims
+  const {
+    selectedService,
+    transactionId,
+    stateData,
+    claimsData,
+    loading,
+    error,
+    hasLoaded,
+    loadPDTFData
+  } = usePDTF();
+
   const [claimsMap, setClaimsMap] = useState(null);
 
   // Claims dialog state
   const [selectedClaims, setSelectedClaims] = useState(null);
   const [claimsDialogOpen, setClaimsDialogOpen] = useState(false);
+
+  // Document summary dialog state
+  const [selectedDocSummary, setSelectedDocSummary] = useState(null);
+  const [docSummaryDialogOpen, setDocSummaryDialogOpen] = useState(false);
 
   // GPT analysis state
   const [analysisLoading, setAnalysisLoading] = useState(false);
@@ -553,6 +553,108 @@ function ConveyancingDiligence() {
   const [insightsResult, setInsightsResult] = useState(null);
 
   const { toast } = useToast();
+
+  // Helper function to format Report on Title object to markdown
+  const formatReportOnTitle = (report) => {
+    if (!report) return '';
+
+    // If it's already a string, return it
+    if (typeof report === 'string') return report;
+
+    // If it's an object, format it as markdown
+    if (typeof report === 'object') {
+      let markdown = '';
+
+      if (report.property) {
+        markdown += `# Report on Title\n\n`;
+        markdown += `**Property:** ${report.property.address}\n\n`;
+        markdown += `**Title Number:** ${report.property.titleNumber}\n\n`;
+        markdown += `**Date:** ${report.property.date}\n\n`;
+        markdown += `---\n\n`;
+      }
+
+      if (report.titleSummary) {
+        markdown += `## Title Summary\n\n`;
+        markdown += `${report.titleSummary.description}\n\n`;
+        markdown += `**Registered Proprietor:** ${report.titleSummary.registeredProprietor}\n\n`;
+        markdown += `**Class of Title:** ${report.titleSummary.classOfTitle}\n\n`;
+      }
+
+      if (report.titleExamination) {
+        markdown += `## Title Examination\n\n`;
+        markdown += `### Title Documents\n${report.titleExamination.titleDocuments}\n\n`;
+        markdown += `### Restrictions\n${report.titleExamination.restrictions}\n\n`;
+        markdown += `### Charges\n${report.titleExamination.charges}\n\n`;
+        markdown += `### Covenants\n${report.titleExamination.covenants}\n\n`;
+      }
+
+      if (report.planningStatutory) {
+        markdown += `## Planning & Statutory\n\n`;
+        markdown += `### Planning\n${report.planningStatutory.planning}\n\n`;
+        markdown += `### Building Regulations\n${report.planningStatutory.buildingRegulations}\n\n`;
+        markdown += `### Conservation\n${report.planningStatutory.conservation}\n\n`;
+        markdown += `### Environmental\n${report.planningStatutory.environmental}\n\n`;
+      }
+
+      if (report.thirdPartyRights) {
+        markdown += `## Third Party Rights\n\n`;
+        markdown += `### Rights of Way\n${report.thirdPartyRights.rightsOfWay}\n\n`;
+        markdown += `### Restrictive Covenants\n${report.thirdPartyRights.restrictiveCovenants}\n\n`;
+        markdown += `### Rights of Light\n${report.thirdPartyRights.rightsOfLight}\n\n`;
+        markdown += `### Party Wall\n${report.thirdPartyRights.partyWall}\n\n`;
+      }
+
+      if (report.financialCharges) {
+        markdown += `## Financial Charges\n\n`;
+        markdown += `### Existing Mortgages\n${report.financialCharges.existingMortgages}\n\n`;
+        markdown += `### Liabilities\n${report.financialCharges.liabilities}\n\n`;
+        markdown += `### Redemption\n${report.financialCharges.redemption}\n\n`;
+      }
+
+      if (report.titleDefects) {
+        markdown += `## Title Defects\n\n`;
+        markdown += `### Defects\n${report.titleDefects.defects}\n\n`;
+        markdown += `### Missing Documents\n${report.titleDefects.missingDocuments}\n\n`;
+        markdown += `### Issues\n${report.titleDefects.issues}\n\n`;
+      }
+
+      if (report.recommendations) {
+        markdown += `## Recommendations\n\n`;
+        markdown += `#### Actions Required\n${report.recommendations.actions}\n\n`;
+        markdown += `#### Additional Searches\n${report.recommendations.searches}\n\n`;
+        markdown += `#### Insurance\n${report.recommendations.insurance}\n\n`;
+        markdown += `#### Risk Mitigation\n${report.recommendations.riskMitigation}\n\n`;
+      }
+
+      if (report.conclusion) {
+        markdown += `## Conclusion\n\n`;
+        markdown += `#### Overall Assessment\n${report.conclusion.assessment}\n\n`;
+        markdown += `#### Mortgage Suitability\n${report.conclusion.mortgageSuitability}\n\n`;
+        markdown += `#### Reservations\n${report.conclusion.reservations}\n\n`;
+      }
+
+      return markdown;
+    }
+
+    return String(report);
+  };
+
+  // Helper function to format document summary for display
+  const formatSummary = (summary) => {
+    if (!summary) return null;
+
+    // If it's a string, just return it
+    if (typeof summary === 'string') {
+      return summary;
+    }
+
+    // If it's an object, format it nicely
+    if (typeof summary === 'object') {
+      return JSON.stringify(summary, null, 2);
+    }
+
+    return String(summary);
+  };
 
   // Helper function to filter claims by IDs
   const getClaimsByIds = (claimIds) => {
@@ -630,6 +732,10 @@ function ConveyancingDiligence() {
 
   const formatCurrency = (amount, qualifier = '') => {
     if (!amount) return 'Not specified';
+    // If already a formatted string (e.g., "£145000"), return as-is
+    if (typeof amount === 'string') {
+      return qualifier ? `${amount} (${qualifier})` : amount;
+    }
     const formatted = new Intl.NumberFormat('en-GB', {
       style: 'currency',
       currency: 'GBP',
@@ -695,47 +801,26 @@ function ConveyancingDiligence() {
     );
   };
 
-  const loadPDTFData = useCallback(async () => {
-    setLoading(true);
-    setError(null);
-
-    try {
-      const [claimsResponse, stateResponse] = await Promise.all([
-        pdtfAPI.getPDTFClaims(PDTF_SERVICES[0].id, DEFAULT_TRANSACTION_ID),
-        pdtfAPI.getPDTFState(PDTF_SERVICES[0].id, DEFAULT_TRANSACTION_ID)
-      ]);
-
-
-      setClaimsData(claimsResponse);
-      setStateData(stateResponse);
-
+  // Generate claims map when claims data changes
+  useEffect(() => {
+    if (claimsData) {
       // Check different possible structures for claims data
       let claims = null;
-      if (Array.isArray(claimsResponse)) {
-        claims = claimsResponse;
-      } else if (claimsResponse.claims && claimsResponse.claims.claims && Array.isArray(claimsResponse.claims.claims)) {
-        claims = claimsResponse.claims.claims;
-      } else if (claimsResponse.claims && Array.isArray(claimsResponse.claims)) {
-        claims = claimsResponse.claims;
-      } else if (claimsResponse.data && Array.isArray(claimsResponse.data)) {
-        claims = claimsResponse.data;
+      if (Array.isArray(claimsData)) {
+        claims = claimsData;
+      } else if (claimsData.claims && claimsData.claims.claims && Array.isArray(claimsData.claims.claims)) {
+        claims = claimsData.claims.claims;
+      } else if (claimsData.claims && Array.isArray(claimsData.claims)) {
+        claims = claimsData.claims;
+      } else if (claimsData.data && Array.isArray(claimsData.data)) {
+        claims = claimsData.data;
       }
 
       // Generate claims map for UI interactions using improved mapping
       const generatedClaimsMap = getClaimsMap(claims);
       setClaimsMap(generatedClaimsMap);
-
-      toast({
-        title: "Data loaded successfully",
-        description: `Loaded ${claims?.length || 0} claims from ${PDTF_SERVICES[0].name}`,
-      });
-
-    } catch (err) {
-      setError(err.response?.data?.error || err.message || 'Failed to load PDTF data');
-    } finally {
-      setLoading(false);
     }
-  }, [toast]);
+  }, [claimsData]);
 
   const handleShowClaims = (path, label, claims) => {
     setSelectedClaims({ path, label, claims });
@@ -864,23 +949,33 @@ function ConveyancingDiligence() {
 
   return (
     <div className="space-y-6">
-      <Card>
-        <CardHeader>
+      {/* Simply Conveyancing Branding */}
+      <div className="flex justify-between items-center border-b-2 border-teal-500 pb-4">
+        <div>
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
+            Conveyancer Workspace
+          </h1>
+        </div>
+        <img
+          src="/simply-conveyancing.png"
+          alt="Simply Conveyancing"
+          className="h-12"
+        />
+      </div>
+
+      {/* Property Header */}
+      <Card className="border-teal-200 shadow-teal-100">
+        <CardHeader className="bg-gradient-to-r from-teal-50 via-cyan-50 to-teal-50">
           <div className="flex items-start justify-between">
             <div className="flex-1">
-              <CardTitle className="flex items-center gap-3">
-                <FileText className="h-6 w-6" />
+              <CardTitle className="flex items-center gap-3 text-teal-900">
+                <FileText className="h-6 w-6 text-teal-600" />
                 {getAddressTitle()}
               </CardTitle>
-              <CardDescription>
+              <CardDescription className="text-teal-700">
                 {getAddressSubtitle()}
               </CardDescription>
             </div>
-            {stateData?.transactionId && (
-              <div className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">
-                {stateData.transactionId}
-              </div>
-            )}
           </div>
         </CardHeader>
       </Card>
@@ -908,20 +1003,39 @@ function ConveyancingDiligence() {
 
       {stateData && !loading && (
         <Tabs defaultValue="property" className="w-full">
-          <TabsList className="grid w-full grid-cols-4">
-            <TabsTrigger value="property" className="flex items-center gap-2">
+          <TabsList className="grid w-full grid-cols-5 bg-teal-100">
+            <TabsTrigger
+              value="property"
+              className="flex items-center gap-2 data-[state=active]:bg-teal-600 data-[state=active]:text-white"
+            >
               <Building className="h-4 w-4" />
               Property Details
             </TabsTrigger>
-            <TabsTrigger value="title" className="flex items-center gap-2">
+            <TabsTrigger
+              value="title"
+              className="flex items-center gap-2 data-[state=active]:bg-teal-600 data-[state=active]:text-white"
+            >
               <FileText className="h-4 w-4" />
               Title Register
             </TabsTrigger>
-            <TabsTrigger value="analysis" className="flex items-center gap-2">
+            <TabsTrigger
+              value="documents"
+              className="flex items-center gap-2 data-[state=active]:bg-teal-600 data-[state=active]:text-white"
+            >
+              <FolderOpen className="h-4 w-4" />
+              Documents
+            </TabsTrigger>
+            <TabsTrigger
+              value="analysis"
+              className="flex items-center gap-2 data-[state=active]:bg-teal-600 data-[state=active]:text-white"
+            >
               <Bot className="h-4 w-4" />
               Report on Title
             </TabsTrigger>
-            <TabsTrigger value="insights" className="flex items-center gap-2">
+            <TabsTrigger
+              value="insights"
+              className="flex items-center gap-2 data-[state=active]:bg-teal-600 data-[state=active]:text-white"
+            >
               <Shield className="h-4 w-4" />
               Insights
             </TabsTrigger>
@@ -930,13 +1044,13 @@ function ConveyancingDiligence() {
           <TabsContent value="property" className="space-y-6">
             {/* Transaction Participants - Featured at Top */}
             {stateData.participants && stateData.participants.length > 0 && (
-              <Card className="border-2 border-blue-200 bg-gradient-to-r from-blue-50 to-indigo-50">
+              <Card className="border-2 border-teal-200 bg-gradient-to-r from-teal-50 via-cyan-50 to-teal-50">
                 <CardHeader>
-                  <CardTitle className="text-lg flex items-center gap-2">
-                    <Users className="h-5 w-5 text-blue-600" />
+                  <CardTitle className="text-lg flex items-center gap-2 text-teal-900">
+                    <Users className="h-5 w-5 text-teal-600" />
                     Transaction Participants
                   </CardTitle>
-                  <p className="text-sm text-gray-600">People and organizations involved in this property transaction</p>
+                  <p className="text-sm text-teal-700">People and organizations involved in this property transaction</p>
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1340,7 +1454,7 @@ function ConveyancingDiligence() {
                       </div>
                       <div className="flex items-center justify-between">
                         <span>Service:</span>
-                        <Badge variant="secondary">{PDTF_SERVICES[0].name}</Badge>
+                        <Badge variant="secondary">{selectedService?.name || 'Unknown'}</Badge>
                       </div>
                     </div>
                   </CardContent>
@@ -1492,6 +1606,128 @@ function ConveyancingDiligence() {
             )}
           </TabsContent>
 
+          <TabsContent value="documents" className="space-y-6">
+            {stateData ? (
+              <Card className="border-teal-200 shadow-teal-100">
+                <CardHeader className="bg-gradient-to-r from-teal-50 via-cyan-50 to-teal-50">
+                  <CardTitle className="flex items-center gap-3 text-teal-900">
+                    <FolderOpen className="h-5 w-5 text-teal-600" />
+                    Transaction Documents
+                  </CardTitle>
+                  <CardDescription className="text-teal-700">
+                    View and download all documents associated with this transaction
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="pt-6">
+                  {stateData.propertyPack?.documents && stateData.propertyPack.documents.length > 0 ? (
+                    <div className="space-y-4">
+                      {stateData.propertyPack.documents.map((doc, index) => (
+                        <Card
+                          key={index}
+                          className="border-teal-200 hover:border-teal-400 transition-colors"
+                        >
+                          <CardContent className="p-5">
+                            <div className="flex items-start gap-4">
+                              <div className="p-3 bg-teal-100 rounded-lg flex-shrink-0">
+                                <FileText className="h-6 w-6 text-teal-600" />
+                              </div>
+                              <div className="flex-1 min-w-0">
+                                <div className="flex items-start justify-between gap-4 mb-3">
+                                  <div className="flex-1 min-w-0">
+                                    <h4 className="font-semibold text-teal-900 text-lg mb-1">
+                                      {doc.displayName || doc.fileName || 'Untitled Document'}
+                                    </h4>
+                                    {doc.documentType && (
+                                      <div className="mb-2">
+                                        <Badge className="bg-teal-100 text-teal-800 hover:bg-teal-200">
+                                          {doc.documentType}
+                                        </Badge>
+                                      </div>
+                                    )}
+                                  </div>
+                                  <div className="flex gap-2 flex-shrink-0">
+                                    <Button
+                                      variant="outline"
+                                      size="sm"
+                                      className="border-teal-600 text-teal-800 hover:bg-teal-50"
+                                      onClick={() => window.open('#', '_blank')}
+                                    >
+                                      <ExternalLinkIcon className="h-4 w-4 mr-2" />
+                                      Open
+                                    </Button>
+                                    <Button
+                                      variant="outline"
+                                      size="sm"
+                                      className="border-teal-600 text-teal-800 hover:bg-teal-50"
+                                    >
+                                      <Download className="h-4 w-4 mr-2" />
+                                      Download
+                                    </Button>
+                                  </div>
+                                </div>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                                  {doc.fileName && (
+                                    <div className="flex items-start gap-2">
+                                      <span className="text-teal-700 font-medium whitespace-nowrap">File name:</span>
+                                      <span className="text-teal-900 font-mono text-xs break-all">{doc.fileName}</span>
+                                    </div>
+                                  )}
+                                  {doc.mimeType && (
+                                    <div className="flex items-start gap-2">
+                                      <span className="text-teal-700 font-medium whitespace-nowrap">Type:</span>
+                                      <span className="text-teal-900 font-mono text-xs">{doc.mimeType}</span>
+                                    </div>
+                                  )}
+                                  {doc.summary && (
+                                    <div className="flex items-start gap-2 md:col-span-2">
+                                      <Button
+                                        variant="outline"
+                                        size="sm"
+                                        className="border-teal-600 text-teal-800 hover:bg-teal-50"
+                                        onClick={() => {
+                                          setSelectedDocSummary({
+                                            title: doc.displayName || doc.fileName || 'Document Summary',
+                                            summary: formatSummary(doc.summary)
+                                          });
+                                          setDocSummaryDialogOpen(true);
+                                        }}
+                                      >
+                                        <Eye className="h-4 w-4 mr-2" />
+                                        View Summary
+                                      </Button>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="text-center py-12">
+                      <FolderOpen className="h-12 w-12 text-teal-400 mx-auto mb-4" />
+                      <p className="text-teal-800 mb-2 font-semibold">No documents available</p>
+                      <p className="text-sm text-teal-600">
+                        Documents will appear here as they are added to the transaction.
+                      </p>
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            ) : (
+              <Card className="border-dashed border-teal-300">
+                <CardContent className="text-center py-12">
+                  <FolderOpen className="h-12 w-12 text-teal-400 mx-auto mb-4" />
+                  <p className="text-teal-800 mb-2 font-semibold">No transaction data loaded</p>
+                  <p className="text-sm text-teal-600">
+                    Load a transaction to view its documents.
+                  </p>
+                </CardContent>
+              </Card>
+            )}
+          </TabsContent>
+
           <TabsContent value="analysis" className="space-y-6">
             {/* AI Report on Title Section */}
             <Card>
@@ -1526,34 +1762,53 @@ function ConveyancingDiligence() {
 
                   {analysisResult && (
                     <div className="mt-6 space-y-4">
-                      {/* Property Summary */}
-                      {analysisResult.property && (
-                        <div className="border rounded-lg p-4 bg-gradient-to-r from-blue-50 to-indigo-50">
-                          <h4 className="font-semibold text-lg mb-2 flex items-center gap-2">
-                            <Building className="h-5 w-5 text-blue-600" />
-                            Property Summary
-                          </h4>
-                          <div className="text-sm text-gray-700">
-                            <div><strong>Address:</strong> {formatAddress(analysisResult.property.address)}</div>
-                            <div><strong>Title Number:</strong> {analysisResult.property.titleNumber}</div>
-                          </div>
-                        </div>
-                      )}
-
                       {/* Report on Title Content */}
                       {analysisResult.reportOnTitle && (
                         <div className="border rounded-lg">
-                          <div className="p-4 border-b bg-gradient-to-r from-amber-50 to-yellow-50">
-                            <h4 className="font-semibold text-lg flex items-center gap-2">
-                              <FileText className="h-5 w-5 text-amber-600" />
-                              Report on Title
-                            </h4>
-                            <p className="text-sm text-gray-600 mt-1">AI-generated comprehensive title analysis</p>
+                          <div className="p-4 border-b bg-gradient-to-r from-teal-50 to-cyan-50 flex items-center justify-between">
+                            <div>
+                              <h4 className="font-semibold text-lg flex items-center gap-2 text-teal-900">
+                                <FileText className="h-5 w-5 text-teal-600" />
+                                Report on Title
+                              </h4>
+                            </div>
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="border-teal-600 text-teal-800 hover:bg-teal-50"
+                              onClick={() => {
+                                const markdown = formatReportOnTitle(analysisResult.reportOnTitle);
+                                const blob = new Blob([markdown], { type: 'text/markdown' });
+                                const url = URL.createObjectURL(blob);
+                                const a = document.createElement('a');
+                                a.href = url;
+                                const address = analysisResult.property?.address || 'property';
+                                const filename = `report-on-title-${address.replace(/[^a-z0-9]/gi, '-').toLowerCase()}.md`;
+                                a.download = filename;
+                                document.body.appendChild(a);
+                                a.click();
+                                document.body.removeChild(a);
+                                URL.revokeObjectURL(url);
+                              }}
+                            >
+                              <Download className="h-4 w-4 mr-2" />
+                              Download as Markdown
+                            </Button>
                           </div>
                           <div className="p-6">
-                            <div className="prose prose-sm max-w-none prose-headings:text-slate-900 prose-p:text-slate-700 prose-strong:text-slate-900 prose-ul:text-slate-700 prose-ol:text-slate-700 prose-li:text-slate-700 prose-table:text-slate-700">
-                              <ReactMarkdown>
-                                {analysisResult.reportOnTitle}
+                            <div className="prose prose-sm max-w-none">
+                              <ReactMarkdown
+                                components={{
+                                  h1: ({node, ...props}) => <h1 className="text-2xl font-bold mb-4 text-slate-900" {...props} />,
+                                  h2: ({node, ...props}) => <h2 className="text-xl font-bold mt-6 mb-3 text-slate-900 border-b border-slate-200 pb-2" {...props} />,
+                                  h3: ({node, ...props}) => <h3 className="text-lg font-bold mt-4 mb-2 text-slate-800" {...props} />,
+                                  h4: ({node, ...props}) => <h4 className="text-base font-bold mt-4 mb-2 text-slate-900" {...props} />,
+                                  p: ({node, ...props}) => <p className="text-slate-700 mb-3" {...props} />,
+                                  strong: ({node, ...props}) => <strong className="font-bold text-slate-900" {...props} />,
+                                  hr: ({node, ...props}) => <hr className="my-6 border-slate-300" {...props} />,
+                                }}
+                              >
+                                {formatReportOnTitle(analysisResult.reportOnTitle)}
                               </ReactMarkdown>
                             </div>
                           </div>
@@ -1646,6 +1901,41 @@ function ConveyancingDiligence() {
                         </div>
                       </div>
 
+                      {/* Proactive Actions Section */}
+                      {insightsResult.checks.some(check => check.proactiveActions) && (
+                        <Card className="border-teal-500 border-2 bg-gradient-to-r from-teal-50 via-cyan-50 to-teal-50">
+                          <CardHeader>
+                            <CardTitle className="flex items-center gap-2 text-teal-900">
+                              <AlertCircle className="h-5 w-5 text-teal-600" />
+                              Recommended Pre-emptive Actions
+                            </CardTitle>
+                            <CardDescription className="text-teal-800">
+                              Take these actions NOW to get ahead of likely buyer queries and prevent transaction delays
+                            </CardDescription>
+                          </CardHeader>
+                          <CardContent>
+                            <div className="space-y-4">
+                              {insightsResult.checks
+                                .filter(check => check.proactiveActions && (check.status === 'warning' || check.status === 'fail'))
+                                .map((check, index) => (
+                                  <div key={index} className="flex gap-3 p-3 bg-white rounded-lg border border-teal-200">
+                                    <div className="flex-shrink-0 mt-1">
+                                      <div className={`w-2 h-2 rounded-full ${
+                                        check.status === 'fail' ? 'bg-red-500' :
+                                        check.status === 'warning' ? 'bg-yellow-500' : 'bg-green-500'
+                                      }`} />
+                                    </div>
+                                    <div className="flex-1 min-w-0">
+                                      <h5 className="font-semibold text-sm text-teal-900 mb-1">{check.name}</h5>
+                                      <p className="text-sm text-teal-800">{check.proactiveActions}</p>
+                                    </div>
+                                  </div>
+                                ))}
+                            </div>
+                          </CardContent>
+                        </Card>
+                      )}
+
                       {/* Individual Check Results */}
                       <div className="space-y-4">
                         <h4 className="font-semibold text-lg flex items-center gap-2">
@@ -1709,6 +1999,17 @@ function ConveyancingDiligence() {
                                 <p className="text-sm text-gray-700">{check.recommendations}</p>
                               </div>
 
+                              {/* Proactive Actions */}
+                              {check.proactiveActions && (
+                                <div className="bg-teal-50 border border-teal-200 rounded-lg p-3">
+                                  <h5 className="font-medium text-sm mb-1 text-teal-900 flex items-center gap-1">
+                                    <AlertCircle className="h-4 w-4" />
+                                    Pre-emptive Actions
+                                  </h5>
+                                  <p className="text-sm text-teal-800">{check.proactiveActions}</p>
+                                </div>
+                              )}
+
                               {/* Relevant Claims Section */}
                               {check.relevantClaimIds && check.relevantClaimIds.length > 0 && (
                                 <div className="pt-3 border-t border-gray-200">
@@ -1734,24 +2035,26 @@ function ConveyancingDiligence() {
                                 <span>Category: {check.category}</span>
                                 <span>Analyzed: {new Date(check.timestamp).toLocaleString()}</span>
                               </div>
+
+                              {/* Performance Metrics */}
+                              {check.performance && (
+                                <div className="flex items-center gap-4 text-xs text-gray-500 pt-2 border-t border-gray-200">
+                                  <span className="flex items-center gap-1">
+                                    <Clock className="h-3 w-3" />
+                                    {check.performance.responseTimeMs}ms
+                                  </span>
+                                  <span>
+                                    Tokens: {check.performance.tokensUsed.total.toLocaleString()}
+                                    <span className="text-gray-400 ml-1">
+                                      ({check.performance.tokensUsed.prompt.toLocaleString()} + {check.performance.tokensUsed.completion.toLocaleString()})
+                                    </span>
+                                  </span>
+                                </div>
+                              )}
                             </CardContent>
                           </Card>
                         ))}
                       </div>
-
-                      {/* Property Summary */}
-                      {insightsResult.property && (
-                        <div className="border rounded-lg p-4 bg-gradient-to-r from-blue-50 to-indigo-50">
-                          <h4 className="font-semibold text-lg mb-2 flex items-center gap-2">
-                            <Building className="h-5 w-5 text-blue-600" />
-                            Property Summary
-                          </h4>
-                          <div className="text-sm text-gray-700">
-                            <div><strong>Address:</strong> {formatAddress(insightsResult.property.address)}</div>
-                            <div><strong>Title Number:</strong> {insightsResult.property.titleNumber}</div>
-                          </div>
-                        </div>
-                      )}
 
                       <div className="text-xs text-gray-500 italic border-l-4 border-purple-200 pl-3 py-2 bg-purple-50">
                         <strong>Important Notice:</strong> {insightsResult.disclaimer}
@@ -1853,6 +2156,31 @@ function ConveyancingDiligence() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Document Summary Dialog */}
+      <Dialog open={docSummaryDialogOpen} onOpenChange={setDocSummaryDialogOpen}>
+        <DialogContent className="sm:max-w-[700px] max-h-[80vh] overflow-hidden flex flex-col">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2 text-teal-900">
+              <FileText className="h-5 w-5 text-teal-600" />
+              {selectedDocSummary?.title}
+            </DialogTitle>
+            <DialogDescription className="text-teal-700">
+              Document summary and details
+            </DialogDescription>
+          </DialogHeader>
+
+          <div className="flex-1 overflow-y-auto pr-2">
+            {selectedDocSummary?.summary && (
+              <div className="bg-teal-50 border border-teal-200 rounded-lg p-4">
+                <pre className="whitespace-pre-wrap text-sm text-teal-900 font-sans">
+                  {selectedDocSummary.summary}
+                </pre>
+              </div>
+            )}
           </div>
         </DialogContent>
       </Dialog>

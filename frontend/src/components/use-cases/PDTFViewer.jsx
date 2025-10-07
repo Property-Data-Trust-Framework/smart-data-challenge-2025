@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -9,77 +9,24 @@ import { Button } from '@/components/ui/button';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Building, MapPin, Users, FileText, Shield, Clock, ExternalLink, Verified, Server, AlertCircle, Settings, Eye } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
-import { pdtfAPI } from '@/lib/api';
-
-const PDTF_SERVICES = [
-  {
-    id: 'moverly',
-    name: 'Moverly PDTF Service',
-    description: 'Moverly staging PDTF API',
-    icon: '🏢',
-  },
-  {
-    id: 'lms-nptn',
-    name: 'LMS NPTN Service',
-    description: 'National Property Transaction Network PDTF API',
-    icon: '🏛️',
-  }
-];
-
-// Default transaction ID - same as other components
-const DEFAULT_TRANSACTION_ID = '78HJ1ggqJBuMjED6bvhdx7';
+import { usePDTF } from '@/contexts/PDTFContext';
 
 function PDTFViewer() {
-  const [selectedService, setSelectedService] = useState(PDTF_SERVICES[0]);
-  const [transactionId, setTransactionId] = useState(DEFAULT_TRANSACTION_ID);
-  const [claimsData, setClaimsData] = useState(null);
-  const [stateData, setStateData] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [hasSearched, setHasSearched] = useState(false);
+  const {
+    services,
+    selectedService,
+    setSelectedService,
+    transactionId,
+    setTransactionId,
+    claimsData,
+    stateData,
+    loading,
+    error,
+    hasLoaded,
+    loadPDTFData
+  } = usePDTF();
+
   const [showConfig, setShowConfig] = useState(false);
-
-  const loadPDTFData = useCallback(async () => {
-    if (!transactionId.trim()) {
-      setError('Please enter a transaction ID');
-      return;
-    }
-
-    setLoading(true);
-    setError(null);
-    setHasSearched(true);
-    
-    try {
-      // Call the appropriate backend API based on selected service
-      const [claimsResponse, stateResponse] = await Promise.all([
-        pdtfAPI.getPDTFClaims(selectedService.id, transactionId),
-        pdtfAPI.getPDTFState(selectedService.id, transactionId)
-      ]);
-      
-      setClaimsData(claimsResponse);
-      setStateData(stateResponse);
-      
-    } catch (err) {
-      console.error('Failed to load PDTF data:', err);
-      let errorMessage = err.response?.data?.error || err.message;
-      
-      // Check if it's a demo data suggestion
-      if (errorMessage.includes('Try transaction ID:')) {
-        errorMessage += '\n\nNote: Live API credentials may be expired. Use the demo transaction ID for testing.';
-      }
-      
-      setError(`Failed to load PDTF data: ${errorMessage}`);
-      setClaimsData(null);
-      setStateData(null);
-    } finally {
-      setLoading(false);
-    }
-  }, [selectedService, transactionId]);
-
-  // Auto-load data on component mount with default settings
-  useEffect(() => {
-    loadPDTFData();
-  }, [loadPDTFData]);
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
@@ -133,22 +80,14 @@ function PDTFViewer() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-2xl font-bold text-gray-900">PDTF Viewer</h2>
+          <h2 className="text-2xl font-bold text-gray-900">PDTF Claims & State Viewer</h2>
           <p className="text-gray-600">
-            Viewing transaction {transactionId} from {selectedService.name}
+            Viewing raw claims and aggregated state for this transaction
           </p>
         </div>
-        <Button
-          variant="outline"
-          onClick={() => setShowConfig(!showConfig)}
-          className="flex items-center gap-2"
-        >
-          <Settings className="h-4 w-4" />
-          {showConfig ? 'Hide Config' : 'Show Config'}
-        </Button>
       </div>
 
-      {/* Service Selection and Transaction Input */}
+      {/* Service Selection and Transaction Input - Hidden by default, config is in main header */}
       {showConfig && (
         <Card>
         <CardHeader>
@@ -165,11 +104,7 @@ function PDTFViewer() {
             <div className="space-y-2">
               <Label htmlFor="service-select">PDTF Service</Label>
               <Select value={selectedService.id} onValueChange={(value) => {
-                setSelectedService(PDTF_SERVICES.find(s => s.id === value));
-                setClaimsData(null);
-                setStateData(null);
-                setHasSearched(false);
-                setError(null);
+                setSelectedService(services.find(s => s.id === value));
               }}>
                 <SelectTrigger id="service-select">
                   <SelectValue placeholder="Select a service">
@@ -180,7 +115,7 @@ function PDTFViewer() {
                   </SelectValue>
                 </SelectTrigger>
                 <SelectContent>
-                  {PDTF_SERVICES.map((service) => (
+                  {services.map((service) => (
                     <SelectItem key={service.id} value={service.id}>
                       <div className="flex items-center space-x-2">
                         <span>{service.icon}</span>
@@ -272,19 +207,34 @@ function PDTFViewer() {
       )}
 
       {/* Demo Mode Indicator */}
-      {!loading && hasSearched && (claimsData || stateData) && (claimsData?._metadata?.mode === 'demo' || stateData?._metadata?.mode === 'demo') && (
+      {!loading && hasLoaded && (claimsData || stateData) && (claimsData?._metadata?.mode === 'demo' || stateData?._metadata?.mode === 'demo') && (
         <Alert>
           <AlertCircle className="h-4 w-4" />
           <AlertTitle>Demo Mode Active</AlertTitle>
           <AlertDescription>
-            You are viewing demonstration data for transaction {transactionId}. 
+            You are viewing demonstration data for transaction {transactionId}.
             {claimsData?._metadata?.note && <div className="mt-2 text-sm text-gray-600">{claimsData._metadata.note}</div>}
           </AlertDescription>
         </Alert>
       )}
 
       {/* Data Display */}
-      {!loading && hasSearched && (claimsData || stateData) && (
+      {!loading && hasLoaded && (claimsData || stateData) && (() => {
+        // Log any claims containing "valuations"
+        if (claimsData) {
+          const valuationClaims = claimsData.filter(claim =>
+            JSON.stringify(claim).toLowerCase().includes('valuation')
+          );
+          if (valuationClaims.length > 0) {
+            console.log('=== CLAIMS CONTAINING "VALUATION" ===');
+            valuationClaims.forEach((claim, index) => {
+              console.log(`Claim ${index + 1}:`, JSON.stringify(claim, null, 2));
+            });
+          }
+        }
+        return null;
+      })()}
+      {!loading && hasLoaded && (claimsData || stateData) && (
         <Tabs defaultValue="state" className="space-y-4">
           <TabsList>
             <TabsTrigger value="state">Transaction State</TabsTrigger>
@@ -395,7 +345,7 @@ function PDTFViewer() {
       )}
 
       {/* Empty State */}
-      {!loading && !hasSearched && (
+      {!loading && !hasLoaded && (
         <Card className="border-dashed">
           <CardContent className="text-center py-12">
             <Server className="h-12 w-12 text-gray-400 mx-auto mb-4" />

@@ -13,17 +13,24 @@ const { z } = require("zod");
 const DiligenceCheckResultSchema = z.object({
   status: z.enum(["pass", "warning", "fail"]),
   riskLevel: z.enum(["low", "medium", "high", "critical"]),
-  findings: z.string().min(1).describe("Brief summary of what was found"),
+  findings: z.string().min(1).max(150).describe("Concise 1-2 sentence summary of what was found"),
   details: z
     .string()
     .min(1)
+    .max(300)
     .describe(
-      "Detailed explanation of the findings and potential implications",
+      "Brief explanation in 2-3 sentences covering key findings and implications",
     ),
   recommendations: z
     .string()
     .min(1)
-    .describe("Specific actions or considerations for the conveyancer"),
+    .max(200)
+    .describe("Specific actions in 1-2 sentences for the conveyancer"),
+  proactiveActions: z
+    .string()
+    .min(1)
+    .max(250)
+    .describe("Pre-emptive actions the seller/conveyancer can take NOW to address this before buyer raises it (1-3 specific actions)"),
   confidence: z.enum(["low", "medium", "high"]),
   relevantClaimIds: z
     .array(z.string())
@@ -251,6 +258,8 @@ const generateDiligenceInsights = onRequest(
  * @return {Promise<Object>} The check result with status and findings
  */
 async function performDiligenceCheck(check, stateData, claimsData) {
+  const startTime = Date.now();
+
   try {
     const openaiApiKey = process.env.OPENAI_API_KEY || config().openai?.api_key;
 
@@ -280,46 +289,44 @@ async function performDiligenceCheck(check, stateData, claimsData) {
           role: "system",
           content: `You are an expert conveyancing solicitor analyzing property transaction data using the Property Data Trust Framework (PDTF).
 
-          UNDERSTANDING PDTF DATA:
-          - You will receive "claims" data - these are individual verified data points from various sources
-          - Each claim contains verification metadata showing the data source and trust level
-          - Claims aggregate together to form the complete property transaction state
-          - All data is provenanced and traceable to its original source
+          CRITICAL: BE EXTREMELY CONCISE. Each field has strict character limits:
+          - findings: Max 150 chars (1-2 sentences)
+          - details: Max 300 chars (2-3 sentences)
+          - recommendations: Max 200 chars (1-2 sentences)
+          - proactiveActions: Max 250 chars (1-3 specific actionable steps)
 
-          You must perform this specific diligence check: "${check.name}"
-          ${check.description}
+          Provide only essential information. No verbose explanations.
 
-          WHAT TO LOOK FOR:
-          ${check.context.lookFor
-    .map((item) => `- ${item}`)
-    .join("\n          ")}
+          PDTF DATA STRUCTURE:
+          - Claims = individual verified data points from sources
+          - Claims aggregate to form complete property state
+          - All data is provenanced and traceable
 
-          RISK ASSESSMENT CRITERIA:
-          - LOW RISK: ${check.context.riskAssessment.low}
-          - MEDIUM RISK: ${check.context.riskAssessment.medium}
-          - HIGH RISK: ${check.context.riskAssessment.high}
-          - CRITICAL RISK: ${check.context.riskAssessment.critical}
+          CHECK: "${check.name}" - ${check.description}
 
-          GUIDANCE: ${check.context.guidance}
+          LOOK FOR: ${check.riskFactors.join(", ")}
 
-          Focus on identifying: ${check.riskFactors.join(", ")}
+          RISK LEVELS:
+          - LOW: ${check.context.riskAssessment.low}
+          - MEDIUM: ${check.context.riskAssessment.medium}
+          - HIGH: ${check.context.riskAssessment.high}
+          - CRITICAL: ${check.context.riskAssessment.critical}
 
-          CRITICAL: For the 'relevantClaimIds' array, ONLY include claim IDs that you DIRECTLY used to make your determination. This means:
-          - Claims that contain the specific data you referenced in your findings
-          - Claims that directly support your risk assessment
-          - Claims that you would cite as evidence for your conclusions
+          PROACTIVE ACTIONS (NEW & IMPORTANT):
+          For proactiveActions, suggest specific steps the SELLER'S conveyancer can take NOW to get ahead of issues the buyer's conveyancer will likely raise. Think: "What can we do TODAY to prevent delays or queries?"
+          Examples:
+          - Order redemption statement from lender now
+          - Request indemnity insurance quote for missing planning consent
+          - Obtain electrical safety certificate
+          - Contact HMLR to clarify conflicting register entries
+          Be specific and action-oriented. Focus on preventing transaction delays.
 
-          DO NOT include:
-          - Claims you merely looked at but didn't use
-          - Claims that are generally related but didn't influence your decision
-          - All claims in a category - only the specific ones that shaped your analysis
+          relevantClaimIds: ONLY include claim IDs directly supporting your conclusions. Be selective.
 
-          Be selective and precise. If you found no specific relevant claims, return an empty array [].
-
-          Status guidelines:
-          - pass: No issues found or only low-risk items that don't require action
-          - warning: Medium-risk issues that should be noted and may require action
-          - fail: High-risk or critical issues that require immediate attention`,
+          Status:
+          - pass: No issues or low-risk only
+          - warning: Medium-risk requiring attention
+          - fail: High/critical requiring immediate action`,
         },
         {
           role: "user",
@@ -340,6 +347,8 @@ async function performDiligenceCheck(check, stateData, claimsData) {
     }
 
     const response = await openai.chat.completions.create(requestConfig);
+
+    const responseTime = Date.now() - startTime;
 
     // Parse the structured response - zodResponseFormat ensures valid structure
     let aiResult;
@@ -378,6 +387,14 @@ async function performDiligenceCheck(check, stateData, claimsData) {
       confidence: aiResult.confidence,
       relevantClaimIds: aiResult.relevantClaimIds,
       timestamp: new Date().toISOString(),
+      performance: {
+        responseTimeMs: responseTime,
+        tokensUsed: {
+          prompt: response.usage?.prompt_tokens || 0,
+          completion: response.usage?.completion_tokens || 0,
+          total: response.usage?.total_tokens || 0,
+        },
+      },
     };
   } catch (error) {
     console.error(`Error performing check ${check.id}:`, error);
@@ -402,6 +419,8 @@ function createFallbackCheckResult(check, stateData) {
         "The property is subject to standard restrictive covenants typical for residential properties built in this era. These include restrictions on business use and requirements for maintaining property standards.",
       recommendations:
         "Review covenant details with client to ensure proposed use complies with restrictions. Consider covenant insurance if any uncertainty exists.",
+      proactiveActions:
+        "Obtain indemnity insurance quote now for covenant restrictions. Prepare summary of covenants for buyer's pack. Confirm with seller any historical covenant breaches or consent obtained.",
       confidence: "high",
       relevantClaimIds: [],
     },
@@ -413,6 +432,8 @@ function createFallbackCheckResult(check, stateData) {
         "The names of the sellers in the contract correspond with the registered proprietors shown in the official copies of the title register.",
       recommendations:
         "Standard identity verification procedures should be followed as per CDD requirements.",
+      proactiveActions:
+        "Complete ID verification checks now. Obtain certified copies of identity documents. Prepare name verification documents for buyer's solicitor.",
       confidence: "high",
       relevantClaimIds: [],
     },
@@ -424,6 +445,8 @@ function createFallbackCheckResult(check, stateData) {
         "The property is subject to a first legal charge in favour of a mainstream lender. Redemption statement will be required to calculate the exact amount needed to discharge the mortgage on completion.",
       recommendations:
         "Request redemption statement from lender at least 10 working days before completion. Ensure sufficient sale proceeds to cover redemption amount and any early repayment charges. Confirm undertaking arrangements with lender's solicitors.",
+      proactiveActions:
+        "Order redemption statement from lender TODAY. Contact lender's solicitors to establish undertaking procedures. Verify no early repayment charges apply. Confirm sale proceeds sufficient for redemption.",
       confidence: "high",
       relevantClaimIds: [],
     },
@@ -435,6 +458,8 @@ function createFallbackCheckResult(check, stateData) {
         "The property has good title with no apparent defects, missing documents, or irregularities that would prevent or delay the sale. Standard documentation appears to be in order.",
       recommendations:
         "Proceed with standard conveyancing process. Consider indemnity insurance quotes for any minor issues that may arise during the transaction.",
+      proactiveActions:
+        "Obtain fresh official copies of title register. Prepare certified document copies for buyer. Review all title documents for completeness before exchange.",
       confidence: "high",
       relevantClaimIds: [],
     },

@@ -56,6 +56,7 @@ import {
 } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { pdtfAPI } from "@/lib/api";
+import { usePDTF } from "@/contexts/PDTFContext";
 
 const PARTICIPANT_STATUS = {
   active: {
@@ -94,8 +95,7 @@ const PARTICIPANT_ROLES = [
 ];
 
 function SellerConsentManagement() {
-  const [transactionId] = useState("78HJ1ggqJBuMjED6bvhdx7");
-  const [transactionState, setTransactionState] = useState(null);
+  const { transactionId, stateData, claimsData, loading: pdtfLoading, error: pdtfError } = usePDTF();
   const [participants, setParticipants] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -114,34 +114,17 @@ function SellerConsentManagement() {
   const [loadingHistory, setLoadingHistory] = useState(false);
   
   // Current user identification
-  const currentUserEmail = "ed+nptn_diane@moverly.com";
+  const currentUserEmail = "ed+dianelaurel@moverly.com";
 
-  const loadTransactionData = useCallback(async () => {
-    setLoading(true);
-    setError(null);
-    setHasSearched(true);
-
-    try {
-      const stateResponse = await pdtfAPI.getPDTFState(
-        "moverly",
-        transactionId
-      );
-      setTransactionState(stateResponse);
-
-      // Extract participants from transaction state and filter out null values
-      const rawParticipants = stateResponse?.participants || [];
+  // Extract participants from PDTF state when it changes
+  useEffect(() => {
+    if (stateData) {
+      setHasSearched(true);
+      const rawParticipants = stateData?.participants || [];
       const extractedParticipants = rawParticipants.filter(participant => participant !== null && participant !== undefined);
       setParticipants(extractedParticipants);
-    } catch (err) {
-      console.error("Failed to load transaction data:", err);
-      const errorMessage = err.response?.data?.error || err.message;
-      setError(`Failed to load transaction data: ${errorMessage}`);
-      setTransactionState(null);
-      setParticipants([]);
-    } finally {
-      setLoading(false);
     }
-  }, [transactionId]);
+  }, [stateData]);
 
   const updateParticipantStatus = async (participantIndex, newStatus) => {
     setUpdatingParticipant(participantIndex);
@@ -163,8 +146,7 @@ function SellerConsentManagement() {
         )
       );
 
-      // Optionally reload full state to ensure consistency
-      // await loadTransactionData();
+      // Note: Full state will be reloaded automatically by PDTFContext if needed
     } catch (err) {
       console.error("Failed to update participant status:", err);
       const errorMessage = err.response?.data?.error || err.message;
@@ -201,8 +183,7 @@ function SellerConsentManagement() {
       });
       setInviteDialogOpen(false);
 
-      // Reload transaction data to show new participant
-      await loadTransactionData();
+      // Note: Transaction data will be reloaded automatically by PDTFContext
     } catch (err) {
       console.error("Failed to invite participant:", err);
       const errorMessage = err.response?.data?.error || err.message;
@@ -217,11 +198,12 @@ function SellerConsentManagement() {
     setError(null);
 
     try {
-      const claims = await pdtfAPI.getPDTFClaims("moverly", transactionId);
-      
+      // Use claims from PDTFContext if available, otherwise fetch
+      const claims = claimsData || await pdtfAPI.getPDTFClaims("moverly", transactionId);
+
       // Filter claims that affect participants
       const participantClaims = claims.filter(claim => {
-        return claim.claims && Object.keys(claim.claims).some(path => 
+        return claim.claims && Object.keys(claim.claims).some(path =>
           path.startsWith("/participants/")
         );
       });
@@ -498,12 +480,9 @@ function SellerConsentManagement() {
     return sortedGroups;
   };
 
-  // Auto-load transaction data on component mount
-  useEffect(() => {
-    if (transactionId && !hasSearched) {
-      loadTransactionData();
-    }
-  }, [transactionId, hasSearched, loadTransactionData]);
+  // Combine loading and error states from PDTF context
+  const isLoading = loading || pdtfLoading;
+  const displayError = error || pdtfError;
 
   return (
     <div className="space-y-6">
@@ -520,8 +499,8 @@ function SellerConsentManagement() {
       {/* Header */}
       <div>
         <h2 className="text-2xl font-bold text-gray-900">
-          {transactionState?.propertyPack?.address ?
-            `${transactionState.propertyPack.address.line1}, ${transactionState.propertyPack.address.town}` :
+          {stateData?.propertyPack?.address ?
+            `${stateData.propertyPack.address.line1}, ${stateData.propertyPack.address.town}` :
             "91 South Hill Avenue, Manchester"
           }
         </h2>
@@ -545,7 +524,7 @@ function SellerConsentManagement() {
 
         {/* Home Tab Content */}
         <TabsContent value="home" className="mt-6">
-          {transactionState ? (
+          {stateData ? (
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {/* Property Overview */}
               <Card>
@@ -557,10 +536,10 @@ function SellerConsentManagement() {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2">
-                    <p className="text-sm text-gray-600">Price: £{transactionState.propertyPack?.priceInformation?.price?.toLocaleString()}</p>
-                    <p className="text-sm text-gray-600">Tenure: {transactionState.propertyPack?.marketingTenure}</p>
-                    <p className="text-sm text-gray-600">Status: {transactionState.status}</p>
-                    <p className="text-sm text-gray-600">UPRN: {transactionState.propertyPack?.uprn}</p>
+                    <p className="text-sm text-gray-600">Price: £{stateData.propertyPack?.priceInformation?.price?.toLocaleString()}</p>
+                    <p className="text-sm text-gray-600">Tenure: {stateData.propertyPack?.marketingTenure}</p>
+                    <p className="text-sm text-gray-600">Status: {stateData.status}</p>
+                    <p className="text-sm text-gray-600">UPRN: {stateData.propertyPack?.uprn}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -593,9 +572,9 @@ function SellerConsentManagement() {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2">
-                    <p className="text-sm text-gray-600">Current: {transactionState.propertyPack?.energyEfficiency?.certificate?.currentEnergyRating}</p>
-                    <p className="text-sm text-gray-600">Potential: {transactionState.propertyPack?.energyEfficiency?.certificate?.potentialEnergyRating}</p>
-                    <p className="text-sm text-gray-600">Efficiency: {transactionState.propertyPack?.energyEfficiency?.certificate?.currentEnergyEfficiency}/100</p>
+                    <p className="text-sm text-gray-600">Current: {stateData.propertyPack?.energyEfficiency?.certificate?.currentEnergyRating}</p>
+                    <p className="text-sm text-gray-600">Potential: {stateData.propertyPack?.energyEfficiency?.certificate?.potentialEnergyRating}</p>
+                    <p className="text-sm text-gray-600">Efficiency: {stateData.propertyPack?.energyEfficiency?.certificate?.currentEnergyEfficiency}/100</p>
                   </div>
                 </CardContent>
               </Card>
@@ -616,16 +595,16 @@ function SellerConsentManagement() {
         {/* Manage Tab Content */}
         <TabsContent value="manage" className="mt-6">
           {/* Error Display */}
-          {error && (
+          {displayError && (
             <Alert variant="destructive" className="mb-6">
               <AlertCircle className="h-4 w-4" />
               <AlertTitle>Error</AlertTitle>
-              <AlertDescription>{error}</AlertDescription>
+              <AlertDescription>{displayError}</AlertDescription>
             </Alert>
           )}
 
           {/* Loading State */}
-      {loading && (
+      {isLoading && (
         <div className="space-y-4">
           <div className="text-center mb-4">
             <p className="text-gray-600">Loading transaction participants...</p>
@@ -647,7 +626,7 @@ function SellerConsentManagement() {
       )}
 
       {/* Participants List */}
-      {!loading && hasSearched && participants.length > 0 && (
+      {!isLoading && hasSearched && participants.length > 0 && (
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center justify-between">
@@ -890,7 +869,7 @@ function SellerConsentManagement() {
       )}
 
       {/* Empty State */}
-      {!loading && hasSearched && participants.length === 0 && (
+      {!isLoading && hasSearched && participants.length === 0 && (
         <Card className="border-dashed">
           <CardContent className="text-center py-12">
             <UserPlus className="h-12 w-12 text-gray-400 mx-auto mb-4" />
@@ -904,7 +883,7 @@ function SellerConsentManagement() {
       )}
 
       {/* No Search State */}
-      {!loading && !hasSearched && (
+      {!isLoading && !hasSearched && (
         <Card className="border-dashed">
           <CardContent className="text-center py-12">
             <Users className="h-12 w-12 text-gray-400 mx-auto mb-4" />
